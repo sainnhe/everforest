@@ -41,15 +41,15 @@ or if you want to apply it without reload
 
 As most of codes are from **[spring-night](https://github.com/rhysd/vim-color-spring-night)**, you can customize some behaviors of this colorscheme just like [this](https://github.com/rhysd/vim-color-spring-night#customize)
 
-- `g:forest_night_kill_italic`: If 1, this colorscheme does not use italic attribute. Default value is 0.
+- `g:forest_night_kill_italic`: If `1`, this colorscheme does not use italic attribute. Default value is `0`.
 
-- `g:forest_night_kill_bold`: If 1, this colorscheme does not use bold attribute. Default value is 0.
+- `g:forest_night_kill_bold`: If `1`, this colorscheme does not use bold attribute. Default value is `0`.
 
-- `g:forest_night_high_contrast`: If 1, it uses a bit high contrast colors. Default value depends on termguicolors option and whether on GUI or CUI Vim is running.
+- `g:forest_night_high_contrast`: If `1`, it uses a bit high contrast colors. Default value depends on termguicolors option and whether on GUI or CUI Vim is running.
 
-- `g:forest_night_highlight_terminal`: If 1, a terminal window is also highlighted with this color scheme. Otherwise default ANSI colors are used. Default value is 1.
+- `g:forest_night_highlight_terminal`: If `1`, a terminal window is also highlighted with this color scheme. Otherwise default ANSI colors are used. Default value is `1`.
 
-- `g:forest_night_cterm_italic`: If 1, italic font is enabled even in a terminal. This variable is useful when your terminal supports italic fonts. Default value is 0.
+- `g:forest_night_cterm_italic`: If `1`, italic font is enabled even in a terminal. This variable is useful when your terminal supports italic fonts. Default value is `0`.
 
 # Inspirations
 
