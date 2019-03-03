@@ -16,24 +16,26 @@ endif
 if exists('g:syntax_on')
     syntax reset
 endif
-
+if exists('g:colors_name')
+  unlet g:colors_name
+endif
 let g:colors_name = 'forest-night'
 
-let g:forest_night_italic_comments = get(g:, 'spring_night_italic_comments', 0)
-let g:forest_night_kill_italic = get(g:, 'spring_night_kill_italic', 0)
-let g:forest_night_kill_bold = get(g:, 'spring_night_kill_bold', 0)
-let g:forest_night_highlight_terminal = get(g:, 'spring_night_highlight_terminal', 1)
-let g:forest_night_cterm_italic = get(g:, 'spring_night_cterm_italic', 0)
+let g:forest_night_italic_comments = get(g:, 'forest_night_italic_comments', 0)
+let g:forest_night_kill_italic = get(g:, 'forest_night_kill_italic', 0)
+let g:forest_night_kill_bold = get(g:, 'forest_night_kill_bold', 0)
+let g:forest_night_highlight_terminal = get(g:, 'forest_night_highlight_terminal', 1)
+let g:forest_night_cterm_italic = get(g:, 'forest_night_cterm_italic', 0)
 
 let s:gui_running = has('gui_running')
 let s:true_colors = has('termguicolors') && &termguicolors
 let s:undercurl_attr = s:gui_running ? 'gui=undercurl cterm=undercurl' : 'gui=underline cterm=underline'
-let s:italic_attr = g:forest_night_kill_italic ? '' : g:spring_night_cterm_italic ? 'gui=italic cterm=italic' : 'gui=italic'
+let s:italic_attr = g:forest_night_kill_italic ? '' : g:forest_night_cterm_italic ? 'gui=italic cterm=italic' : 'gui=italic'
 let s:bold_attr = g:forest_night_kill_bold ? '' : 'gui=bold cterm=bold'
 
 if exists('g:forest_night_high_contrast')
     if type(g:forest_night_high_contrast) != type(0)
-        echoerr 'g:forest_night_high_contrast was changed to number value. Please read README.md of vim-color-spring-night repository and set proper value'
+        echoerr 'g:forest_night_high_contrast was changed to number value. Please read README.md of vim-color-forest-night repository and set proper value'
         let g:forest_night_high_contrast = !s:gui_running && s:true_colors
     endif
 else
