@@ -50,7 +50,8 @@ hi Boolean term=NONE guifg=#fd8489 ctermfg=210
 hi Character term=NONE guifg=#a9dd9d ctermfg=150
 hi ColorColumn term=NONE guibg=#536273 ctermbg=238
 exe 'hi' 'Comment' 'term=NONE' 'guifg=#8d9eb2' 'ctermfg=103' g:forest_night_italic_comments ? s:italic_attr : ''
-exe 'hi' 'Conceal' 'term=NONE' 'guifg=#fb8965' 'ctermfg=209' 'guibg='.s:bg_gui 'ctermbg=233'
+" exe 'hi' 'Conceal' 'term=NONE' 'guifg=#fb8965' 'ctermfg=209' 'guibg='.s:bg_gui 'ctermbg=233'
+hi Conceal          ctermbg=NONE ctermfg=14    cterm=NONE      guibg=NONE    guifg=#616c72   gui=NONE
 hi Conditional term=NONE guifg=#a8d2eb ctermfg=153
 hi Constant term=NONE guifg=#fd8489 ctermfg=210
 exe 'hi' 'Cursor' 'term=NONE' 'guifg='.s:bg_gui 'ctermfg=233' 'guibg=#fffeeb' 'ctermbg='.s:fg_cterm
