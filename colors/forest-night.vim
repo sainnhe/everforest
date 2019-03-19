@@ -186,6 +186,15 @@ if s:gui_running
 else
     hi EasyMotionIncCursor term=NONE gui=reverse cterm=reverse
 endif
+highlight CocHighlightText cterm=bold gui=bold
+highlight CocCodeLens ctermfg=Gray guifg=#888888
+highlight link CocErrorSign ALEErrorSign
+highlight link CocWarningSign ALEWarningSign
+highlight link CocInfoSign ALEInfoSign
+highlight link CocHintSign Label
+highlight link CocErrorHighlight ALEError
+highlight link CocWarningHighlight ALEWarning
+highlight link CocInfoHighlight ALEInfo
 
 if g:forest_night_highlight_terminal
     if has('nvim')
