@@ -1,12 +1,10 @@
-# Demo
+# Introduction
 
 ![](./screenshots/forest_night.png)
 
-You can preview it over here:
+This color scheme is a mixture of [spring-night](https://github.com/rhysd/vim-color-spring-night) and [sacredforest](https://github.com/KKPMW/sacredforest-vim), it uses the tone of sacredforest and combines the syntax highlighting of spring-night which supports tons of filetypes and plugins.
 
-[vimcolors.com](http://vimcolors.com/905/forest-night/dark)
-
-[vivify](http://bytefluent.com/vivify/index.php?remote=github.com%2Fsainnhe%2Fvim-color-forest-night%2Fraw%2Fmaster%2Fcolors%2Fforest-night.vim)
+Supported filetypes and plugins: [Optimized Filetypes and Plugins](https://github.com/rhysd/vim-color-spring-night#optimized-filetypes-and-plugins)
 
 # Installation
 
@@ -53,6 +51,6 @@ As most of codes are from **[spring-night](https://github.com/rhysd/vim-color-sp
 
 # Inspirations
 
-**[spring-night](https://github.com/rhysd/vim-color-spring-night)** (most of codes are from here)
+**[spring-night](https://github.com/rhysd/vim-color-spring-night)**
 
 **[sacredforest](https://github.com/KKPMW/sacredforest-vim)**
