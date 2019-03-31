@@ -131,6 +131,7 @@ hi gitCommitSelectedFile term=NONE guifg=#a8d2eb ctermfg=153
 exe 'hi' 'gitconfigSection' 'term=NONE' 'guifg=#a8d2eb' 'ctermfg=153' s:bold_attr
 hi goBuiltins term=NONE guifg=#fd8489 ctermfg=210
 hi helpExample term=NONE guifg=#a8d2eb ctermfg=153
+hi helpCommand term=NONE guifg=#e7d5ff ctermfg=189
 hi htmlBold term=NONE guibg=#4c5866 ctermbg=235
 hi htmlLinkText term=NONE guifg=#a8d2eb ctermfg=153
 hi htmlTagName term=NONE guifg=#f0aa8a ctermfg=216
