@@ -49,7 +49,7 @@ let s:fg_cterm = g:forest_night_high_contrast ? 231 : 230
 hi Boolean term=NONE guifg=#fd8489 ctermfg=210
 hi Character term=NONE guifg=#a9dd9d ctermfg=150
 hi ColorColumn term=NONE guibg=#536273 ctermbg=238
-exe 'hi' 'Comment' 'term=NONE' 'guifg=#8d9eb2' 'ctermfg=103' g:forest_night_italic_comments ? s:italic_attr : ''
+exe 'hi' 'Comment' 'term=NONE' 'guifg=#616c72' 'ctermfg=103' g:forest_night_italic_comments ? s:italic_attr : ''
 " exe 'hi' 'Conceal' 'term=NONE' 'guifg=#fb8965' 'ctermfg=209' 'guibg='.s:bg_gui 'ctermbg=233'
 hi Conceal          ctermbg=NONE ctermfg=14    cterm=NONE      guibg=NONE    guifg=#616c72   gui=NONE
 hi Conditional term=NONE guifg=#a8d2eb ctermfg=153
@@ -95,19 +95,19 @@ exe 'hi' 'SpellLocal' 'term=NONE' 'guifg=#fd8489' 'ctermfg=210' 'guisp=#fd8489' 
 exe 'hi' 'SpellRare' 'term=NONE' 'guifg=#f0eaaa' 'ctermfg=229' 'guisp=#f0eaaa' s:undercurl_attr
 hi Statement term=NONE guifg=#a8d2eb ctermfg=153
 exe 'hi' 'StatusLine' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm 'guibg=#536273' 'ctermbg=238' s:bold_attr
-hi StatusLineNC term=NONE guifg=#8d9eb2 ctermfg=103 guibg=#4c5866 ctermbg=235 gui=NONE cterm=NONE
+hi StatusLineNC term=NONE guifg=#616c72 ctermfg=103 guibg=#4c5866 ctermbg=235 gui=NONE cterm=NONE
 exe 'hi' 'StatusLineTerm' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm 'guibg=#536273' 'ctermbg=238' s:bold_attr
-hi StatusLineTermNC term=NONE guifg=#8d9eb2 ctermfg=103 guibg=#4c5866 ctermbg=235 gui=NONE cterm=NONE
+hi StatusLineTermNC term=NONE guifg=#616c72 ctermfg=103 guibg=#4c5866 ctermbg=235 gui=NONE cterm=NONE
 exe 'hi' 'StorageClass' 'term=NONE' 'guifg=#f0c38a' 'ctermfg=222' s:italic_attr
 hi String term=NONE guifg=#a9dd9d ctermfg=150
-hi TabLine term=NONE guifg=#8d9eb2 ctermfg=103 guibg=#536273 ctermbg=238
+hi TabLine term=NONE guifg=#616c72 ctermfg=103 guibg=#536273 ctermbg=238
 hi TabLineFill term=NONE guifg=#4c5866 ctermfg=235
 exe 'hi' 'TabLineSel' 'term=NONE' 'guifg=#f0c38a' 'ctermfg=222' 'guibg='.s:bg_gui 'ctermbg=233' s:bold_attr
 hi Tag term=NONE guifg=#f0aa8a ctermfg=216
 exe 'hi' 'Title' 'term=NONE' 'guifg=#f0c38a' 'ctermfg=222' s:bold_attr
 exe 'hi' 'Todo' 'term=NONE' 'guifg='.s:bg_gui 'ctermfg=233' 'guibg=#fd8489' 'ctermbg=210' s:bold_attr
 exe 'hi' 'ToolbarButton' 'term=NONE' 'guifg=#f0c38a' 'ctermfg=222' 'guibg='.s:bg_gui 'ctermbg=233' s:bold_attr
-hi ToolbarLine term=NONE guifg=#8d9eb2 ctermfg=103 guibg=#536273 ctermbg=238
+hi ToolbarLine term=NONE guifg=#616c72 ctermfg=103 guibg=#536273 ctermbg=238
 hi Type term=NONE guifg=#f0c38a ctermfg=222
 hi Underlined term=NONE guifg=#a8d2eb ctermfg=153 gui=underline cterm=underline
 hi VertSplit        ctermbg=NONE ctermfg=243   cterm=NONE      guibg=NONE    guifg=#616c72   gui=NONE
@@ -138,7 +138,7 @@ hi htmlTagName term=NONE guifg=#f0aa8a ctermfg=216
 exe 'hi' 'javaScriptBraces' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm
 hi makeCommands term=NONE guifg=#f0eaaa ctermfg=229
 hi markdownCode term=NONE guifg=#f0eaaa ctermfg=229
-hi markdownUrl term=NONE guifg=#8d9eb2 ctermfg=103
+hi markdownUrl term=NONE guifg=#616c72 ctermfg=103
 hi ocamlConstructor term=NONE guifg=#f0c38a ctermfg=222
 hi ocamlKeyChar term=NONE guifg=#a8d2eb ctermfg=153
 hi ocamlKeyword term=NONE guifg=#f0c38a ctermfg=222
@@ -158,7 +158,7 @@ hi tomlTable term=NONE guifg=#a8d2eb ctermfg=153
 hi tomlTableArray term=NONE guifg=#a8d2eb ctermfg=153
 hi tomlKey term=NONE guifg=#f0c38a ctermfg=222
 exe 'hi' 'typescriptBraces' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm
-hi vimfilerColumn__SizeLine term=NONE guifg=#8d9eb2 ctermfg=103
+hi vimfilerColumn__SizeLine term=NONE guifg=#616c72 ctermfg=103
 hi vimfilerClosedFile term=NONE guifg=#a9dd9d ctermfg=150
 hi vimCommand term=NONE guifg=#a8d2eb ctermfg=153
 exe 'hi' 'wastListDelimiter' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm
@@ -176,7 +176,7 @@ exe 'hi' 'ALEWarning' 'term=NONE' 'guibg='.s:darkgold_gui 'ctermbg=58'
 exe 'hi' 'CleverFChar' 'term=NONE' 'guifg='.s:bg_gui 'ctermfg=233' 'guibg=#fd8489' 'ctermbg=210'
 exe 'hi' 'DirvishArg' 'term=NONE' 'guifg=#f0eaaa' 'ctermfg=229' s:bold_attr
 exe 'hi' 'EasyMotionTarget' 'term=NONE' 'guifg=#fd8489' 'ctermfg=210' s:bold_attr
-exe 'hi' 'EasyMotionShade' 'term=NONE' 'guifg=#8d9eb2' 'ctermfg=103' 'guibg='.s:bg_gui 'ctermbg=233'
+exe 'hi' 'EasyMotionShade' 'term=NONE' 'guifg=#616c72' 'ctermfg=103' 'guibg='.s:bg_gui 'ctermbg=233'
 hi GitGutterAdd term=NONE guifg=#a9dd9d ctermfg=150 guibg=#4c5866 ctermbg=235
 hi GitGutterChange term=NONE guifg=#f0eaaa ctermfg=229 guibg=#4c5866 ctermbg=235
 hi GitGutterChangeDelete term=NONE guifg=#f0c38a ctermfg=222 guibg=#4c5866 ctermbg=235
