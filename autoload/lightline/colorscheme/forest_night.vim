@@ -11,8 +11,8 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 let s:p.normal.left = [[['#4c5866', 240], ['#a9dd9d', 110], 'bold'], [['#FFEBC3', 223], ['#556873', 242]]]
 let s:p.normal.middle = [[['#FFEBC3', 223], ['#3c4c55', 239]]]
 let s:p.normal.right = [[['#4c5866', 240], ['#a9dd9d', 110], 'bold'], [['#FFEBC3', 223], ['#556873', 242]]]
-let s:p.normal.error = [[['#4c5866', 240], ['#fd8489', 174]]]
-let s:p.normal.warning = [[['#4c5866', 240], ['#fb8965', 216]]]
+let s:p.normal.error = [[['#fd8489', 174], ['#556873', 242], 'bold']]
+let s:p.normal.warning = [[['#fb8965', 216], ['#556873', 242], 'bold']]
 
 let s:p.inactive.left = [[['#FFEBC3', 223], ['#556873', 242], 'bold'], [['#FFEBC3', 223], ['#556873', 242]]]
 let s:p.inactive.middle = [[['#FFEBC3', 223], ['#3c4c55', 239]]]
