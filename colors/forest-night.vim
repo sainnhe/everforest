@@ -1,11 +1,10 @@
-" ============================================================
-" forest-night
-" 
-" URL: https://github.com/sainnhe/vim-color-forest-night
+" =============================================================================
+" URL: https://github.com/sainnhe/vim-color-forest-night/
+" Filename: forest-night.vim
 " Author: Sainnhepark
-" License: MIT
-" Last Change: 2019/03/03 15:16
-" ============================================================
+" Email: sainnhe@gmail.com
+" License: MIT License & Anti-996 License
+" =============================================================================
 
 if &background !=# 'dark'
     set background=dark
