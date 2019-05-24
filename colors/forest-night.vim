@@ -73,7 +73,10 @@ hi IncSearch term=NONE guifg=NONE ctermfg=NONE guibg=#a9667a ctermbg=132 gui=und
 exe 'hi' 'Keyword' 'term=NONE' 'guifg=#f0eaaa' 'ctermfg=229' s:bold_attr
 hi Label term=NONE guifg=#a8d2eb ctermfg=153
 hi LineNr term=NONE guifg=#788898 ctermfg=102 guibg=#4c5866 ctermbg=235
-exe 'hi' 'MatchParen' 'term=NONE' 'guifg='.s:bg_gui 'ctermfg=233' 'guibg=#a9667a' 'ctermbg=132' 'gui=underline cterm=underline'
+hi MatchParen cterm=bold gui=bold
+hi MatchParenCur cterm=bold gui=bold
+hi MatchWord cterm=underline gui=underline
+hi MatchWordCur cterm=underline gui=underline
 hi ModeMsg term=NONE guifg=#f0c38a ctermfg=222
 hi MoreMsg term=NONE guifg=#a9dd9d ctermfg=150
 hi NonText term=NONE guifg=#646f7c ctermfg=60
