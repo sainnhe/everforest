@@ -42,6 +42,7 @@ else
 endif
 
 let s:bg_gui = g:forest_night_high_contrast ? '#132132' : '#3C4C55'
+let s:bgweaker_gui = g:forest_night_high_contrast ? '#2a3b4c' : '#3a4b5c'
 let s:darkgold_gui = g:forest_night_high_contrast ? '#484000' : '#685800'
 let s:fg_cterm = g:forest_night_high_contrast ? 231 : 230
 
@@ -63,7 +64,7 @@ hi EndOfBuffer term=NONE guifg=#536273 ctermfg=238
 exe 'hi' 'Error' 'term=NONE' 'guifg=#fd8489' 'ctermfg=210' 'guibg=#4c5866' 'ctermbg=235' s:bold_attr
 exe 'hi' 'ErrorMsg' 'term=NONE' 'guifg=#fd8489' 'ctermfg=210' 'guibg='.s:bg_gui 'ctermbg=233' s:bold_attr
 hi Float term=NONE guifg=#fd8489 ctermfg=210
-exe 'hi' 'FloatNormal' 'term=NONE' 'guifg=#fffeeb' 'ctermfg='.s:fg_cterm 'guibg=#3a4b5c' 'ctermbg=235'
+exe 'hi' 'NormalFloat' 'term=NONE' 'guifg=#ffebc3' 'ctermfg='.s:fg_cterm 'guibg='.s:bgweaker_gui 'ctermbg=235'
 hi FoldColumn       ctermbg=NONE ctermfg=110   cterm=NONE      guibg=NONE    guifg=#7fc1ca   gui=NONE
 hi Folded           ctermbg=NONE ctermfg=110   cterm=NONE      guibg=NONE    guifg=#7fc1ca   gui=NONE
 hi Function term=NONE guifg=#f0aa8a ctermfg=216
