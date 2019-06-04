@@ -6,6 +6,8 @@ This color scheme is a mixture of [spring-night](https://github.com/rhysd/vim-co
 
 Supported filetypes and plugins: [Optimized Filetypes and Plugins](https://github.com/rhysd/vim-color-spring-night#optimized-filetypes-and-plugins)
 
+If you need more syntax highlighting, please install [sheerun/polyglot](https://github.com/sheerun/vim-polyglot).
+
 # Installation
 
 for [vim-plug](https://github.com/junegunn/vim-plug)
