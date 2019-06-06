@@ -20,15 +20,10 @@ QuickFixLine      -> Search
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
 Debug             -> Special
-Delimiter         -> Special
-Exception         -> Statement
 Include           -> PreProc
 Macro             -> PreProc
-PreCondit         -> PreProc
 Repeat            -> Statement
 SpecialChar       -> Special
-SpecialComment    -> Special
-StorageClass      -> Type
 Structure         -> Type
 Typedef           -> Type
 # See `:help lCursor`
@@ -39,7 +34,7 @@ Background: dark
 
 # Color palette {{{
 # Color name                GUI                  Base256    Base16
-Color: white                #fffeeb              230        White
+Color: white                #c5d4dd              230        White
 Color: lightyellow          #ffebc3              223        LightYellow
 Color: black                #3c4c55              239        Black
 Color: dark                 #4c5866              235        Black
@@ -95,71 +90,76 @@ Variant: gui 256 8
 
 # Group              Foreground        Background        Attributes
 ColorColumn          fg                darkgrey
-Conceal              grey              none
+Conceal              greyer            none
 Cursor               black             lightyellow
 CursorColumn         none              dark
 CursorLine           none              dark
 CursorLineNr         lightmagenta      darkgrey
-DiffAdd              none              darkgreen         reverse
-DiffChange           none              darkblue          reverse
-DiffDelete           none              darkred           reverse
-DiffText             none              darkgrey          reverse
+DiffAdd              none              darkgreen
+DiffChange           none              darkblue
+DiffDelete           none              darkred
+DiffText             none              darkgrey
 Directory            green             none
 EndOfBuffer          darkgrey          none
-ErrorMsg             black             red
-FoldColumn           lightyellow       greyalt
-Folded               lightyellow       greyalt           italic
+ErrorMsg             red               black
+FoldColumn           lightyellow       grey
+Folded               lightyellow       grey              italic
 IncSearch            none              darkred           underline
-LineNr               greyer            dark
+LineNr               greyer            grey
 ModeMsg              darkyellow        none
-MoreMsg              green             none
+MoreMsg              blue              none
 NonText              greyalt           none
 Pmenu                lightyellow       grey
 PmenuSbar            none              grey
 PmenuSel             lightyellow       grey              reverse
 PmenuThumb           none              lightyellow
-Question             lightblue         none
+Question             blue              none
 Search               none              darkred           underline
 SignColumn           none              grey
 SpecialKey           darkgrey          none
 SpellBad             red               none              s=red
 SpellCap             lightmagenta      none              s=t_magenta
 SpellLocal           lightblue         none              s=blue
-SpellRare            orange            none              s=orange reverse
-StatusLine           lightyellow       grey
-StatusLineNC         lightyellow       grey
-TabLine              lightyellow       grey
-TabLineFill          lightyellow       grey
-TabLineSel           lightyellow       grey
-Title                darkyellow        none              bold
+SpellRare            orange            none              s=orange
+StatusLine           dark              green
+StatusLineNC         lightyellow       dark
+TabLine              lightyellow       darkgrey
+TabLineFill          lightyellow       dark
+TabLineSel           dark              green
+Title                orange            none              bold
 VertSplit            grey              none
 Visual               none              darkred
-VisualNOS            none              darkred
-WarningMsg           orange            dark
+VisualNOS            none              darkred           italic
+WarningMsg           orange            black
 WildMenu             dark              lightyellow
-Boolean              red               none
+# Other conventional group names (see `:help group-name`)
+Boolean              white             none
 Character            green             none
 Conditional          lightblue         none
 Define               orange            none
-Float                red               none
+Number               green             none
+Float                white             none
 Function             orange            none
 Keyword              yellow            none
 Label                lightblue         none
-Number               green             none
 Operator             orange            none
 String               green             none
 Tag                  orange            none
-# Other conventional group names (see `:help group-name`)
 Comment              grey              none              italic
 Constant             red               none
-Error                red               none              reverse
+Error                red               none
 Identifier           darkyellow        none              italic
 Ignore               red               none
 PreProc              orange            none
+PreCondit            red               none              bold
 Special              yellow            none
+SpecialComment       greyer            none
+Delimiter            yellow            none              bold
 Statement            lightblue         none
-Todo                 green             none              bold
+Exception            red               none
+Todo                 lightmagenta      none              bold
 Type                 darkyellow        none              bold
+StorageClass         orange            none
 Underlined           lightblue         none
 MatchParen           none              none              bold
 # See `:help CursorIM`
@@ -168,7 +168,7 @@ CursorIM             none              fg
 ToolbarLine          grey              darkgrey
 ToolbarButton        darkyellow        none              bold
 # Other
-Noise                yellow            none
+Noise                white             none
 # }}}
 
 # Additional highlight groups {{{
@@ -178,20 +178,20 @@ helpCommand          lightmagenta      none
 # make
 makeCommands         yellow            none
 # markdown
-markdownCode         yellow            none
-markdownUrl          orange            none
+markdownCode         green             none
+markdownUrl          red               none              underline
+mkdCode           -> markdownCode
+mkdUrl            -> markdownUrl
 # rst
-rstEmphasis          none              dark              italic
-rstStrongEmphasis    none              darkgrey          bold
+rstEmphasis          none              none              italic
+rstStrongEmphasis    none              none              bold
 # cmake
 cmakeArguments       yellow            none
-cmakeOperators       red               none
 # html
 htmlBold             none              none              bold
-htmlLinkText         lightblue         none
+htmlLink             orange            none              bold
 htmlTagName          orange            none
 htmlEndTag           orange            none
-htmlLink             red               none
 htmlSpecialTagName   darkyellow        none              bold
 htmlTag              yellow            none
 # xml
@@ -215,12 +215,17 @@ ocamlFunDef          lightblue         none
 # go
 goBuiltins           red               none
 # ruby
-rubyFunction         orange            none
-rubyIdentifier       darkyellow        none              bold
+rubyControl          red               none
+rubyCapitalizedMethod orange           none              bold
+rubyDocumentation    greyer            none
+rubyStringEscape     brown             none
 # rust
 rustEnumVariant      yellow            none
 rustFuncCall         lightblue         none
 rustCommentLineDoc   brown             none
+rustEscape           brown             none
+rustEscapeUnicode    brown             none              italic
+rustEscapeError      brown             none              bold
 # toml
 tomlTable            lightblue         none
 tomlTableArray       lightblue         none
@@ -235,14 +240,13 @@ vimCommand           lightblue         none
 wastListDelimiter    white             none
 wastInstGeneral      yellow            none
 wastInstWithType     yellow            none
-wastUnnamedVar       lightmagenta      none
 # zsh
 zshDelimiter         lightblue         none
 zshPrecommand        red               none
 # ale
-ALEWarningSign       orange            dark
-ALEErrorSign         dark              darkred
-ALEInfoSign          none              greyalt
+ALEWarningSign       orange            grey
+ALEErrorSign         red               grey
+ALEInfoSign          lightblue         grey
 ALEError             none              darkred
 ALEWarning           none              orange
 ALEVirtualTextError  greyer            none
@@ -263,11 +267,6 @@ CocInfoHighlight  -> ALEInfo
 # easymotion
 EasyMotionTarget     none              none              bold
 EasyMotionShade      none              dark              bold
-# gitgutter
-GitGutterAdd         green             none
-GitGutterChange      lightblue         none
-GitGutterChangeDelete blue             none
-GitGutterDelete      red               none
 # vim-matchup
 MatchParenCur        none              none              bold
 MatchWord            none              none              underline
