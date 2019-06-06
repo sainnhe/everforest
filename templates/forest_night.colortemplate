@@ -44,9 +44,9 @@ Color: lightyellow          #ffebc3              223        LightYellow
 Color: black                #3c4c55              239        Black
 Color: dark                 #4c5866              235        Black
 Color: darkgrey             #536273              238        DarkGrey
-Color: grey                 #616c72              103        Grey
-Color: greyalt              #646f7c              60         Grey
-Color: greyer               #788898              102        Grey
+Color: grey                 #616c72              244        Grey
+Color: greyalt              #646f7c              244         Grey
+Color: greyer               #788898              245        Grey
 Color: darkblue             #5f87af              67         DarkBlue
 Color: green                #a9dd9d              150        Green
 Color: red                  #fd8489              210        Red
