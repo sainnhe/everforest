@@ -131,7 +131,7 @@ StatusLineNC         lightyellow       grey
 TabLine              lightyellow       grey
 TabLineFill          lightyellow       grey
 TabLineSel           lightyellow       grey
-Title                darkyellow        none
+Title                darkyellow        none              bold
 VertSplit            grey              none
 Visual               none              darkred
 VisualNOS            none              darkred
@@ -159,7 +159,7 @@ PreProc              orange            none
 Special              yellow            none
 Statement            lightblue         none
 Todo                 green             none              bold
-Type                 darkyellow        none
+Type                 darkyellow        none              bold
 Underlined           lightblue         none
 MatchParen           none              none              bold
 # See `:help CursorIM`
@@ -190,27 +190,27 @@ htmlLinkText         lightblue         none
 htmlTagName          orange            none
 htmlEndTag           orange            none
 htmlLink             red               none
-htmlSpecialTagName   darkyellow        none
+htmlSpecialTagName   darkyellow        none              bold
 htmlTag              yellow            none
 # ocaml
-ocamlConstructor     darkyellow        none
+ocamlConstructor     darkyellow        none              bold
 ocamlKeyChar         lightblue         none
-ocamlKeyword         darkyellow        none
+ocamlKeyword         darkyellow        none              bold
 ocamlFunDef          lightblue         none
 # go
 goBuiltins           red               none
 # ruby
-rubyFunction         darkyellow        none
-rubyIdentifier       darkyellow        none
+rubyFunction         darkyellow        none              bold
+rubyIdentifier       darkyellow        none              bold
 rustEnumVariant      orange            none
 # rust
-rustEnumVariant      darkyellow        none
+rustEnumVariant      darkyellow        none              bold
 rustFuncCall         lightblue         none
 rustCommentLineDoc   brown             none
 # toml
 tomlTable            lightblue         none
 tomlTableArray       lightblue         none
-tomlKey              darkyellow        none
+tomlKey              darkyellow        none              bold
 # typescript
 typescriptBraces     white             none
 # vim
