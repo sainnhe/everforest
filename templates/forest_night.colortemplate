@@ -145,7 +145,7 @@ Float                red               none
 Function             orange            none
 Keyword              yellow            none
 Label                lightblue         none
-Number               red               none
+Number               green             none
 Operator             orange            none
 String               green             none
 Tag                  orange            none
@@ -167,6 +167,8 @@ CursorIM             none              fg
 # See `:help window-toolbar`
 ToolbarLine          grey              darkgrey
 ToolbarButton        darkyellow        none              bold
+# Other
+Noise                yellow            none
 # }}}
 
 # Additional highlight groups {{{
@@ -192,6 +194,19 @@ htmlEndTag           orange            none
 htmlLink             red               none
 htmlSpecialTagName   darkyellow        none              bold
 htmlTag              yellow            none
+# xml
+xmlTag            -> htmlTag
+xmlTagName        -> htmlTagName
+xmlEndTag         -> htmlEndTag
+# javascript
+jsParensIfElse    -> Conditional
+jsParensRepeat    -> Conditional
+jsParensSwitch    -> Conditional
+jsParensCatch     -> Conditional
+jsFunction        -> Function
+# python
+pythonDottedName     red               none
+pythonClassVar       red               none
 # ocaml
 ocamlConstructor     darkyellow        none              bold
 ocamlKeyChar         lightblue         none
@@ -200,9 +215,8 @@ ocamlFunDef          lightblue         none
 # go
 goBuiltins           red               none
 # ruby
-rubyFunction         yellow            none
+rubyFunction         orange            none
 rubyIdentifier       darkyellow        none              bold
-rustEnumVariant      orange            none
 # rust
 rustEnumVariant      yellow            none
 rustFuncCall         lightblue         none
@@ -225,16 +239,6 @@ wastUnnamedVar       lightmagenta      none
 # zsh
 zshDelimiter         lightblue         none
 zshPrecommand        red               none
-# coc
-CocHighlightText     none              none              bold
-CocCodeLens          greyer            none
-CocErrorSign      -> ALEErrorSign
-CocWarningSign    -> ALEWarningSign
-CocInfoSign       -> ALEInfoSign
-CocHintSign       -> Label
-CocErrorHighlight -> ALEError
-CocWarningHighlight -> ALEWarning
-CocInfoHighlight  -> ALEInfo
 # ale
 ALEWarningSign       orange            dark
 ALEErrorSign         dark              darkred
@@ -246,6 +250,16 @@ ALEVirtualTextWarning greyer           none
 ALEVirtualTextInfo   greyer            none
 ALEVirtualTextStyleError            -> ALEVirtualTextError
 ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
+# coc
+CocHighlightText     none              none              bold
+CocCodeLens          greyer            none
+CocErrorSign      -> ALEErrorSign
+CocWarningSign    -> ALEWarningSign
+CocInfoSign       -> ALEInfoSign
+CocHintSign       -> Label
+CocErrorHighlight -> ALEError
+CocWarningHighlight -> ALEWarning
+CocInfoHighlight  -> ALEInfo
 # easymotion
 EasyMotionTarget     none              none              bold
 EasyMotionShade      none              dark              bold
