@@ -1,0 +1,275 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# Information {{{
+Full name:   Forest Night
+Short name:  forest_night
+Author:      Sainnhepark <sainnhe@gmail.com>
+Maintainer:  Sainnhepark <sainnhe@gmail.com>
+Website:     https://github.com/sainnhe/vim-color-forest-night
+Description: low-contrast & comfortable vim color scheme
+License:     MIT && 996-ICU
+Option Prefix: dark
+# }}}
+
+# Documentation {{{
+Include: _help.colortemplate
+# }}}
+
+# Common linked groups {{{
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+Debug             -> Special
+Delimiter         -> Special
+Exception         -> Statement
+Include           -> PreProc
+Macro             -> PreProc
+PreCondit         -> PreProc
+Repeat            -> Statement
+SpecialChar       -> Special
+SpecialComment    -> Special
+StorageClass      -> Type
+Structure         -> Type
+Typedef           -> Type
+# See `:help lCursor`
+lCursor           -> Cursor
+# }}}
+
+Background: dark
+
+# Color palette {{{
+# Color name                GUI                  Base256    Base16
+Color: white                #fffeeb              230        White
+Color: lightyellow          #ffebc3              223        LightYellow
+Color: black                #3c4c55              239        Black
+Color: dark                 #4c5866              235        Black
+Color: darkgrey             #536273              238        DarkGrey
+Color: grey                 #616c72              103        Grey
+Color: greyalt              #646f7c              60         Grey
+Color: greyer               #788898              102        Grey
+Color: darkblue             #5f87af              67         DarkBlue
+Color: green                #a9dd9d              150        Green
+Color: red                  #fd8489              210        Red
+Color: lightblue            #a8d2eb              153        LightCyan
+Color: lightmagenta         #e7d5ff              189        LightMagenta
+Color: orange               #f0aa8a              216        LightRed
+Color: blue                 #7fc1ca              110        Blue
+Color: yellow               #f0eaaa              229        Yellow
+Color: darkyellow           #f0c38a              222        DarkYellow
+Color: darkred              #a9667a              132        DarkRed
+Color: darkgreen            #5f8770               65        DarkGreen
+Color: brown                #b2a488               15        Brown
+Color: t_black              #132132              233        Black
+Color: t_red                #ff6a6f              203        Red
+Color: t_green              #a9dd9d              150        Green
+Color: t_yellow             #f0c38a              222        Yellow
+Color: t_blue               #7098e6               69        Blue
+Color: t_magenta            #605779               60        Magenta
+Color: t_cyan               #a8d2eb              153        Cyan
+Color: t_white              #fffeeb              231        White
+Color: t_black_b            #8d9eb2              103        DarkGrey
+Color: t_red_b              #fd8489              210        LightRed
+Color: t_green_b            #c9fd88              149        LightGreen
+Color: t_blue_b             #98b8e6              111        LightBlue
+Color: t_magenta_b          #e7d5ff              189        LightMagenta
+Color: t_white_b            #ffffff              231        White
+# }}}
+# Terminal colors {{{
+Term colors: t_black t_red t_green yellow t_blue t_magenta t_blue t_white
+Term colors: t_black_b t_red_b t_green_b yellow
+Term colors: t_blue_b t_magenta_b lightblue t_white_b
+# }}}
+
+# Default highlight groups {{{
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8
+    Normal           lightyellow       none
+    Terminal         lightyellow       none
+#else
+    Normal           lightyellow       black
+    Terminal         lightyellow       black
+#endif
+
+# Group              Foreground        Background        Attributes
+ColorColumn          fg                darkgrey
+Conceal              grey              none
+Cursor               black             lightyellow
+CursorColumn         none              dark
+CursorLine           none              dark
+CursorLineNr         lightmagenta      darkgrey
+DiffAdd              none              darkgreen         reverse
+DiffChange           none              darkblue          reverse
+DiffDelete           none              darkred           reverse
+DiffText             none              darkgrey          reverse
+Directory            green             none
+EndOfBuffer          darkgrey          none
+ErrorMsg             black             red
+FoldColumn           lightyellow       greyalt
+Folded               lightyellow       greyalt           italic
+IncSearch            none              darkred           underline
+LineNr               greyer            dark
+ModeMsg              darkyellow        none
+MoreMsg              green             none
+NonText              greyalt           none
+Pmenu                lightyellow       grey
+PmenuSbar            none              grey
+PmenuSel             lightyellow       grey              reverse
+PmenuThumb           none              lightyellow
+Question             lightblue         none
+Search               none              darkred           underline
+SignColumn           none              grey
+SpecialKey           darkgrey          none
+SpellBad             red               none              s=red
+SpellCap             lightmagenta      none              s=t_magenta
+SpellLocal           lightblue         none              s=blue
+SpellRare            orange            none              s=orange reverse
+StatusLine           lightyellow       grey
+StatusLineNC         lightyellow       grey
+TabLine              lightyellow       grey
+TabLineFill          lightyellow       grey
+TabLineSel           lightyellow       grey
+Title                darkyellow        none
+VertSplit            grey              none
+Visual               none              darkred
+VisualNOS            none              darkred
+WarningMsg           orange            dark
+WildMenu             dark              lightyellow
+Boolean              red               none
+Character            green             none
+Conditional          lightblue         none
+Define               orange            none
+Float                red               none
+Function             orange            none
+Keyword              yellow            none
+Label                lightblue         none
+Number               red               none
+Operator             orange            none
+String               green             none
+Tag                  orange            none
+# Other conventional group names (see `:help group-name`)
+Comment              grey              none              italic
+Constant             red               none
+Error                red               none              reverse
+Identifier           darkyellow        none              italic
+Ignore               red               none
+PreProc              orange            none
+Special              yellow            none
+Statement            lightblue         none
+Todo                 green             none              bold
+Type                 darkyellow        none
+Underlined           lightblue         none
+MatchParen           none              none              bold
+# See `:help CursorIM`
+CursorIM             none              fg
+# See `:help window-toolbar`
+ToolbarLine          grey              darkgrey
+ToolbarButton        darkyellow        none              bold
+# }}}
+
+# Additional highlight groups {{{
+# help
+helpExample          lightblue         none
+helpCommand          lightmagenta      none
+# make
+makeCommands         yellow            none
+# markdown
+markdownCode         yellow            none
+markdownUrl          orange            none
+# rst
+rstEmphasis          none              dark              italic
+rstStrongEmphasis    none              darkgrey          bold
+# cmake
+cmakeArguments       yellow            none
+cmakeOperators       red               none
+# html
+htmlBold             none              none              bold
+htmlLinkText         lightblue         none
+htmlTagName          orange            none
+htmlEndTag           orange            none
+htmlLink             red               none
+htmlSpecialTagName   darkyellow        none
+htmlTag              yellow            none
+# ocaml
+ocamlConstructor     darkyellow        none
+ocamlKeyChar         lightblue         none
+ocamlKeyword         darkyellow        none
+ocamlFunDef          lightblue         none
+# go
+goBuiltins           red               none
+# ruby
+rubyFunction         darkyellow        none
+rubyIdentifier       darkyellow        none
+rustEnumVariant      orange            none
+# rust
+rustEnumVariant      darkyellow        none
+rustFuncCall         lightblue         none
+rustCommentLineDoc   brown             none
+# toml
+tomlTable            lightblue         none
+tomlTableArray       lightblue         none
+tomlKey              darkyellow        none
+# typescript
+typescriptBraces     white             none
+# vim
+vimfilerColumn__SizeLine grey          none
+vimfilerClosedFile   green             none
+vimCommand           lightblue         none
+# wast
+wastListDelimiter    white             none
+wastInstGeneral      yellow            none
+wastInstWithType     yellow            none
+wastUnnamedVar       lightmagenta      none
+# zsh
+zshDelimiter         lightblue         none
+zshPrecommand        red               none
+# coc
+CocHighlightText     none              none              bold
+CocCodeLens          greyer            none
+CocErrorSign      -> ALEErrorSign
+CocWarningSign    -> ALEWarningSign
+CocInfoSign       -> ALEInfoSign
+CocHintSign       -> Label
+CocErrorHighlight -> ALEError
+CocWarningHighlight -> ALEWarning
+CocInfoHighlight  -> ALEInfo
+# ale
+ALEWarningSign       orange            dark
+ALEErrorSign         dark              darkred
+ALEInfoSign          none              greyalt
+ALEError             none              darkred
+ALEWarning           none              orange
+ALEVirtualTextError  greyer            none
+ALEVirtualTextWarning greyer           none
+ALEVirtualTextInfo   greyer            none
+ALEVirtualTextStyleError            -> ALEVirtualTextError
+ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
+# easymotion
+EasyMotionTarget     none              none              bold
+EasyMotionShade      none              dark              bold
+# gitgutter
+GitGutterAdd         green             none
+GitGutterChange      lightblue         none
+GitGutterChangeDelete blue             none
+GitGutterDelete      red               none
+# vim-matchup
+MatchParenCur        none              none              bold
+MatchWord            none              none              underline
+MatchWordCur         none              none              underline
+# more
+diffAdded            green             none
+diffFile             yellow            none
+diffIndexLine        darkyellow        none
+diffNewFile          yellow            none
+diffRemoved          red               none
+gitCommitOverflow    red               none
+gitCommitSummary     yellow            none
+gitCommitSelectedFile lightblue        none
+gitconfigSection     lightblue         none
+# }}}
+
+# B/W variant {{{
+Include: _bw.colortemplate
+# }}}
