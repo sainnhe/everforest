@@ -200,11 +200,11 @@ ocamlFunDef          lightblue         none
 # go
 goBuiltins           red               none
 # ruby
-rubyFunction         darkyellow        none              bold
+rubyFunction         yellow            none
 rubyIdentifier       darkyellow        none              bold
 rustEnumVariant      orange            none
 # rust
-rustEnumVariant      darkyellow        none              bold
+rustEnumVariant      yellow            none
 rustFuncCall         lightblue         none
 rustCommentLineDoc   brown             none
 # toml
