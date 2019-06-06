@@ -1,0 +1,19 @@
+*forest_night.txt*	For Vim version 8.0	Last change: 2019 Jun 06
+
+
+		  Forest Night color scheme    by Sainnhepark
+
+Forest Night, a colorscheme with a unique touch.
+
+==============================================================================
+Colorscheme options					forest_night-options*
+
+						*g:dark_transp_bg*
+Set to 1 if you want a transparent background. Takes effect only in the
+terminal.
+>
+	let g:dark_transp_bg = 0
+<
+
+ vim:tw=78:ts=8:noet:ft=help:norl:
+
