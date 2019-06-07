@@ -5,9 +5,9 @@ Full name:   Forest Night
 Short name:  forest_night
 Author:      Sainnhepark <sainnhe@gmail.com>
 Maintainer:  Sainnhepark <sainnhe@gmail.com>
-Website:     https://github.com/sainnhe/vim-color-forest-night
-Description: low-contrast & comfortable vim color scheme
-License:     MIT && 996-ICU
+Website:     https://github.com/sainnhe/vim-color-forest-night/
+Description: 🌲 Comfortable & Pleasant VIM Color Scheme
+License:     MIT && Anti-996
 Option Prefix: dark
 # }}}
 
@@ -33,41 +33,47 @@ lCursor           -> Cursor
 Background: dark
 
 # Color palette {{{
-# Color name                GUI                  Base256    Base16
-Color: white                #c5d4dd              230        White
-Color: lightyellow          #ffebc3              223        LightYellow
-Color: black                #3c4c55              239        Black
-Color: dark                 #4c5866              235        Black
-Color: darkgrey             #536273              238        DarkGrey
-Color: grey                 #616c72              244        Grey
-Color: greyalt              #646f7c              244         Grey
-Color: greyer               #788898              245        Grey
-Color: darkblue             #5f87af              67         DarkBlue
-Color: green                #a9dd9d              150        Green
-Color: red                  #fd8489              210        Red
-Color: lightblue            #a8d2eb              153        LightCyan
-Color: lightmagenta         #e7d5ff              189        LightMagenta
-Color: orange               #f0aa8a              216        LightRed
-Color: blue                 #7fc1ca              110        Blue
-Color: yellow               #f0eaaa              229        Yellow
-Color: darkyellow           #f0c38a              222        DarkYellow
-Color: darkred              #70495d               95        DarkRed
-Color: darkgreen            #5f8770               65        DarkGreen
-Color: brown                #b2a488               15        Brown
-Color: t_black              #132132              233        Black
-Color: t_red                #ff6a6f              203        Red
-Color: t_green              #a9dd9d              150        Green
-Color: t_yellow             #f0c38a              222        Yellow
-Color: t_blue               #7098e6               69        Blue
-Color: t_magenta            #605779               60        Magenta
-Color: t_cyan               #a8d2eb              153        Cyan
-Color: t_white              #fffeeb              231        White
-Color: t_black_b            #8d9eb2              103        DarkGrey
-Color: t_red_b              #fd8489              210        LightRed
-Color: t_green_b            #c9fd88              149        LightGreen
-Color: t_blue_b             #98b8e6              111        LightBlue
-Color: t_magenta_b          #e7d5ff              189        LightMagenta
-Color: t_white_b            #ffffff              231        White
+# Color name         GUI               Base256           Base16
+Color: white         #c5d4dd           230               White
+Color: lightyellow   #ffebc3           223               LightYellow
+Color: black         #3c4c55           239               Black
+Color: dark          #4c5866           235               Black
+Color: darkgrey      #536273           238               DarkGrey
+Color: grey          #616c72           244               Grey
+Color: greyalt       #646f7c           244               Grey
+Color: greyer        #788898           245               Grey
+Color: red           #fd8489           210               Red
+Color: darkred       #70495d           95                DarkRed
+Color: brightgreen   #a9dd9d           150               LightGreen
+# Color: green         #98bc37           148               Green
+# Color: green         #b8bb26           148               Green
+# Color: green         #afb42b           148               Green
+Color: darkgreen     #5f8770           65                DarkGreen
+Color: lightblue     #a8d2eb           153               LightCyan
+Color: blue          #7fc1ca           110               Blue
+Color: darkblue      #5f87af           67                DarkBlue
+Color: lightmagenta  #e7d5ff           189               LightMagenta
+Color: orange        #f0aa8a           216               Yellow
+Color: darkorange    #b57614           136               DarkYellow
+Color: yellow        #f0eaaa           229               Yellow
+Color: darkyellow    #f0c38a           222               DarkYellow
+Color: lightbrown    #b2a488           247               Brown
+Color: brown         #918175           246               Brown
+Color: darkbrown     #2d2c29           237               DarkGrey
+Color: t_black       #132132           233               Black
+Color: t_red         #ff6a6f           203               Red
+Color: t_green       #a9dd9d           150               Green
+Color: t_yellow      #f0c38a           222               Yellow
+Color: t_blue        #7098e6           69                Blue
+Color: t_magenta     #605779           60                Magenta
+Color: t_cyan        #a8d2eb           153               Cyan
+Color: t_white       #fffeeb           231               White
+Color: t_black_b     #8d9eb2           103               DarkGrey
+Color: t_red_b       #fd8489           210               LightRed
+Color: t_green_b     #c9fd88           149               LightGreen
+Color: t_blue_b      #98b8e6           111               LightBlue
+Color: t_magenta_b   #e7d5ff           189               LightMagenta
+Color: t_white_b     #ffffff           231               White
 # }}}
 # Terminal colors {{{
 Term colors: t_black t_red t_green yellow t_blue t_magenta t_blue t_white
@@ -94,12 +100,12 @@ Conceal              greyer            none
 Cursor               black             lightyellow
 CursorColumn         none              dark
 CursorLine           none              dark
-CursorLineNr         lightmagenta      darkgrey
+CursorLineNr         greyer            darkgrey
 DiffAdd              none              darkgreen
 DiffChange           none              darkblue
 DiffDelete           none              darkred
 DiffText             none              darkgrey
-Directory            green             none
+Directory            brightgreen       none
 EndOfBuffer          darkgrey          none
 ErrorMsg             red               black
 FoldColumn           lightyellow       grey
@@ -113,62 +119,62 @@ Pmenu                lightyellow       grey
 PmenuSbar            none              grey
 PmenuSel             lightyellow       grey              reverse
 PmenuThumb           none              lightyellow
-Question             blue              none
+Question             lightblue         none
 Search               none              darkred           underline
 SignColumn           none              grey
 SpecialKey           darkgrey          none
 SpellBad             red               none              s=red
-SpellCap             lightmagenta      none              s=t_magenta
+SpellCap            orange             none              s=orange
 SpellLocal           lightblue         none              s=blue
-SpellRare            orange            none              s=orange
-StatusLine           dark              green
+SpellRare             lightmagenta     none              s=t_magenta
+StatusLine           dark              brightgreen
 StatusLineNC         lightyellow       dark
 TabLine              lightyellow       darkgrey
 TabLineFill          lightyellow       dark
-TabLineSel           dark              green
+TabLineSel           dark              brightgreen
 Title                orange            none              bold
 VertSplit            grey              none
 Visual               none              darkred
 VisualNOS            none              darkred           italic
 WarningMsg           orange            black
 WildMenu             dark              lightyellow
+Underlined           lightblue         none
+MatchParen           none              none              bold
 # Other conventional group names (see `:help group-name`)
 Boolean              white             none
-Character            green             none
-Conditional          lightblue         none
+Character            brightgreen       none
+Conditional          red               none
 Define               orange            none
-Number               green             none
+Number               brightgreen       none
 Float                white             none
 Function             orange            none
 Keyword              yellow            none
 Label                lightblue         none
 Operator             orange            none
-String               green             none
+String               brightgreen       none
 Tag                  orange            none
 Comment              grey              none              italic
 Constant             red               none
 Error                red               none
 Identifier           darkyellow        none              italic
-Ignore               red               none
+Ignore               greyalt           none
 PreProc              orange            none
 PreCondit            red               none              bold
 Special              yellow            none
-SpecialComment       greyer            none
-Delimiter            yellow            none              bold
+SpecialComment       brown             none
+Delimiter            darkyellow        none
 Statement            lightblue         none
 Exception            red               none
 Todo                 lightmagenta      none              bold
 Type                 darkyellow        none              bold
 StorageClass         orange            none
-Underlined           lightblue         none
-MatchParen           none              none              bold
 # See `:help CursorIM`
 CursorIM             none              fg
 # See `:help window-toolbar`
 ToolbarLine          grey              darkgrey
 ToolbarButton        darkyellow        none              bold
 # Other
-Noise                white             none
+Noise                yellow            none
 # }}}
 
 # Additional highlight groups {{{
@@ -178,7 +184,7 @@ helpCommand          lightmagenta      none
 # make
 makeCommands         yellow            none
 # markdown
-markdownCode         green             none
+markdownCode         brightgreen             none
 markdownUrl          red               none              underline
 mkdCode           -> markdownCode
 mkdUrl            -> markdownUrl
@@ -199,10 +205,6 @@ xmlTag            -> htmlTag
 xmlTagName        -> htmlTagName
 xmlEndTag         -> htmlEndTag
 # javascript
-jsParensIfElse    -> Conditional
-jsParensRepeat    -> Conditional
-jsParensSwitch    -> Conditional
-jsParensCatch     -> Conditional
 jsFunction        -> Function
 # python
 pythonDottedName     red               none
@@ -234,10 +236,8 @@ tomlKey              darkyellow        none              bold
 typescriptBraces     white             none
 # vim
 vimfilerColumn__SizeLine grey          none
-vimfilerClosedFile   green             none
-vimCommand           lightblue         none
+vimfilerClosedFile   brightgreen       none
 # wast
-wastListDelimiter    white             none
 wastInstGeneral      yellow            none
 wastInstWithType     yellow            none
 # zsh
@@ -248,7 +248,7 @@ ALEWarningSign       orange            grey
 ALEErrorSign         red               grey
 ALEInfoSign          lightblue         grey
 ALEError             none              darkred
-ALEWarning           none              orange
+ALEWarning           none              darkorange
 ALEVirtualTextError  greyer            none
 ALEVirtualTextWarning greyer           none
 ALEVirtualTextInfo   greyer            none
@@ -264,6 +264,11 @@ CocHintSign       -> Label
 CocErrorHighlight -> ALEError
 CocWarningHighlight -> ALEWarning
 CocInfoHighlight  -> ALEInfo
+CocWarningVirtualText -> ALEVirtualTextWarning
+CocErrorVirtualText -> ALEVirtualTextError
+CocInfoVirtualText -> ALEVirtualTextInfo
+CocHintVirtualText -> ALEVirtualTextInfo
+CocCodeLens       -> ALEVirtualTextInfo
 # easymotion
 EasyMotionTarget     none              none              bold
 EasyMotionShade      none              dark              bold
@@ -272,15 +277,15 @@ MatchParenCur        none              none              bold
 MatchWord            none              none              underline
 MatchWordCur         none              none              underline
 # more
-diffAdded            green             none
-diffFile             yellow            none
+diffAdded            brightgreen       none
+diffFile             brightgreen       none
 diffIndexLine        darkyellow        none
-diffNewFile          yellow            none
+diffNewFile          lightblue         none
 diffRemoved          red               none
 gitCommitOverflow    red               none
-gitCommitSummary     yellow            none
+gitCommitSummary     orange            none
 gitCommitSelectedFile lightblue        none
-gitconfigSection     lightblue         none
+gitconfigSection     none              darkred
 # }}}
 
 # B/W variant {{{
