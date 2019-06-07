@@ -53,7 +53,7 @@ or if you want to apply it without reload
 
 **Q: What's your status line configuration?**
 
-**A:** [#2](https://github.com/sainnhe/vim-color-forest-night/issues/2)
+**A:** check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
 
 # Contribution
 
