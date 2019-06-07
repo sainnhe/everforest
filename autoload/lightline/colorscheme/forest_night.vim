@@ -1,5 +1,5 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/vim-color-forest-night
+" URL: https://github.com/sainnhe/vim-color-forest
 " Filename: autoload/lightline/colorscheme/forest_night.vim
 " Author: Sainnhepark
 " Email: sainnhe@gmail.com
@@ -10,8 +10,8 @@
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:dark      = [ '#3c4c55', 239 ]
-let s:darker      = [ '#4c5866', 240 ]
-let s:gray       = [ '#556873', 242 ]
+let s:darker       = [ '#4c5866', 241 ]
+let s:grey      = [ '#616c72', 244 ]
 let s:blue       = [ '#7fc1ca', 110 ]
 let s:red       = [ '#fd8489', 174 ]
 let s:green       = [ '#a9dd9d', 150 ]
@@ -21,71 +21,71 @@ let s:golden = [ '#FFEBC3', 223 ]
 
 "{{{Definition
 let s:tab_l_fg = s:golden
-let s:tab_l_bg = s:gray
+let s:tab_l_bg = s:grey
 let s:tab_r_fg = s:golden
-let s:tab_r_bg = s:gray
-let s:tab_sel_fg = s:darker
+let s:tab_r_bg = s:grey
+let s:tab_sel_fg = s:dark
 let s:tab_sel_bg = s:green
 let s:tab_middle_fg = s:golden
 let s:tab_middle_bg = s:darker
 
 let s:warningfg = s:orange
-let s:warningbg = s:darker
+let s:warningbg = s:grey
 let s:errorfg = s:red
-let s:errorbg = s:darker
+let s:errorbg = s:grey
 
-let s:normal_l1_fg = s:darker
+let s:normal_l1_fg = s:dark
 let s:normal_l1_bg = s:green
 let s:normal_l2_fg = s:golden
-let s:normal_l2_bg = s:darker
-let s:normal_r1_fg = s:darker
+let s:normal_l2_bg = s:grey
+let s:normal_r1_fg = s:dark
 let s:normal_r1_bg = s:green
 let s:normal_r2_fg = s:golden
-let s:normal_r2_bg = s:darker
+let s:normal_r2_bg = s:grey
 let s:normal_middle_fg = s:golden
 let s:normal_middle_bg = s:dark
 
-let s:insert_l1_fg = s:darker
+let s:insert_l1_fg = s:dark
 let s:insert_l1_bg = s:golden
 let s:insert_l2_fg = s:golden
-let s:insert_l2_bg = s:darker
-let s:insert_r1_fg = s:darker
+let s:insert_l2_bg = s:grey
+let s:insert_r1_fg = s:dark
 let s:insert_r1_bg = s:green
 let s:insert_r2_fg = s:golden
-let s:insert_r2_bg = s:darker
+let s:insert_r2_bg = s:grey
 let s:insert_middle_fg = s:golden
 let s:insert_middle_bg = s:dark
 
-let s:visual_l1_fg = s:darker
+let s:visual_l1_fg = s:dark
 let s:visual_l1_bg = s:red
 let s:visual_l2_fg = s:golden
-let s:visual_l2_bg = s:darker
-let s:visual_r1_fg = s:darker
+let s:visual_l2_bg = s:grey
+let s:visual_r1_fg = s:dark
 let s:visual_r1_bg = s:red
 let s:visual_r2_fg = s:golden
-let s:visual_r2_bg = s:darker
+let s:visual_r2_bg = s:grey
 let s:visual_middle_fg = s:golden
 let s:visual_middle_bg = s:dark
 
-let s:replace_l1_fg = s:darker
+let s:replace_l1_fg = s:dark
 let s:replace_l1_bg = s:orange
 let s:replace_l2_fg = s:golden
-let s:replace_l2_bg = s:darker
-let s:replace_r1_fg = s:darker
+let s:replace_l2_bg = s:grey
+let s:replace_r1_fg = s:dark
 let s:replace_r1_bg = s:orange
 let s:replace_r2_fg = s:golden
-let s:replace_r2_bg = s:darker
+let s:replace_r2_bg = s:grey
 let s:replace_middle_fg = s:golden
 let s:replace_middle_bg = s:dark
 
 let s:inactive_l1_fg = s:golden
-let s:inactive_l1_bg = s:darker
+let s:inactive_l1_bg = s:grey
 let s:inactive_l2_fg = s:golden
-let s:inactive_l2_bg = s:darker
+let s:inactive_l2_bg = s:grey
 let s:inactive_r1_fg = s:golden
-let s:inactive_r1_bg = s:darker
+let s:inactive_r1_bg = s:grey
 let s:inactive_r2_fg = s:golden
-let s:inactive_r2_bg = s:darker
+let s:inactive_r2_bg = s:grey
 let s:inactive_middle_fg = s:golden
 let s:inactive_middle_bg = s:dark
 "}}}
