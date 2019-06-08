@@ -122,7 +122,7 @@ let s:p.normal.error = [ [ s:errorfg, s:errorbg ] ]
 let s:p.normal.warning = [ [ s:warningfg, s:warningbg ] ]
 
 
-if exists('g:lightline_foobar_bold')
+if (has('termguicolors') && &termguicolors) || has('gui_running')
     if g:lightline_foobar_bold == 1
         let s:p.normal.left = [ [ s:normal_l1_fg, s:normal_l1_bg, 'bold' ], [ s:normal_l2_fg, s:normal_l2_bg ] ]
         let s:p.normal.right = [ [ s:normal_r1_fg, s:normal_r1_bg, 'bold' ], [ s:normal_r2_fg, s:normal_r2_bg ] ]
