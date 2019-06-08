@@ -153,7 +153,7 @@ Label                lightblue         none
 Operator             orange            none
 String               brightgreen       none
 Tag                  orange            none
-Comment              grey              none              italic
+Comment              greyer            none              italic
 Constant             red               none
 Error                red               none
 Identifier           darkyellow        none              italic
