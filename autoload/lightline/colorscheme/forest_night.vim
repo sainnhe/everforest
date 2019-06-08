@@ -17,6 +17,8 @@ let s:red       = [ '#fd8489', 174 ]
 let s:green       = [ '#a9dd9d', 150 ]
 let s:orange       = [ '#fb8965', 216 ]
 let s:golden = [ '#FFEBC3', 223 ]
+let s:darkred = [ '#70495d', 95 ]
+let s:darkorange = [ '#b57614', 136 ]
 "}}}
 
 "{{{Definition
@@ -29,10 +31,10 @@ let s:tab_sel_bg = s:green
 let s:tab_middle_fg = s:golden
 let s:tab_middle_bg = s:darker
 
-let s:warningfg = s:orange
-let s:warningbg = s:grey
-let s:errorfg = s:red
-let s:errorbg = s:grey
+let s:warningfg = s:golden
+let s:warningbg = s:darkorange
+let s:errorfg = s:golden
+let s:errorbg = s:darkred
 
 let s:normal_l1_fg = s:dark
 let s:normal_l1_bg = s:green
