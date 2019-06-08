@@ -6,7 +6,7 @@ This color scheme is a mixture of [spring-night](https://github.com/rhysd/vim-co
 
 # Installation
 
-for [vim-plug](https://github.com/junegunn/vim-plug)
+Suppose you are using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
 Plug 'sainnhe/vim-color-forest-night'
