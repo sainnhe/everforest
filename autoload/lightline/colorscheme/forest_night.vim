@@ -48,11 +48,11 @@ let s:normal_middle_bg = s:dark
 let s:insert_l1_fg = s:dark
 let s:insert_l1_bg = s:golden
 let s:insert_l2_fg = s:golden
-let s:insert_l2_bg = s:grey
+let s:insert_l2_bg = s:darker
 let s:insert_r1_fg = s:dark
 let s:insert_r1_bg = s:green
 let s:insert_r2_fg = s:golden
-let s:insert_r2_bg = s:grey
+let s:insert_r2_bg = s:darker
 let s:insert_middle_fg = s:golden
 let s:insert_middle_bg = s:dark
 
