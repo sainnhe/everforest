@@ -326,6 +326,10 @@ StartifyFile      -> Normal
 # sneak{{{
 Sneak                none              darkgreen
 #}}}
+# gv{{{
+gvSha                green             none
+gvAuthor             orange            none
+#}}}
 # more{{{
 diffAdded            brightgreen       none
 diffFile             brightgreen       none
