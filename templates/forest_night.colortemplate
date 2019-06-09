@@ -199,11 +199,10 @@ rstStrongEmphasis    none              none              bold
 #}}}
 # html{{{
 htmlBold             none              none              bold
-htmlLink             orange            none              bold
+htmlTag              darkyellow        none
+htmlEndTag        -> Delimiter
 htmlTagName          orange            none
-htmlEndTag           orange            none
-htmlSpecialTagName   darkyellow        none              bold
-htmlTag              yellow            none
+htmlSpecialTagName   red               none
 #}}}
 # xml{{{
 xmlTag            -> htmlTag
