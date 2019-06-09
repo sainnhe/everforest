@@ -278,6 +278,13 @@ EasyMotionShade      none              dark              bold
 MatchParenCur        none              none              bold
 MatchWord            none              none              underline
 MatchWordCur         none              none              underline
+# startify
+StartifyBracket      brightgreen       none
+StartifyHeader       orange            none              bold
+StartifyNumber       orange            none              bold
+StartifyPath         brightgreen       none
+StartifySlash        darkgreen         none
+StartifySpecial   -> Comment
 # more
 diffAdded            brightgreen       none
 diffFile             brightgreen       none
