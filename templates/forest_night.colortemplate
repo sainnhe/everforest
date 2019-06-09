@@ -34,6 +34,7 @@ Background: dark
 
 # Color palette {{{
 # Color name         GUI               Base256           Base16
+# Color: white         #d6e9ff           189               White
 Color: white         #c5d4dd           230               White
 Color: lightyellow   #ffebc3           223               LightYellow
 Color: black         #3c4c55           239               Black
@@ -160,7 +161,7 @@ PreProc              orange            none
 PreCondit            red               none              bold
 Special              green             none
 SpecialComment       darkgreen         none
-Delimiter            darkyellow        none
+Delimiter            white             none
 Statement            lightblue         none
 Exception            red               none
 Todo                 lightmagenta      none              bold
