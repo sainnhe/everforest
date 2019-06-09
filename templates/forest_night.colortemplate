@@ -218,6 +218,7 @@ ocamlKeyword         darkyellow        none              bold
 ocamlFunDef          lightblue         none
 # go
 goBuiltins           red               none
+goDeclaration     -> Function
 # ruby
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
