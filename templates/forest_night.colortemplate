@@ -272,6 +272,10 @@ vimMap               red               none
 jsonKeyword          orange            none
 jsonQuote            green             none
 #}}}
+# yaml{{{
+yamlKey              orange            none
+yamlConstant         brightgreen       none
+#}}}
 
 # Plugins
 # ale{{{
