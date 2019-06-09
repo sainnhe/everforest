@@ -235,6 +235,11 @@ rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    greyer            none
 rubyStringEscape     brown             none
 #}}}
+# vim{{{
+vimFunction       -> Function
+vimLet            -> Operator
+vimMap               red               none
+#}}}
 
 # Plugins
 # ale{{{
