@@ -323,6 +323,9 @@ StartifySlash        darkgreen         none
 StartifySpecial   -> Comment
 StartifyFile      -> Normal
 #}}}
+# sneak{{{
+Sneak                none              darkgreen
+#}}}
 # more{{{
 diffAdded            brightgreen       none
 diffFile             brightgreen       none
