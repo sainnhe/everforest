@@ -276,6 +276,8 @@ CocCodeLens       -> ALEVirtualTextInfo
 NERDTreeFlags        orange            none
 NERDTreeDirSlash     darkgreen         none
 NERDTreeCWD          darkgreen         none
+NERDTreeLinkFile     darkgreen         none
+NERDTreeLinkTarget   brightgreen       none
 # easymotion
 EasyMotionTarget     none              none              bold
 EasyMotionShade      none              dark              bold
