@@ -148,7 +148,7 @@ Number               brightgreen       none
 Float                darkgreen         none
 Boolean              white             none
 Function             orange            none
-Keyword              yellow            none
+Keyword              orange            none
 Label                lightblue         none
 Operator             orange            none
 String               brightgreen       none
