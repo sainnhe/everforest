@@ -305,10 +305,6 @@ NERDTreeCWD          darkgreen         none
 NERDTreeLinkFile     darkgreen         none
 NERDTreeLinkTarget   brightgreen       none
 #}}}
-# easymotion{{{
-EasyMotionTarget     none              none              bold
-EasyMotionShade      none              dark              bold
-#}}}
 # vim-matchup{{{
 MatchParenCur        none              none              bold
 MatchWord            none              none              underline
@@ -329,17 +325,6 @@ Sneak                none              darkgreen
 # gv{{{
 gvSha                green             none
 gvAuthor             orange            none
-#}}}
-# more{{{
-diffAdded            brightgreen       none
-diffFile             brightgreen       none
-diffIndexLine        darkyellow        none
-diffNewFile          lightblue         none
-diffRemoved          red               none
-gitCommitOverflow    red               none
-gitCommitSummary     orange            none
-gitCommitSelectedFile lightblue        none
-gitconfigSection     none              darkred
 #}}}
 # }}}
 
