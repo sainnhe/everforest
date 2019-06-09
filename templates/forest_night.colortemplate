@@ -238,7 +238,10 @@ tomlTableArray       lightblue         none
 tomlKey              darkyellow        none              bold
 # typescript
 typescriptBraces     white             none
+typescriptEndColons -> typescriptBraces
 typescriptExceptions -> Exception
+typescriptFloat   -> Float
+typescriptMessage -> String
 # vim
 vimfilerColumn__SizeLine grey          none
 vimfilerClosedFile   brightgreen       none
