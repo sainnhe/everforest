@@ -160,7 +160,7 @@ Identifier           red               none
 Ignore               greyalt           none
 PreProc              orange            none
 PreCondit            red               none              bold
-Special              yellow            none
+Special              darkgreen         none
 SpecialComment       brown             none
 Delimiter            darkyellow        none
 Statement            lightblue         none
