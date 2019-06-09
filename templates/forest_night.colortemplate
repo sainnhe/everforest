@@ -1,5 +1,14 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
+# The Design{{{
+# Color ratio: golden > green ≥ orange > red > blue > others
+# golden: lightyellow
+# green: brightgreen(80%) green(15%) darkgreen(5%)
+# orange: orange
+# red: red
+# blue: lightblue(90%) white(10%)
+#}}}
+
 # Information {{{
 Full name:   Forest Night
 Short name:  forest_night
@@ -224,6 +233,8 @@ pythonDecorator      red               none
 #}}}
 # go{{{
 goDeclaration     -> Function
+goImport          -> Define
+goPackage            red               none
 #}}}
 # rust{{{
 rustKeyword          brightgreen       none
