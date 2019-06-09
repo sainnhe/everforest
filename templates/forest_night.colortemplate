@@ -176,80 +176,67 @@ Noise                yellow            none
 # }}}
 
 # Additional highlight groups {{{
-# help
+# Filetypes
+# help{{{
 helpExample          lightblue         none
 helpCommand          lightmagenta      none
-# make
+#}}}
+# make{{{
 makeCommands         yellow            none
-# markdown
+#}}}
+# markdown{{{
 markdownCode         brightgreen       none
 markdownUrl          red               none              underline
 markdownCodeDelimiter brightgreen      none              bold
 mkdCode           -> markdownCode
 mkdUrl            -> markdownUrl
 mkdCodeDelimiter  -> markdownCodeDelimiter
-# rst
+#}}}
+# rst{{{
 rstEmphasis          none              none              italic
 rstStrongEmphasis    none              none              bold
-# cmake
-cmakeArguments       yellow            none
-# html
+#}}}
+# html{{{
 htmlBold             none              none              bold
 htmlLink             orange            none              bold
 htmlTagName          orange            none
 htmlEndTag           orange            none
 htmlSpecialTagName   darkyellow        none              bold
 htmlTag              yellow            none
-# xml
+#}}}
+# xml{{{
 xmlTag            -> htmlTag
 xmlTagName        -> htmlTagName
 xmlEndTag         -> htmlEndTag
-# javascript
+#}}}
+# javascript{{{
 jsFunction        -> Function
 jsExceptions      -> Exception
-# python
-pythonDottedName     red               none
-pythonClassVar       red               none
-# ocaml
-ocamlConstructor     darkyellow        none              bold
-ocamlKeyChar         lightblue         none
-ocamlKeyword         darkyellow        none              bold
-ocamlFunDef          lightblue         none
-# go
-goBuiltins           red               none
-goDeclaration     -> Function
-# ruby
-rubyControl          red               none
-rubyCapitalizedMethod orange           none              bold
-rubyDocumentation    greyer            none
-rubyStringEscape     brown             none
-# rust
-rustEnumVariant      yellow            none
-rustFuncCall         lightblue         none
-rustCommentLineDoc   brown             none
-rustEscape           brown             none
-rustEscapeUnicode    brown             none              italic
-rustEscapeError      brown             none              bold
-# toml
-tomlTable            lightblue         none
-tomlTableArray       lightblue         none
-tomlKey              darkyellow        none              bold
-# typescript
+#}}}
+# typescript{{{
 typescriptBraces     white             none
 typescriptEndColons -> typescriptBraces
 typescriptExceptions -> Exception
 typescriptFloat   -> Float
 typescriptMessage -> String
-# vim
-vimfilerColumn__SizeLine grey          none
-vimfilerClosedFile   brightgreen       none
-# wast
-wastInstGeneral      yellow            none
-wastInstWithType     yellow            none
-# zsh
-zshDelimiter         lightblue         none
-zshPrecommand        red               none
-# ale
+#}}}
+# python{{{
+pythonDottedName     red               none
+pythonClassVar       red               none
+#}}}
+# go{{{
+goBuiltins           red               none
+goDeclaration     -> Function
+#}}}
+# ruby{{{
+rubyControl          red               none
+rubyCapitalizedMethod orange           none              bold
+rubyDocumentation    greyer            none
+rubyStringEscape     brown             none
+#}}}
+
+# Plugins
+# ale{{{
 ALEWarningSign       orange            grey
 ALEErrorSign         red               grey
 ALEInfoSign          lightblue         grey
@@ -260,7 +247,8 @@ ALEVirtualTextWarning greyer           none
 ALEVirtualTextInfo   greyer            none
 ALEVirtualTextStyleError            -> ALEVirtualTextError
 ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
-# coc
+#}}}
+# coc{{{
 CocHighlightText     none              none              bold
 CocCodeLens          greyer            none
 CocErrorSign      -> ALEErrorSign
@@ -275,20 +263,24 @@ CocErrorVirtualText -> ALEVirtualTextError
 CocInfoVirtualText -> ALEVirtualTextInfo
 CocHintVirtualText -> ALEVirtualTextInfo
 CocCodeLens       -> ALEVirtualTextInfo
-# nerdtree
+#}}}
+# nerdtree{{{
 NERDTreeFlags        orange            none
 NERDTreeDirSlash     darkgreen         none
 NERDTreeCWD          darkgreen         none
 NERDTreeLinkFile     darkgreen         none
 NERDTreeLinkTarget   brightgreen       none
-# easymotion
+#}}}
+# easymotion{{{
 EasyMotionTarget     none              none              bold
 EasyMotionShade      none              dark              bold
-# vim-matchup
+#}}}
+# vim-matchup{{{
 MatchParenCur        none              none              bold
 MatchWord            none              none              underline
 MatchWordCur         none              none              underline
-# startify
+#}}}
+# startify{{{
 StartifyBracket      brightgreen       none
 StartifyHeader       orange            none              bold
 StartifyNumber       orange            none              bold
@@ -296,7 +288,8 @@ StartifyPath         brightgreen       none
 StartifySlash        darkgreen         none
 StartifySpecial   -> Comment
 StartifyFile      -> Normal
-# more
+#}}}
+# more{{{
 diffAdded            brightgreen       none
 diffFile             brightgreen       none
 diffIndexLine        darkyellow        none
@@ -306,6 +299,7 @@ gitCommitOverflow    red               none
 gitCommitSummary     orange            none
 gitCommitSelectedFile lightblue        none
 gitconfigSection     none              darkred
+#}}}
 # }}}
 
 # B/W variant {{{
