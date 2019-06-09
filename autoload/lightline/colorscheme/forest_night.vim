@@ -18,7 +18,7 @@ let s:green       = [ '#a9dd9d', 150 ]
 let s:orange       = [ '#fb8965', 216 ]
 let s:golden = [ '#FFEBC3', 223 ]
 let s:darkred = [ '#70495d', 95 ]
-let s:darkorange = [ '#b57614', 136 ]
+let s:darkorange = [ '#b36200', 136 ]
 "}}}
 
 "{{{Definition
