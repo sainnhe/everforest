@@ -182,9 +182,6 @@ Noise                yellow            none
 helpExample          lightblue         none
 helpCommand          lightmagenta      none
 #}}}
-# make{{{
-makeCommands         yellow            none
-#}}}
 # markdown{{{
 markdownCode         brightgreen       none
 markdownUrl          red               none              underline
@@ -220,19 +217,13 @@ typescriptExceptions -> Exception
 typescriptFloat   -> Float
 typescriptMessage -> String
 #}}}
-# python{{{
-pythonDottedName     red               none
-pythonClassVar       red               none
-#}}}
 # go{{{
-goBuiltins           red               none
 goDeclaration     -> Function
 #}}}
 # ruby{{{
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    greyer            none
-rubyStringEscape     brown             none
 #}}}
 # vim{{{
 vimFunction       -> Function
