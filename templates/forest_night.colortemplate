@@ -45,9 +45,7 @@ Color: greyer        #788898           245               Grey
 Color: red           #fd8489           210               Red
 Color: darkred       #70495d           95                DarkRed
 Color: brightgreen   #a9dd9d           150               LightGreen
-# Color: green         #98bc37           148               Green
-# Color: green         #b8bb26           148               Green
-# Color: green         #afb42b           148               Green
+Color: green         #87af87           108               Green
 Color: darkgreen     #5f8770           65                DarkGreen
 Color: lightblue     #a8d2eb           153               LightCyan
 Color: blue          #7fc1ca           110               Blue
@@ -141,11 +139,11 @@ WildMenu             dark              lightyellow
 Underlined           lightblue         none
 MatchParen           none              none              bold
 # Other conventional group names (see `:help group-name`)
-Character            brightgreen       none
 Conditional          red               none
 Define               orange            none
 Number               brightgreen       none
-Float                darkgreen         none
+Float                green             none
+Character            green             none
 Boolean              white             none
 Function             orange            none
 Keyword              orange            none
@@ -160,8 +158,8 @@ Identifier           red               none
 Ignore               greyalt           none
 PreProc              orange            none
 PreCondit            red               none              bold
-Special              darkgreen         none
-SpecialComment       brown             none
+Special              green             none
+SpecialComment       darkgreen         none
 Delimiter            darkyellow        none
 Statement            lightblue         none
 Exception            red               none
