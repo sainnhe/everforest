@@ -276,6 +276,11 @@ jsonQuote            green             none
 yamlKey              orange            none
 yamlConstant         brightgreen       none
 #}}}
+# toml{{{
+tomlTable            red               none
+tomlTableArray       red               none
+tomlKey              orange            none
+#}}}
 
 # Plugins
 # ale{{{
