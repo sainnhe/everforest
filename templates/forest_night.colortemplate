@@ -100,7 +100,7 @@ Conceal              greyer            none
 Cursor               black             lightyellow
 CursorColumn         none              dark
 CursorLine           none              dark
-CursorLineNr         greyer            darkgrey
+CursorLineNr         greyer            grey
 DiffAdd              none              darkgreen
 DiffChange           none              darkblue
 DiffDelete           none              darkred
@@ -111,7 +111,7 @@ ErrorMsg             red               black
 FoldColumn           lightyellow       grey
 Folded               lightyellow       grey              italic
 IncSearch            none              darkred           underline
-LineNr               greyer            grey
+LineNr               black             grey
 ModeMsg              darkyellow        none
 MoreMsg              blue              none
 NonText              greyalt           none
@@ -124,7 +124,7 @@ Search               none              darkred           underline
 SignColumn           none              grey
 SpecialKey           darkgrey          none
 SpellBad             red               none              s=red
-SpellCap            orange             none              s=orange
+SpellCap             orange            none              s=orange
 SpellLocal           lightblue         none              s=blue
 SpellRare             lightmagenta     none              s=t_magenta
 StatusLine           dark              brightgreen
