@@ -141,12 +141,12 @@ WildMenu             dark              lightyellow
 Underlined           lightblue         none
 MatchParen           none              none              bold
 # Other conventional group names (see `:help group-name`)
-Boolean              white             none
 Character            brightgreen       none
 Conditional          red               none
 Define               orange            none
 Number               brightgreen       none
-Float                white             none
+Float                darkgreen         none
+Boolean              white             none
 Function             orange            none
 Keyword              yellow            none
 Label                lightblue         none
@@ -156,7 +156,7 @@ Tag                  orange            none
 Comment              greyer            none              italic
 Constant             red               none
 Error                red               none
-Identifier           darkyellow        none              italic
+Identifier           red               none
 Ignore               greyalt           none
 PreProc              orange            none
 PreCondit            red               none              bold
