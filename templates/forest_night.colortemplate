@@ -208,6 +208,7 @@ xmlTagName        -> htmlTagName
 xmlEndTag         -> htmlEndTag
 # javascript
 jsFunction        -> Function
+jsExceptions      -> Exception
 # python
 pythonDottedName     red               none
 pythonClassVar       red               none
@@ -237,6 +238,7 @@ tomlTableArray       lightblue         none
 tomlKey              darkyellow        none              bold
 # typescript
 typescriptBraces     white             none
+typescriptExceptions -> Exception
 # vim
 vimfilerColumn__SizeLine grey          none
 vimfilerClosedFile   brightgreen       none
