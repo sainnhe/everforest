@@ -184,10 +184,12 @@ helpCommand          lightmagenta      none
 # make
 makeCommands         yellow            none
 # markdown
-markdownCode         brightgreen             none
+markdownCode         brightgreen       none
 markdownUrl          red               none              underline
+markdownCodeDelimiter brightgreen      none              bold
 mkdCode           -> markdownCode
 mkdUrl            -> markdownUrl
+mkdCodeDelimiter  -> markdownCodeDelimiter
 # rst
 rstEmphasis          none              none              italic
 rstStrongEmphasis    none              none              bold
