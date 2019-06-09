@@ -182,7 +182,7 @@ CursorIM             none              fg
 ToolbarLine          grey              darkgrey
 ToolbarButton        darkyellow        none              bold
 # Other
-Noise                yellow            none
+Noise                white             none
 # }}}
 
 # Additional highlight groups {{{
@@ -218,6 +218,14 @@ xmlEndTag         -> htmlEndTag
 # javascript{{{
 jsFunction        -> Function
 jsExceptions      -> Exception
+jsFuncBraces      -> Delimiter
+jsObjectBraces    -> Delimiter
+jsParens          -> Delimiter
+jsFuncParens      -> Delimiter
+jsIfElseBraces    -> Delimiter
+jsNoise           -> Noise
+jsParen              brightgreen       none
+jsReturn             red               none
 #}}}
 # typescript{{{
 typescriptBraces     white             none
