@@ -225,6 +225,20 @@ pythonDecorator      red               none
 # go{{{
 goDeclaration     -> Function
 #}}}
+# rust{{{
+rustKeyword          brightgreen       none
+rustDynKeyword    -> Keyword 
+rustExistential   -> Keyword
+rustPubScopeCrate -> Keyword
+rustSuper         -> Keyword
+rustExternCrate   -> Keyword
+rustSelf             brightgreen       none
+rustSigil            green             none
+rustEnum             orange            none
+rustConditional      brightgreen       none
+rustModPath          orange            none
+rustOperator      -> Delimiter
+#}}}
 # ruby{{{
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
