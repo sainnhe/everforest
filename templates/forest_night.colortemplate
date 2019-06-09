@@ -217,6 +217,11 @@ typescriptExceptions -> Exception
 typescriptFloat   -> Float
 typescriptMessage -> String
 #}}}
+# python{{{
+pythonExClass        orange            none
+pythonBuiltinType    orange            none
+pythonDecorator      red               none
+#}}}
 # go{{{
 goDeclaration     -> Function
 #}}}
