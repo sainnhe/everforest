@@ -185,7 +185,7 @@ helpCommand          lightmagenta      none
 # markdown{{{
 markdownCode         brightgreen       none
 markdownUrl          red               none              underline
-markdownCodeDelimiter brightgreen      none              bold
+markdownCodeDelimiter green            none
 mkdCode           -> markdownCode
 mkdUrl            -> markdownUrl
 mkdCodeDelimiter  -> markdownCodeDelimiter
