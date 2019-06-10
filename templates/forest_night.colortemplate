@@ -384,6 +384,12 @@ luaLocal             orange            none              bold
 luaFuncKeyword       red               none
 luaFuncArgName       green             none
 #}}}
+# sh{{{
+shQuote              brightgreen       none
+shDeref              green             none
+shVariable           orange            none
+shOperator           lightblue         none
+#}}}
 # vim{{{
 vimFunction       -> Function
 vimLet            -> Operator
