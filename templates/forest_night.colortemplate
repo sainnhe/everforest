@@ -333,9 +333,11 @@ csUnspecifiedStatement red             none
 csNewType            orange            none
 #}}}
 # ruby{{{
+rubyInclude          orange            none              bold
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    greyer            none
+rubyPredefinedVariable green           none
 #}}}
 # dart{{{
 dartCoreClasses   -> Function
