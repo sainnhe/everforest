@@ -180,7 +180,7 @@ Error                red               none
 Identifier           red               none
 Ignore               greyalt           none
 PreProc              orange            none
-PreCondit            red               none              bold
+PreCondit            red               none
 Special              green             none
 SpecialComment       darkgreen         none
 Delimiter            white             none
@@ -204,6 +204,7 @@ Noise                white             none
 cmakeVariable        green             none
 cmakeArguments       lightyellow       none
 cmakeVariableValue   lightblue         none
+cmakeKWstring        green             none
 #}}}
 # markdown{{{
 markdownCode         brightgreen       none
