@@ -16,7 +16,7 @@
 # The Design{{{
 # Color ratio: golden > orange ≥ green > red > blue > others
 # golden: lightyellow
-# orange: orange
+# orange: orange(75%) darkyellow(25%)
 # green: brightgreen(80%) green(15%) darkgreen(5%)
 # red: red
 # blue: lightblue(90%) white(10%)
@@ -238,7 +238,7 @@ xmlEndTag         -> htmlEndTag
 cssAtRule            red               none
 cssBraces         -> Delimiter
 cssClassName         orange            none
-cssClassNameDot      red               none
+cssClassNameDot      darkyellow        none
 cssProp              green             none
 cssKeyFrameProp      orange            none
 #}}}
@@ -269,7 +269,6 @@ typescriptLabel      green             none
 typescriptParens  -> Delimiter
 #}}}
 # coffee{{{
-coffeeGlobal         green             none
 coffeeBoolean        brightgreen       none
 coffeeParens         green             none
 coffeeParen       -> Delimiter
@@ -283,7 +282,6 @@ coffeeKeyword        orange            none              bold
 #}}}
 # python{{{
 pythonExClass        orange            none
-pythonBuiltinType    orange            none
 pythonDecorator      red               none
 pythonBoolean        brightgreen       none
 pythonOperator       green             none
@@ -364,7 +362,7 @@ haskellImportKeywords red              none
 haskellType          orange            none
 haskellWhere         lightblue         none
 haskellOperators     green             none
-haskellDeclKeyword   orange            none              bold
+haskellDeclKeyword -> Type
 haskellDecl          red               none
 #}}}
 # lua{{{
