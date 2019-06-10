@@ -300,9 +300,10 @@ rustExternCrate   -> Keyword
 rustSelf             brightgreen       none
 rustSigil            green             none
 rustEnum             orange            none
-rustConditional      brightgreen       none
+rustConditional      red               none
 rustModPath          orange            none
 rustOperator      -> Delimiter
+rustAttribute        green             none
 #}}}
 # php{{{
 phpParent         -> Delimiter
