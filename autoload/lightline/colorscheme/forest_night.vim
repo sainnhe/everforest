@@ -1,5 +1,5 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/vim-color-forest
+" URL: https://github.com/sainnhe/vim-color-forest-night/
 " Filename: autoload/lightline/colorscheme/forest_night.vim
 " Author: Sainnhepark
 " Email: sainnhe@gmail.com
