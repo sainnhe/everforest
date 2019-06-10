@@ -228,6 +228,12 @@ xmlTag            -> htmlTag
 xmlTagName        -> htmlTagName
 xmlEndTag         -> htmlEndTag
 #}}}
+# css{{{
+cssAtRule            lightblue         none
+cssBraces         -> Delimiter
+cssClassName         lightblue         none
+cssClassNameDot      blue              none
+#}}}
 # javascript{{{
 jsFunction        -> Function
 jsExceptions      -> Exception
