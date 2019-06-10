@@ -384,6 +384,13 @@ luaLocal             orange            none              bold
 luaFuncKeyword       red               none
 luaFuncArgName       green             none
 #}}}
+# d{{{
+dTypedef             orange            none              bold
+dScopeDecl           red               none
+dLabel               green             none
+dOperator            green             none
+dAnnotation          darkyellow        none
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
