@@ -204,6 +204,11 @@ Noise                white             none
 helpExample          lightblue         none
 helpCommand          lightmagenta      none
 #}}}
+# cmake{{{
+cmakeVariable        green             none
+cmakeArguments       lightyellow       none
+cmakeVariableValue   lightblue         none
+#}}}
 # markdown{{{
 markdownCode         brightgreen       none
 markdownUrl          red               none              underline
@@ -267,7 +272,7 @@ pythonBoolean        brightgreen       none
 pythonOperator       green             none
 pythonClassVar       orange            none
 #}}}
-# go{{{
+# go(help wanted){{{
 goDeclaration     -> Function
 goImport          -> Define
 goPackage            red               none
