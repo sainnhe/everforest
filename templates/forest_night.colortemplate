@@ -333,7 +333,10 @@ phpOperator       -> Delimiter
 csBraces          -> Delimiter
 csParens          -> Delimiter
 csUnspecifiedStatement red             none
+csContextualStatement green            none
 csNewType            orange            none
+csClass              red               none
+csEndColon           lightyellow       none
 #}}}
 # fsharp{{{
 fsharpOpen           red               none
