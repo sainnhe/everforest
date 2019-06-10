@@ -277,6 +277,21 @@ rustConditional      brightgreen       none
 rustModPath          orange            none
 rustOperator      -> Delimiter
 #}}}
+# php{{{
+phpParent         -> Delimiter
+phpFunction       -> Function
+phpMethod            orange            none
+phpInclude           orange            none              bold
+phpKeyword           red               none
+phpClass             orange            none
+phpClassNamespaceSeparator darkyellow  none
+phpStaticClasses     orange            none              bold
+phpIdentifier        orange            none
+phpIdentifierSimply  orange            none
+phpVarSelector       red               none
+phpMemberSelector -> Delimiter
+phpOperator       -> Delimiter
+#}}}
 # ruby{{{
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
