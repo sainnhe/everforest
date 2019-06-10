@@ -330,6 +330,10 @@ dartTypedef          orange            none
 dartOperator         lightblue         none
 dartKeyword          green             none
 #}}}
+# swift{{{
+swiftImports         orange            none              bold
+swiftProperty        green             none
+#}}}
 # perl{{{
 perlSharpBang        darkgreen         none
 perlStatementInclude orange            none
