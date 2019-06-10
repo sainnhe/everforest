@@ -263,6 +263,9 @@ typescriptParens  -> Delimiter
 pythonExClass        orange            none
 pythonBuiltinType    orange            none
 pythonDecorator      red               none
+pythonBoolean        brightgreen       none
+pythonOperator       green             none
+pythonClassVar       orange            none
 #}}}
 # go{{{
 goDeclaration     -> Function
