@@ -254,7 +254,6 @@ jsIfElseBraces    -> Delimiter
 jsNoise           -> Noise
 jsParen              brightgreen       none
 jsReturn             lightblue         none
-jsOperator           lightblue         none
 jsObjectProp         orange            none
 jsLabel              green             none
 jsObjectKey          green             none
