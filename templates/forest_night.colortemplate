@@ -264,6 +264,19 @@ typescriptMessage -> String
 typescriptLabel      green             none
 typescriptParens  -> Delimiter
 #}}}
+# coffee{{{
+coffeeGlobal         green             none
+coffeeBoolean        brightgreen       none
+coffeeParens         green             none
+coffeeParen       -> Delimiter
+coffeeCurlies        green             none
+coffeeCurly       -> Delimiter
+coffeeSpecialOp   -> Delimiter
+coffeeExtendedOp     lightblue         none
+coffeeSpecialIdent   orange            none
+coffeeConstant       orange            none
+coffeeKeyword        orange            none              bold
+#}}}
 # python{{{
 pythonExClass        orange            none
 pythonBuiltinType    orange            none
@@ -335,18 +348,11 @@ haskellOperators     green             none
 haskellDeclKeyword   orange            none              bold
 haskellDecl          red               none
 #}}}
-# coffee{{{
-coffeeGlobal         green             none
-coffeeBoolean        brightgreen       none
-coffeeParens         green             none
-coffeeParen       -> Delimiter
-coffeeCurlies        green             none
-coffeeCurly       -> Delimiter
-coffeeSpecialOp   -> Delimiter
-coffeeExtendedOp     lightblue         none
-coffeeSpecialIdent   orange            none
-coffeeConstant       orange            none
-coffeeKeyword        orange            none              bold
+# lua{{{
+luaBraces         -> Delimiter
+luaLocal             orange            none              bold
+luaFuncKeyword       red               none
+luaFuncArgName       green             none
 #}}}
 # vim{{{
 vimFunction       -> Function
