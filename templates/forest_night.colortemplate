@@ -279,6 +279,12 @@ coffeeSpecialIdent   orange            none
 coffeeConstant       orange            none
 coffeeKeyword        orange            none              bold
 #}}}
+# java{{{
+javaScopeDecl        red               none
+javaLabel            orange            none
+javaVarArg           green             none
+javaParen         -> Delimiter
+#}}}
 # python{{{
 pythonExClass        orange            none
 pythonDecorator      red               none
