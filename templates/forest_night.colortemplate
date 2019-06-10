@@ -297,6 +297,16 @@ rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    greyer            none
 #}}}
+# perl{{{
+perlSharpBang        darkgreen         none
+perlStatementInclude orange            none
+perlIdentifier       orange            none
+perlVarPlain         green             none
+perlStatementStorage red               none
+perlStatementInclude red               none
+perlStatementFiledesc orange           none
+perlFunction         orange            none              bold
+#}}}
 # vim{{{
 vimFunction       -> Function
 vimLet            -> Operator
