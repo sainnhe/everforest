@@ -319,6 +319,12 @@ phpVarSelector       red               none
 phpMemberSelector -> Delimiter
 phpOperator       -> Delimiter
 #}}}
+# csharp{{{
+csBraces          -> Delimiter
+csParens          -> Delimiter
+csUnspecifiedStatement red             none
+csNewType            orange            none
+#}}}
 # ruby{{{
 rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
