@@ -252,6 +252,8 @@ typescriptEndColons -> typescriptBraces
 typescriptExceptions -> Exception
 typescriptFloat   -> Float
 typescriptMessage -> String
+typescriptLabel      green             none
+typescriptParens  -> Delimiter
 #}}}
 # python{{{
 pythonExClass        orange            none
