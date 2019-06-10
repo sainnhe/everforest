@@ -307,6 +307,14 @@ perlStatementInclude red               none
 perlStatementFiledesc orange           none
 perlFunction         orange            none              bold
 #}}}
+# haskell{{{
+haskellImportKeywords red              none
+haskellType          orange            none
+haskellWhere         lightblue         none
+haskellOperators     green             none
+haskellDeclKeyword   orange            none              bold
+haskellDecl          red               none
+#}}}
 # vim{{{
 vimFunction       -> Function
 vimLet            -> Operator
