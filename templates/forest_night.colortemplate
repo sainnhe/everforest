@@ -335,6 +335,14 @@ csParens          -> Delimiter
 csUnspecifiedStatement red             none
 csNewType            orange            none
 #}}}
+# fsharp{{{
+fsharpOpen           red               none
+fsharpModule         orange            none
+fsharpSymbol         green             none
+fsharpKeychar        white             none
+fsharpOperator       white             none
+fsharpFunDef         white             none
+#}}}
 # ruby{{{
 rubyInclude          orange            none              bold
 rubyControl          red               none
