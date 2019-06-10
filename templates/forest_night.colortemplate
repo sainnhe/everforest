@@ -200,6 +200,10 @@ Noise                white             none
 
 # Additional highlight groups {{{
 # Filetypes
+# make{{{
+makeIdent            orange            none
+makeExport           red               none
+#}}}
 # cmake{{{
 cmakeVariable        green             none
 cmakeArguments       lightyellow       none
