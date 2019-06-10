@@ -394,6 +394,11 @@ shOperator           lightblue         none
 zshPreProc           darkgreen         none
 zshDeref             green             none
 #}}}
+# fish{{{
+fishKeyword          red               none
+fishStatement        orange            none
+fishIdentifier       green             none
+#}}}
 # vim{{{
 vimFunction       -> Function
 vimLet            -> Operator
