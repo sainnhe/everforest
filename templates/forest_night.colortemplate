@@ -1,10 +1,23 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
+# ":help fold-marker" to get better display of this file
+# Util{{{
+# these simple codes can display highlighting groups under current cursor
+# ```vim
+# function! SynStack()
+#     if !exists('*synstack')
+#         return
+#     endif
+#     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+# endfunc
+# nnoremap ? :call SynStack()<CR>
+# ```
+#}}}
 # The Design{{{
-# Color ratio: golden > green ≥ orange > red > blue > others
+# Color ratio: golden > orange ≥ green > red > blue > others
 # golden: lightyellow
-# green: brightgreen(80%) green(15%) darkgreen(5%)
 # orange: orange
+# green: brightgreen(80%) green(15%) darkgreen(5%)
 # red: red
 # blue: lightblue(90%) white(10%)
 #}}}
