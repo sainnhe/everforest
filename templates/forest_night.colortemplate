@@ -311,6 +311,12 @@ rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    greyer            none
 #}}}
+# dart{{{
+dartCoreClasses   -> Function
+dartTypedef          orange            none
+dartOperator         lightblue         none
+dartKeyword          green             none
+#}}}
 # perl{{{
 perlSharpBang        darkgreen         none
 perlStatementInclude orange            none
