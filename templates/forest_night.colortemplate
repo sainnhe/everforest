@@ -234,18 +234,21 @@ xmlTagName        -> htmlTagName
 xmlEndTag         -> htmlEndTag
 #}}}
 # css{{{
-cssAtRule            lightblue         none
+cssAtRule            red               none
 cssBraces         -> Delimiter
-cssClassName         lightblue         none
-cssClassNameDot      blue              none
+cssClassName         orange            none
+cssClassNameDot      red               none
+cssProp              green             none
+cssKeyFrameProp      orange            none
 #}}}
 # javascript{{{
 jsFunction        -> Function
-jsExceptions      -> Exception
 jsFuncBraces      -> Delimiter
+jsFuncParens      -> Delimiter
+jsFuncName           green             none
+jsExceptions      -> Exception
 jsObjectBraces    -> Delimiter
 jsParens          -> Delimiter
-jsFuncParens      -> Delimiter
 jsIfElseBraces    -> Delimiter
 jsNoise           -> Noise
 jsParen              brightgreen       none
@@ -285,10 +288,12 @@ pythonBoolean        brightgreen       none
 pythonOperator       green             none
 pythonClassVar       orange            none
 #}}}
-# go(help wanted){{{
+# go{{{
 goDeclaration     -> Function
-goImport          -> Define
+goImport             orange            none              bold
 goPackage            red               none
+goStatement          green             none
+goPredefinedIdentifiers orange         none
 #}}}
 # rust{{{
 rustKeyword          brightgreen       none
