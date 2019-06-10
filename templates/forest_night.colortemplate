@@ -86,7 +86,7 @@ Color: t_red         #ff6a6f           203               Red
 Color: t_green       #a9dd9d           150               Green
 Color: t_yellow      #f0c38a           222               Yellow
 Color: t_blue        #7098e6           69                Blue
-Color: t_magenta     #605779           60                Magenta
+Color: t_magenta     #894370           60                Magenta
 Color: t_cyan        #a8d2eb           153               Cyan
 Color: t_white       #fffeeb           231               White
 Color: t_black_b     #8d9eb2           103               DarkGrey
