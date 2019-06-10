@@ -390,6 +390,10 @@ shDeref              green             none
 shVariable           orange            none
 shOperator           lightblue         none
 #}}}
+# zsh{{{
+zshPreProc           darkgreen         none
+zshDeref             green             none
+#}}}
 # vim{{{
 vimFunction       -> Function
 vimLet            -> Operator
