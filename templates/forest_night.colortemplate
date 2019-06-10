@@ -200,10 +200,6 @@ Noise                white             none
 
 # Additional highlight groups {{{
 # Filetypes
-# help{{{
-helpExample          lightblue         none
-helpCommand          lightmagenta      none
-#}}}
 # cmake{{{
 cmakeVariable        green             none
 cmakeArguments       lightyellow       none
@@ -387,6 +383,14 @@ yamlConstant         brightgreen       none
 tomlTable            red               none
 tomlTableArray       red               none
 tomlKey              orange            none
+#}}}
+# dockerfile{{{
+dockerfileEmail      green             none
+dockerfileUrl        green             none              underline
+#}}}
+# help{{{
+helpExample          lightblue         none
+helpCommand          lightmagenta      none
 #}}}
 
 # Plugins
