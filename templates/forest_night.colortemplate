@@ -242,6 +242,12 @@ cssClassNameDot      darkyellow        none
 cssProp              green             none
 cssKeyFrameProp      orange            none
 #}}}
+# sass{{{
+sassVariable         orange            none
+sassClassChar        orange            none
+sassCharset          green             none
+sassInclude          red               none
+#}}}
 # javascript{{{
 jsFunction        -> Function
 jsFuncBraces      -> Delimiter
