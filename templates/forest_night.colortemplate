@@ -78,7 +78,7 @@ Color: t_yellow      #f0c38a           222               Yellow
 Color: t_blue        #98b8e6           111               Blue
 Color: t_magenta     #b888e2           140               Magenta
 Color: t_cyan        #7fc1ca           110               Cyan
-Color: t_white       #d6e9ff           189               White
+# lightyellow
 
 Color: t_black_b     #918175           246               DarkGrey
 Color: t_red_b       #fd8489           210               LightRed
@@ -89,7 +89,7 @@ Color: t_magenta_b   #e7d5ff           189               LightMagenta
 # white
 Color: t_white_b     #ffffff           231               White
 
-Term colors: t_black t_red green t_yellow t_blue t_magenta t_cyan t_white
+Term colors: t_black t_red green t_yellow t_blue t_magenta t_cyan lightyellow
 Term colors: t_black_b t_red_b brightgreen t_yellow_b
 Term colors: lightblue t_magenta_b white t_white_b
 # }}}
