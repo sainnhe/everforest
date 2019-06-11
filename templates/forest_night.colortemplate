@@ -241,12 +241,17 @@ cssClassName         orange            none
 cssClassNameDot      darkyellow        none
 cssProp              green             none
 cssKeyFrameProp      orange            none
+cssTagName        -> Type              none
 #}}}
 # sass{{{
 sassVariable         orange            none
 sassClassChar        orange            none
 sassCharset          green             none
 sassInclude          red               none
+#}}}
+# less{{{
+lessMixinChar        darkyellow        none
+lessVariable         orange            none
 #}}}
 # javascript{{{
 jsFunction        -> Function
