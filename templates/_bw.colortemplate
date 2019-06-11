@@ -3,7 +3,7 @@
 # Template for black & white terminals
 Variant: 2
 
-Color: unused #000000 0
+Color: unused #000000 0 0
 
 # Default highlight groups {{{
 # Group              Unused   Unused   term
