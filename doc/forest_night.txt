@@ -1,9 +1,9 @@
 *forest_night.txt*	For Vim version 8.0	Last change: 2019 Jun 11
 
 
-		  Forest Night color scheme    by Sainnhepark
+		  Forest Night 🌲    by Sainnhepark
 
-Forest Night, a colorscheme with a unique touch.
+    Forest Night, a comfortable & pleasant color scheme.
 
 ==============================================================================
 Colorscheme options					forest_night-options*
