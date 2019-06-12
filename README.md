@@ -12,7 +12,7 @@ Suppose you are using [vim-plug](https://github.com/junegunn/vim-plug):
 Plug 'sainnhe/vim-color-forest-night'
 ```
 
-For better syntax highlighting support, please install [sheerun/polyglot](https://github.com/sheerun/vim-polyglot).
+For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
 
 ## Usage
 
