@@ -231,7 +231,7 @@ cssAtRule            red               none
 cssBraces         -> Delimiter
 cssClassName         orange            none
 cssClassNameDot      darkyellow        none
-cssProp              green             none
+cssProp              lightyellow       none
 cssKeyFrameProp      orange            none
 cssTagName        -> Type              none
 #}}}
@@ -259,7 +259,9 @@ jsParen              brightgreen       none
 jsReturn             lightblue         none
 jsObjectProp         orange            none
 jsLabel              green             none
-jsObjectKey          green             none
+jsObjectKey          lightyellow       none
+jsDot                darkyellow        none
+jsAsyncKeyword       red               none
 #}}}
 # typescript{{{
 typescriptBraces     white             none
@@ -272,9 +274,10 @@ typescriptParens  -> Delimiter
 #}}}
 # coffee{{{
 coffeeBoolean        brightgreen       none
-coffeeParens         green             none
+coffeeParens         lightyellow       none
 coffeeParen       -> Delimiter
 coffeeCurlies        green             none
+coffeeSpecialVar     green             none
 coffeeCurly       -> Delimiter
 coffeeSpecialOp   -> Delimiter
 coffeeExtendedOp     lightblue         none
@@ -367,6 +370,8 @@ swiftImports         orange            none              bold
 swiftProperty        green             none
 #}}}
 # perl{{{
+perlPackageDecl      orange            none
+perlStatementPackage red               none
 perlSharpBang        darkgreen         none
 perlStatementInclude orange            none
 perlIdentifier       orange            none
@@ -375,6 +380,7 @@ perlStatementStorage red               none
 perlStatementInclude red               none
 perlStatementFiledesc orange           none
 perlFunction         orange            none              bold
+perlVarSimpleMemberName lightyellow    none
 #}}}
 # haskell{{{
 haskellImportKeywords red              none
@@ -388,7 +394,7 @@ haskellDecl          red               none
 luaBraces         -> Delimiter
 luaLocal             orange            none              bold
 luaFuncKeyword       red               none
-luaFuncArgName       green             none
+luaFuncArgName       lightyellow       none
 #}}}
 # d{{{
 dTypedef             orange            none              bold
@@ -419,7 +425,8 @@ vimMap               red               none
 #}}}
 # json{{{
 jsonKeyword          orange            none
-jsonQuote            green             none
+jsonQuote            darkyellow        none
+jsonBoolean          lightyellow       none
 #}}}
 # yaml{{{
 yamlKey              orange            none
