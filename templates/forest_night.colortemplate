@@ -408,6 +408,14 @@ scalaAnnotation      red               none
 scalaSpecial         lightblue         none
 scalaKeywordModifier orange            none              bold
 #}}}
+# elixir{{{
+elixirAtom           green             none
+elixirInclude        red               none
+elixirAlias          orange            none
+elixirOperator       lightblue         none
+elixirDefine      -> Type
+elixirPrivateDefine -> Type
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
