@@ -403,6 +403,11 @@ dLabel               green             none
 dOperator            green             none
 dAnnotation          darkyellow        none
 #}}}
+# scala{{{
+scalaAnnotation      red               none
+scalaSpecial         lightblue         none
+scalaKeywordModifier orange            none              bold
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
