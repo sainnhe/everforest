@@ -69,6 +69,8 @@ Currently I have only completed some very basic syntax highlighting of common fi
 
 [@ekomizer](https://github.com/ekomizer): simple terminal support
 
+[@JarrettAzar](https://github.com/JarrettAzar): iterm2 support
+
 ## Inspirations
 
 **[rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)**
