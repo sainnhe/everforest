@@ -6,3 +6,8 @@ Download the .itermcolors file, then double click it after iterm2 is installed.
 Then, go to Preferences > Profiles > Colors then click Color Presets and select 'forest-night'
 
 #### *Done!*
+
+##### Note
+I had to update vim using ```brew install vim``` to get forest-night working in vim.
+
+#### Enjoy!
