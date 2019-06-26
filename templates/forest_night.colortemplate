@@ -420,6 +420,10 @@ elixirPrivateDefine -> Type
 ocamlModule       -> Type
 ocamlModPath         green             none
 #}}}
+# fortran{{{
+fortranCall          red               none
+fortranOperator      lightblue         none
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
