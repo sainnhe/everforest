@@ -424,6 +424,10 @@ ocamlModPath         green             none
 fortranCall          red               none
 fortranOperator      lightblue         none
 #}}}
+# elm{{{
+elmType              green             none
+elmOperator          lightblue         none
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
