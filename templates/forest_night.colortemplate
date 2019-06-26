@@ -416,6 +416,10 @@ elixirOperator       lightblue         none
 elixirDefine      -> Type
 elixirPrivateDefine -> Type
 #}}}
+# ocaml{{{
+ocamlModule       -> Type
+ocamlModPath         green             none
+#}}}
 # sh{{{
 shQuote              brightgreen       none
 shDeref              green             none
