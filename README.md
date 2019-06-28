@@ -39,6 +39,18 @@ or if you want to apply it without reload
 :call lightline#update()
 ```
 
+To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc
+
+```vim
+let g:airline_theme = 'forest_night'
+```
+
+To apply without reload
+
+```
+:AirlineTheme forest_night
+```
+
 ## FAQ
 
 **Q: It doesn't work as expected.**
