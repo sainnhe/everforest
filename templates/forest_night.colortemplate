@@ -56,8 +56,8 @@ Color: greyer        #788898           245               Grey
 Color: red           #fd8489           210               Red
 Color: darkred       #70495d           95                DarkRed
 Color: brightgreen   #a9dd9d           150               LightGreen
-Color: green         #87af87           108               Green
-Color: darkgreen     #5f8770           65                DarkGreen
+Color: green         #84cca2           108               Green
+Color: darkgreen     #84a78d           65                DarkGreen
 Color: lightblue     #a8d2eb           153               LightBlue
 Color: blue          #7fc1ca           110               Blue
 Color: darkblue      #5f87af           67                DarkBlue
@@ -65,7 +65,7 @@ Color: lightmagenta  #e7d5ff           189               LightMagenta
 Color: orange        #f0aa8a           216               Yellow
 Color: darkorange    #b36200           136               DarkYellow
 Color: yellow        #f0eaaa           229               Yellow
-Color: darkyellow    #f0c38a           222               DarkYellow
+Color: darkyellow    #eac780           222               DarkYellow
 Color: lightbrown    #b2a488           247               Brown
 Color: brown         #918175           246               Brown
 Color: darkbrown     #2d2c29           237               Black
@@ -179,7 +179,7 @@ Delimiter            white             none
 Statement            lightblue         none
 Exception            red               none
 Todo                 lightmagenta      none              bold
-Type                 darkyellow        none              bold
+Type                 darkyellow        none
 StorageClass         orange            none
 # See `:help CursorIM`
 CursorIM             none              fg
