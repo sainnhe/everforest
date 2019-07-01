@@ -181,6 +181,227 @@ Noise                white             none
 # }}}
 # Additional highlight groups {{{
 # Filetypes
+# html{{{
+htmlStatement        orange            none
+htmlTag              green             none
+#}}}
+# xml{{{
+xmlTag            -> htmlTag
+xmlTagName        -> htmlTagName
+xmlEndTag         -> htmlEndTag
+#}}}
+# css{{{
+cssClassName         orange            none
+cssClassNameDot   -> cssClassName
+cssProp              white             none
+cssBraces         -> Delimiter
+cssAtRule            red               none
+cssTagName           orange            none
+#}}}
+# sass{{{
+sassVariable      -> Identifier
+sassClass            orange            none
+sassClassChar        orange            none
+sassCharset          green             none
+sassInclude          red               none
+#}}}
+# less{{{
+lessVariable      -> Identifier
+lessClass            orange            none
+#}}}
+# js{{{
+jsGlobalNodeObjects  red               none
+jsFunction        -> Keyword
+jsParens          -> Delimiter
+jsBraces          -> Delimiter
+jsFuncBraces      -> Delimiter
+jsFuncParens      -> Delimiter
+jsExceptions      -> Exception
+#}}}
+# ts{{{
+typescriptBranch     orange            none
+typescriptExceptions -> Exception
+typescriptParens  -> Delimiter
+typescriptBraces  -> Delimiter
+typescriptEndColons -> typescriptBraces
+#}}}
+# coffee{{{
+coffeeParen       -> Delimiter
+coffeeCurly       -> Delimiter
+coffeeCurlies        green             none
+coffeeSpecialOp      green             none
+coffeeExtendedOp     blue              none
+coffeeParens         green             none
+coffeeConstant       orange            none
+#}}}
+# java{{{
+javaScopeDecl        red               none
+javaLabel            orange            none
+javaVarArg           green             none
+javaParen         -> Delimiter
+#}}}
+# python{{{
+pythonExClass        orange            none
+pythonBoolean        green             none
+pythonOperator       green             none
+pythonClassVar       orange            none
+pythonDecorator      orange            none
+pythonStatement   -> Keyword
+pythonBuiltinFunc    yellow            none
+#}}}
+# go{{{
+goDeclaration        orange            none
+goImport             orange            none
+goPackage            red               none
+goStatement          green             none
+goPredefinedIdentifiers orange         none
+#}}}
+# rust{{{
+rustKeyword          green             none
+rustDynKeyword    -> Keyword 
+rustExistential   -> Keyword
+rustSuper         -> Keyword
+rustExternCrate   -> Keyword
+rustSelf             yellow            none
+rustSigil            green             none
+rustEnum             orange            none
+rustModPath          orange            none
+rustOperator      -> Delimiter
+rustAttribute        red               none
+rustDerive           orange            none
+rustMacroVariable    orange            none
+rustPubScopeCrate    orange            none
+#}}}
+# php{{{
+phpParent         -> Delimiter
+phpFunction       -> Function
+phpMethod            orange            none
+phpInclude           orange            none              bold
+phpKeyword           red               none
+phpClass             orange            none
+phpClassNamespaceSeparator yellow      none
+phpStaticClasses     yellow            none
+phpIdentifier        orange            none
+phpIdentifierSimply  orange            none
+phpVarSelector       red               none
+phpMemberSelector -> Delimiter
+phpOperator       -> Delimiter
+#}}}
+# csharp{{{
+csBraces          -> Delimiter
+csParens          -> Delimiter
+csUnspecifiedStatement red             none
+csContextualStatement green            none
+csNewType            yellow            none
+csClass              red               none
+csEndColon           white             none
+#}}}
+# fsharp{{{
+fsharpKeyword        orange            none
+fsharpModifier       red               none
+fsharpModule         orange            none
+fsharpSymbol         green             none
+fsharpKeychar        blue              none
+fsharpOperator       green             none
+#}}}
+# ruby{{{
+rubyInclude          orange            none
+rubyControl          red               none
+rubyCapitalizedMethod orange           none              bold
+rubyDocumentation    blackgreen        none
+rubyPredefinedVariable green           none
+#}}}
+# dart{{{
+dartCoreClasses   -> Function
+dartTypedef          orange            none
+dartOperator         blue              none
+dartKeyword          green             none
+#}}}
+# perl{{{
+perlPackageDecl      orange            none
+perlStatementPackage red               none
+perlStatementInclude orange            none
+perlStatementStorage red               none
+perlStatementInclude red               none
+perlStatementFiledesc orange           none
+perlStatementScalar  orange            none
+perlStatementList    yellow            none
+perlFunction         red               none
+perlMethod           orange            none
+perlVarSimpleMemberName white          none
+#}}}
+# haskell{{{
+haskellImportKeywords red              none
+haskellType          orange            none
+haskellWhere         blue              none
+haskellOperators     green             none
+haskellDeclKeyword -> Type
+haskellDecl          red               none
+#}}}
+# lua{{{
+luaBraces         -> Delimiter
+luaFuncKeyword       red               none
+luaFuncArgName       white             none
+#}}}
+# d{{{
+dTypedef             orange            none
+dScopeDecl           red               none
+dLabel               green             none
+dOperator            green             none
+dAnnotation          yellow            none
+dEnum                orange            none
+#}}}
+# scala{{{
+scalaInstanceDeclaration green         none
+scalaCapitalWord     green             none
+scalaAnnotation      red               none
+scalaSpecial         blue              none
+scalaKeywordModifier orange            none
+#}}}
+# elixir{{{
+elixirAtom           green             none
+elixirInclude        red               none
+elixirAlias          orange            none
+elixirOperator       blue              none
+elixirDefine      -> Type
+elixirPrivateDefine -> Type
+#}}}
+# ocaml{{{
+ocamlModule       -> Type
+ocamlModPath         green             none
+#}}}
+# fortran{{{
+fortranCall          red               none
+#}}}
+# sh{{{
+shQuote              green             none
+shDeref              green             none
+shVariable           orange            none
+shOperator           blue              none
+#}}}
+# zsh{{{
+zshPreProc           blackgreen        none
+zshDeref             green             none
+#}}}
+# fish{{{
+fishKeyword          red               none
+fishStatement        orange            none
+fishIdentifier       green             none
+#}}}
+# json{{{
+jsonKeyword          orange            none
+jsonQuote            yellow            none
+jsonBoolean          white             none
+#}}}
+# yaml{{{
+yamlKey              orange            none
+yamlConstant         green             none
+#}}}
+# toml{{{
+tomlTable            red               none
+tomlTableArray       red               none
+tomlKey              orange            none
+#}}}
 
 # Plugins
 # ale{{{
