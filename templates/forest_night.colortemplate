@@ -179,6 +179,68 @@ ToolbarButton        black             white             bold
 # Other
 Noise                white             none
 # }}}
+# Additional highlight groups {{{
+# Filetypes
+
+# Plugins
+# ale{{{
+ALEWarningSign       orange            grey
+ALEErrorSign         red               grey
+ALEInfoSign          blue              grey
+ALEError             none              darkred
+ALEWarning           none              darkorange
+ALEVirtualTextError  greyer            none
+ALEVirtualTextWarning greyer           none
+ALEVirtualTextInfo   greyer            none
+ALEVirtualTextStyleError            -> ALEVirtualTextError
+ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
+#}}}
+# coc{{{
+CocHighlightText     none              none              bold
+CocCodeLens          greyer            none
+CocErrorSign      -> ALEErrorSign
+CocWarningSign    -> ALEWarningSign
+CocInfoSign       -> ALEInfoSign
+CocHintSign       -> Label
+CocErrorHighlight -> ALEError
+CocWarningHighlight -> ALEWarning
+CocInfoHighlight  -> ALEInfo
+CocWarningVirtualText -> ALEVirtualTextWarning
+CocErrorVirtualText -> ALEVirtualTextError
+CocInfoVirtualText -> ALEVirtualTextInfo
+CocHintVirtualText -> ALEVirtualTextInfo
+CocCodeLens       -> ALEVirtualTextInfo
+#}}}
+# nerdtree{{{
+NERDTreeFlags        orange            none
+NERDTreeDirSlash     blackgreen        none
+NERDTreeCWD          blackgreen        none
+NERDTreeLinkFile     blackgreen        none
+NERDTreeLinkTarget   green             none
+#}}}
+# vim-matchup{{{
+MatchParenCur        none              none              bold
+MatchWord            none              none              underline
+MatchWordCur         none              none              underline
+#}}}
+# startify{{{
+StartifyBracket      green             none
+StartifyHeader       red               none
+StartifyNumber       orange            none
+StartifyPath         green             none
+StartifySlash        blackgreen        none
+StartifySection      orange            none
+StartifySpecial   -> Comment
+StartifyFile      -> Normal
+#}}}
+# sneak{{{
+Sneak                none              darkgreen
+#}}}
+# gv{{{
+gvSha                green             none
+gvAuthor             orange            none
+#}}}
+# }}}
 
 # B/W variant {{{
 Include: _bw.colortemplate
