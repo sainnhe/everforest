@@ -224,6 +224,7 @@ typescriptExceptions -> Exception
 typescriptParens  -> Delimiter
 typescriptBraces  -> Delimiter
 typescriptEndColons -> typescriptBraces
+typescriptGlobalObjects orange         none
 #}}}
 # coffee{{{
 coffeeParen       -> Delimiter
