@@ -2,7 +2,7 @@
 𝑭𝒐𝒓𝒆𝒔𝒕 𝑵𝒊𝒈𝒉𝒕
 </h1>
 
-![](./screenshots/forest_night.png)
+![](https://user-images.githubusercontent.com/37491630/60433232-d38b7100-9bf3-11e9-9aee-4dd8364d747d.png)
 
 ## Installation
 
