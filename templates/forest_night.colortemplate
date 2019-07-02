@@ -42,7 +42,7 @@ Color: darkgrey      #536273           238               DarkGrey
 Color: darkgreyalt   #5d6672           238               DarkGrey
 Color: grey          #616c72           244               Grey
 Color: greyalt       #646f7c           244               Grey
-Color: greyer        #788898           245               Grey
+Color: greyer        #7f8f9f           245               Grey
 Color: red           #fd8489           210               Red
 Color: orange        #f0aa8a           216               DarkYellow
 Color: yellow        #eed094           222               Yellow
