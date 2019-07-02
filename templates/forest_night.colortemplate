@@ -59,27 +59,8 @@ Color: brown         #918175           246               Brown
 Color: darkbrown     #2d2c29           237               Black
 # }}}
 # Terminal colors {{{
-Color: t_black       #2d2c29           237               Black
-Color: t_red         #ff5370           203               Red
-# green
-Color: t_yellow      #f0c38a           222               Yellow
-Color: t_blue        #98b8e6           111               Blue
-Color: t_magenta     #b888e2           140               Magenta
-Color: t_cyan        #7fc1ca           110               Cyan
-# white
-
-Color: t_black_b     #918175           246               DarkGrey
-Color: t_red_b       #fd8489           210               LightRed
-# green
-Color: t_yellow_b    #f0eaaa           229               LightYellow
-# blue
-Color: t_magenta_b   #e7d5ff           189               LightMagenta
-# white
-Color: t_white_b     #ffffff           231               White
-
-Term colors: t_black t_red green t_yellow t_blue t_magenta t_cyan white
-Term colors: t_black_b t_red_b green t_yellow_b
-Term colors: blue t_magenta_b white t_white_b
+Term colors: greyer red green orange blue magenta green white
+Term colors: greyer red green yellow blue magenta green white
 # }}}
 
 # Default highlight groups {{{
