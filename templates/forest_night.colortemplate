@@ -155,6 +155,7 @@ Constant             orange            none
 Label                orange            none
 StorageClass         orange            none
 Type                 yellow            none
+Special              yellow            none
 Identifier           green             none
 Operator             green             none
 String               green             none
@@ -162,7 +163,6 @@ Character            green             none
 Number               green             none
 Float                green             none
 Boolean              green             none
-Special              blue              none
 Statement            blue              none
 Delimiter            blue              none
 Conditional          magenta           none
