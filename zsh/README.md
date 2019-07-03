@@ -6,7 +6,7 @@ The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](htt
 
 # Prompt
 
-The prompt is forest-night version of pure power, it depends on [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k).
+The prompt theme is forest-night version of pure power, it depends on [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
 To use it, simply source this file in your zshrc after powerlevel10k has been load:
 
@@ -23,7 +23,7 @@ zplugin snippet https://github.com/sainnhe/vim-color-forest-night/blob/master/zs
 
 ## Customization
 
-There are three modes of the prompt:
+There are three modes of the prompt theme:
 
 ```zsh
 PURE_POWER_MODE=modern    # use nerdfont characters in the prompt
