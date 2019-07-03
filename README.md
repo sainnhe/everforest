@@ -18,8 +18,16 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 
 ### Vim
 
+Put this in your vimrc:
+
 ```vim
 colorscheme forest-night
+```
+
+If you want to apply this color scheme temporarily, run this command in vim:
+
+```vim
+:colorscheme forest-night
 ```
 
 #### Airline
@@ -30,7 +38,7 @@ To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, pu
 let g:airline_theme = 'forest_night'
 ```
 
-or if you want to apply it without reloading:
+To apply it without reloading:
 
 ```
 :AirlineTheme forest_night
@@ -48,23 +56,22 @@ let g:lightline.colorscheme = 'forest_night'
 let g:lightline = {'colorscheme' : 'forest_night'}
 ```
 
-or if you want to apply it without reloading:
+To apply it without reloading:
 
 ```vim
 :let g:lightline.colorscheme = 'forest_night'
 :call lightline#init()
 :call lightline#colorscheme()
-:call lightline#update()
 ```
+
+### Tmux Status Line
+
+Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
 
 ### Zsh
 
 - [Syntax Highlighting](https://github.com/sainnhe/vim-color-forest-night/tree/master/zsh#syntax-highlighting)
 - [Prompt](https://github.com/sainnhe/vim-color-forest-night/tree/master/zsh#prompt)
-
-### Tmux Status Line
-
-Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
 
 ### Terminal Emulators
 
