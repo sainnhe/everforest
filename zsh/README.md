@@ -2,7 +2,7 @@
 
 # Syntax Highlighting
 
-The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting). By using `default` theme with any terminal color scheme of forest-night, you can get a forest-night syntax highlighting theme of zsh.
+The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting). By using `default` theme with any [terminal emulator color scheme](https://github.com/sainnhe/vim-color-forest-night#terminal-emulators) of forest-night, you can get a forest-night syntax highlighting theme of zsh.
 
 # Prompt
 

@@ -66,25 +66,13 @@ To apply without reloading:
 
 Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
 
-### Iterm2
+### Terminal Emulators
 
-[iterm2 - forest-night](./iterm2/README.md)
-
-### Alacritty
-
-[alacritty - forest-night](./alacritty/README.md)
-
-### Kitty
-
-[kitty - forest-night](./kitty/README.md)
-
-### Simple Terminal
-
-[st - forest-night](./st/README.md)
-
-### Tilix
-
-[tilix - forest-night](./tilix/README.md)
+- [Iterm2](./iterm2/README.md)
+- [Alacritty](./alacritty/README.md)
+- [Kitty](./kitty/README.md)
+- [Simple Terminal](./st/README.md)
+- [Tilix](./tilix/README.md)
 
 ## FAQ
 
