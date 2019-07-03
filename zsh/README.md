@@ -1,4 +1,4 @@
-![](https://user-images.githubusercontent.com/37491630/60563123-fe87d900-9d49-11e9-8a44-cb0785543c05.png)
+![](https://user-images.githubusercontent.com/37491630/60578793-5f76d780-9d71-11e9-8def-0129c404c2d2.png)
 
 # Syntax Highlighting
 
