@@ -22,9 +22,23 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 colorscheme forest-night
 ```
 
+#### Airline
+
+To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc:
+
+```vim
+let g:airline_theme = 'forest_night'
+```
+
+or if you want to apply it without reloading:
+
+```
+:AirlineTheme forest_night
+```
+
 #### Lightline
 
-To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, put this in your vimrc
+To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, put this in your vimrc:
 
 ```vim
 let g:lightline = {}
@@ -41,20 +55,6 @@ or if you want to apply it without reloading:
 :call lightline#init()
 :call lightline#colorscheme()
 :call lightline#update()
-```
-
-#### Airline
-
-To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc
-
-```vim
-let g:airline_theme = 'forest_night'
-```
-
-To apply without reloading:
-
-```
-:AirlineTheme forest_night
 ```
 
 ### Zsh
