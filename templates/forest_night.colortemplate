@@ -148,9 +148,9 @@ Statement            blue              none
 Delimiter            blue              none
 Conditional          magenta           none
 Tag                  magenta           none
-Todo                 magenta           none
+Todo                 magenta           none              italic
 Comment              greyer            none              italic
-SpecialComment       blackgreen        none
+SpecialComment       blackgreen        none              italic
 Ignore               greyer            none
 # See `:help CursorIM`
 CursorIM             none              fg
