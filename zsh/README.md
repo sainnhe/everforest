@@ -2,7 +2,7 @@
 
 # Syntax Highlighting
 
-The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting). By using `default` theme with any terminal color scheme of forest-night, you can get a forest-night syntax highlighting in zsh.
+The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting). By using `default` theme with any terminal color scheme of forest-night, you can get a forest-night syntax highlighting theme of zsh.
 
 # Prompt
 
@@ -23,7 +23,7 @@ zplugin snippet https://github.com/sainnhe/vim-color-forest-night/blob/master/zs
 
 ## Customization
 
-There are three modes of the prompt theme:
+There are three modes of this prompt theme:
 
 ```zsh
 PURE_POWER_MODE=modern    # use nerdfont characters in the prompt
