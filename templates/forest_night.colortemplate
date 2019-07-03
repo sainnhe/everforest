@@ -132,11 +132,11 @@ Error                red               none
 PreCondit            orange            none
 Title                orange            none
 Function             orange            none
-Constant             orange            none
 Label                orange            none
 StorageClass         orange            none
 Type                 yellow            none
 Special              yellow            none
+Constant             yellow            none
 Identifier           green             none
 Operator             green             none
 String               green             none
