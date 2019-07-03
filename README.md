@@ -68,7 +68,7 @@ Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8
 
 ### Terminal Emulators
 
-- [Iterm2](./iterm2/README.md)
+- [iTerm2](./iterm2/README.md)
 - [Alacritty](./alacritty/README.md)
 - [Kitty](./kitty/README.md)
 - [Simple Terminal](./st/README.md)
