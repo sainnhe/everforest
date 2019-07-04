@@ -176,8 +176,14 @@ cssClassName         orange            none
 cssClassNameDot   -> cssClassName
 cssProp              white             none
 cssBraces         -> Delimiter
+cssSelectorOp     -> Delimiter
+cssSelectorOp2    -> Delimiter
 cssAtRule            red               none
 cssTagName           orange            none
+cssAttrComma         white             none
+cssUnitDecorators    blue              none
+cssColor             white             none
+cssImportant         red               none
 #}}}
 # sass{{{
 sassVariable      -> Identifier
@@ -185,6 +191,8 @@ sassClass            orange            none
 sassClassChar        orange            none
 sassCharset          green             none
 sassInclude          red               none
+scssSelectorName     orange            none
+scssSelectorChar  -> scssSelectorName
 #}}}
 # less{{{
 lessVariable      -> Identifier
@@ -372,7 +380,7 @@ fishIdentifier       green             none
 #}}}
 # json{{{
 jsonKeyword          orange            none
-jsonQuote            yellow            none
+jsonQuote            white             none
 jsonBoolean          white             none
 #}}}
 # yaml{{{
