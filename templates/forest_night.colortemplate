@@ -120,7 +120,6 @@ WildMenu             dark              white
 VertSplit            grey              none
 Visual               none              darkred
 VisualNOS            none              darkred           italic
-Underlined           blue              none
 MatchParen           none              none              bold
 
 # Syntax
@@ -152,6 +151,7 @@ Todo                 magenta           none              italic
 Comment              greyer            none              italic
 SpecialComment       blackgreen        none              italic
 Ignore               greyer            none
+Underlined           none              none              underline
 # See `:help CursorIM`
 CursorIM             none              fg
 # See `:help window-toolbar`
