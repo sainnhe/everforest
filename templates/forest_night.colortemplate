@@ -230,6 +230,14 @@ typescriptOpSymbols -> Operator
 typescriptOperator   orange            none
 typescriptDomNodeConsts orange         none
 #}}}
+# dart{{{
+dartCoreClasses   -> Function
+dartTypedef          orange            none
+dartOperator         blue              none
+dartKeyword          red               none
+dartCoreClasses      yellow            none
+dartInterpolation    orange            none
+#}}}
 # coffee{{{
 coffeeParen       -> Delimiter
 coffeeCurly       -> Delimiter
@@ -318,12 +326,6 @@ rubyControl          red               none
 rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    blackgreen        none
 rubyPredefinedVariable green           none
-#}}}
-# dart{{{
-dartCoreClasses   -> Function
-dartTypedef          orange            none
-dartOperator         blue              none
-dartKeyword          green             none
 #}}}
 # perl{{{
 perlPackageDecl      orange            none
