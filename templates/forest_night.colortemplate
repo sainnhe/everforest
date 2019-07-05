@@ -258,13 +258,14 @@ javaParen         -> Delimiter
 javaAnnotation       orange            none
 #}}}
 # python{{{
-pythonExClass        orange            none
+pythonExClass        yellow            none
 pythonBoolean        green             none
 pythonOperator       green             none
-pythonClassVar       orange            none
-pythonDecorator      orange            none
+pythonClassVar       yellow            none
+pythonDecorator      red               none
 pythonStatement   -> Keyword
 pythonBuiltinFunc    yellow            none
+pythonDottedName     orange            none
 #}}}
 # go{{{
 goDeclaration        orange            none
