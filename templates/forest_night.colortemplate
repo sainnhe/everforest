@@ -137,7 +137,6 @@ Type                 yellow            none
 Special              yellow            none
 Constant             yellow            none
 Identifier           green             none
-Operator             green             none
 String               green             none
 Character            green             none
 Number               green             none
@@ -145,6 +144,7 @@ Float                green             none
 Boolean              green             none
 Statement            blue              none
 Delimiter            blue              none
+Operator             blue              none
 Conditional          magenta           none
 Tag                  magenta           none
 Todo                 magenta           none              italic
@@ -203,9 +203,20 @@ jsGlobalNodeObjects  red               none
 jsFunction        -> Keyword
 jsParens          -> Delimiter
 jsBraces          -> Delimiter
+jsBrackets        -> Delimiter
 jsFuncBraces      -> Delimiter
 jsFuncParens      -> Delimiter
+jsObjectBraces    -> Delimiter
+jsObjectParens    -> Delimiter
 jsExceptions      -> Exception
+jsObjectValue        green             none
+jsObjectProp         yellow            none
+jsBlockLabel         yellow            none
+jsOperatorKeyword    orange            none
+jsGlobalObjects      orange            none
+jsUndefined          yellow            none
+jsThis               orange            none
+jsArrowFunction      blue              none
 #}}}
 # ts{{{
 typescriptBranch     orange            none
