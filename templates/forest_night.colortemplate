@@ -225,6 +225,10 @@ typescriptParens  -> Delimiter
 typescriptBraces  -> Delimiter
 typescriptEndColons -> typescriptBraces
 typescriptGlobalObjects orange         none
+typescriptLogicSymbols magenta         none
+typescriptOpSymbols -> Operator
+typescriptOperator   orange            none
+typescriptDomNodeConsts orange         none
 #}}}
 # coffee{{{
 coffeeParen       -> Delimiter
