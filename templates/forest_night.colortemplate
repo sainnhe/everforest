@@ -272,7 +272,8 @@ goDeclaration        orange            none
 goImport             orange            none
 goPackage            red               none
 goStatement          green             none
-goPredefinedIdentifiers orange         none
+goPredefinedIdentifiers yellow         none
+goUnsignedInts    -> Function
 #}}}
 # rust{{{
 rustKeyword          green             none
