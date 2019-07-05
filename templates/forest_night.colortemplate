@@ -255,6 +255,7 @@ javaScopeDecl        red               none
 javaLabel            orange            none
 javaVarArg           green             none
 javaParen         -> Delimiter
+javaAnnotation       orange            none
 #}}}
 # python{{{
 pythonExClass        orange            none
