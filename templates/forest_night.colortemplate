@@ -233,11 +233,14 @@ typescriptDomNodeConsts orange         none
 # coffee{{{
 coffeeParen       -> Delimiter
 coffeeCurly       -> Delimiter
+coffeeBracket     -> Delimiter
 coffeeCurlies        green             none
-coffeeSpecialOp      green             none
+coffeeSpecialOp      magenta           none
 coffeeExtendedOp     blue              none
-coffeeParens         green             none
+coffeeParens         white             none
 coffeeConstant       orange            none
+coffeeObjAssign      orange            none
+coffeeInterpDelim    green             none
 #}}}
 # java{{{
 javaScopeDecl        red               none
