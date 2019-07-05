@@ -460,7 +460,7 @@ MatchWordCur         none              none              underline
 # startify{{{
 StartifyBracket      green             none
 StartifyHeader       red               none
-StartifyNumber       orange            none
+StartifyNumber       yellow            none
 StartifyPath         green             none
 StartifySlash        blackgreen        none
 StartifySection      orange            none
