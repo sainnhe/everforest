@@ -418,8 +418,17 @@ elixirModuleDeclaration orange         none
 elixirKeyword        orange            none
 #}}}
 # ocaml{{{
-ocamlModule       -> Type
+ocamlModule          yellow            none
 ocamlModPath         green             none
+ocamlFullMod         yellow            none
+ocamlKeyword         orange            none
+ocamlArrow        -> Delimiter
+ocamlEqual        -> Operator
+ocamlModPreRHS    -> Operator
+ocamlKeyChar         blue              none
+ocamlConstructor     green             none
+ocamlStructEncl      red               none
+ocamlPpxEncl         magenta           none
 #}}}
 # fortran{{{
 fortranCall          red               none
