@@ -451,7 +451,15 @@ shStatement          red               none
 #}}}
 # zsh{{{
 zshPreProc           blackgreen        none
-zshDeref             green             none
+zshDeref             yellow            none
+zshSubst             yellow            none
+zshSubstDelim     -> Delimiter
+zshOption            orange            none
+zshTypes             orange            none
+zshKeyword        -> Keyword
+zshCommands          orange            none
+zshShortDeref        orange            none
+zshDollarVar         orange            none
 #}}}
 # fish{{{
 fishKeyword          red               none
