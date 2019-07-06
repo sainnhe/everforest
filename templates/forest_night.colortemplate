@@ -439,9 +439,15 @@ fortranIO            yellow            none
 #}}}
 # sh{{{
 shQuote              green             none
-shDeref              green             none
+shDeref              yellow            none
+shDerefSimple        yellow            none
+shDerefVar           orange            none
 shVariable           orange            none
 shOperator           blue              none
+shFunction           red               none
+shCmdSubRegion    -> Delimiter
+shCommandSub         orange            none
+shStatement          red               none
 #}}}
 # zsh{{{
 zshPreProc           blackgreen        none
