@@ -282,7 +282,7 @@ rustExistential   -> Keyword
 rustSuper         -> Keyword
 rustExternCrate   -> Keyword
 rustSelf             yellow            none
-rustSigil            green             none
+rustSigil            blue              none
 rustEnum             orange            none
 rustModPath          orange            none
 rustOperator      -> Delimiter
@@ -290,6 +290,8 @@ rustAttribute        red               none
 rustDerive           orange            none
 rustMacroVariable    orange            none
 rustPubScopeCrate    orange            none
+rustStructure        orange            none
+rustStorage          red               none
 #}}}
 # php{{{
 phpParent         -> Delimiter
