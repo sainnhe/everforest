@@ -311,11 +311,15 @@ phpOperator       -> Delimiter
 # csharp{{{
 csBraces          -> Delimiter
 csParens          -> Delimiter
-csUnspecifiedStatement red             none
+csUnspecifiedStatement orange          none
 csContextualStatement green            none
+csNew                orange            none
 csNewType            yellow            none
 csClass              red               none
 csEndColon           white             none
+csLogicSymbols       magenta           none
+csXmlComment      -> SpecialComment
+csXmlCommentLeader -> SpecialComment
 #}}}
 # fsharp{{{
 fsharpKeyword        orange            none
