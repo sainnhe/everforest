@@ -432,6 +432,10 @@ ocamlPpxEncl         magenta           none
 #}}}
 # fortran{{{
 fortranCall          red               none
+fortranUnitHeader    red               none
+fortranKeyword       orange            none
+fortranReadWrite     orange            none
+fortranIO            yellow            none
 #}}}
 # sh{{{
 shQuote              green             none
