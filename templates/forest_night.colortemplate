@@ -327,7 +327,11 @@ fsharpModifier       red               none
 fsharpModule         orange            none
 fsharpSymbol         green             none
 fsharpKeychar        blue              none
-fsharpOperator       green             none
+fsharpOperator       blue              none
+fsharpOption         yellow            none
+fsharpCoreClass      yellow            none
+fsharpAttribute      orange            none
+fsharpAttrib         red               none
 #}}}
 # ruby{{{
 rubyInclude          orange            none
