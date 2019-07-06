@@ -402,8 +402,9 @@ dUserLabel           red               none
 scalaInstanceDeclaration green         none
 scalaCapitalWord     green             none
 scalaAnnotation      red               none
-scalaSpecial         blue              none
+scalaSpecial      -> Special
 scalaKeywordModifier orange            none
+scalaSquareBracketsBrackets -> Delimiter
 #}}}
 # elixir{{{
 elixirAtom           green             none
