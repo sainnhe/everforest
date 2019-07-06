@@ -408,11 +408,14 @@ scalaSquareBracketsBrackets -> Delimiter
 #}}}
 # elixir{{{
 elixirAtom           green             none
-elixirInclude        red               none
-elixirAlias          orange            none
+elixirInclude        orange            none
+elixirAlias          yellow            none
 elixirOperator       blue              none
-elixirDefine      -> Type
-elixirPrivateDefine -> Type
+elixirDefine         red               none
+elixirPrivateDefine  red               none
+elixirVariable       orange            none
+elixirModuleDeclaration orange         none
+elixirKeyword        orange            none
 #}}}
 # ocaml{{{
 ocamlModule       -> Type
