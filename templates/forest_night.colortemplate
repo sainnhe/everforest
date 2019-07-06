@@ -460,6 +460,7 @@ zshKeyword        -> Keyword
 zshCommands          orange            none
 zshShortDeref        orange            none
 zshDollarVar         orange            none
+zshFunction          red               none
 #}}}
 # fish{{{
 fishKeyword          red               none
