@@ -466,6 +466,16 @@ fishKeyword          red               none
 fishStatement        orange            none
 fishIdentifier       yellow            none
 #}}}
+# vim{{{
+vimLet               red               none
+vimCommand           orange            none
+vimOption            yellow            none
+vimNotFunc           blue              none
+vimFunction          yellow            none
+vimFuncName          yellow            none
+vimMap               red               none
+vimMapModKey         orange            none
+#}}}
 # json{{{
 jsonKeyword          orange            none
 jsonQuote            white             none
