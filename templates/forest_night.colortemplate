@@ -167,9 +167,9 @@ htmlStatement        orange            none
 htmlTag              green             none
 #}}}
 # xml{{{
-xmlTag            -> htmlTag
-xmlTagName        -> htmlTagName
-xmlEndTag         -> htmlEndTag
+xmlTag               green             none
+xmlTagName           orange            none
+xmlEndTag            blue              none
 #}}}
 # css{{{
 cssClassName         orange            none
