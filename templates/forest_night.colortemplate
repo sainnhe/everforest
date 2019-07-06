@@ -297,14 +297,14 @@ rustStorage          red               none
 phpParent         -> Delimiter
 phpFunction       -> Function
 phpMethod            orange            none
-phpInclude           orange            none              bold
+phpInclude           orange            none
 phpKeyword           red               none
 phpClass             orange            none
 phpClassNamespaceSeparator yellow      none
 phpStaticClasses     yellow            none
-phpIdentifier        orange            none
+phpIdentifier        green             none
 phpIdentifierSimply  orange            none
-phpVarSelector       red               none
+phpVarSelector       blue              none
 phpMemberSelector -> Delimiter
 phpOperator       -> Delimiter
 #}}}
