@@ -464,7 +464,7 @@ zshDollarVar         orange            none
 # fish{{{
 fishKeyword          red               none
 fishStatement        orange            none
-fishIdentifier       green             none
+fishIdentifier       yellow            none
 #}}}
 # json{{{
 jsonKeyword          orange            none
