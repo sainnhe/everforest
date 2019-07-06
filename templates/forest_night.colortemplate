@@ -360,6 +360,13 @@ perlStatementInclude red               none
 perlStatementFiledesc orange           none
 perlStatementScalar  orange            none
 perlStatementList    yellow            none
+perlStatementFiles   orange            none
+perlStatementSocket  red               none
+perlStatementFlow    magenta           none
+perlStatementTime    yellow            none
+perlStatementRegexp  orange            none
+perlStringStartEnd -> Delimiter
+perlOperator         yellow            none
 perlFunction         red               none
 perlMethod           orange            none
 perlVarSimpleMemberName white          none
