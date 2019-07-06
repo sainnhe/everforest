@@ -390,10 +390,13 @@ luaFuncCall       -> Function
 # d{{{
 dTypedef             orange            none
 dScopeDecl           red               none
-dLabel               green             none
+dLabel               yellow            none
 dOperator            green             none
 dAnnotation          yellow            none
 dEnum                orange            none
+dStructure           orange            none
+dStorageClass        orange            none
+dUserLabel           red               none
 #}}}
 # scala{{{
 scalaInstanceDeclaration green         none
