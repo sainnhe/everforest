@@ -383,6 +383,9 @@ haskellDecl          red               none
 luaBraces         -> Delimiter
 luaFuncKeyword       red               none
 luaFuncArgName       white             none
+luaLocal             orange            none
+luaSpecialValue   -> Special
+luaFuncCall       -> Function
 #}}}
 # d{{{
 dTypedef             orange            none
