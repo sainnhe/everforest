@@ -334,11 +334,22 @@ fsharpAttribute      orange            none
 fsharpAttrib         red               none
 #}}}
 # ruby{{{
-rubyInclude          orange            none
+rubyInclude          red               none
 rubyControl          red               none
-rubyCapitalizedMethod orange           none              bold
 rubyDocumentation    blackgreen        none
 rubyPredefinedVariable green           none
+rubyConstant         orange            none
+rubyPseudoVariable   orange            none
+rubyInstanceVariable yellow            none
+rubyModule           red               none
+rubyModuleName       orange            none
+rubyClass            red               none
+rubyClassName        orange            none
+rubyDefine           orange            none
+rubyMethodName       yellow            none
+rubyCapitalizedMethod orange           none
+rubySymbol        -> Identifier
+rubyExceptionHandler2 red              none
 #}}}
 # perl{{{
 perlPackageDecl      orange            none
