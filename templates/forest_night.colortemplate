@@ -444,6 +444,17 @@ clojureFunc          yellow            none
 clojureDispatch      magenta           none
 clojureAnonArg       blue              none
 #}}}
+# erlang{{{
+erlangAttribute      red               none
+erlangLocalFuncCall  orange            none
+erlangLocalFuncRef   yellow            none
+erlangGlobalFuncCall yellow            none
+erlangType           red               none
+erlangMap            magenta           none
+erlangRecord         orange            none
+erlangVariable       white             none
+erlangAtom           green             none
+#}}}
 # sh{{{
 shQuote              green             none
 shDeref              yellow            none
