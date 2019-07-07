@@ -437,6 +437,13 @@ fortranKeyword       orange            none
 fortranReadWrite     orange            none
 fortranIO            yellow            none
 #}}}
+# clojure{{{
+clojureKeyword       orange            none
+clojureSpecial       orange            none
+clojureFunc          yellow            none
+clojureDispatch      magenta           none
+clojureAnonArg       blue              none
+#}}}
 # sh{{{
 shQuote              green             none
 shDeref              yellow            none
