@@ -455,6 +455,9 @@ erlangRecord         orange            none
 erlangVariable       white             none
 erlangAtom           green             none
 #}}}
+# julia{{{
+juliaBlKeyword       orange            none
+#}}}
 # sh{{{
 shQuote              green             none
 shDeref              yellow            none
