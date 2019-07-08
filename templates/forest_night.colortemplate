@@ -184,6 +184,12 @@ mkdBold           -> Comment
 mkdItalic         -> Comment
 mkdRule              magenta           none
 #}}}
+# rst{{{
+rstSections          red               none
+rstDirective         orange            none
+rstExplicitMarkup    blue              none
+rstStandaloneHyperlink green           none              underline
+#}}}
 # html{{{
 htmlStatement        orange            none
 htmlTag              green             none
