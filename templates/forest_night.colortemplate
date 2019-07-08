@@ -398,6 +398,14 @@ luaLocal             orange            none
 luaSpecialValue   -> Special
 luaFuncCall       -> Function
 #}}}
+# moonscript{{{
+moonKeyword          red               none
+moonFunction      -> Delimiter
+moonSpecialVar       orange            none
+moonInterpDelim      magenta           none
+moonLuaFunc          orange            none
+moonSpecialOp        magenta           none
+#}}}
 # d{{{
 dTypedef             orange            none
 dScopeDecl           red               none
