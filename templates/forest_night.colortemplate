@@ -162,9 +162,34 @@ Noise                white             none
 # }}}
 # Additional highlight groups {{{
 # Filetypes
+# markdown{{{
+markdownLinkText     yellow            none
+markdownUrl          green             none              underline
+markdownListMarker   blue              none
+markdownCode         green             none
+markdownId           orange            none
+markdownIdDeclaration orange           none
+markdownBoldDelimiter -> Comment
+markdownItalicDelimiter -> Comment
+markdownBold         none              none              bold
+markdownItalic       none              none              italic
+markdownRule         magenta           none
+mkdListItem          blue              none
+mkdInlineURL         yellow            none              underline
+mkdLink              yellow            none
+mkdURL               green             none              underline
+mkdCodeDelimiter  -> Delimiter
+mkdID                orange            none
+mkdBold           -> Comment
+mkdItalic         -> Comment
+mkdRule              magenta           none
+#}}}
 # html{{{
 htmlStatement        orange            none
 htmlTag              green             none
+htmlLink             none              none              underline
+htmlBold             none              none              bold
+htmlItalic           none              none              italic
 #}}}
 # xml{{{
 xmlTag               green             none
