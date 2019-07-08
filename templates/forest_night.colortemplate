@@ -256,6 +256,11 @@ coffeeConstant       orange            none
 coffeeObjAssign      orange            none
 coffeeInterpDelim    green             none
 #}}}
+# purescript{{{
+purescriptModuleName orange            none
+purescriptModuleParams green           none
+purescriptOperatorTypeSig magenta      none
+#}}}
 # java{{{
 javaScopeDecl        red               none
 javaLabel            orange            none
