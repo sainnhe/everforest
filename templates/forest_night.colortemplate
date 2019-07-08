@@ -333,6 +333,11 @@ fsharpCoreClass      yellow            none
 fsharpAttribute      orange            none
 fsharpAttrib         red               none
 #}}}
+# swift{{{
+swiftKeywords        orange            none
+swiftMethod          red               none
+swiftProperty        green             none
+#}}}
 # ruby{{{
 rubyInclude          red               none
 rubyControl          red               none
