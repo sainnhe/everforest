@@ -536,6 +536,10 @@ tomlTable            red               none
 tomlTableArray       red               none
 tomlKey              orange            none
 #}}}
+# git{{{
+gitconfigSection     orange            none
+gitcommitBlank       orange            none
+#}}}
 # diff{{{
 diffAdded            green             none
 diffRemoved          red               none
