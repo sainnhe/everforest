@@ -1,0 +1,37 @@
+! Author:     Sainnhepark
+! Email:      sainnhe@gmail.com
+! URL:        https://github.com/sainnhe/vim-color-forest-night/
+! License:    MIT && Anti-996
+
+#define white #ffebc3
+#define black #3c4c55
+#define grey #7f8f9f
+#define red #fd8489
+#define green #a9dd9d
+#define orange #f0aa8a
+#define yellow #eed094
+#define blue #bdd0e5
+#define magenta #daccf0
+
+*.foreground:   white
+*.background:   black
+*.cursorColor:  white
+*fading: 35
+*fadeColor: grey
+
+*.color0: grey
+*.color1: red
+*.color2: green
+*.color3: orange
+*.color4: blue
+*.color5: magenta
+*.color6: green
+*.color7: white
+*.color8: grey
+*.color9: red
+*.color10: green
+*.color11: yellow
+*.color12: blue
+*.color13: magenta
+*.color14: green
+*.color15: white

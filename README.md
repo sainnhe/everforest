@@ -98,6 +98,10 @@ Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8
 - [Simple Terminal](./st/README.md)
 - [Tilix](./tilix/README.md)
 
+### Xresources
+
+[README.md](./xresources/README.md)
+
 ## FAQ
 
 **Q: It doesn't work as expected.**
