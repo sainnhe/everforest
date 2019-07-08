@@ -651,6 +651,14 @@ NERDTreeCWD          blackgreen        none
 NERDTreeLinkFile     blackgreen        none
 NERDTreeLinkTarget   green             none
 #}}}
+# tagbar{{{
+TagbarKind           orange            none
+TagbarVisibilityPublic blue            none
+TagbarVisibilityPrivate magenta        none
+TagbarNestedKind     green             none
+TagbarSignature      green             none
+TagbarPseudoID       magenta           none
+#}}}
 # vim-matchup{{{
 MatchParenCur        none              none              bold
 MatchWord            none              none              underline
