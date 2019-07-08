@@ -190,6 +190,17 @@ rstDirective         orange            none
 rstExplicitMarkup    blue              none
 rstStandaloneHyperlink green           none              underline
 #}}}
+# tex{{{
+texStatement         green             none
+texBeginEnd          orange            none
+texDefCmd            orange            none
+texDefName           yellow            none
+texSection           red               none
+texDocType           orange            none
+texOnlyMath          magenta           none
+texNewCmd            red               none
+texCmdName           orange            none
+#}}}
 # html{{{
 htmlStatement        orange            none
 htmlTag              green             none
