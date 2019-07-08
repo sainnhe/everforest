@@ -6,13 +6,30 @@
 
 ## Installation
 
-Suppose you are using [vim-plug](https://github.com/junegunn/vim-plug):
+### Via Plugin Manager
+
+Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
 ```vim
 Plug 'sainnhe/vim-color-forest-night'
 ```
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
+
+### Manually
+
+1. Clone this repository.
+2. Copy `/path/to/vim-color-forest-night/colors/forest-night.vim` to `~/.vim/colors/forest-night.vim`
+3. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/vim-color-forest-night/autoload/airline/themes/forest_night.vim` to `~/.vim/autoload/airline/themes/forest_night.vim`
+4. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/vim-color-forest-night/autoload/lightline/colorscheme/forest_night.vim` to `~/.vim/autoload/lightline/colorscheme/forest_night.vim`
+
+### AUR
+
+There are some packages available for Arch Linux users in AUR:
+
+- [vim-colorscheme-forest-night-git](https://aur.archlinux.org/packages/vim-colorscheme-forest-night-git/)
+- [vim-airline-forest-night-git](https://aur.archlinux.org/packages/vim-airline-forest-night-git/)
+- [vim-lightline-forest-night-git](https://aur.archlinux.org/packages/vim-lightline-forest-night-git/)
 
 ## Usage
 
