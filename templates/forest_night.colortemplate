@@ -551,6 +551,16 @@ diffLine          -> Comment
 diffIndexLine        yellow            none
 diffSubname          orange            none
 #}}}
+# help{{{
+helpHyperTextEntry   red               none
+helpHyperTextJump    blue              none
+helpSectionDelim  -> Comment
+helpHeadline         orange            none
+helpURL              blue              none              underline
+helpExample          green             none
+helpCommand          green             none
+helpHeader           orange            none
+#}}}
 
 # Plugins
 # ale{{{
