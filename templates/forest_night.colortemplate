@@ -536,6 +536,17 @@ tomlTable            red               none
 tomlTableArray       red               none
 tomlKey              orange            none
 #}}}
+# diff{{{
+diffAdded            green             none
+diffRemoved          red               none
+diffChanged          orange            none
+diffOldFile          blue              none
+diffNewFile          magenta           none
+diffFile             green             none
+diffLine          -> Comment
+diffIndexLine        yellow            none
+diffSubname          orange            none
+#}}}
 
 # Plugins
 # ale{{{
