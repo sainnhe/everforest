@@ -199,6 +199,12 @@ lessVariable      -> Identifier
 lessClass            orange            none
 #}}}
 # js{{{
+javaScriptBraces  -> Delimiter
+javaScriptOperator   orange            none
+javaScriptNull       yellow            none
+javaScriptGlobal     red               none
+javaScriptMessage    blue              none
+javaScriptMember     yellow            none
 jsGlobalNodeObjects  red               none
 jsFunction        -> Keyword
 jsParens          -> Delimiter
