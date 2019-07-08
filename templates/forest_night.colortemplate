@@ -482,6 +482,11 @@ erlangAtom           green             none
 # julia{{{
 juliaBlKeyword       orange            none
 #}}}
+# lisp{{{
+lispFunc             orange            none
+lispDecl             red               none
+lispVar              yellow            none
+#}}}
 # sh{{{
 shQuote              green             none
 shDeref              yellow            none
