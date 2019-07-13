@@ -80,7 +80,7 @@ Variant: gui 256 8
 # UI
 ColorColumn          fg                darkgrey
 Conceal              greyer            none
-Cursor               white             dark
+Cursor               none              none              reverse
 CursorColumn         none              dark
 CursorLine           none              dark
 CursorLineNr         greyer            grey
