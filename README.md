@@ -102,6 +102,11 @@ Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8
 
 [README.md](./xresources/README.md)
 
+## Customization
+
+- `g:forest_night_use_italic`: if `0`, do not use italic; if `1`, use italic. Default: `1`
+- `g:forest_night_transp_bg`: if `1`, use terminal background color; if `0`, use original background color of forest-night. Default: `0`
+
 ## FAQ
 
 **Q: It doesn't work as expected.**

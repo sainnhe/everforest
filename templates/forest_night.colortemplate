@@ -12,10 +12,6 @@ License:     MIT && Anti-996
 Option Prefix: dark
 # }}}
 
-# Documentation {{{
-Include: _help.colortemplate
-# }}}
-
 # Common linked groups {{{
 QuickFixLine      -> Search
 StatusLineTerm    -> StatusLine
@@ -65,9 +61,9 @@ Term colors: greyer red green yellow blue magenta green white
 
 # Default highlight groups {{{
 Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+#if get(g:, 'forest_night_transp_bg', 0) && !has('gui_running')
 Variant: 256 8
-#if get(g:, '@optionprefix_transp_bg', 0)
+#if get(g:, 'forest_night_transp_bg', 0)
 Variant: gui 256 8
     Normal           white             none
     Terminal         white             none
@@ -97,7 +93,6 @@ WarningMsg           orange            grey
 ModeMsg              black             green
 MoreMsg              white             grey
 FoldColumn           white             grey
-Folded               white             grey              italic
 IncSearch            none              darkred           underline
 Search               none              darkred           underline
 NonText              greyer            none
@@ -119,7 +114,6 @@ StatusLineNC         white             dark
 WildMenu             dark              white
 VertSplit            grey              none
 Visual               none              darkred
-VisualNOS            none              darkred           italic
 MatchParen           none              none              bold
 
 # Syntax
@@ -147,9 +141,19 @@ Delimiter            blue              none
 Operator             blue              none
 Conditional          magenta           none
 Tag                  magenta           none
-Todo                 magenta           none              italic
-Comment              greyer            none              italic
-SpecialComment       blackgreen        none              italic
+#if get(g:, 'forest_night_use_italic', 1)
+    Todo                 magenta           none              italic
+    Comment              greyer            none              italic
+    SpecialComment       blackgreen        none              italic
+    Folded               white             grey              italic
+    VisualNOS            none              darkred           italic
+#else
+    Todo                 magenta           none
+    Comment              greyer            none
+    SpecialComment       blackgreen        none
+    Folded               white             grey
+    VisualNOS            none              darkred
+#endif
 Ignore               greyer            none
 Underlined           none              none              underline
 # See `:help CursorIM`
