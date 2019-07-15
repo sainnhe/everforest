@@ -8,5 +8,3 @@
 	- `patch -Np1 < */path/to/st-forest-night.diff*`
 4. Compile.
 	- `sudo make clean install`
-
-Similarly for forest-dusk.
