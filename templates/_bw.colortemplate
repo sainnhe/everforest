@@ -3,69 +3,66 @@
 # Template for black & white terminals
 Variant: 2
 
-Color: unused #000000 0 0
-
 # Default highlight groups {{{
-# Group              Unused   Unused   term
-Normal               unused unused
-ColorColumn          unused unused reverse
-Conceal              unused unused
-Cursor               unused unused
-CursorColumn         unused unused reverse
-CursorLine           unused unused underline
-CursorLineNr         unused unused reverse,italic,bold,underline
-DiffAdd              unused unused reverse,underline
-DiffChange           unused unused reverse,underline
-DiffDelete           unused unused reverse,underline
-DiffText             unused unused bold,reverse,underline
-Directory            unused unused
-EndOfBuffer          unused unused
-ErrorMsg             unused unused bold,reverse,italic
-FoldColumn           unused unused reverse
-Folded               unused unused italic,reverse,underline
-IncSearch            unused unused reverse,bold,italic
-LineNr               unused unused reverse
-MatchParen           unused unused bold,underline
-ModeMsg              unused unused
-MoreMsg              unused unused
-NonText              unused unused
-Pmenu                unused unused reverse
-PmenuSbar            unused unused
-PmenuSel             unused unused
-PmenuThumb           unused unused
-Question             unused unused standout
-Search               unused unused underline,italic
-SignColumn           unused unused reverse
-SpecialKey           unused unused bold
-SpellBad             unused unused underline,italic
-SpellCap             unused unused underline,italic
-SpellLocal           unused unused underline,italic
-SpellRare            unused unused underline,italic
-StatusLine           unused unused reverse,bold
-StatusLineNC         unused unused reverse
-TabLine              unused unused reverse,underline,italic
-TabLineFill          unused unused reverse,underline
-TabLineSel           unused unused bold
-Title                unused unused bold
-VertSplit            unused unused reverse
-Visual               unused unused reverse
-VisualNOS            unused unused
-WarningMsg           unused unused standout
-WildMenu             unused unused bold
+# Group              Unused Unused  Term attributes
+Normal               omit   omit
+ColorColumn          omit   omit    reverse
+Conceal              omit   omit
+Cursor               omit   omit
+CursorColumn         omit   omit    reverse
+CursorLine           omit   omit    underline
+CursorLineNr         omit   omit    reverse,italic,bold,underline
+DiffAdd              omit   omit    reverse,underline
+DiffChange           omit   omit    reverse,underline
+DiffDelete           omit   omit    reverse,underline
+DiffText             omit   omit    bold,reverse,underline
+Directory            omit   omit
+EndOfBuffer          omit   omit
+ErrorMsg             omit   omit    bold,reverse,italic
+FoldColumn           omit   omit    reverse
+Folded               omit   omit    italic,reverse,underline
+IncSearch            omit   omit    reverse,bold,italic
+LineNr               omit   omit    reverse
+MatchParen           omit   omit    bold,underline
+ModeMsg              omit   omit
+MoreMsg              omit   omit
+NonText              omit   omit
+Pmenu                omit   omit    reverse
+PmenuSbar            omit   omit
+PmenuSel             omit   omit
+PmenuThumb           omit   omit
+Question             omit   omit    standout
+Search               omit   omit    underline,italic
+SignColumn           omit   omit    reverse
+SpecialKey           omit   omit    bold
+SpellBad             omit   omit    underline,italic
+SpellCap             omit   omit    underline,italic
+SpellLocal           omit   omit    underline,italic
+SpellRare            omit   omit    underline,italic
+StatusLine           omit   omit    reverse,bold
+StatusLineNC         omit   omit    reverse
+TabLine              omit   omit    reverse,underline,italic
+TabLineFill          omit   omit    reverse,underline
+TabLineSel           omit   omit    bold
+Title                omit   omit    bold
+VertSplit            omit   omit    reverse
+Visual               omit   omit    reverse
+VisualNOS            omit   omit
+WarningMsg           omit   omit    standout
+WildMenu             omit   omit    bold
 # Other conventional group names (see `:help group-name`)
-Comment              unused unused italic
-Constant             unused unused bold,italic
-Error                unused unused reverse
-Identifier           unused unused italic
-Ignore               unused unused
-PreProc              unused unused italic
-Special              unused unused bold,italic
-Statement            unused unused bold
-Todo                 unused unused bold,underline
-Type                 unused unused bold
-Underlined           unused unused underline
-CursorIM             unused unused
-ToolbarLine          unused unused reverse
-ToolbarButton        unused unused bold,reverse
+Comment              omit   omit    italic
+Constant             omit   omit    bold,italic
+Error                omit   omit    reverse
+Identifier           omit   omit    italic
+Ignore               omit   omit
+PreProc              omit   omit    italic
+Special              omit   omit    bold,italic
+Statement            omit   omit    bold
+Todo                 omit   omit    bold,underline
+Type                 omit   omit    bold
+Underlined           omit   omit    underline
+CursorIM             omit   omit
+ToolbarLine          omit   omit    reverse
+ToolbarButton        omit   omit    bold,reverse
 # }}}
-
