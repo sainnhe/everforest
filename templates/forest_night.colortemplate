@@ -1,4 +1,5 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
+#let s:italics = get(g:, 'forest_night_use_italic', 1) && s:italics
 
 # ":help fold-marker" to get better display of this file
 # Information {{{
@@ -93,6 +94,7 @@ WarningMsg           orange            grey
 ModeMsg              black             green
 MoreMsg              white             grey
 FoldColumn           white             grey
+Folded               white             grey              italic
 IncSearch            none              darkred           underline
 Search               none              darkred           underline
 NonText              greyer            none
@@ -114,9 +116,11 @@ StatusLineNC         white             dark
 WildMenu             dark              white
 VertSplit            grey              none
 Visual               none              darkred
+VisualNOS            none              darkred           italic
 MatchParen           none              none              bold
 
 # Syntax
+Todo                 magenta           none              italic
 PreProc              red               none
 Define               red               none
 Keyword              red               none
@@ -141,19 +145,8 @@ Delimiter            blue              none
 Operator             blue              none
 Conditional          magenta           none
 Tag                  magenta           none
-#if get(g:, 'forest_night_use_italic', 1)
-    Todo                 magenta           none              italic
-    Comment              greyer            none              italic
-    SpecialComment       blackgreen        none              italic
-    Folded               white             grey              italic
-    VisualNOS            none              darkred           italic
-#else
-    Todo                 magenta           none
-    Comment              greyer            none
-    SpecialComment       blackgreen        none
-    Folded               white             grey
-    VisualNOS            none              darkred
-#endif
+Comment              greyer            none              italic
+SpecialComment       blackgreen        none              italic
 Ignore               greyer            none
 Underlined           none              none              underline
 # See `:help CursorIM`
