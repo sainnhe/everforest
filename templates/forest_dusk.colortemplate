@@ -1,0 +1,692 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# ":help fold-marker" to get better display of this file
+# Information {{{
+Full name:   Forest Dusk
+Short name:  forest_dusk
+Author:      Sainnhepark <sainnhe@gmail.com>
+Maintainer:  Sainnhepark <sainnhe@gmail.com>
+Website:     https://github.com/sainnhe/vim-color-forest-night/
+Description: 🌲 Comfortable & Pleasant VIM Color Scheme
+License:     MIT && Anti-996
+Option Prefix: dark
+# }}}
+
+# Common linked groups {{{
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+Debug             -> Special
+Include           -> PreProc
+Macro             -> PreProc
+Repeat            -> Statement
+SpecialChar       -> Special
+Structure         -> Type
+Typedef           -> Type
+# See `:help lCursor`
+lCursor           -> Cursor
+# }}}
+
+Background: dark
+
+# Color palette {{{
+# Color name         GUI               Base256           Base16
+Color: white         #fdd89a           223               White
+Color: black         #3c4542           239               Black
+Color: dark          #4b514f           235               Black
+Color: darkgrey      #535a5a           238               DarkGrey
+Color: darkgreyalt   #5c5f57           238               DarkGrey
+Color: grey          #606357           244               Grey
+Color: greyalt       #636560           244               Grey
+Color: greyer        #7e837c           245               Grey
+Color: red           #fc796b           210               Red
+Color: orange        #ed9c6a           216               DarkYellow
+Color: yellow        #edc074           222               Yellow
+Color: green         #a8cb79           150               Green
+Color: blackgreen    #83986f           65                DarkGreen
+Color: blue          #bcbfb4           153               Blue
+Color: magenta       #d8bbbd           189               Magenta
+Color: darkred       #6f4246           95                DarkRed
+Color: darkgreen     #536049           65                DarkGreen
+Color: darkblue      #435255           67                DarkBlue
+Color: darkorange    #613d13           136               DarkYellow
+Color: lightbrown    #b29668           247               Brown
+Color: brown         #90765a           246               Brown
+Color: darkbrown     #2c281e           237               Black
+# }}}
+# Terminal colors {{{
+Term colors: greyer red green orange blue magenta green white
+Term colors: greyer red green yellow blue magenta green white
+# }}}
+
+# Default highlight groups {{{
+Variant: gui
+#if get(g:, 'forest_night_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, 'forest_night_transp_bg', 0)
+Variant: gui 256 8
+    Normal           white             none
+    Terminal         white             none
+#else
+    Normal           white             black
+    Terminal         white             black
+#endif
+
+# Group              Foreground        Background        Attributes
+# UI
+ColorColumn          fg                darkgrey
+Conceal              greyer            none
+Cursor               none              none              reverse
+CursorColumn         none              dark
+CursorLine           none              dark
+CursorLineNr         greyer            grey
+LineNr               black             grey
+SignColumn           none              grey
+DiffAdd              none              darkgreen
+DiffChange           none              darkorange
+DiffDelete           none              darkred
+DiffText             none              darkblue
+Directory            green             none
+EndOfBuffer          darkgrey          none
+ErrorMsg             red               grey
+WarningMsg           orange            grey
+ModeMsg              black             green
+MoreMsg              white             grey
+FoldColumn           white             grey
+IncSearch            none              darkred           underline
+Search               none              darkred           underline
+NonText              greyer            none
+Pmenu                white             grey
+PmenuSbar            none              grey
+PmenuSel             white             grey              reverse
+PmenuThumb           none              white
+Question             blue              none
+SpecialKey           darkgrey          none
+SpellBad             red               none              s=red
+SpellCap             orange            none              s=orange
+SpellLocal           blue              none              s=blue
+SpellRare            magenta           none              s=magenta
+TabLine              white             grey
+TabLineFill          white             dark
+TabLineSel           dark              green
+StatusLine           white             grey
+StatusLineNC         white             dark
+WildMenu             dark              white
+VertSplit            grey              none
+Visual               none              darkred
+MatchParen           none              none              bold
+
+# Syntax
+PreProc              red               none
+Define               red               none
+Keyword              red               none
+Exception            red               none
+Error                red               none
+PreCondit            orange            none
+Title                orange            none
+Function             orange            none
+Label                orange            none
+StorageClass         orange            none
+Type                 yellow            none
+Special              yellow            none
+Constant             yellow            none
+Identifier           green             none
+String               green             none
+Character            green             none
+Number               green             none
+Float                green             none
+Boolean              green             none
+Statement            blue              none
+Delimiter            blue              none
+Operator             blue              none
+Conditional          magenta           none
+Tag                  magenta           none
+#if get(g:, 'forest_night_use_italic', 1)
+    Todo                 magenta           none              italic
+    Comment              greyer            none              italic
+    SpecialComment       blackgreen        none              italic
+    Folded               white             grey              italic
+    VisualNOS            none              darkred           italic
+#else
+    Todo                 magenta           none
+    Comment              greyer            none
+    SpecialComment       blackgreen        none
+    Folded               white             grey
+    VisualNOS            none              darkred
+#endif
+Ignore               greyer            none
+Underlined           none              none              underline
+# See `:help CursorIM`
+CursorIM             none              fg
+# See `:help window-toolbar`
+ToolbarLine          white             grey
+ToolbarButton        black             white             bold
+# Other
+Noise                white             none
+# }}}
+# Additional highlight groups {{{
+# Filetypes
+# markdown{{{
+markdownLinkText     yellow            none
+markdownUrl          green             none              underline
+markdownListMarker   blue              none
+markdownCode         green             none
+markdownId           orange            none
+markdownIdDeclaration orange           none
+markdownBoldDelimiter -> Comment
+markdownItalicDelimiter -> Comment
+markdownBold         none              none              bold
+markdownItalic       none              none              italic
+markdownRule         magenta           none
+mkdListItem          blue              none
+mkdInlineURL         yellow            none              underline
+mkdLink              yellow            none
+mkdURL               green             none              underline
+mkdCodeDelimiter  -> Delimiter
+mkdID                orange            none
+mkdBold           -> Comment
+mkdItalic         -> Comment
+mkdRule              magenta           none
+#}}}
+# rst{{{
+rstSections          red               none
+rstDirective         orange            none
+rstExplicitMarkup    blue              none
+rstStandaloneHyperlink green           none              underline
+#}}}
+# tex{{{
+texStatement         green             none
+texBeginEnd          orange            none
+texDefCmd            orange            none
+texDefName           yellow            none
+texSection           red               none
+texDocType           orange            none
+texOnlyMath          magenta           none
+texNewCmd            red               none
+texCmdName           orange            none
+#}}}
+# html{{{
+htmlStatement        orange            none
+htmlTag              green             none
+htmlLink             none              none              underline
+htmlBold             none              none              bold
+htmlItalic           none              none              italic
+#}}}
+# xml{{{
+xmlTag               green             none
+xmlTagName           orange            none
+xmlEndTag            blue              none
+#}}}
+# css{{{
+cssClassName         orange            none
+cssClassNameDot   -> cssClassName
+cssProp              white             none
+cssBraces         -> Delimiter
+cssSelectorOp     -> Delimiter
+cssSelectorOp2    -> Delimiter
+cssAtRule            red               none
+cssTagName           orange            none
+cssAttrComma         white             none
+cssUnitDecorators    blue              none
+cssColor             white             none
+cssImportant         red               none
+#}}}
+# sass{{{
+sassVariable      -> Identifier
+sassClass            orange            none
+sassClassChar        orange            none
+sassCharset          green             none
+sassInclude          red               none
+scssSelectorName     orange            none
+scssSelectorChar  -> scssSelectorName
+#}}}
+# less{{{
+lessVariable      -> Identifier
+lessClass            orange            none
+#}}}
+# js{{{
+javaScriptBraces  -> Delimiter
+javaScriptOperator   orange            none
+javaScriptNull       yellow            none
+javaScriptGlobal     red               none
+javaScriptMessage    blue              none
+javaScriptMember     yellow            none
+jsGlobalNodeObjects  red               none
+jsFunction        -> Keyword
+jsParens          -> Delimiter
+jsBraces          -> Delimiter
+jsBrackets        -> Delimiter
+jsFuncBraces      -> Delimiter
+jsFuncParens      -> Delimiter
+jsObjectBraces    -> Delimiter
+jsObjectParens    -> Delimiter
+jsExceptions      -> Exception
+jsObjectValue        green             none
+jsObjectProp         yellow            none
+jsBlockLabel         yellow            none
+jsOperatorKeyword    orange            none
+jsGlobalObjects      orange            none
+jsUndefined          yellow            none
+jsThis               orange            none
+jsArrowFunction      blue              none
+#}}}
+# ts{{{
+typescriptBranch     orange            none
+typescriptExceptions -> Exception
+typescriptParens  -> Delimiter
+typescriptBraces  -> Delimiter
+typescriptEndColons -> typescriptBraces
+typescriptGlobalObjects orange         none
+typescriptLogicSymbols magenta         none
+typescriptOpSymbols -> Operator
+typescriptOperator   orange            none
+typescriptDomNodeConsts orange         none
+#}}}
+# dart{{{
+dartCoreClasses   -> Function
+dartTypedef          orange            none
+dartOperator         blue              none
+dartKeyword          red               none
+dartCoreClasses      yellow            none
+dartInterpolation    orange            none
+#}}}
+# coffee{{{
+coffeeParen       -> Delimiter
+coffeeCurly       -> Delimiter
+coffeeBracket     -> Delimiter
+coffeeCurlies        green             none
+coffeeSpecialOp      magenta           none
+coffeeExtendedOp     blue              none
+coffeeParens         white             none
+coffeeConstant       orange            none
+coffeeObjAssign      orange            none
+coffeeInterpDelim    green             none
+#}}}
+# purescript{{{
+purescriptModuleName orange            none
+purescriptModuleParams green           none
+purescriptOperatorTypeSig magenta      none
+#}}}
+# java{{{
+javaScopeDecl        red               none
+javaLabel            orange            none
+javaVarArg           green             none
+javaParen         -> Delimiter
+javaAnnotation       orange            none
+#}}}
+# kotlin{{{
+ktAnnotation         orange            none
+ktStructure          red               none
+ktKeyword            green             none
+ktArrow              magenta           none
+#}}}
+# python{{{
+pythonExClass        yellow            none
+pythonBoolean        green             none
+pythonOperator       green             none
+pythonClassVar       yellow            none
+pythonDecorator      red               none
+pythonStatement   -> Keyword
+pythonBuiltinFunc    yellow            none
+pythonDottedName     orange            none
+#}}}
+# go{{{
+goDeclaration        orange            none
+goImport             orange            none
+goPackage            red               none
+goStatement          green             none
+goPredefinedIdentifiers yellow         none
+goUnsignedInts    -> Function
+#}}}
+# rust{{{
+rustKeyword          green             none
+rustDynKeyword    -> Keyword 
+rustExistential   -> Keyword
+rustSuper         -> Keyword
+rustExternCrate   -> Keyword
+rustSelf             yellow            none
+rustSigil            blue              none
+rustEnum             orange            none
+rustModPath          orange            none
+rustOperator      -> Delimiter
+rustAttribute        red               none
+rustDerive           orange            none
+rustMacroVariable    orange            none
+rustPubScopeCrate    orange            none
+rustStructure        orange            none
+rustStorage          red               none
+#}}}
+# php{{{
+phpParent         -> Delimiter
+phpFunction       -> Function
+phpMethod            orange            none
+phpInclude           orange            none
+phpKeyword           red               none
+phpClass             orange            none
+phpClassNamespaceSeparator yellow      none
+phpStaticClasses     yellow            none
+phpIdentifier        green             none
+phpIdentifierSimply  orange            none
+phpVarSelector       blue              none
+phpMemberSelector -> Delimiter
+phpOperator       -> Delimiter
+#}}}
+# csharp{{{
+csBraces          -> Delimiter
+csParens          -> Delimiter
+csUnspecifiedStatement orange          none
+csContextualStatement green            none
+csNew                orange            none
+csNewType            yellow            none
+csClass              red               none
+csEndColon           white             none
+csLogicSymbols       magenta           none
+csXmlComment      -> SpecialComment
+csXmlCommentLeader -> SpecialComment
+#}}}
+# fsharp{{{
+fsharpKeyword        orange            none
+fsharpModifier       red               none
+fsharpModule         orange            none
+fsharpSymbol         green             none
+fsharpKeychar        blue              none
+fsharpOperator       blue              none
+fsharpOption         yellow            none
+fsharpCoreClass      yellow            none
+fsharpAttribute      orange            none
+fsharpAttrib         red               none
+#}}}
+# swift{{{
+swiftKeywords        orange            none
+swiftMethod          red               none
+swiftProperty        green             none
+#}}}
+# ruby{{{
+rubyInclude          red               none
+rubyControl          red               none
+rubyDocumentation    blackgreen        none
+rubyPredefinedVariable green           none
+rubyConstant         orange            none
+rubyPseudoVariable   orange            none
+rubyInstanceVariable yellow            none
+rubyModule           red               none
+rubyModuleName       orange            none
+rubyClass            red               none
+rubyClassName        orange            none
+rubyDefine           orange            none
+rubyMethodName       yellow            none
+rubyCapitalizedMethod orange           none
+rubySymbol        -> Identifier
+rubyExceptionHandler2 red              none
+#}}}
+# perl{{{
+perlPackageDecl      orange            none
+perlStatementPackage red               none
+perlStatementInclude orange            none
+perlStatementStorage red               none
+perlStatementInclude red               none
+perlStatementFiledesc orange           none
+perlStatementScalar  orange            none
+perlStatementList    yellow            none
+perlStatementFiles   orange            none
+perlStatementSocket  red               none
+perlStatementFlow    magenta           none
+perlStatementTime    yellow            none
+perlStatementRegexp  orange            none
+perlStringStartEnd -> Delimiter
+perlOperator         yellow            none
+perlFunction         red               none
+perlMethod           orange            none
+perlVarSimpleMemberName white          none
+#}}}
+# haskell{{{
+haskellImportKeywords red              none
+haskellType          orange            none
+haskellWhere         blue              none
+haskellOperators     green             none
+haskellDeclKeyword -> Type
+haskellDecl          red               none
+#}}}
+# lua{{{
+luaBraces         -> Delimiter
+luaFuncKeyword       red               none
+luaFuncArgName       white             none
+luaLocal             orange            none
+luaSpecialValue   -> Special
+luaFuncCall       -> Function
+#}}}
+# moonscript{{{
+moonKeyword          red               none
+moonFunction      -> Delimiter
+moonSpecialVar       orange            none
+moonInterpDelim      magenta           none
+moonLuaFunc          orange            none
+moonSpecialOp        magenta           none
+#}}}
+# d{{{
+dTypedef             orange            none
+dScopeDecl           red               none
+dLabel               yellow            none
+dOperator            green             none
+dAnnotation          yellow            none
+dEnum                orange            none
+dStructure           orange            none
+dStorageClass        orange            none
+dUserLabel           red               none
+#}}}
+# scala{{{
+scalaInstanceDeclaration green         none
+scalaCapitalWord     green             none
+scalaAnnotation      red               none
+scalaSpecial      -> Special
+scalaKeywordModifier orange            none
+scalaSquareBracketsBrackets -> Delimiter
+#}}}
+# elixir{{{
+elixirAtom           green             none
+elixirInclude        orange            none
+elixirAlias          yellow            none
+elixirOperator       blue              none
+elixirDefine         red               none
+elixirPrivateDefine  red               none
+elixirVariable       orange            none
+elixirModuleDeclaration orange         none
+elixirKeyword        orange            none
+#}}}
+# ocaml{{{
+ocamlModule          yellow            none
+ocamlModPath         green             none
+ocamlFullMod         yellow            none
+ocamlKeyword         orange            none
+ocamlArrow        -> Delimiter
+ocamlEqual        -> Operator
+ocamlModPreRHS    -> Operator
+ocamlKeyChar         blue              none
+ocamlConstructor     green             none
+ocamlStructEncl      red               none
+ocamlPpxEncl         magenta           none
+#}}}
+# fortran{{{
+fortranCall          red               none
+fortranUnitHeader    red               none
+fortranKeyword       orange            none
+fortranReadWrite     orange            none
+fortranIO            yellow            none
+#}}}
+# clojure{{{
+clojureKeyword       orange            none
+clojureSpecial       orange            none
+clojureFunc          yellow            none
+clojureDispatch      magenta           none
+clojureAnonArg       blue              none
+#}}}
+# erlang{{{
+erlangAttribute      red               none
+erlangLocalFuncCall  orange            none
+erlangLocalFuncRef   yellow            none
+erlangGlobalFuncCall yellow            none
+erlangType           red               none
+erlangMap            magenta           none
+erlangRecord         orange            none
+erlangVariable       white             none
+erlangAtom           green             none
+#}}}
+# julia{{{
+juliaBlKeyword       orange            none
+#}}}
+# lisp{{{
+lispFunc             orange            none
+lispDecl             red               none
+lispVar              yellow            none
+#}}}
+# sh{{{
+shQuote              green             none
+shDeref              yellow            none
+shDerefSimple        yellow            none
+shDerefVar           orange            none
+shVariable           orange            none
+shOperator           blue              none
+shFunction           red               none
+shCmdSubRegion    -> Delimiter
+shCommandSub         orange            none
+shStatement          red               none
+#}}}
+# zsh{{{
+zshPreProc           blackgreen        none
+zshDeref             yellow            none
+zshSubst             yellow            none
+zshSubstDelim     -> Delimiter
+zshOption            orange            none
+zshTypes             orange            none
+zshKeyword        -> Keyword
+zshCommands          orange            none
+zshShortDeref        orange            none
+zshDollarVar         orange            none
+zshFunction          red               none
+#}}}
+# fish{{{
+fishKeyword          red               none
+fishStatement        orange            none
+fishIdentifier       yellow            none
+#}}}
+# vim{{{
+vimLet               red               none
+vimCommand           orange            none
+vimOption            yellow            none
+vimNotFunc           blue              none
+vimFunction          yellow            none
+vimFuncName          yellow            none
+vimMap               red               none
+vimMapModKey         orange            none
+#}}}
+# json{{{
+jsonKeyword          orange            none
+jsonQuote            white             none
+jsonBoolean          white             none
+#}}}
+# yaml{{{
+yamlKey              orange            none
+yamlConstant         green             none
+#}}}
+# toml{{{
+tomlTable            red               none
+tomlTableArray       red               none
+tomlKey              orange            none
+#}}}
+# git{{{
+gitconfigSection     orange            none
+gitcommitBlank       orange            none
+#}}}
+# diff{{{
+diffAdded            green             none
+diffRemoved          red               none
+diffChanged          orange            none
+diffOldFile          blue              none
+diffNewFile          magenta           none
+diffFile             green             none
+diffLine          -> Comment
+diffIndexLine        yellow            none
+diffSubname          orange            none
+#}}}
+# help{{{
+helpHyperTextEntry   red               none
+helpHyperTextJump    blue              none
+helpSectionDelim  -> Comment
+helpHeadline         orange            none
+helpURL              blue              none              underline
+helpExample          green             none
+helpCommand          green             none
+helpHeader           orange            none
+#}}}
+
+# Plugins
+# ale{{{
+ALEWarningSign       orange            grey
+ALEErrorSign         red               grey
+ALEInfoSign          blue              grey
+ALEError             none              darkred
+ALEWarning           none              darkorange
+ALEVirtualTextError  greyer            none
+ALEVirtualTextWarning greyer           none
+ALEVirtualTextInfo   greyer            none
+ALEVirtualTextStyleError            -> ALEVirtualTextError
+ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
+#}}}
+# coc{{{
+CocHighlightText     none              none              bold
+CocCodeLens          greyer            none
+CocErrorSign      -> ALEErrorSign
+CocWarningSign    -> ALEWarningSign
+CocInfoSign       -> ALEInfoSign
+CocHintSign       -> Label
+CocErrorHighlight -> ALEError
+CocWarningHighlight -> ALEWarning
+CocInfoHighlight  -> ALEInfo
+CocWarningVirtualText -> ALEVirtualTextWarning
+CocErrorVirtualText -> ALEVirtualTextError
+CocInfoVirtualText -> ALEVirtualTextInfo
+CocHintVirtualText -> ALEVirtualTextInfo
+CocCodeLens       -> ALEVirtualTextInfo
+#}}}
+# nerdtree{{{
+NERDTreeFlags        orange            none
+NERDTreeDirSlash     blackgreen        none
+NERDTreeCWD          blackgreen        none
+NERDTreeLinkFile     blackgreen        none
+NERDTreeLinkTarget   green             none
+#}}}
+# tagbar{{{
+TagbarKind           orange            none
+TagbarVisibilityPublic blue            none
+TagbarVisibilityPrivate magenta        none
+TagbarNestedKind     green             none
+TagbarSignature      green             none
+TagbarPseudoID       magenta           none
+#}}}
+# vim-matchup{{{
+MatchParenCur        none              none              bold
+MatchWord            none              none              underline
+MatchWordCur         none              none              underline
+#}}}
+# startify{{{
+StartifyBracket      green             none
+StartifyHeader       red               none
+StartifyNumber       yellow            none
+StartifyPath         green             none
+StartifySlash        blackgreen        none
+StartifySection      orange            none
+StartifySpecial   -> Comment
+StartifyFile      -> Normal
+#}}}
+# sneak{{{
+Sneak                none              darkgreen
+#}}}
+# gv{{{
+gvSha                green             none
+gvAuthor             orange            none
+#}}}
+# }}}
+
+# B/W variant {{{
+Include: _bw.colortemplate
+# }}}
