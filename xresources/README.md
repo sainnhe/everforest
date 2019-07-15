@@ -19,3 +19,5 @@ Execute the following command:
 ```sh
 xrdb -merge /path/to/vim-color-forest-night/xresources/forest-night.Xresources
 ```
+
+Similarly for forest-dusk.
