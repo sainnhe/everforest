@@ -33,6 +33,12 @@ There are some packages available for Arch Linux users in AUR:
 
 ## Usage
 
+I've developed another version of this color scheme -- **[forest-dusk](https://user-images.githubusercontent.com/37491630/61204916-1d895200-a6de-11e9-9eb1-cfedbd538e67.png)**
+
+The only difference between forest-night and forest-dusk is that the [color temperature](https://en.wikipedia.org/wiki/Color_temperature) of forest-dusk is lower.
+
+To use forest-dusk instead of forest-night, replace `night` in the following steps with `dusk`.
+
 ### Vim
 
 Put this in your vimrc:
@@ -103,6 +109,8 @@ Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8
 [README.md](./xresources/README.md)
 
 ## Customization
+
+**Note:** forest-night and forest-dusk share the same global variables, you don't need to replace `night` with `dusk`.
 
 - `g:forest_night_use_italic`: if `0`, do not use italic; if `1`, use italic. Default: `1`
 - `g:forest_night_transp_bg`: if `1`, use terminal background color; if `0`, use original background color of forest-night. Default: `0`
