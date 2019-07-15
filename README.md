@@ -37,6 +37,8 @@ I've developed another version of this color scheme -- **[forest-dusk](https://u
 
 The only difference between forest-night and forest-dusk is that the [color temperature](https://en.wikipedia.org/wiki/Color_temperature) of forest-dusk is lower.
 
+forest-dusk is designed to use without redshift/f.lux, but you may not be satisfied with the temperature. I would recommend to use forest-night with redshift/f.lux, you can adjust the color temperature by yourself in this way.
+
 To use forest-dusk instead of forest-night, replace `night` in the following steps with `dusk`.
 
 ### Vim
