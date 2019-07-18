@@ -10,6 +10,7 @@ Maintainer:  Sainnhepark <sainnhe@gmail.com>
 Website:     https://github.com/sainnhe/vim-color-forest-night/
 Description: 🌲 Comfortable & Pleasant VIM Color Scheme
 License:     MIT && Anti-996
+Neovim:      yes
 # }}}
 
 # Common linked groups {{{
