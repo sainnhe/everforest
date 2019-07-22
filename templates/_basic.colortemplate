@@ -1,0 +1,114 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# Common linked groups {{{
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+Debug             -> Special
+Include           -> PreProc
+Macro             -> PreProc
+Repeat            -> Statement
+SpecialChar       -> Special
+Structure         -> Type
+Typedef           -> Type
+# See `:help lCursor`
+lCursor           -> Cursor
+# }}}
+
+# Default highlight groups {{{
+Variant: gui
+#if get(g:, 'forest_night_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, 'forest_night_transp_bg', 0)
+Variant: gui 256 8
+    Normal           white             none
+    Terminal         white             none
+#else
+    Normal           white             black
+    Terminal         white             black
+#endif
+
+# Group              Foreground        Background        Attributes
+# UI
+ColorColumn          fg                darkgrey
+Conceal              greyer            none
+Cursor               none              none              reverse
+CursorColumn         none              dark
+CursorLine           none              dark
+CursorLineNr         greyer            grey
+LineNr               black             grey
+SignColumn           none              grey
+DiffAdd              none              darkgreen
+DiffChange           none              darkorange
+DiffDelete           none              darkred
+DiffText             none              darkblue
+Directory            green             none
+EndOfBuffer          darkgrey          none
+ErrorMsg             red               grey
+WarningMsg           orange            grey
+ModeMsg              black             green
+MoreMsg              white             grey
+FoldColumn           white             grey
+Folded               white             grey              italic
+IncSearch            none              darkred           underline
+Search               none              darkred           underline
+NonText              greyer            none
+Pmenu                white             grey
+PmenuSbar            none              grey
+PmenuSel             white             grey              reverse
+PmenuThumb           none              white
+Question             blue              none
+SpecialKey           darkgrey          none
+SpellBad             red               none              s=red
+SpellCap             orange            none              s=orange
+SpellLocal           blue              none              s=blue
+SpellRare            magenta           none              s=magenta
+TabLine              white             grey
+TabLineFill          white             dark
+TabLineSel           dark              green
+StatusLine           white             grey
+StatusLineNC         white             dark
+WildMenu             dark              white
+VertSplit            grey              none
+Visual               none              darkred
+VisualNOS            none              darkred           italic
+MatchParen           none              none              bold
+
+# Syntax
+Todo                 magenta           none              italic
+PreProc              red               none
+Define               red               none
+Keyword              red               none
+Exception            red               none
+Error                red               none
+PreCondit            orange            none
+Title                orange            none
+Function             orange            none
+Label                orange            none
+StorageClass         orange            none
+Type                 yellow            none
+Special              yellow            none
+Constant             yellow            none
+Identifier           green             none
+String               green             none
+Character            green             none
+Number               green             none
+Float                green             none
+Boolean              green             none
+Statement            blue              none
+Delimiter            blue              none
+Operator             blue              none
+Conditional          magenta           none
+Tag                  magenta           none
+Comment              greyer            none              italic
+SpecialComment       blackgreen        none              italic
+Ignore               greyer            none
+Underlined           none              none              underline
+# See `:help CursorIM`
+CursorIM             none              fg
+# See `:help window-toolbar`
+ToolbarLine          white             grey
+ToolbarButton        black             white             bold
+# Other
+Noise                white             none
+# }}}
