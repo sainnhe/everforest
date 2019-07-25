@@ -58,7 +58,7 @@ PmenuSbar            none              grey
 PmenuSel             white             grey              reverse
 PmenuThumb           none              white
 Question             blue              none
-SpecialKey           darkgrey          none
+SpecialKey           blue              none
 SpellBad             red               none              s=red
 SpellCap             orange            none              s=orange
 SpellLocal           blue              none              s=blue
