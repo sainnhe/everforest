@@ -80,8 +80,8 @@ Define               red               none
 Keyword              red               none
 Exception            red               none
 Error                red               none
+Title                red               none              bold
 PreCondit            orange            none
-Title                orange            none
 Function             orange            none
 Label                orange            none
 StorageClass         orange            none
