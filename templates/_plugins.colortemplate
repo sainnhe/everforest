@@ -1,5 +1,21 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
+# vim-plug{{{
+plug1 -> Red
+plug2 -> Orange
+plugBracket -> White
+plugName -> Green
+plugH2 -> Magenta
+plugMessage -> Magenta
+plugError -> Red
+plugNotLoaded -> Grey
+plugRelDate -> Grey
+plugStar -> Magenta
+plugDash -> Blue
+plugUpdate -> Yellow
+plugDeleted -> Grey
+plugEdge -> Grey
+#}}}
 # ale{{{
 ALEVirtualTextStyleError -> ALEVirtualTextError
 ALEVirtualTextStyleWarning -> ALEVirtualTextWarning
@@ -42,4 +58,26 @@ StartifyFile -> Normal
 # gv{{{
 gvSha -> Green
 gvAuthor -> Orange
+#}}}
+# EasyMotion: {{{
+EasyMotionTarget -> Search
+EasyMotionShade -> Comment
+# }}}
+# FZF {{{
+verbatim
+let g:fzf_colors = {
+      \ 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Green'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Green'],
+      \ 'info':    ['fg', 'Yellow'],
+      \ 'prompt':  ['fg', 'Green'],
+      \ 'pointer': ['fg', 'Blue'],
+      \ 'marker':  ['fg', 'Magenta'],
+      \ 'spinner': ['fg', 'Magenta'],
+      \ 'header':  ['fg', 'Grey']
+      \ }
+endverbatim
 #}}}

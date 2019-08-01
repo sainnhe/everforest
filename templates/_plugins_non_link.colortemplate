@@ -30,3 +30,27 @@ StartifySlash blackgreen none
 # sneak{{{
 Sneak none darkgreen
 #}}}
+# GitGutter {{{
+GitGutterAdd green dark
+GitGutterChange yellow dark
+GitGutterDelete red dark
+GitGutterChangeDelete magenta dark
+# }}}
+# Signify {{{
+SignifySignAdd green dark
+SignifySignChange yellow dark
+SignifySignDelete red dark
+# }}}
+# Vim Multiple Cursors {{{
+multiple_cursors_cursor none none reverse
+multiple_cursors_visual none darkgreen
+# }}}
+# LeaderF {{{
+Lf_hl_match green none bold
+Lf_hl_match0 green none bold
+Lf_hl_match1 yellow none bold
+Lf_hl_match2 orange none bold
+Lf_hl_match3 blue none bold
+Lf_hl_match4 magenta none bold
+Lf_hl_matchRefine red none bold
+#}}}
