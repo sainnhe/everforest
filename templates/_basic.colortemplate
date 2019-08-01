@@ -7,7 +7,6 @@ StatusLineTermNC  -> StatusLineNC
 Debug             -> Special
 Include           -> PreProc
 Macro             -> PreProc
-Repeat            -> Statement
 SpecialChar       -> Special
 Structure         -> Type
 Typedef           -> Type
@@ -99,6 +98,7 @@ Statement            blue              none
 Delimiter            blue              none
 Operator             blue              none
 Conditional          magenta           none
+Repeat               magenta           none
 Tag                  magenta           none
 Comment              greyer            none              italic
 SpecialComment       blackgreen        none              italic
