@@ -85,6 +85,15 @@ jsFuncBraces -> Delimiter
 jsFuncParens -> Delimiter
 jsObjectBraces -> Delimiter
 jsObjectParens -> Delimiter
+jsClassBraces -> Delimiter
+jsIfElseBraces -> Delimiter
+jsTryCatchBraces -> Delimiter
+jsModuleBraces -> Delimiter
+jsFinallyBraces -> Delimiter
+jsRepeatBraces -> Delimiter
+jsSwitchBraces -> Delimiter
+jsTemplateBraces -> Delimiter
+jsDestructuringBraces -> Delimiter
 jsExceptions -> Exception
 jsObjectValue -> Green
 jsObjectProp -> Yellow
