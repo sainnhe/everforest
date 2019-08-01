@@ -48,7 +48,7 @@ WarningMsg           orange            grey
 ModeMsg              black             green
 MoreMsg              white             grey
 FoldColumn           white             grey
-Folded               white             grey              italic
+Folded               white             grey
 IncSearch            none              darkred           underline
 Search               none              darkred           underline
 NonText              greyer            none
