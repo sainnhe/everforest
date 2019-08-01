@@ -438,14 +438,14 @@ diffChanged -> Orange
 diffOldFile -> Blue
 diffNewFile -> Magenta
 diffFile -> Green
-diffLine -> Comment
+diffLine -> Grey
 diffIndexLine -> Yellow
 diffSubname -> Orange
 #}}}
 # help{{{
 helpHyperTextEntry -> Red
 helpHyperTextJump -> Blue
-helpSectionDelim -> Comment
+helpSectionDelim -> Grey
 helpHeadline -> Orange
 helpExample -> Green
 helpCommand -> Green

@@ -52,7 +52,7 @@ StartifyHeader -> Red
 StartifyNumber -> Yellow
 StartifyPath -> Green
 StartifySection -> Orange
-StartifySpecial -> Comment
+StartifySpecial -> Grey
 StartifyFile -> Normal
 #}}}
 # gv{{{
@@ -61,7 +61,7 @@ gvAuthor -> Orange
 #}}}
 # EasyMotion: {{{
 EasyMotionTarget -> Search
-EasyMotionShade -> Comment
+EasyMotionShade -> Grey
 # }}}
 # FZF {{{
 verbatim
