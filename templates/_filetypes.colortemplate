@@ -9,6 +9,7 @@ markdownIdDeclaration -> Orange
 markdownBoldDelimiter -> Grey
 markdownItalicDelimiter -> Comment
 markdownRule -> Magenta
+markdownHeadingDelimiter -> Magenta
 mkdListItem -> Blue
 mkdLink -> Yellow
 mkdCodeDelimiter -> Delimiter
@@ -16,6 +17,7 @@ mkdID -> Orange
 mkdBold -> Grey
 mkdItalic -> Comment
 mkdRule -> Magenta
+mkdHeading -> Magenta
 #}}}
 # rst{{{
 rstSections -> Red
