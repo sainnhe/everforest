@@ -1,6 +1,6 @@
 let g:airline#themes#forest_night#palette = {}
 let g:airline#themes#forest_night#palette.accents = {
-      \ 'red': [ '#fd8489' , '' , 174 , '' , '' ],
+      \ 'red': [ '#fd888d' , '' , 174 , '' , '' ],
       \ }
 
 " Normal mode
@@ -34,7 +34,7 @@ let g:airline#themes#forest_night#palette.replace_modified = {
       \ }
 
 " Visual mode
-let s:V1 = [ '#3c4c55' , '#fd8489' , 239 , 174 ]
+let s:V1 = [ '#3c4c55' , '#fd888d' , 239 , 174 ]
 let s:V2 = [ '#f6e3bc' , '#616c72' , 223 , 244 ]
 let s:V3 = [ '#f6e3bc' , '#3c4c55' , 223 , 239 ]
 

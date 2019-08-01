@@ -6,7 +6,7 @@
 #define white #ffebc3
 #define black #3c4c55
 #define grey #7f8f9f
-#define red #fd8489
+#define red #fd888d
 #define green #a9dd9d
 #define orange #f0aa8a
 #define yellow #eed094

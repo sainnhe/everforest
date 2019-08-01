@@ -57,7 +57,7 @@ fi
   fi
   if [[ "$FOREST_NIGHT_PURE_POWER_TRUE_COLOR" == "true" ]]; then
     local ok="%F{#ffebc3}${p}%f"
-    local err="%F{#fd8489}${p}%f"
+    local err="%F{#fd888d}${p}%f"
   else
     local ok="%F{$(_pp_s 011 223)}${p}%f"
     local err="%F{$(_pp_s 001 210)}${p}%f"
@@ -102,7 +102,7 @@ fi
   if [[ "$FOREST_NIGHT_PURE_POWER_TRUE_COLOR" == "true" ]]; then
     typeset -g POWERLEVEL9K_DIR_{ETC,DEFAULT}_FOREGROUND='#f0aa8a'
     typeset -g POWERLEVEL9K_DIR_{HOME,HOME_SUBFOLDER}_FOREGROUND='#a9dd9d'
-    typeset -g POWERLEVEL9K_DIR_NOT_WRITABLE_FOREGROUND='#fd8489'
+    typeset -g POWERLEVEL9K_DIR_NOT_WRITABLE_FOREGROUND='#fd888d'
   else
     typeset -g POWERLEVEL9K_DIR_{ETC,DEFAULT}_FOREGROUND=$(_pp_c 003 216)
     typeset -g POWERLEVEL9K_DIR_{HOME,HOME_SUBFOLDER}_FOREGROUND=$(_pp_c 010 150)
@@ -161,7 +161,7 @@ fi
   typeset -g POWERLEVEL9K_STATUS_OK=false
   typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND=none
   if [[ "$FOREST_NIGHT_PURE_POWER_TRUE_COLOR" == "true" ]]; then
-    typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND='#fd8489'
+    typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND='#fd888d'
   else
     typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=$(_pp_c 001 210)
   fi
@@ -179,7 +179,7 @@ fi
   typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,ROOT,REMOTE_SUDO,REMOTE,SUDO}_BACKGROUND=none
   if [[ "$FOREST_NIGHT_PURE_POWER_TRUE_COLOR" == "true" ]]; then
     typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,REMOTE_SUDO,REMOTE,SUDO}_FOREGROUND='#84a78d'
-    typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND='#fd8489'
+    typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND='#fd888d'
   else
     typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,REMOTE_SUDO,REMOTE,SUDO}_FOREGROUND=$(_pp_c 008 246)
     typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=$(_pp_c 009 210)

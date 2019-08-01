@@ -35,7 +35,7 @@ index 877afab..6a1699f 100644
  
 +  /* 8 normal colors */
 +  [0] = "#7f8f9f", /* black   */
-+  [1] = "#fd8489", /* red     */
++  [1] = "#fd888d", /* red     */
 +  [2] = "#a9dd9d", /* green   */
 +  [3] = "#f0aa8a", /* yellow  */
 +  [4] = "#bdd0e5", /* blue    */
@@ -45,7 +45,7 @@ index 877afab..6a1699f 100644
 +
 +  /* 8 bright colors */
 +  [8]  = "#7f8f9f", /* black   */
-+  [9]  = "#fd8489", /* red     */
++  [9]  = "#fd888d", /* red     */
 +  [10] = "#a9dd9d", /* green   */
 +  [11] = "#eed094", /* yellow  */
 +  [12] = "#bdd0e5", /* blue    */
