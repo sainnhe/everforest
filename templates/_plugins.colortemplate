@@ -14,7 +14,7 @@ plugStar -> Magenta
 plugDash -> Blue
 plugUpdate -> Yellow
 plugDeleted -> Grey
-plugEdge -> Grey
+plugEdge -> Magenta
 #}}}
 # ale{{{
 ALEVirtualTextStyleError -> ALEVirtualTextError
