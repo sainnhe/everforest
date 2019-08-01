@@ -1,0 +1,442 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# markdown{{{
+markdownLinkText -> Yellow
+markdownListMarker -> Blue
+markdownCode -> Green
+markdownId -> Orange
+markdownIdDeclaration -> Orange
+markdownBoldDelimiter -> Grey
+markdownItalicDelimiter -> Comment
+markdownRule -> Magenta
+mkdListItem -> Blue
+mkdLink -> Yellow
+mkdCodeDelimiter -> Delimiter
+mkdID -> Orange
+mkdBold -> Grey
+mkdItalic -> Comment
+mkdRule -> Magenta
+#}}}
+# rst{{{
+rstSections -> Red
+rstDirective -> Orange
+rstExplicitMarkup -> Blue
+#}}}
+# tex{{{
+texStatement -> Green
+texBeginEnd -> Orange
+texDefCmd -> Orange
+texDefName -> Yellow
+texSection -> Red
+texDocType -> Orange
+texOnlyMath -> Magenta
+texNewCmd -> Red
+texCmdName -> Orange
+#}}}
+# html{{{
+htmlStatement -> Orange
+htmlTag -> Green
+#}}}
+# xml{{{
+xmlTag -> Green
+xmlTagName -> Orange
+xmlEndTag -> Blue
+#}}}
+# css{{{
+cssClassName -> Orange
+cssClassNameDot -> cssClassName
+cssProp -> White
+cssBraces -> Delimiter
+cssSelectorOp -> Delimiter
+cssSelectorOp2 -> Delimiter
+cssAtRule -> Red
+cssTagName -> Orange
+cssAttrComma -> White
+cssUnitDecorators -> Blue
+cssColor -> White
+cssImportant -> Red
+#}}}
+# sass{{{
+sassVariable -> Identifier
+sassClass -> Orange
+sassClassChar -> Orange
+sassCharset -> Green
+sassInclude -> Red
+scssSelectorName -> Orange
+scssSelectorChar -> scssSelectorName
+#}}}
+# less{{{
+lessVariable -> Identifier
+lessClass -> Orange
+#}}}
+# js{{{
+javaScriptBraces -> Delimiter
+javaScriptOperator -> Orange
+javaScriptNull -> Yellow
+javaScriptGlobal -> Red
+javaScriptMessage -> Blue
+javaScriptMember -> Yellow
+jsGlobalNodeObjects -> Red
+jsFunction -> Keyword
+jsParens -> Delimiter
+jsBraces -> Delimiter
+jsBrackets -> Delimiter
+jsFuncBraces -> Delimiter
+jsFuncParens -> Delimiter
+jsObjectBraces -> Delimiter
+jsObjectParens -> Delimiter
+jsExceptions -> Exception
+jsObjectValue -> Green
+jsObjectProp -> Yellow
+jsBlockLabel -> Yellow
+jsOperatorKeyword -> Orange
+jsGlobalObjects -> Orange
+jsUndefined -> Yellow
+jsThis -> Orange
+jsArrowFunction -> Blue
+#}}}
+# ts{{{
+typescriptBranch -> Orange
+typescriptExceptions -> Exception
+typescriptParens -> Delimiter
+typescriptBraces -> Delimiter
+typescriptEndColons -> typescriptBraces
+typescriptGlobalObjects -> Orange
+typescriptLogicSymbols -> Magenta
+typescriptOpSymbols -> Operator
+typescriptOperator -> Orange
+typescriptDomNodeConsts -> Orange
+#}}}
+# dart{{{
+dartCoreClasses -> Function
+dartTypedef -> Orange
+dartOperator -> Blue
+dartKeyword -> Red
+dartCoreClasses -> Yellow
+dartInterpolation -> Orange
+#}}}
+# coffee{{{
+coffeeParen -> Delimiter
+coffeeCurly -> Delimiter
+coffeeBracket -> Delimiter
+coffeeCurlies -> Green
+coffeeSpecialOp -> Magenta
+coffeeExtendedOp -> Blue
+coffeeParens -> White
+coffeeConstant -> Orange
+coffeeObjAssign -> Orange
+coffeeInterpDelim -> Green
+#}}}
+# purescript{{{
+purescriptModuleName -> Orange
+purescriptModuleParams -> Green
+purescriptOperatorTypeSig -> Magenta
+#}}}
+# java{{{
+javaScopeDecl -> Red
+javaLabel -> Orange
+javaVarArg -> Green
+javaParen -> Delimiter
+javaAnnotation -> Orange
+#}}}
+# kotlin{{{
+ktAnnotation -> Orange
+ktStructure -> Red
+ktKeyword -> Green
+ktArrow -> Magenta
+#}}}
+# python{{{
+pythonExClass -> Yellow
+pythonBoolean -> Green
+pythonOperator -> Green
+pythonClassVar -> Yellow
+pythonDecorator -> Red
+pythonStatement -> Keyword
+pythonBuiltinFunc -> Yellow
+pythonDottedName -> Orange
+#}}}
+# go{{{
+goDeclaration -> Orange
+goImport -> Orange
+goPackage -> Red
+goStatement -> Green
+goPredefinedIdentifiers -> Yellow
+goUnsignedInts -> Function
+#}}}
+# rust{{{
+rustKeyword -> Green
+rustDynKeyword -> Keyword 
+rustExistential -> Keyword
+rustSuper -> Keyword
+rustExternCrate -> Keyword
+rustSelf -> Yellow
+rustSigil -> Blue
+rustEnum -> Orange
+rustModPath -> Orange
+rustOperator -> Delimiter
+rustAttribute -> Red
+rustDerive -> Orange
+rustMacroVariable -> Orange
+rustPubScopeCrate -> Orange
+rustStructure -> Orange
+rustStorage -> Red
+#}}}
+# php{{{
+phpParent -> Delimiter
+phpFunction -> Function
+phpMethod -> Orange
+phpInclude -> Orange
+phpKeyword -> Red
+phpClass -> Orange
+phpClassNamespaceSeparator -> Yellow
+phpStaticClasses -> Yellow
+phpIdentifier -> Green
+phpIdentifierSimply -> Orange
+phpVarSelector -> Blue
+phpMemberSelector -> Delimiter
+phpOperator -> Delimiter
+#}}}
+# csharp{{{
+csBraces -> Delimiter
+csParens -> Delimiter
+csUnspecifiedStatement -> Orange
+csContextualStatement -> Green
+csNew -> Orange
+csNewType -> Yellow
+csClass -> Red
+csEndColon -> White
+csLogicSymbols -> Magenta
+csXmlComment -> SpecialComment
+csXmlCommentLeader -> SpecialComment
+#}}}
+# fsharp{{{
+fsharpKeyword -> Orange
+fsharpModifier -> Red
+fsharpModule -> Orange
+fsharpSymbol -> Green
+fsharpKeychar -> Blue
+fsharpOperator -> Blue
+fsharpOption -> Yellow
+fsharpCoreClass -> Yellow
+fsharpAttribute -> Orange
+fsharpAttrib -> Red
+#}}}
+# swift{{{
+swiftKeywords -> Orange
+swiftMethod -> Red
+swiftProperty -> Green
+#}}}
+# ruby{{{
+rubyInclude -> Red
+rubyControl -> Red
+rubyPredefinedVariable -> Green
+rubyConstant -> Orange
+rubyPseudoVariable -> Orange
+rubyInstanceVariable -> Yellow
+rubyModule -> Red
+rubyModuleName -> Orange
+rubyClass -> Red
+rubyClassName -> Orange
+rubyDefine -> Orange
+rubyMethodName -> Yellow
+rubyCapitalizedMethod -> Orange
+rubySymbol -> Identifier
+rubyExceptionHandler2 -> Red
+#}}}
+# perl{{{
+perlPackageDecl -> Orange
+perlStatementPackage -> Red
+perlStatementInclude -> Orange
+perlStatementStorage -> Red
+perlStatementInclude -> Red
+perlStatementFiledesc -> Orange
+perlStatementScalar -> Orange
+perlStatementList -> Yellow
+perlStatementFiles -> Orange
+perlStatementSocket -> Red
+perlStatementFlow -> Magenta
+perlStatementTime -> Yellow
+perlStatementRegexp -> Orange
+perlStringStartEnd -> Delimiter
+perlOperator -> Yellow
+perlFunction -> Red
+perlMethod -> Orange
+perlVarSimpleMemberName -> White
+#}}}
+# haskell{{{
+haskellImportKeywords -> Red
+haskellType -> Orange
+haskellWhere -> Blue
+haskellOperators -> Green
+haskellDeclKeyword -> Type
+haskellDecl -> Red
+#}}}
+# lua{{{
+luaBraces -> Delimiter
+luaFuncKeyword -> Red
+luaFuncArgName -> White
+luaLocal -> Orange
+luaSpecialValue -> Special
+luaFuncCall -> Function
+#}}}
+# moonscript{{{
+moonKeyword -> Red
+moonFunction -> Delimiter
+moonSpecialVar -> Orange
+moonInterpDelim -> Magenta
+moonLuaFunc -> Orange
+moonSpecialOp -> Magenta
+#}}}
+# d{{{
+dTypedef -> Orange
+dScopeDecl -> Red
+dLabel -> Yellow
+dOperator -> Green
+dAnnotation -> Yellow
+dEnum -> Orange
+dStructure -> Orange
+dStorageClass -> Orange
+dUserLabel -> Red
+#}}}
+# scala{{{
+scalaInstanceDeclaration -> Green
+scalaCapitalWord -> Green
+scalaAnnotation -> Red
+scalaSpecial -> Special
+scalaKeywordModifier -> Orange
+scalaSquareBracketsBrackets -> Delimiter
+#}}}
+# elixir{{{
+elixirAtom -> Green
+elixirInclude -> Orange
+elixirAlias -> Yellow
+elixirOperator -> Blue
+elixirDefine -> Red
+elixirPrivateDefine -> Red
+elixirVariable -> Orange
+elixirModuleDeclaration -> Orange
+elixirKeyword -> Orange
+#}}}
+# ocaml{{{
+ocamlModule -> Yellow
+ocamlModPath -> Green
+ocamlFullMod -> Yellow
+ocamlKeyword -> Orange
+ocamlArrow -> Delimiter
+ocamlEqual -> Operator
+ocamlModPreRHS -> Operator
+ocamlKeyChar -> Blue
+ocamlConstructor -> Green
+ocamlStructEncl -> Red
+ocamlPpxEncl -> Magenta
+#}}}
+# fortran{{{
+fortranCall -> Red
+fortranUnitHeader -> Red
+fortranKeyword -> Orange
+fortranReadWrite -> Orange
+fortranIO -> Yellow
+#}}}
+# clojure{{{
+clojureKeyword -> Orange
+clojureSpecial -> Orange
+clojureFunc -> Yellow
+clojureDispatch -> Magenta
+clojureAnonArg -> Blue
+#}}}
+# erlang{{{
+erlangAttribute -> Red
+erlangLocalFuncCall -> Orange
+erlangLocalFuncRef -> Yellow
+erlangGlobalFuncCall -> Yellow
+erlangType -> Red
+erlangMap -> Magenta
+erlangRecord -> Orange
+erlangVariable -> White
+erlangAtom -> Green
+#}}}
+# julia{{{
+juliaBlKeyword -> Orange
+#}}}
+# lisp{{{
+lispFunc -> Orange
+lispDecl -> Red
+lispVar -> Yellow
+#}}}
+# sh{{{
+shQuote -> Green
+shDeref -> Yellow
+shDerefSimple -> Yellow
+shDerefVar -> Orange
+shVariable -> Orange
+shOperator -> Blue
+shFunction -> Red
+shCmdSubRegion -> Delimiter
+shCommandSub -> Orange
+shStatement -> Red
+#}}}
+# zsh{{{
+zshDeref -> Yellow
+zshSubst -> Yellow
+zshSubstDelim -> Delimiter
+zshOption -> Orange
+zshTypes -> Orange
+zshKeyword -> Keyword
+zshCommands -> Orange
+zshShortDeref -> Orange
+zshDollarVar -> Orange
+zshFunction -> Red
+#}}}
+# fish{{{
+fishKeyword -> Red
+fishStatement -> Orange
+fishIdentifier -> Yellow
+#}}}
+# vim{{{
+vimLet -> Red
+vimCommand -> Orange
+vimOption -> Yellow
+vimNotFunc -> Blue
+vimFunction -> Yellow
+vimFuncName -> Yellow
+vimMap -> Red
+vimMapModKey -> Orange
+#}}}
+# json{{{
+jsonKeyword -> Orange
+jsonQuote -> White
+jsonBoolean -> White
+#}}}
+# yaml{{{
+yamlKey -> Orange
+yamlConstant -> Green
+#}}}
+# toml{{{
+tomlTable -> Red
+tomlTableArray -> Red
+tomlKey -> Orange
+#}}}
+# git{{{
+gitconfigSection -> Orange
+gitcommitBlank -> Orange
+#}}}
+# diff{{{
+diffAdded -> Green
+diffRemoved -> Red
+diffChanged -> Orange
+diffOldFile -> Blue
+diffNewFile -> Magenta
+diffFile -> Green
+diffLine -> Comment
+diffIndexLine -> Yellow
+diffSubname -> Orange
+#}}}
+# help{{{
+helpHyperTextEntry -> Red
+helpHyperTextJump -> Blue
+helpSectionDelim -> Comment
+helpHeadline -> Orange
+helpExample -> Green
+helpCommand -> Green
+helpHeader -> Orange
+#}}}

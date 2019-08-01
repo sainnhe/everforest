@@ -1,0 +1,45 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# ale{{{
+ALEVirtualTextStyleError -> ALEVirtualTextError
+ALEVirtualTextStyleWarning -> ALEVirtualTextWarning
+#}}}
+# coc{{{
+CocErrorSign -> ALEErrorSign
+CocWarningSign -> ALEWarningSign
+CocInfoSign -> ALEInfoSign
+CocHintSign -> Label
+CocErrorHighlight -> ALEError
+CocWarningHighlight -> ALEWarning
+CocInfoHighlight -> ALEInfo
+CocWarningVirtualText -> ALEVirtualTextWarning
+CocErrorVirtualText -> ALEVirtualTextError
+CocInfoVirtualText -> ALEVirtualTextInfo
+CocHintVirtualText -> ALEVirtualTextInfo
+CocCodeLens -> ALEVirtualTextInfo
+#}}}
+# nerdtree{{{
+NERDTreeFlags -> Orange
+NERDTreeLinkTarget -> Green
+#}}}
+# tagbar{{{
+TagbarKind -> Orange
+TagbarVisibilityPublic -> Blue
+TagbarVisibilityPrivate -> Magenta
+TagbarNestedKind -> Green
+TagbarSignature -> Green
+TagbarPseudoID -> Magenta
+#}}}
+# startify{{{
+StartifyBracket -> Green
+StartifyHeader -> Red
+StartifyNumber -> Yellow
+StartifyPath -> Green
+StartifySection -> Orange
+StartifySpecial -> Comment
+StartifyFile -> Normal
+#}}}
+# gv{{{
+gvSha -> Green
+gvAuthor -> Orange
+#}}}

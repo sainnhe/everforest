@@ -22,3 +22,12 @@ Color: darkorange    #613d13           136               DarkYellow
 Color: lightbrown    #b29668           247               Brown
 Color: brown         #90765a           246               Brown
 Color: darkbrown     #2c281e           237               Black
+
+White                white             none
+Grey                 greyer            none
+Red                  red               none
+Orange               orange            none
+Yellow               yellow            none
+Green                green             none
+Blue                 blue              none
+Magenta              magenta           none
