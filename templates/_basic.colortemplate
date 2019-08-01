@@ -34,19 +34,19 @@ Conceal              greyer            none
 Cursor               none              none              reverse
 CursorColumn         none              dark
 CursorLine           none              dark
-CursorLineNr         greyer            grey
-LineNr               black             grey
-SignColumn           none              grey
+CursorLineNr         white             dark
+LineNr               greyer            dark
+SignColumn           none              dark
 DiffAdd              none              darkgreen
 DiffChange           none              darkorange
 DiffDelete           none              darkred
 DiffText             none              darkblue
 Directory            green             none
-EndOfBuffer          darkgrey          none
-ErrorMsg             red               grey
-WarningMsg           orange            grey
-ModeMsg              black             green
-MoreMsg              white             grey
+EndOfBuffer          black             black
+ErrorMsg             black             red
+WarningMsg           black             orange
+ModeMsg              green             none              bold
+MoreMsg              blue              none              bold
 FoldColumn           white             grey
 Folded               white             grey
 IncSearch            none              darkred           underline
