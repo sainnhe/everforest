@@ -4,8 +4,6 @@
 
 ![](https://user-images.githubusercontent.com/37491630/60754686-5174c100-9fd4-11e9-9efb-cec66f6c9062.png)
 
-**This project will not be maintained any more. Please use [sainnhe/forest-theme](https://github.com/sainnhe/forest-theme) instead.**
-
 ## Installation
 
 ### Via Plugin Manager
