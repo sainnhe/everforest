@@ -110,6 +110,10 @@ Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8
 
 [README.md](./xresources/README.md)
 
+### Visual Studio Code
+
+[Forest Theme](https://marketplace.visualstudio.com/items?itemName=sainnhe.forest-theme)
+
 ## Customization
 
 **Note:** forest-night and forest-dusk share the same global variables, you don't need to replace `night` with `dusk`.
