@@ -12,29 +12,26 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 let s:dark      = [ '#3c4c55', 239 ]
 let s:darker       = [ '#4c5866', 241 ]
 let s:grey      = [ '#616c72', 244 ]
-let s:blue       = [ '#7fc1ca', 110 ]
-let s:red       = [ '#fd888d', 174 ]
-let s:green       = [ '#a9dd9d', 150 ]
-let s:orange       = [ '#fb8965', 216 ]
-let s:golden = [ '#f6e3bc', 223 ]
-let s:darkred = [ '#70495d', 95 ]
-let s:darkorange = [ '#b36200', 136 ]
+let s:red       = [ '#ff9094', 174 ]
+let s:green       = [ '#aac98c', 150 ]
+let s:orange       = [ '#f0b295', 216 ]
+let s:golden = [ '#f2ddb5', 223 ]
 "}}}
 
 "{{{Definition
 let s:tab_l_fg = s:golden
 let s:tab_l_bg = s:grey
-let s:tab_r_fg = s:golden
-let s:tab_r_bg = s:grey
+let s:tab_r_fg = s:dark
+let s:tab_r_bg = s:green
 let s:tab_sel_fg = s:dark
 let s:tab_sel_bg = s:green
 let s:tab_middle_fg = s:golden
 let s:tab_middle_bg = s:darker
 
-let s:warningfg = s:golden
-let s:warningbg = s:darkorange
-let s:errorfg = s:golden
-let s:errorbg = s:darkred
+let s:warningfg = s:dark
+let s:warningbg = s:orange
+let s:errorfg = s:dark
+let s:errorbg = s:red
 
 let s:normal_l1_fg = s:dark
 let s:normal_l1_bg = s:green
@@ -50,11 +47,11 @@ let s:normal_middle_bg = s:dark
 let s:insert_l1_fg = s:dark
 let s:insert_l1_bg = s:golden
 let s:insert_l2_fg = s:golden
-let s:insert_l2_bg = s:darker
+let s:insert_l2_bg = s:grey
 let s:insert_r1_fg = s:dark
-let s:insert_r1_bg = s:green
+let s:insert_r1_bg = s:golden
 let s:insert_r2_fg = s:golden
-let s:insert_r2_bg = s:darker
+let s:insert_r2_bg = s:grey
 let s:insert_middle_fg = s:golden
 let s:insert_middle_bg = s:dark
 
