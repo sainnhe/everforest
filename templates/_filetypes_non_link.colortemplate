@@ -1,26 +1,49 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
 # markdown{{{
+markdownH1 red none bold
+markdownH2 orange none bold
+markdownH3 yellow none bold
+markdownH4 aqua none bold
+markdownH5 blue none bold
+markdownH6 magenta none bold
 markdownUrl green none underline
 markdownBold none none bold
 markdownItalic none none italic
+markdownItalicDelimiter grey none italic
+
 mkdInlineURL yellow none underline
 mkdURL green none underline
+mkdItalic grey none italic
 #}}}
 # rst{{{
 rstStandaloneHyperlink green none underline
+rstSections red none bold
+rstHyperlinkTarget green none underline
+rstSubstitutionReference magenta none
 #}}}
 # html{{{
+htmlH1 red none bold
+htmlH2 orange none bold
+htmlH3 yellow none bold
+htmlH4 aqua none bold
+htmlH5 blue none bold
+htmlH6 magenta none bold
 htmlLink none none underline
 htmlBold none none bold
+htmlBoldUnderline none none bold,underline
+htmlBoldItalic none none bold,italic
+htmlBoldUnderlineItalic none none bold,underline,italic
+htmlUnderline none none underline
+htmlUnderlineItalic none none underline,italic
 htmlItalic none none italic
 #}}}
-# ruby{{{
-rubyDocumentation blackgreen none
-#}}}
-# zsh{{{
-zshPreProc blackgreen none
-#}}}
-# help{{{
-helpURL blue none underline
-#}}}
+# # ruby{{{
+# rubyDocumentation blackgreen none
+# #}}}
+# # zsh{{{
+# zshPreProc blackgreen none
+# #}}}
+# # help{{{
+# helpURL blue none underline
+# #}}}
