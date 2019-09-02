@@ -51,11 +51,11 @@ SpellCap                blue            none            italic t=underline g=und
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               magenta         none            italic t=underline g=undercurl s=magenta
 StatusLine              white           darkgrey
-StatusLineNC            white           black
+StatusLineNC            white           dark1
 StatusLineTerm          white           darkgrey
-StatusLineTermNC        white           black
+StatusLineTermNC        white           dark1
 TabLine                 white           darkgrey
-TabLineFill             white           black
+TabLineFill             white           dark1
 TabLineSel              dark0           green           bold
 VertSplit               dark3           dark0
 Visual                  none            darkred
@@ -75,6 +75,7 @@ Conditional             red             none
 Repeat                  red             none
 PreProc                 red             none
 Include                 red             none
+Define                  red             none
 PreCondit               red             none
 Title                   orange          none            bold
 Statement               orange          none
@@ -87,7 +88,6 @@ Typedef                 yellow          none
 Function                green           none
 String                  green           none
 Character               green           none
-Define                  aqua            none
 Constant                aqua            none
 Identifier              aqua            none
 Macro                   aqua            none

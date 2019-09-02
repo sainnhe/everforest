@@ -15,7 +15,7 @@ let g:airline#themes#forest_night#palette.normal_modified = {
 
 " Insert mode
 let s:I1 = [ '#3c4c55' , '#f2ddb5' , 239 , 223 ]
-let s:I2 = [ '#f2ddb5' , '#4c5866' , 223 , 241 ]
+let s:I2 = [ '#f2ddb5' , '#45565e' , 223 , 241 ]
 let s:I3 = [ '#f2ddb5' , '#3c4c55' , 223 , 239 ]
 
 let g:airline#themes#forest_night#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
@@ -44,7 +44,7 @@ let g:airline#themes#forest_night#palette.visual_modified = {
       \ }
 
 " Inactive
-let s:IA = [ '#f2ddb5' , '#4c5866' , 223 , 241 , '' ]
+let s:IA = [ '#f2ddb5' , '#45565e' , 223 , 241 , '' ]
 let g:airline#themes#forest_night#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 let g:airline#themes#forest_night#palette.inactive_modified = {
       \ 'airline_c': [ '#f2ddb5' , '#3c4c55' , 223 , 239 ] ,

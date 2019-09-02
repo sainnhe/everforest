@@ -10,7 +10,7 @@
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:dark      = [ '#3c4c55', 239 ]
-let s:darker       = [ '#4c5866', 241 ]
+let s:darker       = [ '#45565e', 241 ]
 let s:grey      = [ '#616c72', 244 ]
 let s:red       = [ '#ff9094', 174 ]
 let s:green       = [ '#aac98c', 150 ]
