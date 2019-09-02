@@ -1,59 +1,64 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
 # vim-plug{{{
-plug1 -> Red
-plug2 -> Orange
-plugBracket -> White
+plug2 -> Yellow
+plugBracket -> Grey
+plugDash -> Orange
 plugName -> Green
-plugH2 -> Magenta
-plugMessage -> Magenta
+plugH2 -> Orange
+plugMessage -> Orange
 plugError -> Red
 plugNotLoaded -> Grey
 plugRelDate -> Grey
-plugStar -> Magenta
-plugDash -> Blue
-plugUpdate -> Yellow
+plugStar -> Blue
+plugUpdate -> Aqua
 plugDeleted -> Grey
 plugEdge -> Magenta
 #}}}
 # ale{{{
 ALEVirtualTextStyleError -> ALEVirtualTextError
 ALEVirtualTextStyleWarning -> ALEVirtualTextWarning
+ALEVirtualTextError -> Grey
+ALEVirtualTextWarning -> Grey
+ALEVirtualTextInfo -> Grey
 #}}}
 # coc{{{
 CocErrorSign -> ALEErrorSign
 CocWarningSign -> ALEWarningSign
 CocInfoSign -> ALEInfoSign
-CocHintSign -> Label
 CocErrorHighlight -> ALEError
 CocWarningHighlight -> ALEWarning
 CocInfoHighlight -> ALEInfo
+CocCodeLens -> Grey
 CocWarningVirtualText -> ALEVirtualTextWarning
 CocErrorVirtualText -> ALEVirtualTextError
 CocInfoVirtualText -> ALEVirtualTextInfo
 CocHintVirtualText -> ALEVirtualTextInfo
-CocCodeLens -> ALEVirtualTextInfo
 #}}}
 # nerdtree{{{
 NERDTreeFlags -> Orange
 NERDTreeLinkTarget -> Green
+NERDTreeDirSlash -> Aqua
+NERDTreeCWD -> Aqua
+NERDTreeLinkFile -> Grey
 #}}}
 # tagbar{{{
 TagbarKind -> Orange
 TagbarVisibilityPublic -> Blue
 TagbarVisibilityPrivate -> Magenta
-TagbarNestedKind -> Green
+TagbarNestedKind -> Aqua
 TagbarSignature -> Green
 TagbarPseudoID -> Magenta
 #}}}
 # startify{{{
-StartifyBracket -> Green
-StartifyHeader -> Red
-StartifyNumber -> Yellow
+StartifyBracket -> Grey
+StartifyHeader -> Orange
+StartifySection -> Red
+StartifyNumber -> Blue
 StartifyPath -> Green
-StartifySection -> Orange
 StartifySpecial -> Grey
 StartifyFile -> Normal
+StartifySlash -> Aqua
 #}}}
 # gv{{{
 gvSha -> Green

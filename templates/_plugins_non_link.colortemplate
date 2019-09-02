@@ -1,45 +1,38 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
+# vim-plug{{{
+plug1 red none bold
+plugNumber red none bold
+#}}}
 # ale{{{
-ALEWarningSign orange grey
-ALEErrorSign red grey
-ALEInfoSign blue grey
-ALEError none darkred
-ALEWarning none darkorange
-ALEVirtualTextError greyer none
-ALEVirtualTextWarning greyer none
-ALEVirtualTextInfo greyer none
+ALEWarningSign yellow dark1
+ALEErrorSign red dark1
+ALEInfoSign blue dark1
+ALEError red none bold,italic
+ALEWarning yellow none bold,italic
 #}}}
 # coc{{{
 CocHighlightText none none bold
-CocCodeLens greyer none
-#}}}
-# nerdtree{{{
-NERDTreeDirSlash blackgreen none
-NERDTreeCWD blackgreen none
-NERDTreeLinkFile blackgreen none
+CocHintSign magenta dark1
 #}}}
 # vim-matchup{{{
 MatchParenCur none none bold
 MatchWord none none underline
 MatchWordCur none none underline
 #}}}
-# startify{{{
-StartifySlash blackgreen none
-#}}}
 # sneak{{{
-Sneak none darkgreen
+Sneak none darkgreen bold
 #}}}
 # GitGutter {{{
-GitGutterAdd green dark
-GitGutterChange yellow dark
-GitGutterDelete red dark
-GitGutterChangeDelete magenta dark
+GitGutterAdd green dark1
+GitGutterChange blue dark1
+GitGutterDelete red dark1
+GitGutterChangeDelete magenta dark1
 # }}}
 # Signify {{{
-SignifySignAdd green dark
-SignifySignChange yellow dark
-SignifySignDelete red dark
+SignifySignAdd green dark1
+SignifySignChange blue dark1
+SignifySignDelete red dark1
 # }}}
 # Vim Multiple Cursors {{{
 multiple_cursors_cursor none none reverse

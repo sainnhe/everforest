@@ -10,6 +10,8 @@ Description: 🌲 Comfortable & Pleasant VIM Color Scheme
 License:     MIT && Anti-996
 Neovim:      yes
 
+Include: _plugins
+
 Background:  dark
 
 Include: _palette
@@ -17,5 +19,7 @@ Include: _palette
 Include: _terminal
 
 Include: _basic
+
+Include: _plugins_non_link
 
 Include: _bw.colortemplate
