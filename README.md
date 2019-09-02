@@ -4,6 +4,12 @@
 
 ![](https://user-images.githubusercontent.com/37491630/60754686-5174c100-9fd4-11e9-9efb-cec66f6c9062.png)
 
+- Eye-friendly
+- Moderate contrast
+- Precise code highlighting
+- Less painful switching between bright background applications
+- Work perfectly with [redshift](http://jonls.dk/redshift/) and [f.lux](https://justgetflux.com/)
+
 ## Installation
 
 ### Via Plugin Manager
@@ -43,7 +49,7 @@ set termguicolors
 colorscheme forest-night
 ```
 
-If you want to apply this color scheme temporarily, run this command in vim(**This may cause color broken!**):
+If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
 
 ```vim
 :colorscheme forest-night
