@@ -38,12 +38,10 @@ htmlUnderline none none underline
 htmlUnderlineItalic none none underline,italic
 htmlItalic none none italic
 #}}}
-# # ruby{{{
-# rubyDocumentation blackgreen none
-# #}}}
-# # zsh{{{
-# zshPreProc blackgreen none
-# #}}}
+# toml{{{
+tomlTable red none bold
+tomlTableArray red none bold
+#}}}
 # # help{{{
 # helpURL blue none underline
 # #}}}

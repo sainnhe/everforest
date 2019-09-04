@@ -33,7 +33,7 @@ DiffDelete              none            darkred
 Directory               green           none
 ErrorMsg                red             none            bold
 WarningMsg              yellow          none            bold
-ModeMsg                 dark0           green           bold
+ModeMsg                 white           none            bold
 MoreMsg                 yellow          none            bold
 FoldColumn              white           darkgrey
 Folded                  white           darkgrey
