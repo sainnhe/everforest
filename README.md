@@ -119,10 +119,6 @@ See [RELATED_PROJECTS.md](./RELATED_PROJECTS.md)
 
 Check this gist for detailed instructions to hack this color scheme: [hack-color-schemes.md](https://gist.github.com/sainnhe/911f78cbb092ac58c8734c423a464935)
 
-### Thanks to
-
-[@termlimit](https://github.com/termlimit): airline support
-
 ## Inspirations
 
 [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
