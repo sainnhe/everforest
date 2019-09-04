@@ -2,13 +2,7 @@
     <a href="https://gist.github.com/sainnhe/991dc3cb7d885e20f911816197c85b9d#%F0%9D%90%85%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A0%F0%9D%90%A1%F0%9D%90%AD">𝐅𝐨𝐫𝐞𝐬𝐭 𝐍𝐢𝐠𝐡𝐭</a>
 </h1>
 
-![](https://user-images.githubusercontent.com/37491630/60754686-5174c100-9fd4-11e9-9efb-cec66f6c9062.png)
-
-- Eye-friendly
-- Moderate contrast
-- Precise code highlighting
-- Less painful switching between bright background applications
-- Work perfectly with [redshift](http://jonls.dk/redshift/) and [f.lux](https://justgetflux.com/)
+![](https://user-images.githubusercontent.com/37491630/64232973-9d63b980-cee2-11e9-8409-108e7d657494.png)
 
 ## Installation
 
