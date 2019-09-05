@@ -104,4 +104,4 @@ Comment                 grey            none            italic
 SpecialComment          grey            none            italic
 Delimiter               white           none
 Ignore                  white           none
-Error                   none            darkred
+Error                   red             none            bold,italic
