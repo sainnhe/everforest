@@ -31,7 +31,7 @@ DiffAdd                 none            darkgreen
 DiffChange              none            darkblue
 DiffDelete              none            darkred
 Directory               green           none
-ErrorMsg                red             none            bold
+ErrorMsg                red             none            bold,underline
 WarningMsg              yellow          none            bold
 ModeMsg                 white           none            bold
 MoreMsg                 yellow          none            bold
