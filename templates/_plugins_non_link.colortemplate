@@ -13,6 +13,7 @@ ALEWarning yellow none bold,italic
 #}}}
 # coc{{{
 CocHighlightText none none bold
+CocHoverRange none none bold,underline
 CocHintSign magenta dark1
 #}}}
 # vim-matchup{{{
