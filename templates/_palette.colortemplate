@@ -1,24 +1,24 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
-Color: white         #f6e3bc           ~                 White
-Color: dark0         #3c4c55           ~                 Black
-Color: dark1         #45565e           ~                 Black
-Color: dark2         #4f6269           ~                 Black
-Color: dark3         #576a72           ~                 Black
-Color: dark4         #60737a           ~                 Black
-Color: dark5         #677a81           ~                 Black
-Color: darkgrey      #616c72           ~                 DarkGrey
-Color: grey          #7f8f9f           ~                 Grey
+Color: white         #f6e3bc           223               White
+Color: dark0         #3c4c55           239               Black
+Color: dark1         #45565e           240               Black
+Color: dark2         #4f6269           241               Black
+Color: dark3         #576a72           242               Black
+Color: dark4         #60737a           243               Black
+Color: dark5         #677a81           244               Black
+Color: darkgrey      #616c72           242               DarkGrey
+Color: grey          #7f8f9f           245               Grey
 Color: red           #ff9094           ~                 Red
 Color: orange        #ecaf93           ~                 DarkYellow
 Color: yellow        #eccc8f           ~                 Yellow
 Color: green         #b9ce8e           ~                 Green
 Color: aqua          #a2cea5           ~                 DarkGreen
-Color: blue          #bdd0e5           ~                 Blue
+Color: blue          #bdd0e5           152               Blue
 Color: magenta       #e5c6f0           ~                 Magenta
-Color: darkred       #70495d           ~                 DarkRed
-Color: darkgreen     #54695f           ~                 DarkGreen
-Color: darkblue      #43596f           ~                 DarkBlue
+Color: darkred       #70495d           52                DarkRed
+Color: darkgreen     #54695f           22                DarkGreen
+Color: darkblue      #43596f           17                DarkBlue
 
 White                white             none
 Grey                 grey              none
