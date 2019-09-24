@@ -39,7 +39,7 @@ FoldColumn              white           darkgrey
 Folded                  white           darkgrey
 IncSearch               none            darkgreen       bold
 Search                  none            darkred         underline
-MatchParen              none            none            bold
+MatchParen              none            dark3           bold
 NonText                 grey            none
 Pmenu                   white           darkgrey
 PmenuSbar               none            darkgrey
