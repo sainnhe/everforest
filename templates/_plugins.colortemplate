@@ -34,6 +34,21 @@ CocWarningVirtualText -> ALEVirtualTextWarning
 CocErrorVirtualText -> ALEVirtualTextError
 CocInfoVirtualText -> ALEVirtualTextInfo
 CocHintVirtualText -> ALEVirtualTextInfo
+CocExplorerBufferRoot -> Orange
+CocExplorerBufferExpandIcon -> Green
+CocExplorerBufferBufnr -> Magenta
+CocExplorerBufferModified -> Red
+CocExplorerBufferBufname -> Grey
+CocExplorerFileRoot -> Orange
+CocExplorerFileExpandIcon -> Green
+CocExplorerFileFullpath -> Aqua
+CocExplorerFileDirectory -> Green
+CocExplorerFileGitStage -> Magenta
+CocExplorerFileGitUnstage -> Blue
+CocExplorerFileSize -> Yellow
+CocExplorerTimeAccessed -> Aqua
+CocExplorerTimeCreated -> Aqua
+CocExplorerTimeModified -> Aqua
 #}}}
 # nerdtree{{{
 NERDTreeFlags -> Orange
