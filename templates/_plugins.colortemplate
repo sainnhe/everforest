@@ -34,6 +34,11 @@ CocWarningVirtualText -> ALEVirtualTextWarning
 CocErrorVirtualText -> ALEVirtualTextError
 CocInfoVirtualText -> ALEVirtualTextInfo
 CocHintVirtualText -> ALEVirtualTextInfo
+CocGitAddedSign      -> GitGutterAdd
+CocGitChangeRemovedSign -> GitGutterChangeDelete
+CocGitChangedSign    -> GitGutterChange
+CocGitRemovedSign    -> GitGutterDelete
+CocGitTopRemovedSign -> GitGutterDelete
 CocExplorerBufferRoot -> Orange
 CocExplorerBufferExpandIcon -> Green
 CocExplorerBufferBufnr -> Magenta
