@@ -2,7 +2,7 @@
 𝐅𝐨𝐫𝐞𝐬𝐭 𝐍𝐢𝐠𝐡𝐭
 </h1>
 
-![](https://user-images.githubusercontent.com/37491630/64232973-9d63b980-cee2-11e9-8409-108e7d657494.png)
+![demo](https://user-images.githubusercontent.com/37491630/74096715-40f07000-4afa-11ea-9d40-d7390106d7a9.png)
 
 ## Installation
 
@@ -38,10 +38,17 @@ There are some packages available for Arch Linux users in AUR:
 Put this in your vimrc:
 
 ```vim
+" important!!
 set termguicolors
+
+" the configuration options should be placed before `colorscheme forest-night`
+let g:forest_night_enable_italic = 1
+let g:forest_night_disable_italic_comment = 1
 
 colorscheme forest-night
 ```
+
+See [Configuration](https://github.com/sainnhe/vim-color-forest-night#configuration) for more configuration options.
 
 If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
 
@@ -83,19 +90,44 @@ To apply it without reloading:
 :call lightline#colorscheme()
 ```
 
+#### Configuration
+
+**Note:** The configuration options should be placed before `colorscheme forest-night` .
+
+- `g:forest_night_transparent_background`: Set to `1` to enable transparent background.
+  - Available values: `0`, `1`
+  - Default value: `0`
+- `g:forest_night_disable_italic_comment`: Set to `1` to disable italic in `Comment` .
+  - Available values: `0`, `1`
+  - Default value: `0`
+- `g:forest_night_enable_italic`: Set to `1` to italicize keywords. This option is designed to use with fonts that support cursive italic styles, for example [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+  - Available values: `0`, `1`
+  - Default value: `0`
+- `g:forest_night_current_word`: Some plugins can highlight the word under current cursor(for example [neoclide/coc-highlight](https://github.com/neoclide/coc-highlight)), you can use this option to control their behavior.
+  - Available values: `'bold'`, `'underline'`, `'italic'`, `'grey background'`
+  - Default value: `'grey background'` when not in transparent mode, `'bold'` when in transparent mode.
+- `g:forest_night_lightline_disable_bold`: Set to `1` to disable bold in lightline theme.
+  - Available values: `0`, `1`
+  - Default value: `0`
+
 ## FAQ
 
 **Q: It doesn't work as expected.**
 
 **A:**
 
-1. This color scheme is mainly designed for true colors, `set termguicolors` is required. Check output of `vim --version`, maybe your vim doesn't support `termguicolors`
+1. This color scheme is mainly designed for true colors, `set termguicolors` is required. Check output of `vim --version`, maybe your vim doesn't support `termguicolors`.
+2. Maybe your terminal emulator doesn't support true colors, you can test it using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
+3. If you are running vim in tmux, you need to override default true colors of tmux, as tmux cannot display true colors properly: [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause colors to break. If any color is broken, you can enable the color scheme in your vimrc instead of after vim startup.
 
-2. Maybe your terminal emulator doesn't support true colors, you can test it using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern)
+**Q: How to enable cursive italic keywords?**
 
-3. If you are running vim in tmux, you need to override default true colors of tmux, as tmux cannot display true color properly: [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+**A:**
 
-4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause color broken. If there is any color broken, you can enable the color scheme in your vimrc instead of after vim startup.
+1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
+2. Enable italic keywords in this color scheme: `let g:forest_night_enable_italic = 1`
+3. Disable italic comment(optional): `let g:forest_night_disable_italic_comment = 1`
 
 **Q: What's your status line configuration?**
 
@@ -103,22 +135,20 @@ To apply it without reloading:
 
 **Q: What's the font used here?**
 
-**A:** [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
+**A:** [InconsolataLGC iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
 
 ## Related Projects
 
-See [RELATED_PROJECTS.md](./RELATED_PROJECTS.md)
-
-## Contribution
-
-Check this gist for detailed instructions to hack this color scheme: [hack-color-schemes.md](https://gist.github.com/sainnhe/911f78cbb092ac58c8734c423a464935)
+- [Alacritty](./alacritty/README.md)
+- [Zsh](./zsh/README.md)
+- [Tmux](https://gist.github.com/sainnhe/01f266092eac1aae15136b5bda879bad)
 
 ## Inspirations
 
-[rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
-
-[KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
+- [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
+- [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
+- [gruvbox-material](https://github.com/gruvbox-material/vim)
 
 ## License
 
-[MIT](./LICENSE) && [Anti-996](./Anti-996-LICENSE)
+[MIT](./LICENSE)
