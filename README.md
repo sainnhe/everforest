@@ -149,7 +149,7 @@ To apply it without reloading:
 
 - [Alacritty](./alacritty/README.md)
 - [Zsh](./zsh/README.md)
-- [Tmux](https://gist.github.com/sainnhe/01f266092eac1aae15136b5bda879bad)
+- [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
 
 ## Inspirations
 
