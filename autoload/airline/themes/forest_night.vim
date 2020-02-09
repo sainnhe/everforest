@@ -16,6 +16,7 @@ let s:red       = [ '#e3888a', 167 ]
 let s:green     = [ '#a7bf81', 142 ]
 let s:orange    = [ '#e3a184', 208 ]
 let s:white     = [ '#d8cbb2', 223 ]
+let s:golden    = [ '#d8caac', 223 ]
 let s:red_fg    = [ '#e3888a', 167 ]
 let s:blue_fg   = [ '#91bebb', 109 ]
 "}}}
@@ -33,7 +34,7 @@ let s:normal_mod_fg = s:blue_fg
 let s:normal_mod_bg = s:darker
 
 let s:insert_side_fg = s:dark
-let s:insert_side_bg = s:green
+let s:insert_side_bg = s:golden
 let s:insert_sub_fg = s:white
 let s:insert_sub_bg = s:darkgrey
 let s:insert_mid_fg = s:white
