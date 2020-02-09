@@ -4,6 +4,14 @@
 
 ![demo](https://user-images.githubusercontent.com/37491630/74096715-40f07000-4afa-11ea-9d40-d7390106d7a9.png)
 
+## Features
+
+- Green based but warm-toned.
+- Designed to have soft contrast for eye protection.
+- Customizable.
+- Rich support for common file types and plugins.
+- [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
+
 ## Installation
 
 ### Via Plugin Manager
@@ -129,13 +137,13 @@ To apply it without reloading:
 2. Enable italic keywords in this color scheme: `let g:forest_night_enable_italic = 1`
 3. Disable italic comment(optional): `let g:forest_night_disable_italic_comment = 1`
 
-**Q: What's your status line configuration?**
-
-**A:** Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
-
 **Q: What's the font used here?**
 
 **A:** [InconsolataLGC iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+
+**Q: What's your status line configuration?**
+
+**A:** Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
 
 ## Related Projects
 
