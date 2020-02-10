@@ -1393,7 +1393,7 @@ elseif s:configuration.current_word ==# 'underline'
 elseif s:configuration.current_word ==# 'italic'
   call s:HL('CocHighlightText', s:palette.none, s:palette.none, 'italic')
 elseif s:configuration.current_word ==# 'grey background'
-  call s:HL('CocHighlightText', s:palette.none, s:palette.bg1)
+  call s:HL('CocHighlightText', s:palette.none, s:palette.bg2)
 endif
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
