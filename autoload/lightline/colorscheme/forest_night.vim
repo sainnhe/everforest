@@ -11,9 +11,9 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 let s:dark      = [ '#323d43', 235 ]
 let s:darker    = [ '#3c474d', 236 ]
 let s:darkgrey  = [ '#576268', 240 ]
-let s:red       = [ '#e3888a', 167 ]
-let s:green     = [ '#a7bf81', 142 ]
-let s:orange    = [ '#e3a184', 208 ]
+let s:red       = [ '#e68183', 167 ]
+let s:green     = [ '#a7c080', 142 ]
+let s:orange    = [ '#e39b7b', 208 ]
 let s:white     = [ '#d8cbb2', 223 ]
 let s:golden    = [ '#d8caac', 223 ]
 "}}}
