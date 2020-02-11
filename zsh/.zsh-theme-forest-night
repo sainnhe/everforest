@@ -56,7 +56,7 @@ fi
     p=$ins
   fi
   if [[ "$DESERT_NIGHT_PURE_POWER_TRUE_COLOR" == "true" ]]; then
-    local ok="%F{#d8cbb2}${p}%f"
+    local ok="%F{#d8caac}${p}%f"
     local err="%F{#e68183}${p}%f"
   else
     local ok="%F{$(_pp_s 007 223)}${p}%f"

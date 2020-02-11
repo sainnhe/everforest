@@ -6,7 +6,7 @@ In `~/.config/alacritty/alacritty.yml`:
 colors:
   primary:
     background: '0x323d43'
-    foreground: '0xd8cbb2'
+    foreground: '0xd8caac'
 
   normal:
     black:   '0x868d80'
@@ -16,7 +16,7 @@ colors:
     blue:    '0x89beba'
     magenta: '0xd3a0bc'
     cyan:    '0x87c095'
-    white:   '0xd8cbb2'
+    white:   '0xd8caac'
 
   bright:
     black:   '0x868d80'
@@ -26,5 +26,5 @@ colors:
     blue:    '0x89beba'
     magenta: '0xd3a0bc'
     cyan:    '0x87c095'
-    white:   '0xd8cbb2'
+    white:   '0xd8caac'
 ```

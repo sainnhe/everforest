@@ -14,7 +14,7 @@ let s:darkgrey  = [ '#576268', 240 ]
 let s:red       = [ '#e68183', 167 ]
 let s:green     = [ '#a7c080', 142 ]
 let s:orange    = [ '#e39b7b', 208 ]
-let s:white     = [ '#d8cbb2', 223 ]
+let s:white     = [ '#d8caac', 223 ]
 let s:golden    = [ '#d8caac', 223 ]
 "}}}
 
