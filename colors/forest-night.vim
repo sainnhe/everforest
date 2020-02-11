@@ -36,7 +36,7 @@ let s:palette = {
       \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
       \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
       \ 'fg':         ['#d8caac',   '223',  'White'],
-      \ 'red':        ['#e37f81',   '167',  'Red'],
+      \ 'red':        ['#e68183',   '167',  'Red'],
       \ 'orange':     ['#e39b7b',   '208',  'Red'],
       \ 'yellow':     ['#d9bb80',   '214',  'Yellow'],
       \ 'green':      ['#a7c17f',   '142',  'Green'],
