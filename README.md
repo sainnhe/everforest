@@ -2,7 +2,7 @@
 𝐅𝐨𝐫𝐞𝐬𝐭 𝐍𝐢𝐠𝐡𝐭
 </h1>
 
-![demo](https://user-images.githubusercontent.com/37491630/74096715-40f07000-4afa-11ea-9d40-d7390106d7a9.png)
+![demo](https://user-images.githubusercontent.com/37491630/74209833-5217b900-4c81-11ea-86e2-3727fdfc3233.png)
 
 ## Features
 
