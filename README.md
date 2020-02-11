@@ -159,4 +159,4 @@ To apply it without reloading:
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](./LICENSE) © sainnhe
