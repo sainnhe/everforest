@@ -1420,7 +1420,7 @@ highlight! link CocExplorerBufferModified Red
 highlight! link CocExplorerBufferBufname Grey
 highlight! link CocExplorerFileRoot Orange
 highlight! link CocExplorerFileExpandIcon Cyan
-highlight! link CocExplorerFileFullpath Cyan
+highlight! link CocExplorerFileFullpath Grey
 highlight! link CocExplorerFileDirectory Green
 highlight! link CocExplorerFileGitStage Purple
 highlight! link CocExplorerFileGitUnstage Yellow
@@ -1645,7 +1645,7 @@ highlight! link StartifyBracket Grey
 highlight! link StartifyFile Fg
 highlight! link StartifyNumber Red
 highlight! link StartifyPath Green
-highlight! link StartifySlash Cyan
+highlight! link StartifySlash Green
 highlight! link StartifySection Blue
 highlight! link StartifyHeader Orange
 highlight! link StartifySpecial Grey
