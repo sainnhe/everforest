@@ -8,6 +8,7 @@
 
 - Green based but warm-toned.
 - Designed to have soft contrast for eye protection.
+- Works well with [redshift](https://github.com/jonls/redshift) and [f.lux](https://justgetflux.com).
 - Customizable.
 - Rich support for common file types and plugins.
 - [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
