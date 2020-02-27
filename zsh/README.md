@@ -11,14 +11,14 @@ The prompt theme is forest-night version of pure power, it depends on [romkatv/p
 To use it, simply source this file in your zshrc after powerlevel10k has been load:
 
 ```zsh
-source /path/to/vim-color-forest-night/zsh/.zsh-theme-forest-night
+source /path/to/forest-night/zsh/.zsh-theme-forest-night
 ```
 
 Alternatively, if you are using [zplugin](https://github.com/zdharma/zplugin), you can install the theme like this:
 
 ```zsh
 zplugin light romkatv/powerlevel10k
-zplugin snippet https://github.com/sainnhe/vim-color-forest-night/blob/master/zsh/.zsh-theme-forest-night
+zplugin snippet https://github.com/sainnhe/forest-night/blob/master/zsh/.zsh-theme-forest-night
 ```
 
 ## Customization
@@ -31,4 +31,4 @@ PURE_POWER_MODE=fancy     # use unicode characters in the prompt
 PURE_POWER_MODE=portable  # use only ascii characters in the prompt
 ```
 
-To switch between them, edit `/path/to/vim-color-forest-night/zsh/.zsh-theme-forest-night`, and change the value of `PURE_POWER_MODE`.
+To switch between them, edit `/path/to/forest-night/zsh/.zsh-theme-forest-night`, and change the value of `PURE_POWER_MODE`.

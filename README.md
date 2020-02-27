@@ -20,7 +20,7 @@
 Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
 ```vim
-Plug 'sainnhe/vim-color-forest-night'
+Plug 'sainnhe/forest-night'
 ```
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
@@ -28,9 +28,9 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 ### Manually
 
 1. Clone this repository.
-2. Copy `/path/to/vim-color-forest-night/colors/forest-night.vim` to `~/.vim/colors/forest-night.vim`
-3. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/vim-color-forest-night/autoload/airline/themes/forest_night.vim` to `~/.vim/autoload/airline/themes/forest_night.vim`
-4. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/vim-color-forest-night/autoload/lightline/colorscheme/forest_night.vim` to `~/.vim/autoload/lightline/colorscheme/forest_night.vim`
+2. Copy `/path/to/forest-night/colors/forest-night.vim` to `~/.vim/colors/forest-night.vim`
+3. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/forest-night/autoload/airline/themes/forest_night.vim` to `~/.vim/autoload/airline/themes/forest_night.vim`
+4. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/forest-night/autoload/lightline/colorscheme/forest_night.vim` to `~/.vim/autoload/lightline/colorscheme/forest_night.vim`
 
 ### AUR
 
@@ -57,7 +57,7 @@ let g:forest_night_disable_italic_comment = 1
 colorscheme forest-night
 ```
 
-See [Configuration](https://github.com/sainnhe/vim-color-forest-night#configuration) for more configuration options.
+See [Configuration](https://github.com/sainnhe/forest-night#configuration) for more configuration options.
 
 If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
 
@@ -156,7 +156,7 @@ To apply it without reloading:
 
 - [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
 - [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
-- [gruvbox-material](https://github.com/gruvbox-material/vim)
+- [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 
 ## License
 

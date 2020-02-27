@@ -1,8 +1,8 @@
 " -----------------------------------------------------------------------------
 " Name:         Forest Night
 " Description:  Comfortable & Pleasant Color Scheme for Vim
-" Author:       Sainnhepark <sainnhe@gmail.com>
-" Website:      https://github.com/sainnhe/vim-color-forest-night
+" Author:       sainnhe <sainnhe@gmail.com>
+" Website:      https://github.com/sainnhe/forest-night
 " License:      MIT
 " -----------------------------------------------------------------------------
 

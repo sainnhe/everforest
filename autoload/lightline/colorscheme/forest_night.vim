@@ -1,7 +1,7 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/vim-color-forest-night
+" URL: https://github.com/sainnhe/forest-night
 " Filename: autoload/lightline/colorscheme/forest_night.vim
-" Author: Sainnhepark
+" Author: sainnhe
 " Email: sainnhe@gmail.com
 " License: MIT License
 " =============================================================================
