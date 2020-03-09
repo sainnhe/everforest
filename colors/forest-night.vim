@@ -1626,6 +1626,10 @@ highlight! link illuminatedWord CocHighlightText
 highlight! link CursorWord0 CocHighlightText
 highlight! link CursorWord1 CocHighlightText
 " }}}
+" Yggdroot/indentLine{{{
+let g:indentLine_color_gui = s:palette.grey[0]
+let g:indentLine_color_term = s:palette.grey[1]
+" }}}
 " nathanaelkane/vim-indent-guides{{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0
   call s:HL('IndentGuidesOdd', s:palette.bg0, s:palette.bg1)
