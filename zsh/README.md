@@ -14,11 +14,11 @@ To use it, simply source this file in your zshrc after powerlevel10k has been lo
 source /path/to/forest-night/zsh/.zsh-theme-forest-night
 ```
 
-Alternatively, if you are using [zplugin](https://github.com/zdharma/zplugin), you can install the theme like this:
+Alternatively, if you are using [zinit](https://github.com/zdharma/zinit)(formerly known as zplugin, [highly recommended](https://gist.github.com/laggardkernel/4a4c4986ccdcaf47b91e8227f9868ded)), you can install the theme like this:
 
 ```zsh
-zplugin light romkatv/powerlevel10k
-zplugin snippet https://github.com/sainnhe/forest-night/blob/master/zsh/.zsh-theme-forest-night
+zinit light romkatv/powerlevel10k
+zinit snippet https://github.com/sainnhe/forest-night/raw/master/zsh/.zsh-theme-forest-night
 ```
 
 ## Customization
