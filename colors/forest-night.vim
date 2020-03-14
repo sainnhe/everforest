@@ -64,7 +64,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg
           \ ]
     if a:0 >= 1
       if a:1 ==# 'undercurl'
-        call add(hl_string, 'gui=undercurl')
+        if has('gui_running')
+          call add(hl_string, 'gui=undercurl')
+        else
+          call add(hl_string, 'gui=underline')
+        endif
         call add(hl_string, 'cterm=underline')
       else
         call add(hl_string, 'gui=' . a:1)
