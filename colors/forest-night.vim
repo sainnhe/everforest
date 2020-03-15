@@ -14,6 +14,7 @@ endif
 set background=dark
 
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
+let s:tmux = executable('tmux') && $TMUX !=# ''
 
 let g:colors_name = 'forest-night'
 " }}}
@@ -64,7 +65,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg
           \ ]
     if a:0 >= 1
       if a:1 ==# 'undercurl'
-        if has('gui_running')
+        if !s:tmux
           call add(hl_string, 'gui=undercurl')
         else
           call add(hl_string, 'gui=underline')
