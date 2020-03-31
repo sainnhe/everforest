@@ -151,6 +151,7 @@ To apply it without reloading:
 
 ## Related Projects
 
+- [Visual Studio Code](https://github.com/sainnhe/forest-night-vscode)
 - [Alacritty](./alacritty/README.md)
 - [Zsh](./zsh/README.md)
 - [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
@@ -159,7 +160,7 @@ To apply it without reloading:
 
 - [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
 - [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
-- [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 
 ## License
 
