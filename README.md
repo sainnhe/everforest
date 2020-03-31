@@ -156,6 +156,12 @@ To apply it without reloading:
 - [Zsh](./zsh/README.md)
 - [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
 
+## More Color Schemes
+
+- [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
+- [Edge](https://github.com/sainnhe/edge)
+- [Sonokai](https://github.com/sainnhe/sonokai)
+
 ## Inspirations
 
 - [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
