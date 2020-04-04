@@ -872,6 +872,18 @@ highlight! link cppSTLexception Purple
 " vim-cpp-modern: https://github.com/bfrg/vim-cpp-modern{{{
 highlight! link cppSTLVariable Cyan
 " }}}
+" chromatica: https://github.com/arakashic/chromatica.nvim{{{
+highlight! link Member Aqua
+highlight! link Variable Blue
+highlight! link Namespace Purple
+highlight! link EnumConstant Aqua
+highlight! link chromaticaException RedItalic
+highlight! link chromaticaCast Orange
+highlight! link OperatorOverload Orange
+highlight! link AccessQual Orange
+highlight! link Linkage Orange
+highlight! link AutoType Yellow
+" }}}
 " }}}
 " ObjectiveC: {{{
 " builtin: {{{
