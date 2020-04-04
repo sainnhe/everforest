@@ -933,6 +933,21 @@ highlight! link pythonException RedItalic
 highlight! link pythonNone Cyan
 highlight! link pythonDot Grey
 " }}}
+" semshi: https://github.com/numirias/semshi{{{
+call s:HL('semshiUnresolved', s:palette.yellow, s:palette.none, 'undercurl')
+highlight! link semshiImported Purple
+highlight! link semshiParameter Blue
+highlight! link semshiParameterUnused Grey
+highlight! link semshiSelf PurpleItalic
+highlight! link semshiGlobal Yellow
+highlight! link semshiBuiltin Yellow
+highlight! link semshiAttribute Aqua
+highlight! link semshiLocal Red
+highlight! link semshiFree Red
+highlight! link semshiSelected CocHighlightText
+highlight! link semshiErrorSign RedSign
+highlight! link semshiErrorChar RedSign
+" }}}
 " }}}
 " Lua: {{{
 " builtin: {{{
