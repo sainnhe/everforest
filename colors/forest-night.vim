@@ -873,10 +873,10 @@ highlight! link cppSTLexception Purple
 highlight! link cppSTLVariable Cyan
 " }}}
 " chromatica: https://github.com/arakashic/chromatica.nvim{{{
-highlight! link Member Aqua
+highlight! link Member Cyan
 highlight! link Variable Blue
 highlight! link Namespace Purple
-highlight! link EnumConstant Aqua
+highlight! link EnumConstant Cyan
 highlight! link chromaticaException RedItalic
 highlight! link chromaticaCast Orange
 highlight! link OperatorOverload Orange
@@ -887,9 +887,9 @@ highlight! link AutoType Yellow
 " vim-lsp-cxx-highlight https://github.com/jackguo380/vim-lsp-cxx-highlight{{{
 highlight! link LspCxxHlSkippedRegion Grey
 highlight! link LspCxxHlSkippedRegionBeginEnd PurpleItalic
-highlight! link LspCxxHlGroupEnumConstant Aqua
+highlight! link LspCxxHlGroupEnumConstant Cyan
 highlight! link LspCxxHlGroupNamespace Purple
-highlight! link LspCxxHlGroupMemberVariable Aqua
+highlight! link LspCxxHlGroupMemberVariable Cyan
 " }}}
 " }}}
 " ObjectiveC: {{{
@@ -948,7 +948,7 @@ highlight! link semshiParameterUnused Grey
 highlight! link semshiSelf PurpleItalic
 highlight! link semshiGlobal Yellow
 highlight! link semshiBuiltin Yellow
-highlight! link semshiAttribute Aqua
+highlight! link semshiAttribute Cyan
 highlight! link semshiLocal Red
 highlight! link semshiFree Red
 highlight! link semshiSelected CocHighlightText
@@ -1442,6 +1442,11 @@ highlight! link plugSha Green
 " }}}
 " neoclide/coc.nvim{{{
 call s:HL('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
+call s:HL('CocHintHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.cyan)
+call s:HL('CocErrorFloat', s:palette.red, s:palette.bg3)
+call s:HL('CocWarningFloat', s:palette.yellow, s:palette.bg3)
+call s:HL('CocInfoFloat', s:palette.blue, s:palette.bg3)
+call s:HL('CocHintFloat', s:palette.cyan, s:palette.bg3)
 if s:configuration.current_word ==# 'bold'
   call s:HL('CocHighlightText', s:palette.none, s:palette.none, 'bold')
 elseif s:configuration.current_word ==# 'underline'
