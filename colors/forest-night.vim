@@ -144,20 +144,18 @@ call s:HL('ColorColumn', s:palette.none, s:palette.bg1)
 call s:HL('Conceal', s:palette.grey, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call s:HL('Cursor', s:palette.none, s:palette.none, 'reverse')
-  call s:HL('lCursor', s:palette.none, s:palette.none, 'reverse')
 elseif s:configuration.cursor ==# 'red'
   call s:HL('Cursor', s:palette.bg0, s:palette.red)
-  call s:HL('lCursor', s:palette.bg0, s:palette.red)
 elseif s:configuration.cursor ==# 'green'
   call s:HL('Cursor', s:palette.bg0, s:palette.green)
-  call s:HL('lCursor', s:palette.bg0, s:palette.green)
 elseif s:configuration.cursor ==# 'blue'
   call s:HL('Cursor', s:palette.bg0, s:palette.blue)
-  call s:HL('lCursor', s:palette.bg0, s:palette.blue)
 elseif s:configuration.cursor ==# 'purple'
   call s:HL('Cursor', s:palette.bg0, s:palette.purple)
-  call s:HL('lCursor', s:palette.bg0, s:palette.purple)
 endif
+highlight! link vCursor Cursor
+highlight! link iCursor Cursor
+highlight! link lCursor Cursor
 call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
 call s:HL('CursorLine', s:palette.none, s:palette.bg1)
 call s:HL('LineNr', s:palette.grey, s:palette.none)
