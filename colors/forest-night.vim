@@ -1406,6 +1406,16 @@ highlight! link diffFile Cyan
 highlight! link diffLine Grey
 highlight! link diffIndexLine Purple
 " }}}
+" Git Commit: {{{
+highlight! link gitcommitSummary Red
+highlight! link gitcommitUntracked Grey
+highlight! link gitcommitDiscarded Grey
+highlight! link gitcommitSelected Grey
+highlight! link gitcommitUnmerged Grey
+highlight! link gitcommitOnBranch Grey
+highlight! link gitcommitArrow Grey
+highlight! link gitcommitFile Green
+" }}}
 " Help: {{{
 call s:HL('helpNote', s:palette.purple, s:palette.none, 'bold')
 call s:HL('helpHeadline', s:palette.red, s:palette.none, 'bold')
