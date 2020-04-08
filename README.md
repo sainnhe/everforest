@@ -154,7 +154,7 @@ To apply it without reloading:
 - [Visual Studio Code](https://github.com/sainnhe/forest-night-vscode)
 - [Alacritty](./alacritty/README.md)
 - [Zsh](./zsh/README.md)
-- [Tmux](https://www.sainnhe.dev/post/status-line-config/b)
+- [Tmux](https://www.sainnhe.dev/post/status-line-config/)
 
 ## More Color Schemes
 
