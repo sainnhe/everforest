@@ -147,14 +147,14 @@ To apply it without reloading:
 
 **Q: What's your status line configuration?**
 
-**A:** Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
+**A:** See this [article](https://www.sainnhe.dev/post/status-line-config/).
 
 ## Related Projects
 
 - [Visual Studio Code](https://github.com/sainnhe/forest-night-vscode)
 - [Alacritty](./alacritty/README.md)
 - [Zsh](./zsh/README.md)
-- [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
+- [Tmux](https://www.sainnhe.dev/post/status-line-config/b)
 
 ## More Color Schemes
 
