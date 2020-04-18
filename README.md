@@ -133,6 +133,14 @@ To apply it without reloading:
 3. If you are running vim in tmux, you need to override default true colors of tmux, as tmux cannot display true colors properly: [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
 4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause colors to break. If any color is broken, you can enable the color scheme in your vimrc instead of after vim startup.
 
+**Q: I can't apply airline/lightline color scheme.**
+
+**A:** The name is `forest_night` instead of `forest-night`. I have to use underline for some grammatical reasons.
+
+**Q: The background color of gitgutter looks wired.**
+
+**A:** See [edge#6](https://github.com/sainnhe/edge/issues/6#issuecomment-570750204).
+
 **Q: How to enable cursive italic keywords?**
 
 **A:**
