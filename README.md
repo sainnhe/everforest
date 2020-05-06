@@ -159,6 +159,7 @@ To apply it without reloading:
 - [Alacritty](./alacritty/README.md)
 - [Zsh](./zsh/README.md)
 - [Tmux](https://www.sainnhe.dev/post/status-line-config/)
+- [Alfred](./alfred/README.md)
 
 ## More Color Schemes
 
