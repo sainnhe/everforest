@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.github.sainnhe.forestnight.jetbrains</id>
   <name>Forest Night</name>
-  <version>1.1.1</version>
+  <version>1.0.0</version>
   <vendor email="jeffreylec@gmail.com" url="https://github.com/sainnhe/forest-night">Forest Night</vendor>
 
   <description><![CDATA[
