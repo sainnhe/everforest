@@ -1,1 +1,7 @@
-colors/forest_night.vim
+# Git Related
+.idea/
+.vscode/
+out/
+
+# Outputs
+forest-night-jetbrains.jar

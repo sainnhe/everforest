@@ -1,4 +1,4 @@
-# Forest Night Alfred Theme
+# Forest Night - Alfred
 
 ![](./example.png)
 

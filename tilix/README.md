@@ -1,4 +1,4 @@
-# Forest Night iTerm Theme
+# Forest Night Tilix
 
 ![colortest](./colortest.png)
 

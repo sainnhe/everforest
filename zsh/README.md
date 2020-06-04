@@ -1,10 +1,12 @@
+# Forest Night - Zsh
+
 ![zsh](https://user-images.githubusercontent.com/37491630/74096717-4483f700-4afa-11ea-9018-0253d502c8f5.png)
 
-# Syntax Highlighting
+## Syntax Highlighting
 
 The syntax highlighting is implemented by [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting). By using `default` theme with any terminal emulator color scheme of forest-night, you can get a forest-night syntax highlighting theme of zsh.
 
-# Prompt
+## Prompt
 
 The prompt theme is forest-night version of pure power, it depends on [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
