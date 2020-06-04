@@ -1,4 +1,4 @@
-# Forest Night Tilix
+# Forest Night - Tilix
 
 ![colortest](./colortest.png)
 

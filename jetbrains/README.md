@@ -4,7 +4,7 @@
 
 ## Install
 
-Download from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/14436-forest-night).
+Download from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/14448-forest-night).
 
 ## Contributing
 
