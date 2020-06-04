@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.github.sainnhe.forestnight.jetbrains</id>
   <name>Forest Night</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <vendor email="jeffreylec@gmail.com" url="https://github.com/sainnhe/forest-night">Forest Night</vendor>
 
   <description><![CDATA[
@@ -14,7 +14,7 @@
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
+  <idea-version since-build="191.0"/>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
