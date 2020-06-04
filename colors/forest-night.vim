@@ -213,8 +213,8 @@ if has('nvim')
   highlight! link healthWarning Yellow
   highlight! link LspDiagnosticsError Grey
   highlight! link LspDiagnosticsWarning Grey
-  highlight! link LspDiagnosticInformation Grey
-  highlight! link LspDiagnosticHint Grey
+  highlight! link LspDiagnosticsInformation Grey
+  highlight! link LspDiagnosticsHint Grey
   highlight! link LspReferenceText CocHighlightText
   highlight! link LspReferenceRead CocHighlightText
   highlight! link LspReferenceWrite CocHighlightText

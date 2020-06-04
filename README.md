@@ -155,12 +155,7 @@ To apply it without reloading:
 
 ## Related Projects
 
-- [Alacritty](./alacritty/README.md)
-- [Alfred](./alfred/README.md)
-- [Tilix](./tilix/README.md)
-- [Tmux](https://www.sainnhe.dev/post/status-line-config/)
-- [Visual Studio Code](https://github.com/sainnhe/forest-night-vscode)
-- [Zsh](./zsh/README.md)
+See this [wiki page](https://github.com/sainnhe/forest-night/wiki/Related-Projects).
 
 ## More Color Schemes
 
