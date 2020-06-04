@@ -1,4 +1,8 @@
+# Forest Night - Alacritty
+
 ![alacritty](https://user-images.githubusercontent.com/37491630/74096695-f66ef380-4af9-11ea-9cda-ebb57583bee2.png)
+
+## Install
 
 In `~/.config/alacritty/alacritty.yml`:
 
