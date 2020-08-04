@@ -169,6 +169,12 @@ See this [wiki page](https://github.com/sainnhe/forest-night/wiki/Related-Projec
 - [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
 - [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 
+## Maintainers
+
+| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Jef LeCompte](https://avatars0.githubusercontent.com/u/12074633?s=70&u=425e7f9db7a80a6615fd0d89bd58afdf7bddfda1&v=4)](https://github.com/jef) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Jef LeCompte](https://github.com/jef)                                                                                                           |
+
 ## License
 
-[MIT](./LICENSE) © sainnhe
+[MIT](./LICENSE)
