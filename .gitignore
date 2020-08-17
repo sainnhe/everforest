@@ -1,3 +1,6 @@
+# System
+.DS_Store
+
 # Git Related
 .idea/
 .vscode/
