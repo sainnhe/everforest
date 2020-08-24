@@ -36,9 +36,8 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 
 There are some packages available for Arch Linux users in AUR:
 
-- [vim-colorscheme-forest-night-git](https://aur.archlinux.org/packages/vim-colorscheme-forest-night-git/)
-- [vim-airline-forest-night-git](https://aur.archlinux.org/packages/vim-airline-forest-night-git/)
-- [vim-lightline-forest-night-git](https://aur.archlinux.org/packages/vim-lightline-forest-night-git/)
+- [vim-forest-night-git](https://aur.archlinux.org/pkgbase/vim-forest-night-git/)
+- [neovim-forest-night-git](https://aur.archlinux.org/pkgbase/neovim-forest-night-git/)
 
 ## Usage
 
