@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon 29 Jun 2020 10:07:19 AM UTC'
+let s:last_modified = 'Sat Aug 29 03:05:29 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -609,7 +609,7 @@ highlight! link netrwVersion Orange
 " Extended File Types: {{{
 " Note: To ensure that the `s:last_modified` variable is always up to date, you need to copy `.githooks/pre-commit` to `.git/hooks/pre-commit`.
 " Generate the `after/ftplugin` directory based on the comment tags in this file.
-" For example, the content between `ft_begin: sh/zsh` and `ft_end` will be placed in `after/ftplugin/sh/forest_night.vim` and `after/ftplugin/zsh/gruvbox_material.vim`.
+" For example, the content between `ft_begin: sh/zsh` and `ft_end` will be placed in `after/ftplugin/sh/forest_night.vim` and `after/ftplugin/zsh/forest_night.vim`.
 if forest_night#ft_exists(s:path) " If the ftplugin exists.
   if s:configuration.better_performance
     if !forest_night#ft_newest(s:path, s:last_modified) " Regenerate if it's not up to date.
