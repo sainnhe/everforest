@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Update the `s:last_modified` in `colors/forest-night.vim` automatically.
+
+BBLUE='\033[1;34m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+DATE=$(date --utc)
+
+# Stash unstaged changes
+git stash -q --keep-index
+
+# Edit the file if it's staged.
+if test "$(git diff --cached --name-only | grep 'colors/forest-night.vim')"x != ""x
+then
+  # Use `sed -i.bak` instead of `sed -i` for compatibility with Mac OS and Free BSD.
+  sed -i.bak "s/^let\ s:last_modified.*\$/let s:last_modified = '${DATE}'/" colors/forest-night.vim
+  rm colors/forest-night.vim.bak
+  printf "${BBLUE}The last modified time field has been updated in colors/forest-night.vim\n${GREEN}let s:last_modified = '${DATE}'${NC}\n\n"
+fi
+
+# Stage updated files
+git add -u
+
+# Re-apply original unstaged changes
+git stash pop -q
