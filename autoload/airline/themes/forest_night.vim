@@ -36,16 +36,16 @@ let s:normal_sub_fg = s:palette.grey2
 let s:normal_sub_bg = s:palette.bg3
 let s:normal_mid_fg = s:palette.grey1
 let s:normal_mid_bg = s:palette.bg1
-let s:normal_mod_fg = s:palette.aqua
+let s:normal_mod_fg = s:palette.green
 let s:normal_mod_bg = s:palette.bg1
 
 let s:insert_side_fg = s:palette.bg0
 let s:insert_side_bg = s:palette.fg
-let s:insert_sub_fg = s:palette.grey2
+let s:insert_sub_fg = s:palette.fg
 let s:insert_sub_bg = s:palette.bg3
-let s:insert_mid_fg = s:palette.grey1
+let s:insert_mid_fg = s:palette.fg
 let s:insert_mid_bg = s:palette.bg1
-let s:insert_mod_fg = s:palette.aqua
+let s:insert_mod_fg = s:palette.fg
 let s:insert_mod_bg = s:palette.bg1
 
 let s:visual_side_fg = s:palette.bg0
@@ -54,7 +54,7 @@ let s:visual_sub_fg = s:palette.grey2
 let s:visual_sub_bg = s:palette.bg3
 let s:visual_mid_fg = s:palette.grey1
 let s:visual_mid_bg = s:palette.bg1
-let s:visual_mod_fg = s:palette.aqua
+let s:visual_mod_fg = s:palette.red
 let s:visual_mod_bg = s:palette.bg1
 
 let s:replace_side_fg = s:palette.bg0
@@ -63,7 +63,7 @@ let s:replace_sub_fg = s:palette.grey2
 let s:replace_sub_bg = s:palette.bg3
 let s:replace_mid_fg = s:palette.grey1
 let s:replace_mid_bg = s:palette.bg1
-let s:replace_mod_fg = s:palette.aqua
+let s:replace_mod_fg = s:palette.orange
 let s:replace_mod_bg = s:palette.bg1
 
 let s:commandline_side_fg = s:palette.bg0
