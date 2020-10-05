@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct  5 08:26:43 AM UTC 2020'
+let s:last_modified = 'Mon Oct  5 08:34:28 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -82,9 +82,9 @@ call forest_night#highlight('MatchParen', s:palette.none, s:palette.bg4)
 call forest_night#highlight('NonText', s:palette.bg4, s:palette.none)
 call forest_night#highlight('Whitespace', s:palette.bg3, s:palette.none)
 call forest_night#highlight('SpecialKey', s:palette.bg3, s:palette.none)
-call forest_night#highlight('Pmenu', s:palette.grey2, s:palette.bg2)
+call forest_night#highlight('Pmenu', s:palette.fg, s:palette.bg2)
 call forest_night#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
-call forest_night#highlight('PmenuSel', s:palette.fg, s:palette.bg4)
+call forest_night#highlight('PmenuSel', s:palette.bg0, s:palette.green)
 highlight! link WildMenu PmenuSel
 call forest_night#highlight('PmenuThumb', s:palette.none, s:palette.grey1)
 call forest_night#highlight('Question', s:palette.yellow, s:palette.none)
@@ -109,7 +109,6 @@ call forest_night#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call forest_night#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
   call forest_night#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  call forest_night#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
