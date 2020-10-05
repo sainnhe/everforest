@@ -1,3 +1,7 @@
+# Vim
+doc/tags
+after
+
 # System
 .DS_Store
 
