@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct  5 08:14:38 AM UTC 2020'
+let s:last_modified = 'Mon Oct  5 08:26:43 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -224,10 +224,10 @@ else
   call forest_night#highlight('PurpleSign', s:palette.purple, s:palette.bg1)
 endif
 if s:configuration.diagnostic_line_highlight
-  call forest_night#highlight('ErrorLine', s:palette.bg0, s:palette.red)
-  call forest_night#highlight('WarningLine', s:palette.bg0, s:palette.yellow)
-  call forest_night#highlight('InfoLine', s:palette.bg0, s:palette.blue)
-  call forest_night#highlight('HintLine', s:palette.bg0, s:palette.green)
+  call forest_night#highlight('ErrorLine', s:palette.none, s:palette.bg_red)
+  call forest_night#highlight('WarningLine', s:palette.none, s:palette.bg_yellow)
+  call forest_night#highlight('InfoLine', s:palette.none, s:palette.bg_blue)
+  call forest_night#highlight('HintLine', s:palette.none, s:palette.bg_green)
 else
   highlight clear ErrorLine
   highlight clear WarningLine
