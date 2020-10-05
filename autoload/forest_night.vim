@@ -35,9 +35,9 @@ function! forest_night#get_palette() "{{{
         \ 'orange':     ['#e39b7b',   '208',  'Red'],
         \ 'yellow':     ['#d9bb80',   '214',  'Yellow'],
         \ 'green':      ['#a7c080',   '142',  'Green'],
-        \ 'aqua':       ['#87c095',   '108',   'Cyan'],
-        \ 'blue':       ['#89beba',   '109',  'Blue'],
-        \ 'purple':     ['#d3a0bc',   '175',  'Magenta'],
+        \ 'aqua':       ['#87c095',   '108',  'Cyan'],
+        \ 'blue':       ['#83b6af',   '109',  'Blue'],
+        \ 'purple':     ['#d39bb6',   '175',  'Magenta'],
         \ 'grey':       ['#868d80',   '245',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
