@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct  5 08:34:28 AM UTC 2020'
+let s:last_modified = 'Mon Oct  5 10:36:59 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -65,9 +65,9 @@ call forest_night#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 call forest_night#highlight('CursorLine', s:palette.none, s:palette.bg1)
 call forest_night#highlight('LineNr', s:palette.grey0, s:palette.none)
 if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-  call forest_night#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
+  call forest_night#highlight('CursorLineNr', s:palette.fg, s:palette.none)
 else
-  call forest_night#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
+  call forest_night#highlight('CursorLineNr', s:palette.fg, s:palette.bg1)
 endif
 call forest_night#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call forest_night#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
