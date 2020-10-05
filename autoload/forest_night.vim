@@ -26,7 +26,7 @@ function! forest_night#get_palette() "{{{
         \ 'bg1':        ['#3c474d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#465258',   '237',  'DarkGrey'],
         \ 'bg3':        ['#505a60',   '238',  'DarkGrey'],
-        \ 'bg4':        ['#576268',   '239',  'Grey'],
+        \ 'bg4':        ['#576268',   '239',  'DarkGrey'],
         \ 'bg_red':     ['#392f32',   '52',   'DarkRed'],
         \ 'bg_green':   ['#333b2f',   '22',   'DarkGreen'],
         \ 'bg_blue':    ['#203a41',   '17',   'DarkBlue'],
@@ -38,7 +38,9 @@ function! forest_night#get_palette() "{{{
         \ 'aqua':       ['#87c095',   '108',  'Cyan'],
         \ 'blue':       ['#83b6af',   '109',  'Blue'],
         \ 'purple':     ['#d39bb6',   '175',  'Magenta'],
-        \ 'grey':       ['#868d80',   '245',  'LightGrey'],
+        \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
+        \ 'grey1':      ['#868d80',   '245',  'Grey'],
+        \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
 endfunction "}}}

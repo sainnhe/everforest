@@ -184,19 +184,6 @@ E.g.~
     let g:forest_night_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-                                     *g:forest_night_menu_selection_background*
-
-Customize the background color of |hl-PmenuSel| and |hl-WildMenu|.
-
-    Available values: `'white'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
-    `'aqua'`, `'blue'`, `'purple'`
-    Default value: `'white'`
-
-E.g.~
->
-    let g:forest_night_menu_selection_background = 'green'
-<
-------------------------------------------------------------------------------
                                         *g:forest_night_sign_column_background*
 
 By default, the background color of sign column is different from normal text.
