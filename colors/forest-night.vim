@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct  6 07:31:04 AM UTC 2020'
+let s:last_modified = 'Tue Oct  6 07:47:21 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -100,8 +100,8 @@ call forest_night#highlight('TabLine', s:palette.grey2, s:palette.bg3)
 call forest_night#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
 call forest_night#highlight('TabLineSel', s:palette.bg0, s:palette.green)
 call forest_night#highlight('VertSplit', s:palette.bg4, s:palette.none)
-call forest_night#highlight('Visual', s:palette.none, s:palette.bg3)
-call forest_night#highlight('VisualNOS', s:palette.none, s:palette.bg3)
+call forest_night#highlight('Visual', s:palette.none, s:palette.bg_visual)
+call forest_night#highlight('VisualNOS', s:palette.none, s:palette.bg_visual)
 call forest_night#highlight('QuickFixLine', s:palette.purple, s:palette.none, 'bold')
 call forest_night#highlight('Debug', s:palette.orange, s:palette.none)
 call forest_night#highlight('debugPC', s:palette.bg0, s:palette.green)
