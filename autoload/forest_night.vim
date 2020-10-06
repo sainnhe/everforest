@@ -27,7 +27,7 @@ function! forest_night#get_palette() "{{{
         \ 'bg2':        ['#465258',   '237',  'DarkGrey'],
         \ 'bg3':        ['#505a60',   '238',  'DarkGrey'],
         \ 'bg4':        ['#576268',   '239',  'DarkGrey'],
-        \ 'bg_visual':  ['#57414f',   '52',   'DarkRed'],
+        \ 'bg_visual':  ['#5d4251',   '52',   'DarkRed'],
         \ 'bg_red':     ['#5f4e53',   '52',   'DarkRed'],
         \ 'bg_green':   ['#4f5d52',   '22',   'DarkGreen'],
         \ 'bg_blue':    ['#46575f',   '17',   'DarkBlue'],
