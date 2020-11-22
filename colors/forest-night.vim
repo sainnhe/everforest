@@ -113,10 +113,10 @@ if has('nvim')
   highlight! link healthError Red
   highlight! link healthSuccess Green
   highlight! link healthWarning Yellow
-  highlight! link LspDiagnosticsDefaultError Red
-  highlight! link LspDiagnosticsDefaultWarning Yellow
-  highlight! link LspDiagnosticsDefaultInformation Blue
-  highlight! link LspDiagnosticsDefaultHint Aqua
+  highlight! link LspDiagnosticsDefaultError Grey
+  highlight! link LspDiagnosticsDefaultWarning Grey
+  highlight! link LspDiagnosticsDefaultInformation Grey
+  highlight! link LspDiagnosticsDefaultHint Grey
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
