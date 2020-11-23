@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 23 02:16:14 AM UTC 2020'
+let s:last_modified = 'Mon Nov 23 02:45:14 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -94,6 +94,7 @@ call forest_night#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
 call forest_night#highlight('PmenuSel', s:palette.bg0, s:palette.green)
 highlight! link WildMenu PmenuSel
 call forest_night#highlight('PmenuThumb', s:palette.none, s:palette.grey1)
+call forest_night#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
 call forest_night#highlight('Question', s:palette.yellow, s:palette.none)
 call forest_night#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
 call forest_night#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
