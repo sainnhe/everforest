@@ -21,7 +21,7 @@ endif
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct  6 07:47:21 AM UTC 2020'
+let s:last_modified = 'Mon Nov 23 02:16:14 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -61,10 +61,17 @@ highlight! link vCursor Cursor
 highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
-call forest_night#highlight('CursorColumn', s:palette.none, s:palette.bg1)
-call forest_night#highlight('CursorLine', s:palette.none, s:palette.bg1)
+if &diff
+  call forest_night#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
+  call forest_night#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
+else
+  call forest_night#highlight('CursorLine', s:palette.none, s:palette.bg1)
+  call forest_night#highlight('CursorColumn', s:palette.none, s:palette.bg1)
+endif
 call forest_night#highlight('LineNr', s:palette.grey0, s:palette.none)
-if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+if &diff
+  call forest_night#highlight('CursorLineNr', s:palette.fg, s:palette.none, 'underline')
+elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
   call forest_night#highlight('CursorLineNr', s:palette.fg, s:palette.none)
 else
   call forest_night#highlight('CursorLineNr', s:palette.fg, s:palette.bg1)
@@ -108,18 +115,31 @@ call forest_night#highlight('debugPC', s:palette.bg0, s:palette.green)
 call forest_night#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call forest_night#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
+  call forest_night#highlight('LspDiagnosticsFloatingError', s:palette.red, s:palette.bg2)
+  call forest_night#highlight('LspDiagnosticsFloatingWarning', s:palette.yellow, s:palette.bg2)
+  call forest_night#highlight('LspDiagnosticsFloatingInformation', s:palette.blue, s:palette.bg2)
+  call forest_night#highlight('LspDiagnosticsFloatingHint', s:palette.aqua, s:palette.bg2)
   call forest_night#highlight('Substitute', s:palette.bg0, s:palette.yellow)
+  highlight! link LspDiagnosticsDefaultError ErrorLine
+  highlight! link LspDiagnosticsDefaultWarning WarningLine
+  highlight! link LspDiagnosticsDefaultInformation InfoLine
+  highlight! link LspDiagnosticsDefaultHint HintLine
+  highlight! link LspDiagnosticsVirtualTextError Grey
+  highlight! link LspDiagnosticsVirtualTextWarning Grey
+  highlight! link LspDiagnosticsVirtualTextInformation Grey
+  highlight! link LspDiagnosticsVirtualTextHint Grey
+  highlight! link LspDiagnosticsUnderlineError ErrorLine
+  highlight! link LspDiagnosticsUnderlineWarning WarningLine
+  highlight! link LspDiagnosticsUnderlineInformation InfoLine
+  highlight! link LspDiagnosticsUnderlineHint HintLine
+  highlight! link LspDiagnosticsSignError RedSign
+  highlight! link LspDiagnosticsSignWarning YellowSign
+  highlight! link LspDiagnosticsSignInformation BlueSign
+  highlight! link LspDiagnosticsSignHint AquaSign
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
   highlight! link healthWarning Yellow
-  highlight! link LspDiagnosticsDefaultError Grey
-  highlight! link LspDiagnosticsDefaultWarning Grey
-  highlight! link LspDiagnosticsDefaultInformation Grey
-  highlight! link LspDiagnosticsDefaultHint Grey
-  highlight! link LspReferenceText CurrentWord
-  highlight! link LspReferenceRead CurrentWord
-  highlight! link LspReferenceWrite CurrentWord
 endif
 " }}}
 " Syntax: {{{
@@ -233,7 +253,9 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-if s:configuration.current_word ==# 'grey background'
+if &diff
+  call forest_night#highlight('CurrentWord', s:palette.bg0, s:palette.green)
+elseif s:configuration.current_word ==# 'grey background'
   call forest_night#highlight('CurrentWord', s:palette.none, s:palette.bg2)
 else
   call forest_night#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
@@ -346,19 +368,38 @@ highlight! link CocGitTopRemovedSign RedSign
 highlight! link CocExplorerBufferRoot Orange
 highlight! link CocExplorerBufferExpandIcon Aqua
 highlight! link CocExplorerBufferBufnr Purple
-highlight! link CocExplorerBufferModified Red
+highlight! link CocExplorerBufferModified Yellow
+highlight! link CocExplorerBufferReadonly Red
 highlight! link CocExplorerBufferBufname Grey
 highlight! link CocExplorerBufferFullpath Grey
 highlight! link CocExplorerFileRoot Orange
+highlight! link CocExplorerFileRootName Green
 highlight! link CocExplorerFileExpandIcon Aqua
 highlight! link CocExplorerFileFullpath Grey
 highlight! link CocExplorerFileDirectory Green
-highlight! link CocExplorerFileGitStage Purple
-highlight! link CocExplorerFileGitUnstage Yellow
+highlight! link CocExplorerFileGitStaged Purple
+highlight! link CocExplorerFileGitUnstaged Yellow
+highlight! link CocExplorerFileGitRootStaged Purple
+highlight! link CocExplorerFileGitRootUnstaged Yellow
+highlight! link CocExplorerGitPathChange Fg
+highlight! link CocExplorerGitContentChange Fg
+highlight! link CocExplorerGitRenamed Purple
+highlight! link CocExplorerGitCopied Fg
+highlight! link CocExplorerGitAdded Green
+highlight! link CocExplorerGitUntracked Blue
+highlight! link CocExplorerGitUnmodified Fg
+highlight! link CocExplorerGitUnmerged Orange
+highlight! link CocExplorerGitMixed Aqua
+highlight! link CocExplorerGitModified Yellow
+highlight! link CocExplorerGitDeleted Red
+highlight! link CocExplorerGitIgnored Grey
 highlight! link CocExplorerFileSize Blue
 highlight! link CocExplorerTimeAccessed Aqua
 highlight! link CocExplorerTimeCreated Aqua
 highlight! link CocExplorerTimeModified Aqua
+highlight! link CocExplorerIndentLine Conceal
+highlight! link CocExplorerHelpDescription Grey
+highlight! link CocExplorerHelpHint Grey
 " }}}
 " prabirshrestha/vim-lsp {{{
 highlight! link LspErrorVirtual Grey

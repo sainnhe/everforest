@@ -161,6 +161,9 @@ E.g.~
 >
     let g:forest_night_disable_italic_comment = 1
 <
+Note: Some terminal emulators don't support italics, which may cause the
+comment color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
+
 ------------------------------------------------------------------------------
                                                         *g:forest_night_cursor*
 
