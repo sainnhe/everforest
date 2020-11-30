@@ -49,7 +49,7 @@ See [`:help forest-night.txt`](https://github.com/sainnhe/forest-night/blob/mast
 
 ## Related Projects
 
-See this [wiki page](https://github.com/sainnhe/forest-night/wiki/Related-Projects).
+See this [wiki page](https://github.com/sainnhe/forest-night/wiki).
 
 ## More Color Schemes
 
