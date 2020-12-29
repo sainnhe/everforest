@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Dec 29 01:42:55 AM UTC 2020'
+let s:last_modified = 'Tue Dec 29 03:45:20 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -309,37 +309,52 @@ endif
 " }}}
 " Plugins: {{{
 " nvim-treesitter/nvim-treesitter {{{
-highlight! link TSPunctDelimiter Grey
-highlight! link TSPunctBracket Fg
-highlight! link TSPunctSpecial Fg
-highlight! link TSConstant PurpleItalic
+highlight! link TSAnnotation Purple
+highlight! link TSAttribute Purple
+highlight! link TSBoolean Purple
+highlight! link TSCharacter Yellow
+highlight! link TSComment Grey
+highlight! link TSConditional Red
 highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro Purple
-highlight! link TSString Yellow
-highlight! link TSStringRegex Green
-highlight! link TSStringEscape Green
-highlight! link TSCharacter Yellow
-highlight! link TSNumber Purple
-highlight! link TSBoolean Purple
+highlight! link TSConstant PurpleItalic
+highlight! link TSConstructor Fg
+highlight! link TSError CocErrorHighlight
+highlight! link TSException Red
+highlight! link TSField Green
 highlight! link TSFloat Purple
-highlight! link TSFunction Green
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
-highlight! link TSParameter Fg
-highlight! link TSMethod Green
-highlight! link TSField Green
-highlight! link TSProperty Green
-highlight! link TSConstructor Fg
-highlight! link TSConditional Red
-highlight! link TSRepeat Red
-highlight! link TSLabel Orange
-highlight! link TSOperator Orange
+highlight! link TSFunction Green
+highlight! link TSInclude PurpleItalic
 highlight! link TSKeyword Red
-highlight! link TSException Red
+highlight! link TSKeywordFunction Red
+highlight! link TSLabel Orange
+highlight! link TSMethod Green
+highlight! link TSNamespace BlueItalic
+highlight! link TSNumber Purple
+highlight! link TSOperator Orange
+highlight! link TSParameter Fg
+highlight! link TSParameterReference Fg
+highlight! link TSProperty Green
+highlight! link TSPunctBracket Fg
+highlight! link TSPunctDelimiter Grey
+highlight! link TSPunctSpecial Fg
+highlight! link TSRepeat Red
+highlight! link TSString Yellow
+highlight! link TSStringEscape Green
+highlight! link TSStringRegex Green
+highlight! link TSStructure Orange
+highlight! link TSTag Orange
+highlight! link TSTagDelimiter Green
+highlight! link TSText Green
+call forest_night#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
+call forest_night#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
 highlight! link TSType Aqua
 highlight! link TSTypeBuiltin BlueItalic
-highlight! link TSStructure Orange
-highlight! link TSInclude PurpleItalic
+highlight! link TSURI markdownUrl
+highlight! link TSVariable Fg
+highlight! link TSVariableBuiltin PurpleItalic
 " }}}
 " neoclide/coc.nvim {{{
 call forest_night#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
