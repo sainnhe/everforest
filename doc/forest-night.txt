@@ -8,6 +8,8 @@ Usage                                        |forest-night-usage|
 Configuration                                |forest-night-configuration|
 FAQ                                          |forest-night-faq|
 
+Note: Type |gO| to show the outline of contents.
+
 ==============================================================================
 INTRODUCTION                                        *forest-night-introduction*
 
