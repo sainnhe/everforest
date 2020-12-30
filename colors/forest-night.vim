@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Dec 29 03:45:20 AM UTC 2020'
+let s:last_modified = 'Wed Dec 30 12:49:55 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -118,23 +118,23 @@ call forest_night#highlight('debugPC', s:palette.bg0, s:palette.green)
 call forest_night#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call forest_night#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
-  call forest_night#highlight('LspDiagnosticsFloatingError', s:palette.red, s:palette.bg2)
-  call forest_night#highlight('LspDiagnosticsFloatingWarning', s:palette.yellow, s:palette.bg2)
-  call forest_night#highlight('LspDiagnosticsFloatingInformation', s:palette.blue, s:palette.bg2)
-  call forest_night#highlight('LspDiagnosticsFloatingHint', s:palette.aqua, s:palette.bg2)
   call forest_night#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link LspDiagnosticsDefaultError ErrorLine
-  highlight! link LspDiagnosticsDefaultWarning WarningLine
-  highlight! link LspDiagnosticsDefaultInformation InfoLine
-  highlight! link LspDiagnosticsDefaultHint HintLine
+  highlight! link LspDiagnosticsFloatingError ErrorFloat
+  highlight! link LspDiagnosticsFloatingWarning WarningFloat
+  highlight! link LspDiagnosticsFloatingInformation InfoFloat
+  highlight! link LspDiagnosticsFloatingHint HintFloat
+  highlight! link LspDiagnosticsDefaultError ErrorText
+  highlight! link LspDiagnosticsDefaultWarning WarningText
+  highlight! link LspDiagnosticsDefaultInformation InfoText
+  highlight! link LspDiagnosticsDefaultHint HintText
   highlight! link LspDiagnosticsVirtualTextError Grey
   highlight! link LspDiagnosticsVirtualTextWarning Grey
   highlight! link LspDiagnosticsVirtualTextInformation Grey
   highlight! link LspDiagnosticsVirtualTextHint Grey
-  highlight! link LspDiagnosticsUnderlineError ErrorLine
-  highlight! link LspDiagnosticsUnderlineWarning WarningLine
-  highlight! link LspDiagnosticsUnderlineInformation InfoLine
-  highlight! link LspDiagnosticsUnderlineHint HintLine
+  highlight! link LspDiagnosticsUnderlineError ErrorText
+  highlight! link LspDiagnosticsUnderlineWarning WarningText
+  highlight! link LspDiagnosticsUnderlineInformation InfoText
+  highlight! link LspDiagnosticsUnderlineHint HintText
   highlight! link LspDiagnosticsSignError RedSign
   highlight! link LspDiagnosticsSignWarning YellowSign
   highlight! link LspDiagnosticsSignInformation BlueSign
@@ -259,6 +259,14 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
+call forest_night#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
+call forest_night#highlight('WarningText', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
+call forest_night#highlight('InfoText', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
+call forest_night#highlight('HintText', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
+call forest_night#highlight('ErrorFloat', s:palette.red, s:palette.bg2)
+call forest_night#highlight('WarningFloat', s:palette.yellow, s:palette.bg2)
+call forest_night#highlight('InfoFloat', s:palette.blue, s:palette.bg2)
+call forest_night#highlight('HintFloat', s:palette.green, s:palette.bg2)
 if &diff
   call forest_night#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
@@ -319,7 +327,7 @@ highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro Purple
 highlight! link TSConstant PurpleItalic
 highlight! link TSConstructor Fg
-highlight! link TSError CocErrorHighlight
+highlight! link TSError ErrorText
 highlight! link TSException Red
 highlight! link TSField Green
 highlight! link TSFloat Purple
@@ -358,14 +366,14 @@ highlight! link TSVariableBuiltin PurpleItalic
 " }}}
 " neoclide/coc.nvim {{{
 call forest_night#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
-call forest_night#highlight('CocErrorHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call forest_night#highlight('CocWarningHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
-call forest_night#highlight('CocInfoHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-call forest_night#highlight('CocHintHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
-call forest_night#highlight('CocErrorFloat', s:palette.red, s:palette.bg2)
-call forest_night#highlight('CocWarningFloat', s:palette.yellow, s:palette.bg2)
-call forest_night#highlight('CocInfoFloat', s:palette.blue, s:palette.bg2)
-call forest_night#highlight('CocHintFloat', s:palette.aqua, s:palette.bg2)
+highlight! link CocErrorFloat ErrorFloat
+highlight! link CocWarningFloat WarningFloat
+highlight! link CocInfoFloat InfoFloat
+highlight! link CocHintFloat HintFloat
+highlight! link CocErrorHighlight ErrorText
+highlight! link CocWarningHighlight WarningText
+highlight! link CocInfoHighlight InfoText
+highlight! link CocHintHighlight HintText
 highlight! link CocHighlightText CurrentWord
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
@@ -427,10 +435,10 @@ highlight! link LspErrorVirtual Grey
 highlight! link LspWarningVirtual Grey
 highlight! link LspInformationVirtual Grey
 highlight! link LspHintVirtual Grey
-highlight! link LspErrorHighlight CocErrorHighlight
-highlight! link LspWarningHighlight CocWarningHighlight
-highlight! link LspInformationHighlight CocInfoHighlight
-highlight! link LspHintHighlight CocHintHighlight
+highlight! link LspErrorHighlight ErrorText
+highlight! link LspWarningHighlight WarningText
+highlight! link LspInformationHighlight InfoText
+highlight! link LspHintHighlight HintText
 highlight! link lspReference CurrentWord
 " }}}
 " ycm-core/YouCompleteMe {{{
@@ -438,13 +446,13 @@ highlight! link YcmErrorSign RedSign
 highlight! link YcmWarningSign YellowSign
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
-highlight! link YcmErrorSection CocErrorHighlight
-highlight! link YcmWarningSection CocWarningHighlight
+highlight! link YcmErrorSection ErrorText
+highlight! link YcmWarningSection WarningText
 " }}}
 " dense-analysis/ale {{{
-highlight! link ALEError CocErrorHighlight
-highlight! link ALEWarning CocWarningHighlight
-highlight! link ALEInfo CocInfoHighlight
+highlight! link ALEError ErrorText
+highlight! link ALEWarning WarningText
+highlight! link ALEInfo InfoText
 highlight! link ALEErrorSign RedSign
 highlight! link ALEWarningSign YellowSign
 highlight! link ALEInfoSign BlueSign

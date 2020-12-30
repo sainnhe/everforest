@@ -226,7 +226,6 @@ E.g.
 <
 Currently, the following plugins are supported:
 
-- builtin diagnostic highlight groups in neovim
 - https://github.com/neoclide/coc.nvim
 - https://github.com/ycm-core/YouCompleteMe
 - https://github.com/dense-analysis/ale
