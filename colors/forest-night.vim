@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Dec 30 01:09:30 AM UTC 2020'
+let s:last_modified = 'Thu Dec 31 10:00:02 AM UTC 2020'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -857,6 +857,23 @@ highlight! link texBeginEnd Red
 highlight! link texBeginEndName Blue
 highlight! link texDocType Purple
 highlight! link texDocTypeArgs Orange
+" }}}
+" vimtex: https://github.com/lervag/vimtex {{{
+highlight! link texCmd Green
+highlight! link texCmdClass Purple
+highlight! link texCmdTitle Purple
+highlight! link texCmdAuthor Purple
+highlight! link texCmdPart Purple
+highlight! link texCmdBib Purple
+highlight! link texCmdPackage Yellow
+highlight! link texCmdNew Yellow
+highlight! link texArgNew Orange
+highlight! link texPartArgTitle BlueItalic
+highlight! link texFileArg BlueItalic
+highlight! link texEnvArgName BlueItalic
+highlight! link texMathEnvArgName BlueItalic
+highlight! link texTitleArg BlueItalic
+highlight! link texAuthorArg BlueItalic
 " }}}
 " ft_end }}}
 " ft_begin: html/markdown/javascriptreact/typescriptreact {{{
