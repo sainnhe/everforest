@@ -110,7 +110,10 @@ function! forest_night#ft_write(rootpath, ft, content) "{{{
   " If there is something like `call forest_night#highlight()`, then add
   " code to initialize the palette and configuration.
   if matchstr(a:content, 'forest_night#highlight') !=# ''
-    call writefile(['let s:configuration = forest_night#get_configuration()', 'let s:palette = forest_night#get_palette()'], ft_path, 'a')
+    call writefile([
+          \ 'let s:configuration = forest_night#get_configuration()',
+          \ 'let s:palette = forest_night#get_palette()'
+          \ ], ft_path, 'a')
   endif
   " Append the content.
   call writefile(split(a:content, "\n"), ft_path, 'a')
