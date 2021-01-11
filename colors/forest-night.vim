@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Dec 31 10:00:02 AM UTC 2020'
+let s:last_modified = 'Mon Jan 11 02:10:21 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -683,7 +683,7 @@ if forest_night#ft_exists(s:path) " If the ftplugin exists.
       call forest_night#ft_gen(s:path, s:last_modified, 'update')
     endif
     finish
-  elseif !has('nvim') " Only clean the `after/ftplugin` directory when in vim. This code will produce a bug in neovim.
+  else
     call forest_night#ft_clean(s:path, 1)
   endif
 else
