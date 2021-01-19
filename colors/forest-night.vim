@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan 19 10:36:50 AM UTC 2021'
+let s:last_modified = 'Tue Jan 19 10:47:16 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -248,7 +248,7 @@ else
   call forest_night#highlight('BlueSign', s:palette.blue, s:palette.bg1)
   call forest_night#highlight('PurpleSign', s:palette.purple, s:palette.bg1)
 endif
-if s:configuration.diagnostic_background_highlight
+if s:configuration.diagnostic_text_highlight
   call forest_night#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
   call forest_night#highlight('WarningText', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
   call forest_night#highlight('InfoText', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)

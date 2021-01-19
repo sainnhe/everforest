@@ -213,17 +213,17 @@ E.g.
     let g:forest_night_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
-                                *g:forest_night_diagnostic_background_highlight*
-g:forest_night_diagnostic_background_highlight~
+                                      *g:forest_night_diagnostic_text_highlight*
+g:forest_night_diagnostic_text_highlight~
 
-Whether to highlight the background of error/warning/info/hint.
+Whether to highlight the background of error/warning/info/hint text.
 
     Available values: `0`, `1`
     Default value: `0`
 
 E.g.
 >
-    let g:forest_night_diagnostic_background_highlight = 1
+    let g:forest_night_diagnostic_text_highlight = 1
 <
 ------------------------------------------------------------------------------
                                       *g:forest_night_diagnostic_line_highlight*
