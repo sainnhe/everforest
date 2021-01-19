@@ -16,6 +16,7 @@ function! forest_night#get_configuration() "{{{
         \ 'sign_column_background': get(g:, 'forest_night_sign_column_background', 'default'),
         \ 'current_word': get(g:, 'forest_night_current_word', get(g:, 'forest_night_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'lightline_disable_bold': get(g:, 'forest_night_lightline_disable_bold', 0),
+        \ 'diagnostic_background_highlight': get(g:, 'forest_night_diagnostic_background_highlight', 0),
         \ 'diagnostic_line_highlight': get(g:, 'forest_night_diagnostic_line_highlight', 0),
         \ 'better_performance': get(g:, 'forest_night_better_performance', 0),
         \ }

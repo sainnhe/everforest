@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Jan 11 02:10:21 AM UTC 2021'
+let s:last_modified = 'Tue Jan 19 10:36:50 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -248,6 +248,17 @@ else
   call forest_night#highlight('BlueSign', s:palette.blue, s:palette.bg1)
   call forest_night#highlight('PurpleSign', s:palette.purple, s:palette.bg1)
 endif
+if s:configuration.diagnostic_background_highlight
+  call forest_night#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
+  call forest_night#highlight('WarningText', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
+  call forest_night#highlight('InfoText', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
+  call forest_night#highlight('HintText', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
+else
+  call forest_night#highlight('ErrorText', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
+  call forest_night#highlight('WarningText', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
+  call forest_night#highlight('InfoText', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+  call forest_night#highlight('HintText', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
+endif
 if s:configuration.diagnostic_line_highlight
   call forest_night#highlight('ErrorLine', s:palette.none, s:palette.bg_red)
   call forest_night#highlight('WarningLine', s:palette.none, s:palette.bg_yellow)
@@ -259,10 +270,6 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-call forest_night#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
-call forest_night#highlight('WarningText', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
-call forest_night#highlight('InfoText', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
-call forest_night#highlight('HintText', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
 call forest_night#highlight('ErrorFloat', s:palette.red, s:palette.bg2)
 call forest_night#highlight('WarningFloat', s:palette.yellow, s:palette.bg2)
 call forest_night#highlight('InfoFloat', s:palette.blue, s:palette.bg2)
