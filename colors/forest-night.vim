@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan 19 10:47:16 AM UTC 2021'
+let s:last_modified = 'Sun Feb 14 01:55:23 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -512,6 +512,38 @@ highlight! link Lf_hl_cursorline Fg
 highlight! link Lf_hl_selection DiffAdd
 highlight! link Lf_hl_rgHighlight Visual
 highlight! link Lf_hl_gtagsHighlight Visual
+" }}}
+" liuchengxu/vim-clap {{{
+call forest_night#highlight('ClapSelected', s:palette.red, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapCurrentSelection', s:palette.orange, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapBlines', s:palette.fg, s:palette.bg2)
+call forest_night#highlight('ClapProviderId', s:palette.fg, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches1', s:palette.red, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches2', s:palette.orange, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches3', s:palette.yellow, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches4', s:palette.aqua, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches5', s:palette.blue, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapMatches6', s:palette.purple, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapFuzzyMatches', s:palette.green, s:palette.bg2, 'bold')
+call forest_night#highlight('ClapNoMatchesFound', s:palette.red, s:palette.bg2, 'bold')
+highlight! link ClapInput Pmenu
+highlight! link ClapDisplay Pmenu
+highlight! link ClapPreview Pmenu
+highlight! link ClapFuzzyMatches1 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches2 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches3 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches4 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches5 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches6 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches7 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches8 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches9 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches10 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches11 ClapFuzzyMatches
+highlight! link ClapFuzzyMatches12 ClapFuzzyMatches
+highlight! link ClapBlinesLineNr Grey
+highlight! link ClapProviderColon ClapBlines
+highlight! link ClapProviderAbout ClapBlines
 " }}}
 " junegunn/fzf.vim {{{
 let g:fzf_colors = {
