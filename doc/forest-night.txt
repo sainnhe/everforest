@@ -171,9 +171,6 @@ E.g.
 >
     let g:forest_night_disable_italic_comment = 1
 <
-Note: Some terminal emulators don't support italics, which may cause the
-comment color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
-
 ------------------------------------------------------------------------------
                                                          *g:forest_night_cursor*
 g:forest_night_cursor~
@@ -333,6 +330,13 @@ How to enable cursive italic keywords?~
 2. Enable italic keywords in this color scheme: `let g:forest_night_enable_italic = 1`
 
 3. Disable italic comment(optional): `let g:forest_night_disable_italic_comment = 1`
+
+------------------------------------------------------------------------------
+
+The comment color looks weird.~
+
+Some terminal emulators don't support italics, which may cause the comment
+color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
 
 ------------------------------------------------------------------------------
 
