@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Feb 27 11:30:38 AM UTC 2021'
+let s:last_modified = 'Sun Feb 28 10:50:59 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -508,10 +508,26 @@ call forest_night#highlight('Lf_hl_match2', s:palette.blue, s:palette.none, 'bol
 call forest_night#highlight('Lf_hl_match3', s:palette.purple, s:palette.none, 'bold')
 call forest_night#highlight('Lf_hl_match4', s:palette.orange, s:palette.none, 'bold')
 call forest_night#highlight('Lf_hl_matchRefine', s:palette.red, s:palette.none, 'bold')
+call forest_night#highlight('Lf_hl_popup_normalMode', s:palette.bg0, s:palette.red, 'bold')
+call forest_night#highlight('Lf_hl_popup_inputMode', s:palette.bg0, s:palette.green, 'bold')
+call forest_night#highlight('Lf_hl_popup_category', s:palette.fg, s:palette.bg4)
+call forest_night#highlight('Lf_hl_popup_nameOnlyMode', s:palette.fg, s:palette.bg3)
+call forest_night#highlight('Lf_hl_popup_fullPathMode', s:palette.fg, s:palette.bg3)
+call forest_night#highlight('Lf_hl_popup_fuzzyMode', s:palette.fg, s:palette.bg3)
+call forest_night#highlight('Lf_hl_popup_regexMode', s:palette.fg, s:palette.bg3)
+call forest_night#highlight('Lf_hl_popup_lineInfo', s:palette.yellow, s:palette.bg4)
+call forest_night#highlight('Lf_hl_popup_total', s:palette.bg0, s:palette.orange)
+call forest_night#highlight('Lf_hl_popup_cursor', s:palette.bg0, s:palette.green)
 highlight! link Lf_hl_cursorline Fg
 highlight! link Lf_hl_selection DiffAdd
 highlight! link Lf_hl_rgHighlight Visual
 highlight! link Lf_hl_gtagsHighlight Visual
+highlight! link Lf_hl_popup_inputText Pmenu
+highlight! link Lf_hl_popup_window Pmenu
+highlight! link Lf_hl_popup_prompt Green
+highlight! link Lf_hl_popup_cwd Pmenu
+highlight! link Lf_hl_popup_blank Lf_hl_popup_window
+highlight! link Lf_hl_popup_spin Red
 " }}}
 " liuchengxu/vim-clap {{{
 call forest_night#highlight('ClapSelected', s:palette.red, s:palette.bg2, 'bold')
