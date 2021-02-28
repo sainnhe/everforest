@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette()
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Feb 28 10:50:59 AM UTC 2021'
+let s:last_modified = 'Sun Feb 28 11:18:53 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -576,6 +576,12 @@ let g:fzf_colors = {
       \ 'spinner': ['fg', 'Yellow'],
       \ 'header':  ['fg', 'Grey']
       \ }
+" }}}
+" nvim-telescope/telescope.nvim {{{
+call forest_night#highlight('TelescopeMatching', s:palette.green, s:palette.none, 'bold')
+highlight! link TelescopeBorder Grey
+highlight! link TelescopePromptPrefix Orange
+highlight! link TelescopeSelection DiffAdd
 " }}}
 " Shougo/denite.nvim {{{
 call forest_night#highlight('deniteMatchedChar', s:palette.green, s:palette.none, 'bold')
