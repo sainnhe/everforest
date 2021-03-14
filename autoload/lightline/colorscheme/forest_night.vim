@@ -8,7 +8,7 @@
 
 " Initialization: {{{
 let s:configuration = forest_night#get_configuration()
-let s:palette = forest_night#get_palette()
+let s:palette = forest_night#get_palette(s:configuration.background)
 "}}}
 " Definition: {{{
 let s:tab_l_fg = s:palette.grey2

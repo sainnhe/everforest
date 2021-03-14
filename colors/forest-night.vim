@@ -8,9 +8,9 @@
 
 " Initialization: {{{
 let s:configuration = forest_night#get_configuration()
-let s:palette = forest_night#get_palette()
+let s:palette = forest_night#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Feb 28 11:18:53 AM UTC 2021'
+let s:last_modified = 'Sun Mar 14 10:11:11 AM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)

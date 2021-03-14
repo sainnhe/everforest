@@ -7,7 +7,8 @@
 " =============================================================================
 
 " Initialization: {{{
-let s:palette = forest_night#get_palette()
+let s:configuration = forest_night#get_configuration()
+let s:palette = forest_night#get_palette(s:configuration.background)
 "}}}
 " Definition: {{{
 let s:accents = s:palette.red

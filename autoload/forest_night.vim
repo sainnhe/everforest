@@ -8,6 +8,7 @@
 
 function! forest_night#get_configuration() "{{{
   return {
+        \ 'background': get(g:, 'forest_night_background', 'medium'),
         \ 'transparent_background': get(g:, 'forest_night_transparent_background', 0),
         \ 'disable_italic_comment': get(g:, 'forest_night_disable_italic_comment', 0),
         \ 'enable_italic': get(g:, 'forest_night_enable_italic', 0),
@@ -21,31 +22,62 @@ function! forest_night#get_configuration() "{{{
         \ 'better_performance': get(g:, 'forest_night_better_performance', 0),
         \ }
 endfunction "}}}
-function! forest_night#get_palette() "{{{
-  return {
-        \ 'bg0':        ['#323d43',   '235',  'Black'],
-        \ 'bg1':        ['#3c474d',   '236',  'DarkGrey'],
-        \ 'bg2':        ['#465258',   '237',  'DarkGrey'],
-        \ 'bg3':        ['#505a60',   '238',  'DarkGrey'],
-        \ 'bg4':        ['#576268',   '239',  'DarkGrey'],
-        \ 'bg_visual':  ['#5d4251',   '52',   'DarkRed'],
-        \ 'bg_red':     ['#614b51',   '52',   'DarkRed'],
-        \ 'bg_green':   ['#4e6053',   '22',   'DarkGreen'],
-        \ 'bg_blue':    ['#415c6d',   '17',   'DarkBlue'],
-        \ 'bg_yellow':  ['#5d5c50',   '136',  'DarkBlue'],
-        \ 'fg':         ['#d8caac',   '223',  'White'],
-        \ 'red':        ['#e68183',   '167',  'Red'],
-        \ 'orange':     ['#e39b7b',   '208',  'Red'],
-        \ 'yellow':     ['#d9bb80',   '214',  'Yellow'],
+function! forest_night#get_palette(background) "{{{
+  if a:background ==# 'hard'
+    let palette1 = {
+          \ 'bg0':        ['#2b353b',   '235',  'Black'],
+          \ 'bg1':        ['#323d43',   '236',  'DarkGrey'],
+          \ 'bg2':        ['#3c474d',   '237',  'DarkGrey'],
+          \ 'bg3':        ['#465258',   '238',  'DarkGrey'],
+          \ 'bg4':        ['#505a60',   '239',  'DarkGrey'],
+          \ 'bg_visual':  ['#553b4a',   '52',   'DarkRed'],
+          \ 'bg_red':     ['#564349',   '52',   'DarkRed'],
+          \ 'bg_green':   ['#46554a',   '22',   'DarkGreen'],
+          \ 'bg_blue':    ['#3a5462',   '17',   'DarkBlue'],
+          \ 'bg_yellow':  ['#525147',   '136',  'DarkBlue'],
+          \ }
+  elseif a:background ==# 'medium'
+    let palette1 = {
+          \ 'bg0':        ['#2f393f',   '235',  'Black'],
+          \ 'bg1':        ['#374248',   '236',  'DarkGrey'],
+          \ 'bg2':        ['#414d53',   '237',  'DarkGrey'],
+          \ 'bg3':        ['#4b565c',   '238',  'DarkGrey'],
+          \ 'bg4':        ['#545e64',   '239',  'DarkGrey'],
+          \ 'bg_visual':  ['#593f4e',   '52',   'DarkRed'],
+          \ 'bg_red':     ['#5a464c',   '52',   'DarkRed'],
+          \ 'bg_green':   ['#49594e',   '22',   'DarkGreen'],
+          \ 'bg_blue':    ['#3d5766',   '17',   'DarkBlue'],
+          \ 'bg_yellow':  ['#56554b',   '136',  'DarkBlue'],
+          \ }
+  elseif a:background ==# 'soft'
+    let palette1 = {
+          \ 'bg0':        ['#323d43',   '235',  'Black'],
+          \ 'bg1':        ['#3c474d',   '236',  'DarkGrey'],
+          \ 'bg2':        ['#465258',   '237',  'DarkGrey'],
+          \ 'bg3':        ['#505a60',   '238',  'DarkGrey'],
+          \ 'bg4':        ['#576268',   '239',  'DarkGrey'],
+          \ 'bg_visual':  ['#5d4251',   '52',   'DarkRed'],
+          \ 'bg_red':     ['#5e494f',   '52',   'DarkRed'],
+          \ 'bg_green':   ['#4c5d51',   '22',   'DarkGreen'],
+          \ 'bg_blue':    ['#3f5a6a',   '17',   'DarkBlue'],
+          \ 'bg_yellow':  ['#5a594e',   '136',  'DarkBlue'],
+          \ }
+  endif
+  let palette2 = {
+        \ 'fg':         ['#d3c6aa',   '223',  'White'],
+        \ 'red':        ['#e67e80',   '167',  'Red'],
+        \ 'orange':     ['#e69875',   '208',  'Red'],
+        \ 'yellow':     ['#dcbc7d',   '214',  'Yellow'],
         \ 'green':      ['#a7c080',   '142',  'Green'],
-        \ 'aqua':       ['#87c095',   '108',  'Cyan'],
-        \ 'blue':       ['#83b6af',   '109',  'Blue'],
-        \ 'purple':     ['#d39bb6',   '175',  'Magenta'],
+        \ 'aqua':       ['#83c092',   '108',  'Cyan'],
+        \ 'blue':       ['#7fbbb3',   '109',  'Blue'],
+        \ 'purple':     ['#d699b6',   '175',  'Magenta'],
         \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
         \ 'grey1':      ['#868d80',   '245',  'Grey'],
         \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
+  return extend(palette1, palette2)
 endfunction "}}}
 function! forest_night#highlight(group, fg, bg, ...) "{{{
   execute 'highlight' a:group
@@ -113,7 +145,7 @@ function! forest_night#ft_write(rootpath, ft, content) "{{{
   if matchstr(a:content, 'forest_night#highlight') !=# ''
     call writefile([
           \ 'let s:configuration = forest_night#get_configuration()',
-          \ 'let s:palette = forest_night#get_palette()'
+          \ 'let s:palette = forest_night#get_palette(s:configuration.background)'
           \ ], ft_path, 'a')
   endif
   " Append the content.
