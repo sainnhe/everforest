@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Mar 14 12:40:02 PM UTC 2021'
+let s:last_modified = 'Sun Mar 14 12:55:15 PM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -93,9 +93,9 @@ call forest_night#highlight('Whitespace', s:palette.bg3, s:palette.none)
 call forest_night#highlight('SpecialKey', s:palette.bg3, s:palette.none)
 call forest_night#highlight('Pmenu', s:palette.fg, s:palette.bg2)
 call forest_night#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
-call forest_night#highlight('PmenuSel', s:palette.bg0, s:palette.green)
+call forest_night#highlight('PmenuSel', s:palette.bg0, s:palette.statusline1)
 highlight! link WildMenu PmenuSel
-call forest_night#highlight('PmenuThumb', s:palette.none, s:palette.grey1)
+call forest_night#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call forest_night#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
 call forest_night#highlight('Question', s:palette.yellow, s:palette.none)
 call forest_night#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
