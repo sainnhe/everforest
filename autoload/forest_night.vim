@@ -23,7 +23,7 @@ function! forest_night#get_configuration() "{{{
         \ }
 endfunction "}}}
 function! forest_night#get_palette(background) "{{{
-  if a:background ==# 'hard'
+  if a:background ==# 'hard' "{{{
     let palette1 = {
           \ 'bg0':        ['#2b353b',   '235',  'Black'],
           \ 'bg1':        ['#323d43',   '236',  'DarkGrey'],
@@ -35,21 +35,36 @@ function! forest_night#get_palette(background) "{{{
           \ 'bg_green':   ['#46554a',   '22',   'DarkGreen'],
           \ 'bg_blue':    ['#3a5462',   '17',   'DarkBlue'],
           \ 'bg_yellow':  ['#525147',   '136',  'DarkBlue'],
-          \ }
-  elseif a:background ==# 'medium'
-    let palette1 = {
-          \ 'bg0':        ['#2f393f',   '235',  'Black'],
-          \ 'bg1':        ['#374248',   '236',  'DarkGrey'],
-          \ 'bg2':        ['#414d53',   '237',  'DarkGrey'],
-          \ 'bg3':        ['#4b565c',   '238',  'DarkGrey'],
-          \ 'bg4':        ['#545e64',   '239',  'DarkGrey'],
-          \ 'bg_visual':  ['#593f4e',   '52',   'DarkRed'],
-          \ 'bg_red':     ['#5a464c',   '52',   'DarkRed'],
-          \ 'bg_green':   ['#49594e',   '22',   'DarkGreen'],
-          \ 'bg_blue':    ['#3d5766',   '17',   'DarkBlue'],
-          \ 'bg_yellow':  ['#56554b',   '136',  'DarkBlue'],
-          \ }
-  elseif a:background ==# 'soft'
+          \ } "}}}
+  elseif a:background ==# 'medium' "{{{
+    if &background ==# 'dark'
+      let palette1 = {
+            \ 'bg0':        ['#2f393f',   '235',  'Black'],
+            \ 'bg1':        ['#374248',   '236',  'DarkGrey'],
+            \ 'bg2':        ['#414d53',   '237',  'DarkGrey'],
+            \ 'bg3':        ['#4b565c',   '238',  'DarkGrey'],
+            \ 'bg4':        ['#545e64',   '239',  'DarkGrey'],
+            \ 'bg_visual':  ['#593f4e',   '52',   'DarkRed'],
+            \ 'bg_red':     ['#5a464c',   '52',   'DarkRed'],
+            \ 'bg_green':   ['#49594e',   '22',   'DarkGreen'],
+            \ 'bg_blue':    ['#3d5766',   '17',   'DarkBlue'],
+            \ 'bg_yellow':  ['#56554b',   '136',  'DarkBlue'],
+            \ }
+    else
+      let palette1 = {
+            \ 'bg0':        ['#fdf6e3',   '235',  'Black'],
+            \ 'bg1':        ['#fdf6e3',   '236',  'DarkGrey'],
+            \ 'bg2':        ['#fdf6e3',   '237',  'DarkGrey'],
+            \ 'bg3':        ['#fdf6e3',   '238',  'DarkGrey'],
+            \ 'bg4':        ['#fdf6e3',   '239',  'DarkGrey'],
+            \ 'bg_visual':  ['#593f4e',   '52',   'DarkRed'],
+            \ 'bg_red':     ['#5a464c',   '52',   'DarkRed'],
+            \ 'bg_green':   ['#49594e',   '22',   'DarkGreen'],
+            \ 'bg_blue':    ['#3d5766',   '17',   'DarkBlue'],
+            \ 'bg_yellow':  ['#56554b',   '136',  'DarkBlue'],
+            \ }
+    endif "}}}
+  elseif a:background ==# 'soft' "{{{
     let palette1 = {
           \ 'bg0':        ['#323d43',   '235',  'Black'],
           \ 'bg1':        ['#3c474d',   '236',  'DarkGrey'],
@@ -62,21 +77,38 @@ function! forest_night#get_palette(background) "{{{
           \ 'bg_blue':    ['#3f5a6a',   '17',   'DarkBlue'],
           \ 'bg_yellow':  ['#5a594e',   '136',  'DarkBlue'],
           \ }
+  endif "}}}
+  if &background ==# 'dark'
+    let palette2 = {
+          \ 'fg':         ['#d3c6aa',   '223',  'White'],
+          \ 'red':        ['#e67e80',   '167',  'Red'],
+          \ 'orange':     ['#e69875',   '208',  'Red'],
+          \ 'yellow':     ['#dcbc7d',   '214',  'Yellow'],
+          \ 'green':      ['#a7c080',   '142',  'Green'],
+          \ 'aqua':       ['#83c092',   '108',  'Cyan'],
+          \ 'blue':       ['#7fbbb3',   '109',  'Blue'],
+          \ 'purple':     ['#d699b6',   '175',  'Magenta'],
+          \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
+          \ 'grey1':      ['#868d80',   '245',  'Grey'],
+          \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
+          \ 'none':       ['NONE',      'NONE', 'NONE']
+          \ }
+  else
+    let palette2 = {
+          \ 'fg':         ['#5c6a72',   '223',  'White'],
+          \ 'red':        ['#ff5350',   '167',  'Red'],
+          \ 'orange':     ['#ff7c1e',   '208',  'Red'],
+          \ 'yellow':     ['#e0a100',   '214',  'Yellow'],
+          \ 'green':      ['#90a501',   '142',  'Green'],
+          \ 'aqua':       ['#3aaa7f',   '108',  'Cyan'],
+          \ 'blue':       ['#3e93d0',   '109',  'Blue'],
+          \ 'purple':     ['#e66cbf',   '175',  'Magenta'],
+          \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
+          \ 'grey1':      ['#868d80',   '245',  'Grey'],
+          \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
+          \ 'none':       ['NONE',      'NONE', 'NONE']
+          \ }
   endif
-  let palette2 = {
-        \ 'fg':         ['#d3c6aa',   '223',  'White'],
-        \ 'red':        ['#e67e80',   '167',  'Red'],
-        \ 'orange':     ['#e69875',   '208',  'Red'],
-        \ 'yellow':     ['#dcbc7d',   '214',  'Yellow'],
-        \ 'green':      ['#a7c080',   '142',  'Green'],
-        \ 'aqua':       ['#83c092',   '108',  'Cyan'],
-        \ 'blue':       ['#7fbbb3',   '109',  'Blue'],
-        \ 'purple':     ['#d699b6',   '175',  'Magenta'],
-        \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
-        \ 'grey1':      ['#868d80',   '245',  'Grey'],
-        \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
-        \ 'none':       ['NONE',      'NONE', 'NONE']
-        \ }
   return extend(palette1, palette2)
 endfunction "}}}
 function! forest_night#highlight(group, fg, bg, ...) "{{{
