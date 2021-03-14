@@ -10,7 +10,7 @@
 let s:configuration = forest_night#get_configuration()
 let s:palette = forest_night#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Mar 14 10:11:11 AM UTC 2021'
+let s:last_modified = 'Sun Mar 14 12:40:02 PM UTC 2021'
 let g:forest_night_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'forest-night' && s:configuration.better_performance)
@@ -108,7 +108,7 @@ call forest_night#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)
 call forest_night#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
 call forest_night#highlight('TabLine', s:palette.grey2, s:palette.bg3)
 call forest_night#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
-call forest_night#highlight('TabLineSel', s:palette.bg0, s:palette.green)
+call forest_night#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 call forest_night#highlight('VertSplit', s:palette.bg4, s:palette.none)
 call forest_night#highlight('Visual', s:palette.none, s:palette.bg_visual)
 call forest_night#highlight('VisualNOS', s:palette.none, s:palette.bg_visual)

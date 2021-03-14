@@ -121,6 +121,9 @@ function! forest_night#get_palette(background) "{{{
           \ 'grey0':      ['#7c8377',   '243',  'DarkGrey'],
           \ 'grey1':      ['#868d80',   '245',  'Grey'],
           \ 'grey2':      ['#999f93',   '247',  'LightGrey'],
+          \ 'statusline1':['#a7c080',   '142',  'Green'],
+          \ 'statusline2':['#d3c6aa',   '223',  'White'],
+          \ 'statusline3':['#e67e80',   '167',  'Red'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ } "}}}
   else "{{{
@@ -136,6 +139,9 @@ function! forest_night#get_palette(background) "{{{
           \ 'grey0':      ['#a0a79a',   '247',  'DarkGrey'],
           \ 'grey1':      ['#999f93',   '247',  'Grey'],
           \ 'grey2':      ['#92978c',   '247',  'LightGrey'],
+          \ 'statusline1':['#8da560',   '106',  'Green'],
+          \ 'statusline2':['#708089',   '242',  'White'],
+          \ 'statusline3':['#c76666',   '160',  'Red'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ }
   endif "}}}
