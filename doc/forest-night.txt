@@ -140,12 +140,27 @@ E.g.
     if has('termguicolors')
       set termguicolors
     endif
+    set background=light
 
+    let g:forest_night_background = 'soft'
     let g:forest_night_enable_italic = 1
     let g:forest_night_disable_italic_comment = 1
 
     colorscheme forest-night
     let g:lightline.colorscheme = 'forest_night'
+<
+------------------------------------------------------------------------------
+                                                     *g:forest_night_background*
+g:forest_night_background~
+
+The background contrast used in this color scheme.
+
+    Available values: `'hard'`, `'medium'`, `'soft'`
+    Default value: `'medium'`
+
+E.g.
+>
+    let g:forest_night_background = 'soft'
 <
 ------------------------------------------------------------------------------
                                                   *g:forest_night_enable_italic*
@@ -379,7 +394,7 @@ See this [article](https://www.sainnhe.dev/post/status-line-config/).
 
 What's the font used here?~
 
-[Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+[Recursive Code iCursive Cg](https://github.com/sainnhe/icursive-nerd-font).
 
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:

@@ -2,7 +2,11 @@
 𝐅𝐨𝐫𝐞𝐬𝐭 𝐍𝐢𝐠𝐡𝐭
 </h1>
 
-![demo](https://user-images.githubusercontent.com/37491630/74209833-5217b900-4c81-11ea-86e2-3727fdfc3233.png)
+|        |                                      𝐃𝐚𝐫𝐤                                      |                                      𝐋𝐢𝐠𝐡𝐭                                       |
+| :----: | :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |   ![hard-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-hard.png)   |   ![hard-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-hard.png)   |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![medium-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-medium.png) | ![medium-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-medium.png) |
+|  𝐒𝐨𝐟𝐭  |   ![soft-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-soft.png)   |   ![soft-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-soft.png)   |
 
 ## Features
 
@@ -62,6 +66,7 @@ See this [wiki page](https://github.com/sainnhe/forest-night/wiki).
 - [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
 - [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
 - [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 
 ## Maintainers
 
