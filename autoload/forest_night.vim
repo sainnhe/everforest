@@ -139,9 +139,9 @@ function! forest_night#get_palette(background) "{{{
           \ 'grey0':      ['#a0a79a',   '247',  'DarkGrey'],
           \ 'grey1':      ['#999f93',   '247',  'Grey'],
           \ 'grey2':      ['#92978c',   '247',  'LightGrey'],
-          \ 'statusline1':['#8da560',   '106',  'Green'],
+          \ 'statusline1':['#93b259',   '106',  'Green'],
           \ 'statusline2':['#708089',   '242',  'White'],
-          \ 'statusline3':['#c76666',   '160',  'Red'],
+          \ 'statusline3':['#db7070',   '160',  'Red'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ }
   endif "}}}
