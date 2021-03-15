@@ -1,9 +1,7 @@
 ---
 name: 🐛 Bug report
 about: Report a problem with forest-night
-title: 'bug: '
 labels: 'bug'
-assignees: jef,sainnhe
 
 ---
 

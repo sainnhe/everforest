@@ -1,9 +1,7 @@
 ---
 name: 🚀 Feature request
 about: Suggest a new idea for forest-night
-title: 'feat: '
 labels: 'enhancement'
-assignees: jef,sainnhe
 
 ---
 
