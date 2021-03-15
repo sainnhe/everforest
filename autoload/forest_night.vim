@@ -135,7 +135,7 @@ function! forest_night#get_palette(background) "{{{
           \ 'green':      ['#8ea201',   '106',  'Green'],
           \ 'aqua':       ['#36a57b',   '37',   'Cyan'],
           \ 'blue':       ['#3d91cd',   '32',   'Blue'],
-          \ 'purple':     ['#e16bbc',   '162',  'Magenta'],
+          \ 'purple':     ['#df69ba',   '162',  'Magenta'],
           \ 'grey0':      ['#a0a79a',   '247',  'DarkGrey'],
           \ 'grey1':      ['#999f93',   '247',  'Grey'],
           \ 'grey2':      ['#92978c',   '247',  'LightGrey'],
