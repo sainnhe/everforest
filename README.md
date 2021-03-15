@@ -8,9 +8,11 @@
 | 𝐌𝐞𝐝𝐢𝐮𝐦 | ![medium-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-medium.png) | ![medium-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-medium.png) |
 |  𝐒𝐨𝐟𝐭  |   ![soft-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-soft.png)   |   ![soft-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-soft.png)   |
 
-## Features
+## Introduction
 
 Forest Night is a green based color scheme, it's designed to be warm and soft in order to protect developers' eyes.
+
+### Features
 
 - Green based but warm-toned.
 - Designed to have soft contrast for eye protection.
