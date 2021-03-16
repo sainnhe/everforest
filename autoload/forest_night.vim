@@ -141,7 +141,7 @@ function! forest_night#get_palette(background) "{{{
           \ 'grey2':      ['#92978c',   '247',  'LightGrey'],
           \ 'statusline1':['#93b259',   '106',  'Green'],
           \ 'statusline2':['#708089',   '242',  'White'],
-          \ 'statusline3':['#db7070',   '160',  'Red'],
+          \ 'statusline3':['#e66868',   '160',  'Red'],
           \ 'none':       ['NONE',      'NONE', 'NONE']
           \ }
   endif "}}}
