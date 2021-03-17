@@ -67,7 +67,7 @@ See this [wiki page](https://github.com/sainnhe/forest-night/wiki).
 
 - [rhysd/vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
 - [KKPMW/sacredforest-vim](https://github.com/KKPMW/sacredforest-vim)
-- [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
 - [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 
 ## Maintainers
