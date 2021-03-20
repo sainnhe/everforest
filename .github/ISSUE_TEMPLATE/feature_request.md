@@ -1,6 +1,6 @@
 ---
 name: 🚀 Feature request
-about: Suggest a new idea for forest-night
+about: Suggest a new idea for everforest
 labels: 'enhancement'
 
 ---

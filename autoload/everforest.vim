@@ -1,28 +1,28 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/forest-night
-" Filename: autoload/forest_night.vim
+" URL: https://github.com/sainnhe/everforest
+" Filename: autoload/everforest.vim
 " Author: sainnhe
 " Email: sainnhe@gmail.com
 " License: MIT License
 " =============================================================================
 
-function! forest_night#get_configuration() "{{{
+function! everforest#get_configuration() "{{{
   return {
-        \ 'background': get(g:, 'forest_night_background', 'medium'),
-        \ 'transparent_background': get(g:, 'forest_night_transparent_background', 0),
-        \ 'disable_italic_comment': get(g:, 'forest_night_disable_italic_comment', 0),
-        \ 'enable_italic': get(g:, 'forest_night_enable_italic', 0),
-        \ 'cursor': get(g:, 'forest_night_cursor', 'auto'),
-        \ 'menu_selection_background': get(g:, 'forest_night_menu_selection_background', 'white'),
-        \ 'sign_column_background': get(g:, 'forest_night_sign_column_background', 'default'),
-        \ 'current_word': get(g:, 'forest_night_current_word', get(g:, 'forest_night_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
-        \ 'lightline_disable_bold': get(g:, 'forest_night_lightline_disable_bold', 0),
-        \ 'diagnostic_text_highlight': get(g:, 'forest_night_diagnostic_text_highlight', 0),
-        \ 'diagnostic_line_highlight': get(g:, 'forest_night_diagnostic_line_highlight', 0),
-        \ 'better_performance': get(g:, 'forest_night_better_performance', 0),
+        \ 'background': get(g:, 'everforest_background', 'medium'),
+        \ 'transparent_background': get(g:, 'everforest_transparent_background', 0),
+        \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 0),
+        \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
+        \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
+        \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
+        \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'default'),
+        \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
+        \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
+        \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),
+        \ 'diagnostic_line_highlight': get(g:, 'everforest_diagnostic_line_highlight', 0),
+        \ 'better_performance': get(g:, 'everforest_better_performance', 0),
         \ }
 endfunction "}}}
-function! forest_night#get_palette(background) "{{{
+function! everforest#get_palette(background) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
@@ -147,7 +147,7 @@ function! forest_night#get_palette(background) "{{{
   endif "}}}
   return extend(palette1, palette2)
 endfunction "}}}
-function! forest_night#highlight(group, fg, bg, ...) "{{{
+function! everforest#highlight(group, fg, bg, ...) "{{{
   execute 'highlight' a:group
         \ 'guifg=' . a:fg[0]
         \ 'guibg=' . a:bg[0]
@@ -169,57 +169,57 @@ function! forest_night#highlight(group, fg, bg, ...) "{{{
           \ a:2[0] :
           \ 'NONE')
 endfunction "}}}
-function! forest_night#ft_gen(path, last_modified, msg) "{{{
+function! everforest#ft_gen(path, last_modified, msg) "{{{
   " Generate the `after/ftplugin` directory.
-  let full_content = join(readfile(a:path), "\n") " Get the content of `colors/forest-night.vim`
+  let full_content = join(readfile(a:path), "\n") " Get the content of `colors/everforest.vim`
   let ft_content = []
-  let rootpath = forest_night#ft_rootpath(a:path) " Get the path to place the `after/ftplugin` directory.
+  let rootpath = everforest#ft_rootpath(a:path) " Get the path to place the `after/ftplugin` directory.
   call substitute(full_content, '" ft_begin.\{-}ft_end', '\=add(ft_content, submatch(0))', 'g') " Search for 'ft_begin.\{-}ft_end' (non-greedy) and put all the search results into a list.
   for content in ft_content
     let ft_list = []
     call substitute(matchstr(matchstr(content, 'ft_begin:.\{-}{{{'), ':.\{-}{{{'), '\(\w\|-\)\+', '\=add(ft_list, submatch(0))', 'g') " Get the file types. }}}}}}
     for ft in ft_list
-      call forest_night#ft_write(rootpath, ft, content) " Write the content.
+      call everforest#ft_write(rootpath, ft, content) " Write the content.
     endfor
   endfor
-  call forest_night#ft_write(rootpath, 'text', "let g:forest_night_last_modified = '" . a:last_modified . "'") " Write the last modified time to `after/ftplugin/text/forest_night.vim`
+  call everforest#ft_write(rootpath, 'text', "let g:everforest_last_modified = '" . a:last_modified . "'") " Write the last modified time to `after/ftplugin/text/everforest.vim`
   if a:msg ==# 'update'
-    echohl WarningMsg | echom '[forest-night] Updated ' . rootpath . '/after/ftplugin' | echohl None
+    echohl WarningMsg | echom '[everforest] Updated ' . rootpath . '/after/ftplugin' | echohl None
   else
-    echohl WarningMsg | echom '[forest-night] Generated ' . rootpath . '/after/ftplugin' | echohl None
+    echohl WarningMsg | echom '[everforest] Generated ' . rootpath . '/after/ftplugin' | echohl None
   endif
 endfunction "}}}
-function! forest_night#ft_write(rootpath, ft, content) "{{{
+function! everforest#ft_write(rootpath, ft, content) "{{{
   " Write the content.
-  let ft_path = a:rootpath . '/after/ftplugin/' . a:ft . '/forest_night.vim' " The path of a ftplugin file.
+  let ft_path = a:rootpath . '/after/ftplugin/' . a:ft . '/everforest.vim' " The path of a ftplugin file.
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/after/ftplugin/' . a:ft, 'p')
     call writefile([
-          \ "if !exists('g:colors_name') || g:colors_name !=# 'forest-night'",
+          \ "if !exists('g:colors_name') || g:colors_name !=# 'everforest'",
           \ '    finish',
           \ 'endif'
-          \ ], ft_path, 'a') " Abort if the current color scheme is not forest-night.
+          \ ], ft_path, 'a') " Abort if the current color scheme is not everforest.
     call writefile([
-          \ "if index(g:forest_night_loaded_file_types, '" . a:ft . "') ==# -1",
-          \ "    call add(g:forest_night_loaded_file_types, '" . a:ft . "')",
+          \ "if index(g:everforest_loaded_file_types, '" . a:ft . "') ==# -1",
+          \ "    call add(g:everforest_loaded_file_types, '" . a:ft . "')",
           \ 'else',
           \ '    finish',
           \ 'endif'
           \ ], ft_path, 'a') " Abort if this file type has already been loaded.
   endif
-  " If there is something like `call forest_night#highlight()`, then add
+  " If there is something like `call everforest#highlight()`, then add
   " code to initialize the palette and configuration.
-  if matchstr(a:content, 'forest_night#highlight') !=# ''
+  if matchstr(a:content, 'everforest#highlight') !=# ''
     call writefile([
-          \ 'let s:configuration = forest_night#get_configuration()',
-          \ 'let s:palette = forest_night#get_palette(s:configuration.background)'
+          \ 'let s:configuration = everforest#get_configuration()',
+          \ 'let s:palette = everforest#get_palette(s:configuration.background)'
           \ ], ft_path, 'a')
   endif
   " Append the content.
   call writefile(split(a:content, "\n"), ft_path, 'a')
 endfunction "}}}
-function! forest_night#ft_rootpath(path) "{{{
+function! everforest#ft_rootpath(path) "{{{
   " Get the directory where `after/ftplugin` is generated.
   if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " Return the plugin directory. The `after/ftplugin` directory should never be generated in `/usr/share`, even if you are a root user.
     return fnamemodify(a:path, ':p:h:h')
@@ -235,17 +235,17 @@ function! forest_night#ft_rootpath(path) "{{{
     endif
   endif
 endfunction "}}}
-function! forest_night#ft_newest(path, last_modified) "{{{
-  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/forest-night.vim` and `after/ftplugin/text/forest_night.vim`.
-  let rootpath = forest_night#ft_rootpath(a:path)
-  execute 'source ' . rootpath . '/after/ftplugin/text/forest_night.vim'
-  return a:last_modified ==# g:forest_night_last_modified ? 1 : 0
+function! everforest#ft_newest(path, last_modified) "{{{
+  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/everforest.vim` and `after/ftplugin/text/everforest.vim`.
+  let rootpath = everforest#ft_rootpath(a:path)
+  execute 'source ' . rootpath . '/after/ftplugin/text/everforest.vim'
+  return a:last_modified ==# g:everforest_last_modified ? 1 : 0
 endfunction "}}}
-function! forest_night#ft_clean(path, msg) "{{{
+function! everforest#ft_clean(path, msg) "{{{
   " Clean the `after/ftplugin` directory.
-  let rootpath = forest_night#ft_rootpath(a:path)
-  " Remove `after/ftplugin/**/forest_night.vim`.
-  let file_list = split(globpath(rootpath, 'after/ftplugin/**/forest_night.vim'), "\n")
+  let rootpath = everforest#ft_rootpath(a:path)
+  " Remove `after/ftplugin/**/everforest.vim`.
+  let file_list = split(globpath(rootpath, 'after/ftplugin/**/everforest.vim'), "\n")
   for file in file_list
     call delete(file)
   endfor
@@ -263,11 +263,11 @@ function! forest_night#ft_clean(path, msg) "{{{
     call delete(rootpath . '/after', 'd')
   endif
   if a:msg
-    echohl WarningMsg | echom '[forest-night] Cleaned ' . rootpath . '/after/ftplugin' | echohl None
+    echohl WarningMsg | echom '[everforest] Cleaned ' . rootpath . '/after/ftplugin' | echohl None
   endif
 endfunction "}}}
-function! forest_night#ft_exists(path) "{{{
-  return filereadable(forest_night#ft_rootpath(a:path) . '/after/ftplugin/text/forest_night.vim')
+function! everforest#ft_exists(path) "{{{
+  return filereadable(everforest#ft_rootpath(a:path) . '/after/ftplugin/text/everforest.vim')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:

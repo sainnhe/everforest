@@ -1,19 +1,19 @@
-*forest-night.txt*
+*everforest.txt*
 
-CONTENTS                                     *forest-night-contents*
+CONTENTS                                     *everforest-contents*
 
-Introduction                                 |forest-night-introduction|
-Installation                                 |forest-night-installation|
-Usage                                        |forest-night-usage|
-Configuration                                |forest-night-configuration|
-FAQ                                          |forest-night-faq|
+Introduction                                 |everforest-introduction|
+Installation                                 |everforest-installation|
+Usage                                        |everforest-usage|
+Configuration                                |everforest-configuration|
+FAQ                                          |everforest-faq|
 
 Note: Type |gO| to show the outline of contents.
 
 ==============================================================================
-INTRODUCTION                                         *forest-night-introduction*
+INTRODUCTION                                           *everforest-introduction*
 
-Forest Night is a green based color scheme, it's designed to be warm and soft
+Everforest is a green based color scheme, it's designed to be warm and soft
 in order to protect developers' eyes.
 
 Features~
@@ -26,7 +26,7 @@ Features~
 - Italic support 🎉
 
 ==============================================================================
-INSTALLATION                                         *forest-night-installation*
+INSTALLATION                                           *everforest-installation*
 
 ------------------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ Via Plugin Manager~
 
     Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 >
-        Plug 'sainnhe/forest-night'
+        Plug 'sainnhe/everforest'
 <
     For better syntax highlighting support, please install
     https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
@@ -43,23 +43,23 @@ Via Plugin Manager~
 
 Manually~
 
-    1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/forest-night.git`
+    1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/everforest.git`
 
-    2. Copy `/path/to/forest-night/autoload/forest_night.vim` to
+    2. Copy `/path/to/everforest/autoload/everforest.vim` to
     `~/.vim/autoload/`.
 
-    3. Copy `/path/to/forest-night/colors/forest-night.vim` to
+    3. Copy `/path/to/everforest/colors/everforest.vim` to
     `~/.vim/colors/` .
 
-    4. Copy `/path/to/forest-night/doc/forest-night.txt` to
+    4. Copy `/path/to/everforest/doc/everforest.txt` to
     `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
 
     5. To install [airline](https://github.com/vim-airline/vim-airline) theme,
-    copy `/path/to/forest-night/autoload/airline/themes/forest_night.vim`
+    copy `/path/to/everforest/autoload/airline/themes/everforest.vim`
     to `~/.vim/autoload/airline/themes/` .
 
     6. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
-    copy `/path/to/forest-night/autoload/lightline/colorscheme/forest_night.vim`
+    copy `/path/to/everforest/autoload/lightline/colorscheme/everforest.vim`
     to `~/.vim/autoload/lightline/colorscheme/` .
 
 ------------------------------------------------------------------------------
@@ -68,11 +68,11 @@ AUR~
 
     There are some packages available for Arch Linux users in AUR:
 
-    - [vim-forest-night-git](https://aur.archlinux.org/pkgbase/vim-forest-night-git/)
-    - [neovim-forest-night-git](https://aur.archlinux.org/pkgbase/neovim-forest-night-git/)
+    - [vim-everforest-git](https://aur.archlinux.org/pkgbase/vim-everforest-git/)
+    - [neovim-everforest-git](https://aur.archlinux.org/pkgbase/neovim-everforest-git/)
 
 ==============================================================================
-USAGE                                                       *forest-night-usage*
+USAGE                                                         *everforest-usage*
 
 ------------------------------------------------------------------------------
 
@@ -92,18 +92,18 @@ Vim~
         set background=light
 
         " Set contrast.
-        " This configuration option should be placed before `colorscheme forest-night`.
+        " This configuration option should be placed before `colorscheme everforest`.
         " Available values: 'hard', 'medium'(default), 'soft'
-        let g:gruvbox_material_background = 'soft'
+        let g:everforest_background = 'soft'
 
-        colorscheme forest-night
+        colorscheme everforest
 <
-    See |forest-night-configuration| for more configuration options.
+    See |everforest-configuration| for more configuration options.
 
     If you want to apply this color scheme temporarily, run this command in
     vim(this may cause broken colors):
 >
-        :colorscheme forest-night
+        :colorscheme everforest
 <
 ------------------------------------------------------------------------------
 
@@ -112,11 +112,11 @@ Airline~
     To enable [airline](https://github.com/vim-airline/vim-airline) color
     scheme, put this in your vimrc:
 >
-        let g:airline_theme = 'forest_night'
+        let g:airline_theme = 'everforest'
 <
     To apply it without reloading:
 >
-        :AirlineTheme forest_night
+        :AirlineTheme everforest
 <
 ------------------------------------------------------------------------------
 
@@ -126,21 +126,21 @@ Lightline~
     scheme, put this in your vimrc:
 >
         let g:lightline = {}
-        let g:lightline.colorscheme = 'forest_night'
+        let g:lightline.colorscheme = 'everforest'
 
         " Or this line:
-        let g:lightline = {'colorscheme' : 'forest_night'}
+        let g:lightline = {'colorscheme' : 'everforest'}
 <
     To apply it without reloading:
 >
-        :let g:lightline.colorscheme = 'forest_night'
+        :let g:lightline.colorscheme = 'everforest'
         :call lightline#init()
         :call lightline#colorscheme()
 <
 ==============================================================================
-CONFIGURATION                                       *forest-night-configuration*
+CONFIGURATION                                         *everforest-configuration*
 
-Note: the configuration options should be placed before `colorscheme forest-night`
+Note: the configuration options should be placed before `colorscheme everforest`
 
 E.g.
 >
@@ -149,16 +149,16 @@ E.g.
     endif
     set background=light
 
-    let g:forest_night_background = 'soft'
-    let g:forest_night_enable_italic = 1
-    let g:forest_night_disable_italic_comment = 1
+    let g:everforest_background = 'soft'
+    let g:everforest_enable_italic = 1
+    let g:everforest_disable_italic_comment = 1
 
-    colorscheme forest-night
-    let g:lightline.colorscheme = 'forest_night'
+    colorscheme everforest
+    let g:lightline.colorscheme = 'everforest'
 <
 ------------------------------------------------------------------------------
-                                                     *g:forest_night_background*
-g:forest_night_background~
+                                                       *g:everforest_background*
+g:everforest_background~
 
 The background contrast used in this color scheme.
 
@@ -167,35 +167,35 @@ The background contrast used in this color scheme.
 
 E.g.
 >
-    let g:forest_night_background = 'soft'
+    let g:everforest_background = 'soft'
 <
 ------------------------------------------------------------------------------
-                                                  *g:forest_night_enable_italic*
-g:forest_night_enable_italic~
+                                                    *g:everforest_enable_italic*
+g:everforest_enable_italic~
 
 To enable italic in this color scheme, set this option to `1`.
 
 E.g.
 >
-    let g:forest_night_enable_italic = 1
+    let g:everforest_enable_italic = 1
 <
 Note: This option is designed to use with fonts that support cursive italics.
-See |forest-night-faq| for more information.
+See |everforest-faq| for more information.
 
 ------------------------------------------------------------------------------
-                                         *g:forest_night_disable_italic_comment*
-g:forest_night_disable_italic_comment~
+                                           *g:everforest_disable_italic_comment*
+g:everforest_disable_italic_comment~
 
 By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
 this option to `1`.
 
 E.g.
 >
-    let g:forest_night_disable_italic_comment = 1
+    let g:everforest_disable_italic_comment = 1
 <
 ------------------------------------------------------------------------------
-                                                         *g:forest_night_cursor*
-g:forest_night_cursor~
+                                                           *g:everforest_cursor*
+g:everforest_cursor~
 
 Customize the cursor color, only works in GUI clients.
 
@@ -205,21 +205,21 @@ Customize the cursor color, only works in GUI clients.
 
 E.g.
 >
-    let g:forest_night_cursor = 'green'
+    let g:everforest_cursor = 'green'
 <
 ------------------------------------------------------------------------------
-                                         *g:forest_night_transparent_background*
-g:forest_night_transparent_background~
+                                           *g:everforest_transparent_background*
+g:everforest_transparent_background~
 
 To use transparent background, set this option to `1`.
 
 E.g.
 >
-    let g:forest_night_transparent_background = 1
+    let g:everforest_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-                                         *g:forest_night_sign_column_background*
-g:forest_night_sign_column_background~
+                                           *g:everforest_sign_column_background*
+g:everforest_sign_column_background~
 
 By default, the background color of sign column is different from normal text.
 If you want to make it the same as normal text, set this option to `'none'`.
@@ -229,11 +229,11 @@ If you want to make it the same as normal text, set this option to `'none'`.
 
 E.g.
 >
-    let g:forest_night_sign_column_background = 'none'
+    let g:everforest_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
-                                      *g:forest_night_diagnostic_text_highlight*
-g:forest_night_diagnostic_text_highlight~
+                                        *g:everforest_diagnostic_text_highlight*
+g:everforest_diagnostic_text_highlight~
 
 Whether to highlight the background of error/warning/info/hint text.
 
@@ -242,11 +242,11 @@ Whether to highlight the background of error/warning/info/hint text.
 
 E.g.
 >
-    let g:forest_night_diagnostic_text_highlight = 1
+    let g:everforest_diagnostic_text_highlight = 1
 <
 ------------------------------------------------------------------------------
-                                      *g:forest_night_diagnostic_line_highlight*
-g:forest_night_diagnostic_line_highlight~
+                                        *g:everforest_diagnostic_line_highlight*
+g:everforest_diagnostic_line_highlight~
 
 Some plugins support highlighting error/warning/info/hint lines, but this
 feature is disabled by default in this color scheme. To enable this feature,
@@ -254,7 +254,7 @@ set this option to `1`.
 
 E.g.
 >
-    let g:forest_night_diagnostic_line_highlight = 1
+    let g:everforest_diagnostic_line_highlight = 1
 <
 Currently, the following plugins are supported:
 
@@ -264,8 +264,8 @@ Currently, the following plugins are supported:
 - https://github.com/vim-syntastic/syntastic
 
 ------------------------------------------------------------------------------
-                                                   *g:forest_night_current_word*
-g:forest_night_current_word~
+                                                     *g:everforest_current_word*
+g:everforest_current_word~
 
 Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
@@ -284,24 +284,24 @@ Currently support:
 
 E.g.
 >
-    let g:forest_night_current_word = 'bold'
+    let g:everforest_current_word = 'bold'
 <
 ------------------------------------------------------------------------------
-                                         *g:forest_night_lightline_disable_bold*
-g:forest_night_lightline_disable_bold~
+                                           *g:everforest_lightline_disable_bold*
+g:everforest_lightline_disable_bold~
 
 By default, bold is enabled in lightline color scheme. To disable bold in
 lightline color scheme, set this option to `1`.
 
 E.g.
 >
-    let g:forest_night_lightline_disable_bold = 1
+    let g:everforest_lightline_disable_bold = 1
 <
-Note: this configuration option doesn't need to be placed before `colorscheme forest-night`
+Note: this configuration option doesn't need to be placed before `colorscheme everforest`
 
 ------------------------------------------------------------------------------
-                                             *g:forest_night_better_performance*
-g:forest_night_better_performance~
+                                               *g:everforest_better_performance*
+g:everforest_better_performance~
 
 The loading time of this color scheme is very long because too many file types
 and plugins are optimized. This feature allows you to load part of the code on
@@ -311,10 +311,10 @@ Enabling this option will reduce loading time by approximately 50%.
 
 E.g.
 >
-    let g:forest_night_better_performance = 1
+    let g:everforest_better_performance = 1
 <
 ==============================================================================
-FAQ                                                           *forest-night-faq*
+FAQ                                                             *everforest-faq*
 
 ------------------------------------------------------------------------------
 
@@ -338,20 +338,13 @@ can enable the color scheme in your vimrc instead of after vim startup.
 
 ------------------------------------------------------------------------------
 
-I can't apply airline/lightline color scheme.~
-
-The name is `forest_night` instead of `forest-night`. I have to use underline
-for some grammatical reasons.
-
-------------------------------------------------------------------------------
-
 How to enable cursive italic keywords?~
 
 1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
 
-2. Enable italic keywords in this color scheme: `let g:forest_night_enable_italic = 1`
+2. Enable italic keywords in this color scheme: `let g:everforest_enable_italic = 1`
 
-3. Disable italic comment(optional): `let g:forest_night_disable_italic_comment = 1`
+3. Disable italic comment(optional): `let g:everforest_disable_italic_comment = 1`
 
 ------------------------------------------------------------------------------
 
@@ -364,30 +357,30 @@ color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issu
 
 How to use custom colors?~
 >
-    function! s:forest_night_custom() abort
+    function! s:everforest_custom() abort
       " Link a highlight group to a predefined highlight group.
-      " See `colors/forest-night.vim` for all predefined highlight groups.
+      " See `colors/everforest.vim` for all predefined highlight groups.
       highlight! link groupA groupB
       highlight! link groupC groupD
     
       " Initialize the color palette.
-      let l:palette = forest_night#get_palette()
+      let l:palette = everforest#get_palette()
       " Define a highlight group.
       " The first parameter is the name of a highlight group,
       " the second parameter is the foreground color,
       " the third parameter is the background color,
       " the fourth parameter is for UI highlighting which is optional,
       " and the last parameter is for `guisp` which is also optional.
-      " See `autoload/forest_night.vim` for the format of `l:palette`.
-      call forest_night#highlight('groupE', l:palette.red, l:palette.none, 'undercurl', l:palette.red)
+      " See `autoload/everforest.vim` for the format of `l:palette`.
+      call everforest#highlight('groupE', l:palette.red, l:palette.none, 'undercurl', l:palette.red)
     endfunction
     
-    augroup ForestNightCustom
+    augroup EverforestCustom
       autocmd!
-      autocmd ColorScheme forest-night call s:forest_night_custom()
+      autocmd ColorScheme everforest call s:everforest_custom()
     augroup END
     
-    colorscheme forest-night
+    colorscheme everforest
 <
 Note: Make sure to define the `augroup` before declare the `colorscheme`.
 

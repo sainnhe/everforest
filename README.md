@@ -1,5 +1,5 @@
 <h1 align="center">
-𝐅𝐨𝐫𝐞𝐬𝐭 𝐍𝐢𝐠𝐡𝐭
+𝐄𝐯𝐞𝐫𝐟𝐨𝐫𝐞𝐬𝐭
 </h1>
 
 |        |                                      𝐃𝐚𝐫𝐤                                      |                                      𝐋𝐢𝐠𝐡𝐭                                       |
@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Forest Night is a green based color scheme, it's designed to be warm and soft in order to protect developers' eyes.
+Everforest is a green based color scheme, it's designed to be warm and soft in order to protect developers' eyes.
 
 ### Features
 
@@ -28,7 +28,7 @@ Forest Night is a green based color scheme, it's designed to be warm and soft in
 Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
 ```vim
-Plug 'sainnhe/forest-night'
+Plug 'sainnhe/everforest'
 ```
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
@@ -36,26 +36,26 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 ### Manually
 
 1. Clone this repository.
-2. Copy `/path/to/forest-night/autoload/forest_night.vim` to `~/.vim/autoload/`.
-3. Copy `/path/to/forest-night/colors/forest-night.vim` to `~/.vim/colors/forest-night.vim`
-4. Copy `/path/to/forest-night/doc/forest-night.txt` to `~/.vim/doc/` and execute `:helptags ~/.vim/doc` to generate help tags.
-5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/forest-night/autoload/airline/themes/forest_night.vim` to `~/.vim/autoload/airline/themes/`
-6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/forest-night/autoload/lightline/colorscheme/forest_night.vim` to `~/.vim/autoload/lightline/colorscheme/`
+2. Copy `/path/to/everforest/autoload/everforest.vim` to `~/.vim/autoload/`.
+3. Copy `/path/to/everforest/colors/everforest.vim` to `~/.vim/colors/everforest.vim`
+4. Copy `/path/to/everforest/doc/everforest.txt` to `~/.vim/doc/` and execute `:helptags ~/.vim/doc` to generate help tags.
+5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/everforest/autoload/airline/themes/everforest.vim` to `~/.vim/autoload/airline/themes/`
+6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/everforest/autoload/lightline/colorscheme/everforest.vim` to `~/.vim/autoload/lightline/colorscheme/`
 
 ### AUR
 
 There are some packages available for Arch Linux users in AUR:
 
-- [vim-forest-night-git](https://aur.archlinux.org/pkgbase/vim-forest-night-git/)
-- [neovim-forest-night-git](https://aur.archlinux.org/pkgbase/neovim-forest-night-git/)
+- [vim-everforest-git](https://aur.archlinux.org/pkgbase/vim-everforest-git/)
+- [neovim-everforest-git](https://aur.archlinux.org/pkgbase/neovim-everforest-git/)
 
 ## Usage
 
-See [`:help forest-night.txt`](https://github.com/sainnhe/forest-night/blob/master/doc/forest-night.txt)
+See [`:help everforest.txt`](https://github.com/sainnhe/everforest/blob/master/doc/everforest.txt)
 
 ## Related Projects
 
-See this [wiki page](https://github.com/sainnhe/forest-night/wiki).
+See this [wiki page](https://github.com/sainnhe/everforest/wiki).
 
 ## More Color Schemes
 

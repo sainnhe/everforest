@@ -1,23 +1,31 @@
 ---
 name: 🐛 Bug report
-about: Report a problem with forest-night
+about: Report a problem with everforest
 labels: 'bug'
 
 ---
 
-### Problem
+<!-- Before reporting: search existing issues and check the FAQ. -->
 
-<!--
-Describe the problem here. Feel free to include any screenshots.
+- Operating system/version:
+- Terminal emulator/version:
+- `echo $TERM`:
+- `tmux -V`: <!-- Don't fill this if you're not using tmux. -->
+- `vim --version` or `nvim --version`:
 
-Please try to include as many details as possible.
- -->
+<!-- Paste the output here: -->
+```
 
-<!--
-Application:
-Version:
--->
+```
 
-### Expected output
+### Minimal vimrc that can reproduce this bug
 
-<!-- Describe the expected output here. -->
+```vim
+
+```
+
+### Steps to reproduce this bug using minimal vimrc
+
+### Actual behaviour
+
+### Expected behaviour

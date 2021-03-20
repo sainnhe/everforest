@@ -1,14 +1,14 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/forest-night
-" Filename: autoload/lightline/colorscheme/forest_night.vim
+" URL: https://github.com/sainnhe/everforest
+" Filename: autoload/lightline/colorscheme/everforest.vim
 " Author: sainnhe
 " Email: sainnhe@gmail.com
 " License: MIT License
 " =============================================================================
 
 " Initialization: {{{
-let s:configuration = forest_night#get_configuration()
-let s:palette = forest_night#get_palette(s:configuration.background)
+let s:configuration = everforest#get_configuration()
+let s:palette = everforest#get_palette(s:configuration.background)
 "}}}
 " Definition: {{{
 let s:tab_l_fg = s:palette.grey2
@@ -158,7 +158,7 @@ if s:configuration.lightline_disable_bold
   let s:p.tabline.tabsel = [ [ s:tab_sel_fg, s:tab_sel_bg ] ]
 endif
 
-let g:lightline#colorscheme#forest_night#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#everforest#palette = lightline#colorscheme#flatten(s:p)
 "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
