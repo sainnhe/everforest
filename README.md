@@ -78,4 +78,4 @@ See this [wiki page](https://github.com/sainnhe/everforest/wiki).
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](./LICENSE) © sainnhe
