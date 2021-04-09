@@ -264,6 +264,19 @@ Currently, the following plugins are supported:
 - https://github.com/vim-syntastic/syntastic
 
 ------------------------------------------------------------------------------
+                                                     *g:everforest_virtual_text*
+g:everforest_virtual_text~
+
+The virtual text colors in neovim.
+
+    Available values: `'grey'`, `'colored'`
+    Default value: `'grey'`
+
+E.g.
+>
+    let g:everforest_virtual_text = 'colored'
+<
+------------------------------------------------------------------------------
                                                      *g:everforest_current_word*
 g:everforest_current_word~
 
