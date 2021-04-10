@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Mar 14 12:55:15 PM UTC 2021'
+let s:last_modified = 'Sat Apr 10 01:20:39 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -270,7 +270,7 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-if s:configuration.virtual_text ==# 'grey'
+if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextWarning Grey
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
