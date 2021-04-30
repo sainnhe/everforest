@@ -387,6 +387,13 @@ can enable the color scheme in your vimrc instead of after vim startup.
 
 ------------------------------------------------------------------------------
 
+A lot of errors are detected if I install with pack feature.~
+
+You'll need to add `packadd! everforest` before applying this color scheme.
+Check [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
+
+------------------------------------------------------------------------------
+
 How to enable cursive italic keywords?~
 
 1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
