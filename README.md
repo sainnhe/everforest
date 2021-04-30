@@ -33,6 +33,15 @@ Plug 'sainnhe/everforest'
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
+### Via Pack Feature
+
+1. Create a new directory: `$ mkdir -p ~/.vim/pack/colors/opt`
+2. Clone this repository: `$ git clone --depth 1 https://github.com/sainnhe/everforest.git ~/.vim/pack/colors/opt/everforest`
+3. Generate help tags: `:helptags ~/.vim/pack/colors/opt/everforest/doc/`
+4. Add `packadd! everforest` to your vimrc.
+
+**Note:** If you install this color scheme to `pack/*/start`, you still need to add `packadd! everforest` to your vimrc. [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
+
 ### Manually
 
 1. Clone this repository.
