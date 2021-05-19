@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat May  8 03:47:16 AM UTC 2021'
+let s:last_modified = 'Wed May 19 12:28:35 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -81,7 +81,7 @@ endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
 call everforest#highlight('DiffDelete', s:palette.none, s:palette.bg_red)
-call everforest#highlight('DiffText', s:palette.bg0, s:palette.fg)
+call everforest#highlight('DiffText', s:palette.bg0, s:palette.blue)
 call everforest#highlight('Directory', s:palette.green, s:palette.none)
 call everforest#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call everforest#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
