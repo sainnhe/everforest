@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat May 22 01:54:42 AM UTC 2021'
+let s:last_modified = 'Sat May 22 02:01:29 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -335,12 +335,12 @@ endif
 " }}}
 " Plugins: {{{
 " nvim-treesitter/nvim-treesitter {{{
-call gruvbox_material#highlight('TSStrong', s:palette.none, s:palette.none, 'bold')
-call gruvbox_material#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
-call gruvbox_material#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
-call gruvbox_material#highlight('TSNote', s:palette.bg0, s:palette.blue, 'bold')
-call gruvbox_material#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
-call gruvbox_material#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
+call everforest#highlight('TSStrong', s:palette.none, s:palette.none, 'bold')
+call everforest#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
+call everforest#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
+call everforest#highlight('TSNote', s:palette.bg0, s:palette.blue, 'bold')
+call everforest#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
+call everforest#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
 highlight! link TSAnnotation Purple
 highlight! link TSAttribute Purple
 highlight! link TSBoolean Purple
