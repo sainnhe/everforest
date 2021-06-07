@@ -21,6 +21,7 @@ function! everforest#get_configuration() "{{{
         \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
         \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
         \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'default'),
+        \ 'show_eob': get(g:, 'everforest_show_eob', 1),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),

@@ -247,6 +247,19 @@ E.g.
     let g:everforest_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                                         *g:everforest_show_eob*
+g:everforest_show_eob~
+
+Whether to show |hl-EndOfBuffer|.
+
+    Available values: `1`, `0`
+    Default value: `1`
+
+E.g.
+>
+    let g:everforest_show_eob = 0
+<
+------------------------------------------------------------------------------
                                         *g:everforest_diagnostic_text_highlight*
 g:everforest_diagnostic_text_highlight~
 
