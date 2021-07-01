@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jun  8 11:23:49 PM UTC 2021'
+let s:last_modified = 'Thu Jul  1 12:43:53 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1856,6 +1856,15 @@ highlight! link matlabArithmeticOperator Orange
 highlight! link matlabRelationalOperator Orange
 highlight! link matlabRelationalOperator Orange
 highlight! link matlabLogicalOperator Orange
+" }}}
+" ft_end }}}
+" ft_begin: octave {{{
+" vim-octave: https://github.com/McSinyx/vim-octave{{{
+highlight! link octaveDelimiter Fg
+highlight! link octaveSemicolon Grey
+highlight! link octaveOperator Orange
+highlight! link octaveVariable YellowItalic
+highlight! link octaveVarKeyword YellowItalic
 " }}}
 " ft_end }}}
 " ft_begin: sh/zsh {{{
