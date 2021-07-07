@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jul  7 01:20:58 AM UTC 2021'
+let s:last_modified = 'Wed Jul  7 01:53:33 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1556,23 +1556,23 @@ highlight! link cppSTLexception Purple
 highlight! link cppSTLVariable Aqua
 " }}}
 " chromatica: https://github.com/arakashic/chromatica.nvim {{{
-highlight! link Member Aqua
-highlight! link Variable Blue
-highlight! link Namespace Purple
-highlight! link EnumConstant Aqua
-highlight! link chromaticaException RedItalic
-highlight! link chromaticaCast Orange
-highlight! link OperatorOverload Orange
-highlight! link AccessQual Orange
-highlight! link Linkage Orange
-highlight! link AutoType Yellow
+highlight! link Member TSProperty
+highlight! link Variable TSVariable
+highlight! link Namespace TSNamespace
+highlight! link EnumConstant TSType
+highlight! link chromaticaException TSException
+highlight! link chromaticaCast TSLabel
+highlight! link OperatorOverload TSOperator
+highlight! link AccessQual TSOperator
+highlight! link Linkage TSOperator
+highlight! link AutoType TSType
 " }}}
 " vim-lsp-cxx-highlight https://github.com/jackguo380/vim-lsp-cxx-highlight {{{
 highlight! link LspCxxHlSkippedRegion Grey
-highlight! link LspCxxHlSkippedRegionBeginEnd PurpleItalic
-highlight! link LspCxxHlGroupEnumConstant Aqua
-highlight! link LspCxxHlGroupNamespace Purple
-highlight! link LspCxxHlGroupMemberVariable Aqua
+highlight! link LspCxxHlSkippedRegionBeginEnd TSKeyword
+highlight! link LspCxxHlGroupEnumConstant TSType
+highlight! link LspCxxHlGroupNamespace TSNamespace
+highlight! link LspCxxHlGroupMemberVariable TSProperty
 " }}}
 " ft_end }}}
 " ft_begin: objc {{{
@@ -1625,15 +1625,15 @@ highlight! link pythonDot Grey
 " }}}
 " semshi: https://github.com/numirias/semshi {{{
 call everforest#highlight('semshiUnresolved', s:palette.yellow, s:palette.none, 'undercurl')
-highlight! link semshiImported Purple
-highlight! link semshiParameter Blue
+highlight! link semshiImported TSInclude
+highlight! link semshiParameter TSParameter
 highlight! link semshiParameterUnused Grey
-highlight! link semshiSelf PurpleItalic
-highlight! link semshiGlobal Yellow
-highlight! link semshiBuiltin Yellow
-highlight! link semshiAttribute Aqua
-highlight! link semshiLocal Red
-highlight! link semshiFree Red
+highlight! link semshiSelf TSVariableBuiltin
+highlight! link semshiGlobal TSType
+highlight! link semshiBuiltin TSTypeBuiltin
+highlight! link semshiAttribute TSAttribute
+highlight! link semshiLocal TSKeyword
+highlight! link semshiFree TSKeyword
 highlight! link semshiSelected CurrentWord
 highlight! link semshiErrorSign RedSign
 highlight! link semshiErrorChar RedSign
