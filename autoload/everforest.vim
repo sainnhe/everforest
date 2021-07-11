@@ -39,6 +39,7 @@ function! everforest#get_palette(background) "{{{
             \ 'bg2':        ['#3a454a',   '237',  'DarkGrey'],
             \ 'bg3':        ['#445055',   '238',  'DarkGrey'],
             \ 'bg4':        ['#4c555b',   '239',  'DarkGrey'],
+            \ 'bg5':        ['#576168',   '240',  'DarkGrey'],
             \ 'bg_visual':  ['#503946',   '52',   'DarkRed'],
             \ 'bg_red':     ['#4e3e43',   '52',   'DarkRed'],
             \ 'bg_green':   ['#404d44',   '22',   'DarkGreen'],
@@ -48,15 +49,16 @@ function! everforest#get_palette(background) "{{{
     else
       let palette1 = {
             \ 'bg0':        ['#fff9e8',   '230',  'Black'],
-            \ 'bg1':        ['#f7f2e0',   '228',  'DarkGrey'],
-            \ 'bg2':        ['#f0eed9',   '223',  'DarkGrey'],
-            \ 'bg3':        ['#e9e8d2',   '223',  'DarkGrey'],
-            \ 'bg4':        ['#e1ddcb',   '223',  'DarkGrey'],
-            \ 'bg_visual':  ['#edf0cd',   '194',  'DarkRed'],
-            \ 'bg_red':     ['#fce5dc',   '217',  'DarkRed'],
-            \ 'bg_green':   ['#f1f3d4',   '194',  'DarkGreen'],
-            \ 'bg_blue':    ['#eaf2eb',   '117',  'DarkBlue'],
-            \ 'bg_yellow':  ['#fbefd0',   '226',  'DarkBlue'],
+            \ 'bg1':        ['#f7f2e0',   '228',  'LightGrey'],
+            \ 'bg2':        ['#f0eed9',   '223',  'LightGrey'],
+            \ 'bg3':        ['#e9e8d2',   '223',  'LightGrey'],
+            \ 'bg4':        ['#e1ddcb',   '223',  'LightGrey'],
+            \ 'bg5':        ['#d4d4c0',   '223',  'LightGrey'],
+            \ 'bg_visual':  ['#edf0cd',   '194',  'LightRed'],
+            \ 'bg_red':     ['#fce5dc',   '217',  'LightRed'],
+            \ 'bg_green':   ['#f1f3d4',   '194',  'LightGreen'],
+            \ 'bg_blue':    ['#eaf2eb',   '117',  'LightBlue'],
+            \ 'bg_yellow':  ['#fbefd0',   '226',  'LightBlue'],
             \ }
     endif "}}}
   elseif a:background ==# 'medium' "{{{
@@ -67,6 +69,7 @@ function! everforest#get_palette(background) "{{{
             \ 'bg2':        ['#404c51',   '237',  'DarkGrey'],
             \ 'bg3':        ['#4a555b',   '238',  'DarkGrey'],
             \ 'bg4':        ['#525c62',   '239',  'DarkGrey'],
+            \ 'bg5':        ['#5d686f',   '240',  'DarkGrey'],
             \ 'bg_visual':  ['#573e4c',   '52',   'DarkRed'],
             \ 'bg_red':     ['#544247',   '52',   'DarkRed'],
             \ 'bg_green':   ['#445349',   '22',   'DarkGreen'],
@@ -76,15 +79,16 @@ function! everforest#get_palette(background) "{{{
     else
       let palette1 = {
             \ 'bg0':        ['#fdf6e3',   '230',  'Black'],
-            \ 'bg1':        ['#f3efda',   '228',  'DarkGrey'],
-            \ 'bg2':        ['#edead5',   '223',  'DarkGrey'],
-            \ 'bg3':        ['#e4e1cd',   '223',  'DarkGrey'],
-            \ 'bg4':        ['#dfdbc8',   '223',  'DarkGrey'],
-            \ 'bg_visual':  ['#eaedc8',   '194',  'DarkRed'],
-            \ 'bg_red':     ['#fbe3da',   '217',  'DarkRed'],
-            \ 'bg_green':   ['#f0f1d2',   '194',  'DarkGreen'],
-            \ 'bg_blue':    ['#e9f0e9',   '117',  'DarkBlue'],
-            \ 'bg_yellow':  ['#faedcd',   '226',  'DarkBlue'],
+            \ 'bg1':        ['#f3efda',   '228',  'LightGrey'],
+            \ 'bg2':        ['#edead5',   '223',  'LightGrey'],
+            \ 'bg3':        ['#e4e1cd',   '223',  'LightGrey'],
+            \ 'bg4':        ['#dfdbc8',   '223',  'LightGrey'],
+            \ 'bg5':        ['#d2d2bd',   '223',  'LightGrey'],
+            \ 'bg_visual':  ['#eaedc8',   '194',  'LightRed'],
+            \ 'bg_red':     ['#fbe3da',   '217',  'LightRed'],
+            \ 'bg_green':   ['#f0f1d2',   '194',  'LightGreen'],
+            \ 'bg_blue':    ['#e9f0e9',   '117',  'LightBlue'],
+            \ 'bg_yellow':  ['#faedcd',   '226',  'LightBlue'],
             \ }
     endif "}}}
   elseif a:background ==# 'soft' "{{{
@@ -95,6 +99,7 @@ function! everforest#get_palette(background) "{{{
             \ 'bg2':        ['#465258',   '237',  'DarkGrey'],
             \ 'bg3':        ['#505a60',   '238',  'DarkGrey'],
             \ 'bg4':        ['#576268',   '239',  'DarkGrey'],
+            \ 'bg5':        ['#626e75',   '240',  'DarkGrey'],
             \ 'bg_visual':  ['#5d4251',   '52',   'DarkRed'],
             \ 'bg_red':     ['#59454b',   '52',   'DarkRed'],
             \ 'bg_green':   ['#48584d',   '22',   'DarkGreen'],
@@ -104,15 +109,16 @@ function! everforest#get_palette(background) "{{{
     else
       let palette1 = {
             \ 'bg0':        ['#f8f0dc',   '230',  'Black'],
-            \ 'bg1':        ['#efead4',   '228',  'DarkGrey'],
-            \ 'bg2':        ['#e9e5cf',   '223',  'DarkGrey'],
-            \ 'bg3':        ['#e1ddc9',   '223',  'DarkGrey'],
-            \ 'bg4':        ['#dcd8c4',   '223',  'DarkGrey'],
-            \ 'bg_visual':  ['#e6e9c4',   '194',  'DarkRed'],
-            \ 'bg_red':     ['#f9e0d4',   '217',  'DarkRed'],
-            \ 'bg_green':   ['#edeece',   '194',  'DarkGreen'],
-            \ 'bg_blue':    ['#e7ede5',   '117',  'DarkBlue'],
-            \ 'bg_yellow':  ['#f6e9c9',   '226',  'DarkBlue'],
+            \ 'bg1':        ['#efead4',   '228',  'LightGrey'],
+            \ 'bg2':        ['#e9e5cf',   '223',  'LightGrey'],
+            \ 'bg3':        ['#e1ddc9',   '223',  'LightGrey'],
+            \ 'bg4':        ['#dcd8c4',   '223',  'LightGrey'],
+            \ 'bg5':        ['#cfcfb9',   '223',  'LightGrey'],
+            \ 'bg_visual':  ['#e6e9c4',   '194',  'LightRed'],
+            \ 'bg_red':     ['#f9e0d4',   '217',  'LightRed'],
+            \ 'bg_green':   ['#edeece',   '194',  'LightGreen'],
+            \ 'bg_blue':    ['#e7ede5',   '117',  'LightBlue'],
+            \ 'bg_yellow':  ['#f6e9c9',   '226',  'LightBlue'],
             \ }
     endif
   endif "}}}

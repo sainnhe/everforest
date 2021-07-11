@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jul 10 05:41:13 AM UTC 2021'
+let s:last_modified = 'Sun Jul 11 04:46:15 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -36,7 +36,7 @@ if s:configuration.transparent_background
   else
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
-  call everforest#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+  call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
   call everforest#highlight('Folded', s:palette.grey1, s:palette.none)
   call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.none)
@@ -55,13 +55,13 @@ else
     call everforest#highlight('FoldColumn', s:palette.grey1, s:palette.bg1)
   else
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
-    call everforest#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+    call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
   endif
 endif
 call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
 call everforest#highlight('Search', s:palette.bg0, s:palette.green)
 call everforest#highlight('ColorColumn', s:palette.none, s:palette.bg1)
-call everforest#highlight('Conceal', s:palette.grey1, s:palette.none)
+call everforest#highlight('Conceal', s:palette.bg5, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call everforest#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
 else
@@ -78,13 +78,13 @@ else
   call everforest#highlight('CursorLine', s:palette.none, s:palette.bg1)
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
-call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
+call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
 if &diff
-  call everforest#highlight('CursorLineNr', s:palette.fg, s:palette.none, 'underline')
+  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
 elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-  call everforest#highlight('CursorLineNr', s:palette.fg, s:palette.none)
+  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
 else
-  call everforest#highlight('CursorLineNr', s:palette.fg, s:palette.bg1)
+  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
 endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
@@ -97,7 +97,7 @@ call everforest#highlight('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call everforest#highlight('MoreMsg', s:palette.yellow, s:palette.none, 'bold')
 call everforest#highlight('MatchParen', s:palette.none, s:palette.bg4)
 call everforest#highlight('NonText', s:palette.bg4, s:palette.none)
-call everforest#highlight('Whitespace', s:palette.bg3, s:palette.none)
+call everforest#highlight('Whitespace', s:palette.bg4, s:palette.none)
 call everforest#highlight('SpecialKey', s:palette.bg3, s:palette.none)
 call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg2)
 call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
@@ -733,8 +733,14 @@ highlight! link CursorWord0 CurrentWord
 highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
-let g:indentLine_color_gui = s:palette.grey1[0]
-let g:indentLine_color_term = s:palette.grey1[1]
+let g:indentLine_color_gui = s:palette.bg5[0]
+let g:indentLine_color_term = s:palette.bg5[1]
+" }}}
+" lukas-reineke/indent-blankline.nvim {{{
+call everforest#highlight('IndentBlanklineContextChar', s:palette.grey0, s:palette.none)
+highlight! link IndentBlanklineChar Conceal
+highlight! link IndentBlanklineSpaceChar Conceal
+highlight! link IndentBlanklineSpaceCharBlankline Conceal
 " }}}
 " nathanaelkane/vim-indent-guides {{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0
