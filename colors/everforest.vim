@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jul 11 10:38:39 AM UTC 2021'
+let s:last_modified = 'Tue Jul 13 12:50:25 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -37,7 +37,7 @@ if s:configuration.transparent_background
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
   call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
-  call everforest#highlight('Folded', s:palette.grey1, s:palette.none)
+  call everforest#highlight('Folded', s:palette.grey2, s:palette.none)
   call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.none)
 else
@@ -48,11 +48,11 @@ else
   else
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   endif
-  call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('Folded', s:palette.grey2, s:palette.bg1)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   if s:configuration.sign_column_background ==# 'default'
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.bg1)
-    call everforest#highlight('FoldColumn', s:palette.grey1, s:palette.bg1)
+    call everforest#highlight('FoldColumn', s:palette.grey2, s:palette.bg1)
   else
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
     call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
@@ -80,11 +80,11 @@ else
 endif
 call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
 if &diff
-  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
+  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
 elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
+  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
 else
-  call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
 endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
