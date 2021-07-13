@@ -49,7 +49,7 @@ function! everforest#get_palette(background) "{{{
     else
       let palette1 = {
             \ 'bg0':        ['#fff9e8',   '230'],
-            \ 'bg1':        ['#f7f2e0',   '228'],
+            \ 'bg1':        ['#f7f4e0',   '228'],
             \ 'bg2':        ['#f0eed9',   '223'],
             \ 'bg3':        ['#e9e8d2',   '223'],
             \ 'bg4':        ['#e1ddcb',   '223'],
@@ -132,7 +132,7 @@ function! everforest#get_palette(background) "{{{
           \ 'aqua':       ['#83c092',   '108'],
           \ 'blue':       ['#7fbbb3',   '109'],
           \ 'purple':     ['#d699b6',   '175'],
-          \ 'grey0':      ['#7b897b',   '243'],
+          \ 'grey0':      ['#7f897d',   '243'],
           \ 'grey1':      ['#859289',   '245'],
           \ 'grey2':      ['#9aa79d',   '247'],
           \ 'statusline1':['#a7c080',   '142'],
