@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jul 13 12:50:25 AM UTC 2021'
+let s:last_modified = 'Tue Jul 13 01:01:10 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -736,7 +736,7 @@ let g:indentLine_color_gui = s:palette.bg5[0]
 let g:indentLine_color_term = s:palette.bg5[1]
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
-call everforest#highlight('IndentBlanklineContextChar', s:palette.grey0, s:palette.none)
+call everforest#highlight('IndentBlanklineContextChar', s:palette.grey1, s:palette.none)
 highlight! link IndentBlanklineChar Conceal
 highlight! link IndentBlanklineSpaceChar Conceal
 highlight! link IndentBlanklineSpaceCharBlankline Conceal
