@@ -199,6 +199,21 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |everforest-faq| for more information.
 
 ------------------------------------------------------------------------------
+                                                 *g:everforest_spell_foreground*
+g:everforest_spell_foreground~
+
+By default this color scheme will use colored foreground and undercurl in
+|spell|. You can disable colored foreground and just use undercurl by setting
+this option to `'undercurl'`.
+
+    Available values: `'default'`, `'undercurl'`
+    Default value: `'default'`
+
+E.g.
+>
+    let g:everforest_spell_foreground = 'undercurl'
+<
+------------------------------------------------------------------------------
                                            *g:everforest_disable_italic_comment*
 g:everforest_disable_italic_comment~
 
