@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Jul 19 01:13:38 AM UTC 2021'
+let s:last_modified = 'Tue Jul 20 10:44:54 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -37,7 +37,7 @@ if s:configuration.transparent_background
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
   call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
-  call everforest#highlight('Folded', s:palette.grey2, s:palette.none)
+  call everforest#highlight('Folded', s:palette.grey1, s:palette.none)
   call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.none)
 else
@@ -48,7 +48,7 @@ else
   else
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   endif
-  call everforest#highlight('Folded', s:palette.grey2, s:palette.bg1)
+  call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   if s:configuration.sign_column_background ==# 'default'
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.bg1)
