@@ -36,7 +36,11 @@ if s:configuration.transparent_background
   else
     call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
-  call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+  if s:configuration.ui_contrast ==# 'low'
+    call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+  else
+    call everforest#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+  endif
   call everforest#highlight('Folded', s:palette.grey1, s:palette.none)
   call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.none)
@@ -55,13 +59,21 @@ else
     call everforest#highlight('FoldColumn', s:palette.grey2, s:palette.bg1)
   else
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
-    call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+    if s:configuration.ui_contrast ==# 'low'
+      call everforest#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+    else
+      call everforest#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+    endif
   endif
 endif
 call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
 call everforest#highlight('Search', s:palette.bg0, s:palette.green)
 call everforest#highlight('ColorColumn', s:palette.none, s:palette.bg1)
-call everforest#highlight('Conceal', s:palette.bg5, s:palette.none)
+if s:configuration.ui_contrast ==# 'low'
+  call everforest#highlight('Conceal', s:palette.bg5, s:palette.none)
+else
+  call everforest#highlight('Conceal', s:palette.grey0, s:palette.none)
+endif
 if s:configuration.cursor ==# 'auto'
   call everforest#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
 else
@@ -78,13 +90,24 @@ else
   call everforest#highlight('CursorLine', s:palette.none, s:palette.bg1)
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
-call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
-if &diff
-  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
-elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
+if s:configuration.ui_contrast ==# 'low'
+  call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
+  if &diff
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
+  else
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
+  endif
 else
-  call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
+  call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
+  if &diff
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
+  else
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
+  endif
 endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
@@ -762,14 +785,19 @@ highlight! link CursorWord0 CurrentWord
 highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
-let g:indentLine_color_gui = s:palette.bg5[0]
-let g:indentLine_color_term = s:palette.bg5[1]
+if s:configuration.ui_contrast ==# 'low'
+  let g:indentLine_color_gui = s:palette.bg5[0]
+  let g:indentLine_color_term = s:palette.bg5[1]
+else
+  let g:indentLine_color_gui = s:palette.grey0[0]
+  let g:indentLine_color_term = s:palette.grey0[1]
+endif
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
-call everforest#highlight('IndentBlanklineContextChar', s:palette.grey1, s:palette.none)
-highlight! link IndentBlanklineChar Conceal
-highlight! link IndentBlanklineSpaceChar Conceal
-highlight! link IndentBlanklineSpaceCharBlankline Conceal
+highlight! link IndentBlanklineContextChar CursorLineNr
+highlight! link IndentBlanklineChar LineNr
+highlight! link IndentBlanklineSpaceChar LineNr
+highlight! link IndentBlanklineSpaceCharBlankline LineNr
 " }}}
 " nathanaelkane/vim-indent-guides {{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0

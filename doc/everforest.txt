@@ -248,6 +248,19 @@ E.g.
     let g:everforest_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                                      *g:everforest_ui_contrast*
+g:everforest_ui_contrast~
+
+The contrast of line numbers, indent lines, etc.
+
+    Available values: `'low'`, `'high'`
+    Default value: `'low'`
+
+E.g.
+>
+    let g:everforest_ui_contrast = 'high'
+<
+------------------------------------------------------------------------------
                                                          *g:everforest_show_eob*
 g:everforest_show_eob~
 
