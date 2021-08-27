@@ -764,6 +764,12 @@ highlight! link Sneak Search
 highlight! link SneakLabel Search
 highlight! link SneakScope DiffText
 " }}}
+" phaazon/hop.nvim {{{
+call everforest#highlight('HopNextKey', s:palette.orange, s:palette.none, 'bold')
+call everforest#highlight('HopNextKey1', s:palette.green, s:palette.none, 'bold')
+highlight! link HopNextKey2 Green
+highlight! link HopUnmatched Grey
+" }}}
 " terryma/vim-multiple-cursors {{{
 highlight! link multiple_cursors_cursor Cursor
 highlight! link multiple_cursors_visual Visual
