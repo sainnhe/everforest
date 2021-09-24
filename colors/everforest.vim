@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Aug  6 11:24:44 AM UTC 2021'
+let s:last_modified = 'Fri Sep 24 09:41:57 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1123,6 +1123,27 @@ highlight! link mkdRule Purple
 highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
 " }}}
+" ft_end }}}
+" ft_begin: vimwiki {{{
+call everforest#highlight('VimwikiHeader1', s:palette.red, s:palette.none, 'bold')
+call everforest#highlight('VimwikiHeader2', s:palette.orange, s:palette.none, 'bold')
+call everforest#highlight('VimwikiHeader3', s:palette.yellow, s:palette.none, 'bold')
+call everforest#highlight('VimwikiHeader4', s:palette.green, s:palette.none, 'bold')
+call everforest#highlight('VimwikiHeader5', s:palette.blue, s:palette.none, 'bold')
+call everforest#highlight('VimwikiHeader6', s:palette.purple, s:palette.none, 'bold')
+call everforest#highlight('VimwikiLink', s:palette.blue, s:palette.none, 'underline')
+call everforest#highlight('VimwikiItalic', s:palette.none, s:palette.none, 'italic')
+call everforest#highlight('VimwikiBold', s:palette.none, s:palette.none, 'bold')
+call everforest#highlight('VimwikiUnderline', s:palette.none, s:palette.none, 'underline')
+highlight! link VimwikiList Red
+highlight! link VimwikiTag Aqua
+highlight! link VimwikiCode Green
+highlight! link VimwikiHR Yellow
+highlight! link VimwikiHeaderChar Grey
+highlight! link VimwikiMarkers Grey
+highlight! link VimwikiPre Green
+highlight! link VimwikiPreDelim Green
+highlight! link VimwikiNoExistsLink Red
 " ft_end }}}
 " ft_begin: rst {{{
 " builtin: https://github.com/marshallward/vim-restructuredtext {{{
