@@ -5,7 +5,7 @@
 BBLUE='\033[1;34m'
 GREEN='\033[0;32m'
 NC='\033[0m'
-DATE=$(date --utc)
+DATE=$(date -u)
 
 # Stash unstaged changes
 git stash -q --keep-index
