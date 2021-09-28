@@ -1,0 +1,67 @@
+name: Bug Report GUI
+description: Choose this template if you are using a GUI client
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        _Before reporting:_ search [existing issues](https://github.com/sainnhe/everforest/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and check the FAQ in help doc. Any bug report which doesn't follow the issue template and I can't reproduce will be closed.
+
+  - type: input
+    attributes:
+      label: "Operating system/version"
+      placeholder: "e.g. macOS Big Sur 11.6"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "GUI client/version"
+      placeholder: "e.g. neovide 0.7.0"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Feature matrix"
+      description: |
+        - If you are using gvim, paste **ALL** the output of `vim --version` (execute this command in your terminal emulator)
+        - If you are using a neovim GUI client, paste **ALL** the output of `:checkhealth` (execute this command in your neovim)
+        - Triple backticks is the syntax of creating fenced code blocks in markdown, you should paste your output inside the code block.
+      placeholder: |
+        ```text
+        Paste your output here.
+        ```
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Minimal vimrc that can reproduce this bug."
+      placeholder: |
+        ```vim
+        call plug#begin(fnamemodify(stdpath('data'), ':p') . 'plugins')
+        Plug 'sainnhe/everforest'
+        call plug#end()
+
+        set termguicolors
+        colorscheme everforest
+        ```
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce this bug using minimal vimrc"
+      placeholder: |
+        1. Launch (neo)vim using minimal vimrc.
+        2. Execute `:edit foo.txt`.
+        3. Other steps.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Actual behavior"
+    validations:
+      required: true
