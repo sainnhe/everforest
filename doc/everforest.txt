@@ -62,7 +62,7 @@ Manually~
     1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/everforest.git`
 
     2. Copy `/path/to/everforest/autoload/everforest.vim` to
-    `~/.vim/autoload/`.
+    `~/.vim/autoload/` .
 
     3. Copy `/path/to/everforest/colors/everforest.vim` to
     `~/.vim/colors/` .
