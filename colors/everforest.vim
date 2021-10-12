@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Sep 24 09:41:57 UTC 2021'
+let s:last_modified = 'Tue Oct 12 07:31:51 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -721,6 +721,7 @@ let g:fzf_colors = {
       \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
       \ 'hl+':     ['fg', 'Aqua'],
       \ 'info':    ['fg', 'Aqua'],
+      \ 'border':  ['fg', 'Grey'],
       \ 'prompt':  ['fg', 'Orange'],
       \ 'pointer': ['fg', 'Blue'],
       \ 'marker':  ['fg', 'Yellow'],
