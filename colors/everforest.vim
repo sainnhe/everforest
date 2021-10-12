@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct 12 07:31:51 UTC 2021'
+let s:last_modified = 'Tue Oct 12 08:05:01 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -587,6 +587,13 @@ highlight! link CocExplorerIndentLine Conceal
 highlight! link CocExplorerHelpDescription Grey
 highlight! link CocExplorerHelpHint Grey
 highlight! link CocRustChainingHint Grey
+" }}}
+" hrsh7th/nvim-cmp {{{
+highlight! link CmpItemAbbr Grey
+highlight! link CmpItemAbbrDeprecated Grey
+highlight! link CmpItemAbbrMatch Green
+highlight! link CmpItemAbbrMatchFuzzy Green
+highlight! link CmpItemKind Yellow
 " }}}
 " prabirshrestha/vim-lsp {{{
 highlight! link LspErrorVirtual VirtualTextError
