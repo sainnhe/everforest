@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct 12 12:00:50 UTC 2021'
+let s:last_modified = 'Mon Nov  1 03:57:01 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -630,6 +630,11 @@ highlight! link ALEVirtualTextWarning VirtualTextWarning
 highlight! link ALEVirtualTextInfo VirtualTextInfo
 highlight! link ALEVirtualTextStyleError VirtualTextHint
 highlight! link ALEVirtualTextStyleWarning VirtualTextHint
+" }}}
+" folke/trouble.nvim {{{
+highlight! link TroubleText Fg
+highlight! link TroubleSource Grey
+highlight! link TroubleCode Grey
 " }}}
 " neomake/neomake {{{
 highlight! link NeomakeError ErrorText
