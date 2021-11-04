@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Nov  4 09:02:46 UTC 2021'
+let s:last_modified = 'Thu Nov  4 12:03:12 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -897,6 +897,25 @@ highlight! link BufTabLineCurrent TabLineSel
 highlight! link BufTabLineActive TabLine
 highlight! link BufTabLineHidden TabLineFill
 highlight! link BufTabLineFill TabLineFill
+" }}}
+" romgrk/barbar.nvim {{{
+call everforest#highlight('BufferCurrentSign', s:palette.green, s:palette.none)
+call everforest#highlight('BufferCurrentTarget', s:palette.orange, s:palette.none, 'bold')
+call everforest#highlight('BufferVisibleSign', s:palette.grey0, s:palette.none)
+call everforest#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.none, 'bold')
+call everforest#highlight('BufferInactive', s:palette.grey1, s:palette.bg3)
+call everforest#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg3)
+call everforest#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg3)
+call everforest#highlight('BufferInactiveSign', s:palette.bg0, s:palette.bg3)
+call everforest#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg3, 'bold')
+call everforest#highlight('BufferTabpages', s:palette.bg0, s:palette.green, 'bold')
+call everforest#highlight('BufferTabpageFill', s:palette.grey1, s:palette.bg1)
+highlight! link BufferCurrent Fg
+highlight! link BufferCurrentIndex Fg
+highlight! link BufferCurrentMod Blue
+highlight! link BufferVisible Grey
+highlight! link BufferVisibleIndex Grey
+highlight! link BufferVisibleMod Grey
 " }}}
 " liuchengxu/vim-which-key {{{
 highlight! link WhichKey Red
