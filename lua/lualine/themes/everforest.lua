@@ -1,3 +1,11 @@
+-- =============================================================================
+-- URL: https://github.com/sainnhe/everforest
+-- Filename: lua/lualine/themes/everforest.lua
+-- Author: sainnhe
+-- Email: sainnhe@gmail.com
+-- License: MIT License
+-- =============================================================================
+
 local configuration = vim.fn['everforest#get_configuration']()
 local palette = vim.fn['everforest#get_palette'](configuration.background)
 
