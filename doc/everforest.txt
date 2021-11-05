@@ -78,6 +78,10 @@ Manually~
     copy `/path/to/everforest/autoload/lightline/colorscheme/everforest.vim`
     to `~/.vim/autoload/lightline/colorscheme/` .
 
+    7. To install [lualine](https://github.com/nvim-lualine/lualine.nvim) theme,
+    copy `/path/to/everforest/lua/lualine/themes/everforest.lua`
+    to `~/.config/nvim/lua/lualine/themes/` .
+
 ------------------------------------------------------------------------------
 
 AUR~
@@ -152,6 +156,23 @@ Lightline~
         :let g:lightline.colorscheme = 'everforest'
         :call lightline#init()
         :call lightline#colorscheme()
+<
+------------------------------------------------------------------------------
+
+Lualine~
+
+    To enable [lualine](https://github.com/nvim-lualine/lualine.nvim) color
+    scheme, put this in your init.lua:
+>
+        require'lualine'.setup {
+          options = {
+            theme = 'everforest'
+          }
+        }
+<
+    To apply it without reloading:
+>
+        :lua require'lualine'.setup {options = {theme = 'everforest'}}
 <
 ==============================================================================
 CONFIGURATION                                         *everforest-configuration*

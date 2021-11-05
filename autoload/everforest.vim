@@ -92,7 +92,7 @@ function! everforest#get_palette(background) "{{{
             \ 'bg_yellow':  ['#faedcd',   '226'],
             \ }
     endif "}}}
-  elseif a:background ==# 'soft' "{{{
+  else "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg0':        ['#323d43',   '235'],
