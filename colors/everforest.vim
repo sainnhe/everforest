@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov 30 07:53:42 UTC 2021'
+let s:last_modified = 'Tue Nov 30 08:09:25 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -420,7 +420,7 @@ highlight! link TSNumber Purple
 highlight! link TSOperator Orange
 highlight! link TSParameter Fg
 highlight! link TSParameterReference Fg
-highlight! link TSProperty Green
+highlight! link TSProperty Fg
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
@@ -540,7 +540,7 @@ highlight! link CocSymbolArray TSVariable
 highlight! link CocSymbolObject TSVariable
 highlight! link CocSymbolKey TSKeyword
 highlight! link CocSymbolNull TSVariableBuiltin
-highlight! link CocSymbolEnumMember TSProperty
+highlight! link CocSymbolEnumMember TSNumber
 highlight! link CocSymbolStruct TSStructure
 highlight! link CocSymbolEvent TSLabel
 highlight! link CocSymbolOperator TSOperator
@@ -1802,7 +1802,7 @@ highlight! link cppSTLVariable Aqua
 highlight! link Member TSVariable
 highlight! link Variable TSVariable
 highlight! link Namespace TSNamespace
-highlight! link EnumConstant TSStructure
+highlight! link EnumConstant TSNumber
 highlight! link chromaticaException TSException
 highlight! link chromaticaCast TSLabel
 highlight! link OperatorOverload TSOperator
