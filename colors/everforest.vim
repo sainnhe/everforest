@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Nov 11 07:38:36 AM UTC 2021'
+let s:last_modified = 'Tue Nov 30 02:42:21 AM UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -479,7 +479,7 @@ highlight! link CocSem_number TSNumber
 highlight! link CocSem_operator TSOperator
 highlight! link CocSem_parameter TSParameter
 highlight! link CocSem_parenthesis TSPunctBracket
-highlight! link CocSem_property TSVariable
+highlight! link CocSem_property TSProperty
 highlight! link CocSem_punctuation TSOperator
 highlight! link CocSem_regexp TSStringRegex
 highlight! link CocSem_selfKeyword TSConstBuiltin
