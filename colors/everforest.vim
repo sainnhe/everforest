@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov 30 07:34:02 UTC 2021'
+let s:last_modified = 'Tue Nov 30 07:53:42 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -907,7 +907,7 @@ highlight! link CmpItemKindColor Aqua
 highlight! link CmpItemKindFile Aqua
 highlight! link CmpItemKindReference Aqua
 highlight! link CmpItemKindFolder Aqua
-highlight! link CmpItemKindEnumMember Blue
+highlight! link CmpItemKindEnumMember Purple
 highlight! link CmpItemKindConstant Blue
 highlight! link CmpItemKindStruct Yellow
 highlight! link CmpItemKindEvent Orange
