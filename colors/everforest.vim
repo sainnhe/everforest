@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Dec 17 01:53:53 UTC 2021'
+let s:last_modified = 'Fri Dec 17 01:54:22 UTC 2021'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -752,6 +752,14 @@ highlight! link GitGutterAdd GreenSign
 highlight! link GitGutterChange BlueSign
 highlight! link GitGutterDelete RedSign
 highlight! link GitGutterChangeDelete PurpleSign
+highlight! link GitGutterAddLine DiffAdd
+highlight! link GitGutterChangeLine DiffChange
+highlight! link GitGutterDeleteLine DiffDelete
+highlight! link GitGutterChangeDeleteLine DiffChange
+highlight! link GitGutterAddLineNr Green
+highlight! link GitGutterChangeLineNr Blue
+highlight! link GitGutterDeleteLineNr Red
+highlight! link GitGutterChangeDeleteLineNr Purple
 " }}}
 " mhinz/vim-signify {{{
 highlight! link SignifySignAdd GreenSign
