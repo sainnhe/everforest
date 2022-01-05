@@ -6,12 +6,6 @@
 " License: MIT License
 " =============================================================================
 
-" g:everforest#tmux: is in tmux < 2.9 or not {{{
-let g:everforest#tmux = executable('tmux') && $TMUX !=# '' ?
-                  \ (str2float(system("tmux -V | grep -oE '[0-9]+\.[0-9]*'")) < 2.9 ?
-                    \ 1 :
-                    \ 0) :
-                  \ 0 "}}}
 function! everforest#get_configuration() "{{{
   return {
         \ 'background': get(g:, 'everforest_background', 'medium'),
@@ -169,11 +163,7 @@ function! everforest#highlight(group, fg, bg, ...) "{{{
         \ 'ctermfg=' . a:fg[1]
         \ 'ctermbg=' . a:bg[1]
         \ 'gui=' . (a:0 >= 1 ?
-          \ (a:1 ==# 'undercurl' ?
-            \ (g:everforest#tmux ?
-              \ 'underline' :
-              \ 'undercurl') :
-            \ a:1) :
+          \ a:1 :
           \ 'NONE')
         \ 'cterm=' . (a:0 >= 1 ?
           \ (a:1 ==# 'undercurl' ?
