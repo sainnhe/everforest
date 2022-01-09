@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan  9 10:47:30 UTC 2022'
+let s:last_modified = 'Sun Jan  9 12:27:56 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1005,6 +1005,34 @@ highlight! link NotifyWARNTitle Yellow
 highlight! link NotifyINFOTitle Green
 highlight! link NotifyDEBUGTitle Grey
 highlight! link NotifyTRACETitle Purple
+" }}}
+" glepnir/lspsaga.nvim {{{
+call everforest#highlight('LspFloatWinBorder', s:palette.bg0, s:palette.bg0)
+call everforest#highlight('LspSagaDiagnosticHeader', s:palette.orange, s:palette.none, 'bold')
+call everforest#highlight('LspSagaCodeActionTitle', s:palette.purple, s:palette.none, 'bold')
+call everforest#highlight('DefinitionPreviewTitle', s:palette.blue, s:palette.none, 'bold')
+highlight! link LspSagaDiagnosticBorder Orange
+highlight! link LspSagaDiagnosticTruncateLine Orange
+highlight! link LspSagaRenameBorder Purple
+highlight! link LspSagaRenamePromptPrefix Blue
+highlight! link LspSagaCodeActionBorder Purple
+highlight! link LspSagaCodeActionTruncateLine Purple
+highlight! link LspSagaCodeActionContent Green
+highlight! link LspSagaHoverBorder Green
+highlight! link LspSagaDocTruncateLine Green
+highlight! link LspSagaSignatureHelpBorder Green
+highlight! link LspSagaShTruncateLine Green
+highlight! link LspSagaDefPreviewBorder Blue
+highlight! link DefinitionIcon Blue
+highlight! link LspLinesDiagBorder Yellow
+highlight! link LineDiagTuncateLine Yellow
+highlight! link LspSagaAutoPreview Green
+highlight! link LspSagaFinderSelection Fg
+highlight! link DiagnosticWarning DiagnosticWarn
+highlight! link DiagnosticInformation DiagnosticInfo
+highlight! link ReferencesCount Grey
+highlight! link DefinitionCount Grey
+highlight! link TargetFileName Grey
 " }}}
 endif
 " }}}
