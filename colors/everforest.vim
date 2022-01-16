@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan 16 11:52:11 UTC 2022'
+let s:last_modified = 'Sun Jan 16 12:06:23 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1027,7 +1027,7 @@ highlight! link plugSha Green
 " ft_end }}}
 " ft_begin: coctree {{{
 " https://github.com/neoclide/coc.nvim
-highlight! link CocTreeOpenClose Grey
+highlight! link CocTreeOpenClose Aqua
 highlight! link CocTreeDescription Grey
 highlight! link CocSymbolFile Green
 highlight! link CocSymbolModule Purple
