@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan 16 12:06:23 UTC 2022'
+let s:last_modified = 'Tue Jan 18 13:16:22 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1199,11 +1199,11 @@ highlight! link netrwVersion Orange
 " https://github.com/skywind3000/quickmenu.vim
 highlight! link StartifyBracket Grey
 highlight! link StartifyFile Fg
-highlight! link StartifyNumber Red
+highlight! link StartifyNumber Orange
 highlight! link StartifyPath Green
 highlight! link StartifySlash Green
-highlight! link StartifySection Blue
-highlight! link StartifyHeader Orange
+highlight! link StartifySection Yellow
+highlight! link StartifyHeader Aqua
 highlight! link StartifySpecial Grey
 highlight! link StartifyFooter Grey
 " ft_end }}}
