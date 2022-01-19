@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan 18 13:16:22 UTC 2022'
+let s:last_modified = 'Wed Jan 19 00:58:35 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1094,6 +1094,9 @@ highlight! link CocExplorerTimeModified Aqua
 highlight! link CocExplorerIndentLine Conceal
 highlight! link CocExplorerHelpDescription Grey
 highlight! link CocExplorerHelpHint Grey
+highlight! link CocExplorerDiagnosticError Red
+highlight! link CocExplorerDiagnosticWarning Yellow
+highlight! link CocExplorerFileHidden Grey
 " ft_end }}}
 " ft_begin: tagbar {{{
 " https://github.com/majutsushi/tagbar
