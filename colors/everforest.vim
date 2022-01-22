@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jan 19 00:58:35 UTC 2022'
+let s:last_modified = 'Sat Jan 22 03:53:33 AM UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -129,10 +129,17 @@ highlight! link WildMenu PmenuSel
 call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
 call everforest#highlight('Question', s:palette.yellow, s:palette.none)
-call everforest#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call everforest#highlight('SpellCap', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-call everforest#highlight('SpellLocal', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
-call everforest#highlight('SpellRare', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+if s:configuration.spell_foreground ==# 'none'
+  call everforest#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
+  call everforest#highlight('SpellCap', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+  call everforest#highlight('SpellLocal', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
+  call everforest#highlight('SpellRare', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+else
+  call everforest#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
+  call everforest#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
+  call everforest#highlight('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
+  call everforest#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
+endif
 call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg1)
 call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
 call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)

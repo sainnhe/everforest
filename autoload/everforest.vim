@@ -15,6 +15,7 @@ function! everforest#get_configuration() "{{{
         \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
         \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
         \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'default'),
+        \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
