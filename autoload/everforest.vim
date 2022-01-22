@@ -229,17 +229,13 @@ function! everforest#ft_write(rootpath, ft, content) "{{{
 endfunction "}}}
 function! everforest#ft_rootpath(path) "{{{
   " Get the directory where `after/ftplugin` is generated.
-  if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " Return the plugin directory. The `after/ftplugin` directory should never be generated in `/usr/share`, even if you are a root user.
+  if (matchstr(a:path, '^/usr/share') ==# '') " Return the plugin directory. The `after/ftplugin` directory should never be generated in `/usr/share`, even if you are a root user.
     return fnamemodify(a:path, ':p:h:h')
   else " Use vim home directory.
     if has('nvim')
       return stdpath('config')
     else
-      if has('win32') || has ('win64')
-        return $VIM . '/vimfiles'
-      else
-        return $HOME . '/.vim'
-      endif
+      return expand('~') . '/.vim'
     endif
   endif
 endfunction "}}}
