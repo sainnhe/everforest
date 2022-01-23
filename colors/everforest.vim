@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jan 22 12:13:09 UTC 2022'
+let s:last_modified = 'Sun Jan 23 13:04:08 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -780,6 +780,10 @@ highlight! link WhichKey Red
 highlight! link WhichKeySeperator Green
 highlight! link WhichKeyGroup Yellow
 highlight! link WhichKeyDesc Blue
+" }}}
+" junegunn/limelight.vim {{{
+let g:limelight_conceal_ctermfg = s:palette.grey0[1]
+let g:limelight_conceal_guifg = s:palette.grey0[0]
 " }}}
 " unblevable/quick-scope {{{
 call everforest#highlight('QuickScopePrimary', s:palette.aqua, s:palette.none, 'underline')
