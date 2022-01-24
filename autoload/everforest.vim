@@ -192,6 +192,7 @@ function! everforest#syn_gen(path, last_modified, msg) "{{{
   let syntax_relative_path = has('win32') ? '\after\syntax' : '/after/syntax'
   if a:msg ==# 'update'
     echohl WarningMsg | echom '[everforest] Updated ' . rootpath . syntax_relative_path | echohl None
+    call everforest#ftplugin_detect(a:path)
   else
     echohl WarningMsg | echom '[everforest] Generated ' . rootpath . syntax_relative_path | echohl None
   endif
@@ -274,6 +275,16 @@ function! everforest#syn_clean(path, msg) "{{{
 endfunction "}}}
 function! everforest#syn_exists(path) "{{{
   return filereadable(everforest#syn_rootpath(a:path) . '/after/syntax/text/everforest.vim')
+endfunction "}}}
+function! everforest#ftplugin_detect(path) "{{{
+  " Check if /after/ftplugin exists.
+  " This directory is generated in earlier versions, users may need to manually clean it.
+  let rootpath = everforest#syn_rootpath(a:path)
+  if filereadable(everforest#syn_rootpath(a:path) . '/after/ftplugin/text/everforest.vim')
+    let ftplugin_relative_path = has('win32') ? '\after\ftplugin' : '/after/ftplugin'
+    echohl WarningMsg | echom '[everforest] Detected ' . rootpath . ftplugin_relative_path | echohl None
+    echohl WarningMsg | echom '[everforest] This directory is no longer used, you may need to manually delete it.' | echohl None
+  endif
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
