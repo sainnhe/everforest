@@ -431,7 +431,7 @@ FAQ                                                             *everforest-faq*
 
 ------------------------------------------------------------------------------
 
-The colors doesn't match those in the screenshots.~
+The colors don't match those in the screenshots.~
 
 1. This color scheme is mainly designed for true colors, `set termguicolors`
 is required. Check output of `vim --version`, maybe your vim doesn't support
