@@ -199,23 +199,20 @@ g:everforest_background~
 
 The background contrast used in this color scheme.
 
-    Available values: `'hard'`, `'medium'`, `'soft'`
-    Default value: `'medium'`
+    Type:               |String|
+    Available values:   `'hard'`, `'medium'`, `'soft'`
+    Default value:      `'medium'`
 
-E.g.
->
-    let g:everforest_background = 'soft'
-<
 ------------------------------------------------------------------------------
                                                     *g:everforest_enable_italic*
 g:everforest_enable_italic~
 
 To enable italic in this color scheme, set this option to `1`.
 
-E.g.
->
-    let g:everforest_enable_italic = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Note: This option is designed to use with fonts that support cursive italics.
 See |everforest-faq| for more information.
 
@@ -226,34 +223,31 @@ g:everforest_disable_italic_comment~
 By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
 this option to `1`.
 
-E.g.
->
-    let g:everforest_disable_italic_comment = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                                            *g:everforest_cursor*
 g:everforest_cursor~
 
 Customize the cursor color, only works in GUI clients.
 
-    Available values: `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    Type:               |String|
+    Available values:   `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
     `'aqua'`, `'blue'`, `'purple'`
-    Default value: `'auto'`
+    Default value:      `'auto'`
 
-E.g.
->
-    let g:everforest_cursor = 'green'
-<
 ------------------------------------------------------------------------------
                                            *g:everforest_transparent_background*
 g:everforest_transparent_background~
 
 To use transparent background, set this option to `1`.
 
-E.g.
->
-    let g:everforest_transparent_background = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                            *g:everforest_sign_column_background*
 g:everforest_sign_column_background~
@@ -261,13 +255,10 @@ g:everforest_sign_column_background~
 By default, the background color of sign column is different from normal text.
 If you want to make it the same as normal text, set this option to `'none'`.
 
-    Available values: `'default'`, `'none'`
-    Default value: `'default'`
+    Type:               |String|
+    Available values:   `'default'`, `'none'`
+    Default value:      `'default'`
 
-E.g.
->
-    let g:everforest_sign_column_background = 'none'
-<
 ------------------------------------------------------------------------------
                                                  *g:everforest_spell_foreground*
 g:everforest_spell_foreground~
@@ -276,39 +267,30 @@ By default, this color scheme won't color the foreground of |spell|, instead
 colored under curls will be used. If you also want to color the foreground,
 set this option to `'colored'`.
 
-    Available values: `'none'`, `'colored'`
-    Default value: `'none'`
+    Type:               |String|
+    Available values:   `'none'`, `'colored'`
+    Default value:      `'none'`
 
-E.g.
->
-    let g:everforest_spell_foreground = 'colored'
-<
 ------------------------------------------------------------------------------
                                                       *g:everforest_ui_contrast*
 g:everforest_ui_contrast~
 
 The contrast of line numbers, indent lines, etc.
 
-    Available values: `'low'`, `'high'`
-    Default value: `'low'`
+    Type:               |String|
+    Available values:   `'low'`, `'high'`
+    Default value:      `'low'`
 
-E.g.
->
-    let g:everforest_ui_contrast = 'high'
-<
 ------------------------------------------------------------------------------
                                                          *g:everforest_show_eob*
 g:everforest_show_eob~
 
 Whether to show |hl-EndOfBuffer|.
 
-    Available values: `1`, `0`
-    Default value: `1`
+    Type:               |Number|
+    Available values:   `1`, `0`
+    Default value:      `1`
 
-E.g.
->
-    let g:everforest_show_eob = 0
-<
 ------------------------------------------------------------------------------
                                         *g:everforest_diagnostic_text_highlight*
 g:everforest_diagnostic_text_highlight~
@@ -317,13 +299,10 @@ Some plugins support highlighting error/warning/info/hint texts, by default
 these texts are only underlined, but you can use this option to also highlight
 the background of them.
 
-    Available values: `0`, `1`
-    Default value: `0`
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
 
-E.g.
->
-    let g:everforest_diagnostic_text_highlight = 1
-<
 Currently, the following plugins are supported:
 
 - neovim's built-in language server client
@@ -342,10 +321,10 @@ Some plugins support highlighting error/warning/info/hint lines, but this
 feature is disabled by default in this color scheme. To enable this feature,
 set this option to `1`.
 
-E.g.
->
-    let g:everforest_diagnostic_line_highlight = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Currently, the following plugins are supported:
 
 - https://github.com/neoclide/coc.nvim
@@ -361,13 +340,10 @@ Some plugins can use virtual text feature of neovim to display
 error/warning/info/hint information, you can use this option to adjust the
 colors of it.
 
-    Available values: `'grey'`, `'colored'`
-    Default value: `'grey'`
+    Type:               |String|
+    Available values:   `'grey'`, `'colored'`
+    Default value:      `'grey'`
 
-E.g.
->
-    let g:everforest_diagnostic_virtual_text = 'colored'
-<
 Currently, the following plugins are supported:
 
 - neovim's built-in language server client
@@ -383,14 +359,11 @@ g:everforest_current_word~
 Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
 
-    Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
-    Default value: `'grey background'` when not in transparent mode, `'bold'`
+    Type:               |String|
+    Available values:   `'grey background'`, `'bold'`, `'underline'`, `'italic'`
+    Default value:      `'grey background'` when not in transparent mode, `'bold'`
     when in transparent mode.
 
-E.g.
->
-    let g:everforest_current_word = 'bold'
-<
 Currently, the following plugins are supported:
 
 - https://github.com/neoclide/coc-highlight
@@ -406,10 +379,10 @@ g:everforest_lightline_disable_bold~
 By default, bold is enabled in lightline color scheme. To disable bold in
 lightline color scheme, set this option to `1`.
 
-E.g.
->
-    let g:everforest_lightline_disable_bold = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Note: this configuration option doesn't need to be placed before `colorscheme everforest`
 
 ------------------------------------------------------------------------------
@@ -422,10 +395,10 @@ demand by placing them in the `after/syntax` directory.
 
 Enabling this option will reduce loading time by approximately 50%.
 
-E.g.
->
-    let g:everforest_better_performance = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ==============================================================================
 FAQ                                                             *everforest-faq*
 
