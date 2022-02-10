@@ -1,4 +1,5 @@
-*everforest.txt*
+*everforest.txt*   Comfortable & Pleasant Color Scheme for Vim
+*everforest*
 
 CONTENTS                                     *everforest-contents*
 
@@ -8,7 +9,7 @@ Usage                                        |everforest-usage|
 Configuration                                |everforest-configuration|
 FAQ                                          |everforest-faq|
 
-Note: Type |gO| to show the outline of contents.
+Note: Type |gO| in neovim to show the outline of contents.
 
 ==============================================================================
 INTRODUCTION                                           *everforest-introduction*
