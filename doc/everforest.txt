@@ -1,6 +1,14 @@
 *everforest.txt*   Comfortable & Pleasant Color Scheme for Vim
 *everforest*
+>
+            ______                ____                     __
+           / ____/   _____  _____/ __/___  ________  _____/ /_
+          / __/ | | / / _ \/ ___/ /_/ __ \/ ___/ _ \/ ___/ __/
+         / /___ | |/ /  __/ /  / __/ /_/ / /  /  __(__  ) /_
+        /_____/ |___/\___/_/  /_/  \____/_/   \___/____/\__/
+<
 
+==============================================================================
 CONTENTS                                     *everforest-contents*
 
 Introduction                                 |everforest-introduction|
