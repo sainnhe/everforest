@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Jan 24 04:19:58 UTC 2022'
+let s:last_modified = 'Sun Feb 20 07:57:13 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -696,6 +696,9 @@ call everforest#highlight('SneakLabelMask', s:palette.orange, s:palette.orange)
 highlight! link Sneak Search
 highlight! link SneakLabel Search
 highlight! link SneakScope DiffText
+" }}}
+" rhysd/clever-f.vim {{{
+highlight! link CleverFDefaultLabel Search
 " }}}
 " terryma/vim-multiple-cursors {{{
 highlight! link multiple_cursors_cursor Cursor
