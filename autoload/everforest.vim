@@ -167,9 +167,7 @@ function! everforest#highlight(group, fg, bg, ...) "{{{
           \ a:1 :
           \ 'NONE')
         \ 'cterm=' . (a:0 >= 1 ?
-          \ (a:1 ==# 'undercurl' ?
-            \ 'underline' :
-            \ a:1) :
+          \ a:1 :
           \ 'NONE')
         \ 'guisp=' . (a:0 >= 2 ?
           \ a:2[0] :
