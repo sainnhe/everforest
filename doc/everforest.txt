@@ -384,6 +384,18 @@ Currently, the following plugins are supported:
 - https://github.com/prabirshrestha/vim-lsp
 
 ------------------------------------------------------------------------------
+                                          *g:everforest_disable_terminal_colors*
+g:everforest_disable_terminal_colors~
+
+Setting this option to `1` will disable terminal colors provided by this color
+scheme so you can remain terminal colors the same when using |:terminal| in
+nvim and outside of nvim.
+
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
+------------------------------------------------------------------------------
                                            *g:everforest_lightline_disable_bold*
 g:everforest_lightline_disable_bold~
 

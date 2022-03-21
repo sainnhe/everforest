@@ -23,6 +23,7 @@ function! everforest#get_configuration() "{{{
         \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),
         \ 'diagnostic_line_highlight': get(g:, 'everforest_diagnostic_line_highlight', 0),
         \ 'diagnostic_virtual_text': get(g:, 'everforest_diagnostic_virtual_text', 'grey'),
+        \ 'disable_terminal_colors': get(g:, 'everforest_disable_terminal_colors', 0),
         \ 'better_performance': get(g:, 'everforest_better_performance', 0),
         \ }
 endfunction "}}}
