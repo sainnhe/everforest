@@ -125,6 +125,9 @@ Vim~
         " Available values: 'hard', 'medium'(default), 'soft'
         let g:everforest_background = 'soft'
 
+        " For better performance
+        let g:everforest_better_performance = 1
+
         colorscheme everforest
 <
     See |everforest-configuration| for more configuration options.
@@ -196,8 +199,7 @@ E.g.
     set background=light
 
     let g:everforest_background = 'soft'
-    let g:everforest_enable_italic = 1
-    let g:everforest_disable_italic_comment = 1
+    let g:everforest_better_performance = 1
 
     colorscheme everforest
     let g:lightline.colorscheme = 'everforest'
@@ -447,7 +449,7 @@ How to enable cursive italic keywords?~
 
 2. Enable italic keywords in this color scheme: `let g:everforest_enable_italic = 1`
 
-3. Disable italic comment(optional): `let g:everforest_disable_italic_comment = 1`
+3. (Optional) Disable italic comment: `let g:everforest_disable_italic_comment = 1`
 
 ------------------------------------------------------------------------------
 
