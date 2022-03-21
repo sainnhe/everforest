@@ -389,7 +389,7 @@ g:everforest_disable_terminal_colors~
 
 Setting this option to `1` will disable terminal colors provided by this color
 scheme so you can remain terminal colors the same when using |:terminal| in
-nvim and outside of nvim.
+vim and outside of vim.
 
     Type:               |Number|
     Available values:   `0`, `1`
