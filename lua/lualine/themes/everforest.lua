@@ -9,6 +9,10 @@
 local configuration = vim.fn['everforest#get_configuration']()
 local palette = vim.fn['everforest#get_palette'](configuration.background)
 
+if configuration.transparent_background == 1 then
+  palette.bg1[1] = palette.none[1]
+end
+
 return {
   normal = {
     a = {bg = palette.statusline1[1], fg = palette.bg0[1], gui = 'bold'},
