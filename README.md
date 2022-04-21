@@ -21,7 +21,7 @@ Everforest is a green based color scheme, it's designed to be warm and soft in o
 - Rich support for common file types and plugins.
 - Tree-sitter support.
 - Semantic highlighting support.
-- [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
+- [Italic support](https://www.sainnhe.dev/post/patch-fonts-with-cursive-italic-styles/) 🎉
 
 ## Documentation
 
