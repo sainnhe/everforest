@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Apr  4 01:48:02 UTC 2022'
+let s:last_modified = 'Wed May  4 00:31:28 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -128,6 +128,7 @@ call everforest#highlight('PmenuSel', s:palette.bg0, s:palette.statusline1)
 highlight! link WildMenu PmenuSel
 call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
+call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
 call everforest#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
   call everforest#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
