@@ -9,7 +9,7 @@
 " Initialization: {{{
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
-if s:configuration.transparent_background
+if s:configuration.transparent_background == 2
   let s:palette.bg1 = s:palette.none
 endif
 "}}}

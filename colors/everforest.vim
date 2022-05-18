@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May  4 00:31:28 UTC 2022'
+let s:last_modified = 'Wed May 18 12:23:58 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -28,7 +28,7 @@ endif
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
-if s:configuration.transparent_background
+if s:configuration.transparent_background == 1
   call everforest#highlight('Normal', s:palette.fg, s:palette.none)
   call everforest#highlight('Terminal', s:palette.fg, s:palette.none)
   if s:configuration.show_eob
@@ -141,13 +141,23 @@ else
   call everforest#highlight('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
   call everforest#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
 endif
-call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)
-call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
-call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
-call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
+if s:configuration.transparent_background == 2
+  call everforest#highlight('StatusLine', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
+  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
+  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
+  call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
+else
+  call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)
+  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
+  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
+  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
+endif
 call everforest#highlight('VertSplit', s:palette.bg4, s:palette.none)
 call everforest#highlight('Visual', s:palette.none, s:palette.bg_visual)
 call everforest#highlight('VisualNOS', s:palette.none, s:palette.bg_visual)
