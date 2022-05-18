@@ -255,7 +255,7 @@ g:everforest_transparent_background~
 
 To use transparent background, set this option to `1`.
 
-If you want more ui components to be transparent too (for example, status line
+If you want more ui components to be transparent (for example, status line
 background), set this option to `2`.
 
     Type:               |Number|
