@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 18 13:14:00 UTC 2022'
+let s:last_modified = 'Wed May 18 13:41:26 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -464,6 +464,12 @@ highlight! link TSVariableBuiltin BlueItalic
 " }}}
 " neoclide/coc.nvim {{{
 call everforest#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
+call everforest#highlight('CocSearch', s:palette.green, s:palette.none, 'bold')
+highlight! link CocDisabled Grey
+highlight! link CocSnippetVisual DiffAdd
+highlight! link CocInlayHint Grey
+highlight! link CocNotificationProgress Green
+highlight! link CocNotificationButton PmenuSel
 highlight! link CocSemClass TSType
 highlight! link CocSemEnum TSType
 highlight! link CocSemInterface TSType
