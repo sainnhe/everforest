@@ -425,6 +425,21 @@ Enabling this option will reduce loading time by approximately 50%.
     Available values:   `0`, `1`
     Default value:      `0`
 
+------------------------------------------------------------------------------
+                                                  *g:everforest_colors_override*
+g:everforest_colors_override 
+
+Override color palette. The available keys can be found in
+`/path/to/everforest/autoload/everforest.vim`.
+
+E.g.
+ 
+    let g:everforest_colors_override = {'bg0': ['#202020', '234'], 'bg2': ['#282828', '235']}
+    colorscheme everforest
+ 
+    Type:               |Dictionary|
+    Default value:      `{}`
+
 ==============================================================================
 FAQ                                                             *everforest-faq*
 
@@ -484,7 +499,9 @@ How to use custom colors?~
       highlight! link groupC groupD
     
       " Initialize the color palette.
-      let l:palette = everforest#get_palette()
+      " The first parameter is a valid value for `g:everforest_background`,
+      " and the second parameter is a valid value for `g:everforest_colors_override`.
+      let l:palette = everforest#get_palette('medium', {})
       " Define a highlight group.
       " The first parameter is the name of a highlight group,
       " the second parameter is the foreground color,

@@ -7,7 +7,7 @@
 -- =============================================================================
 
 local configuration = vim.fn['everforest#get_configuration']()
-local palette = vim.fn['everforest#get_palette'](configuration.background)
+local palette = vim.fn['everforest#get_palette'](configuration.background, configuration.colors_override)
 
 if configuration.transparent_background == 2 then
   palette.bg1 = palette.none

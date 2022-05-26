@@ -25,9 +25,10 @@ function! everforest#get_configuration() "{{{
         \ 'diagnostic_virtual_text': get(g:, 'everforest_diagnostic_virtual_text', 'grey'),
         \ 'disable_terminal_colors': get(g:, 'everforest_disable_terminal_colors', 0),
         \ 'better_performance': get(g:, 'everforest_better_performance', 0),
+        \ 'colors_override': get(g:, 'everforest_colors_override', {}),
         \ }
 endfunction "}}}
-function! everforest#get_palette(background) "{{{
+function! everforest#get_palette(background, colors_override) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
@@ -156,7 +157,7 @@ function! everforest#get_palette(background) "{{{
           \ 'none':       ['NONE',      'NONE']
           \ }
   endif "}}}
-  return extend(palette1, palette2)
+  return extend(extend(palette1, palette2), a:colors_override)
 endfunction "}}}
 function! everforest#highlight(group, fg, bg, ...) "{{{
   execute 'highlight' a:group
@@ -221,7 +222,7 @@ function! everforest#syn_write(rootpath, syn, content) "{{{
   if matchstr(a:content, 'everforest#highlight') !=# ''
     call writefile([
           \ 'let s:configuration = everforest#get_configuration()',
-          \ 'let s:palette = everforest#get_palette(s:configuration.background)'
+          \ 'let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)'
           \ ], syn_path, 'a')
   endif
   " Append the content.
