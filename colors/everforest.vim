@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue May 31 11:40:53 AM UTC 2022'
+let s:last_modified = 'Tue May 31 12:10:29 PM UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -54,7 +54,7 @@ else
   endif
   call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
-  if s:configuration.sign_column_background ==# 'default'
+  if s:configuration.sign_column_background ==# 'grey'
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.bg1)
     call everforest#highlight('FoldColumn', s:palette.grey2, s:palette.bg1)
   else
@@ -94,7 +94,7 @@ if s:configuration.ui_contrast ==# 'low'
   call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
   if &diff
     call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
-  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
     call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
   else
     call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
@@ -103,7 +103,7 @@ else
   call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
   if &diff
     call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
-  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
     call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
     call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
@@ -303,7 +303,7 @@ else
   call everforest#highlight('BlueItalic', s:palette.blue, s:palette.none)
   call everforest#highlight('PurpleItalic', s:palette.purple, s:palette.none)
 endif
-if s:configuration.transparent_background || s:configuration.sign_column_background !=# 'default'
+if s:configuration.transparent_background || s:configuration.sign_column_background ==# 'none'
   call everforest#highlight('RedSign', s:palette.red, s:palette.none)
   call everforest#highlight('OrangeSign', s:palette.orange, s:palette.none)
   call everforest#highlight('YellowSign', s:palette.yellow, s:palette.none)

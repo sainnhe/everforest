@@ -14,7 +14,7 @@ function! everforest#get_configuration() "{{{
         \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
         \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
         \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
-        \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'default'),
+        \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'none'),
         \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),

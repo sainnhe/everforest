@@ -266,12 +266,12 @@ background), set this option to `2`.
                                            *g:everforest_sign_column_background*
 g:everforest_sign_column_background~
 
-By default, the background color of sign column is different from normal text.
-If you want to make it the same as normal text, set this option to `'none'`.
+By default, the color of sign column background is the same as normal text
+background, but you can use a grey background by setting this option to `'grey'`.
 
     Type:               |String|
-    Available values:   `'default'`, `'none'`
-    Default value:      `'default'`
+    Available values:   `'none'`, `'grey'`
+    Default value:      `'none'`
 
 ------------------------------------------------------------------------------
                                                  *g:everforest_spell_foreground*
