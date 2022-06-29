@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jun 12 10:59:38 UTC 2022'
+let s:last_modified = 'Wed Jun 29 09:27:21 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -993,6 +993,9 @@ highlight! link DiagnosticInformation DiagnosticInfo
 highlight! link ReferencesCount Grey
 highlight! link DefinitionCount Grey
 highlight! link TargetFileName Grey
+" }}}
+" b0o/incline.nvim {{{
+call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 " }}}
 endif
 " }}}
