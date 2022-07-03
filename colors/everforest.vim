@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jun 29 09:27:21 UTC 2022'
+let s:last_modified = 'Sun Jul  3 03:05:08 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -168,6 +168,7 @@ call everforest#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call everforest#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
   call everforest#highlight('Substitute', s:palette.bg0, s:palette.yellow)
+  highlight! link WinBarNC Grey
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
