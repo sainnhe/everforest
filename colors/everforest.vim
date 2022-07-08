@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jul  3 03:05:08 UTC 2022'
+let s:last_modified = 'Sun Jul  8 12:40:13 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -997,6 +997,57 @@ highlight! link TargetFileName Grey
 " }}}
 " b0o/incline.nvim {{{
 call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
+" }}}
+" echasnovski/mini.nvim {{{
+highlight! link MiniCompletionActiveParameter LspSignatureActiveParameter
+
+highlight! link MiniCursorword CurrentWord
+highlight! link MiniCursorwordCurrent CurrentWord
+
+highlight! link MiniIndentscopeSymbol Grey
+call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine') " Make it invisible
+
+highlight! link MiniJump Search
+
+call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
+
+call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
+highlight! link MiniStarterFooter Orange
+highlight! link MiniStarterHeader Yellow
+highlight! link MiniStarterInactive Comment
+highlight! link MiniStarterItem Normal
+call everforest#highlight('MiniStarterItemBullet', s:palette.grey1, s:palette.none)
+call everforest#highlight('MiniStarterItemPrefix', s:palette.yellow, s:palette.none)
+highlight! link MiniStarterSection Title
+call everforest#highlight('MiniStarterQuery', s:palette.blue, s:palette.none)
+
+call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineFilename', s:palette.grey1, s:palette.none)
+call everforest#highlight('MiniStatuslineModeInactive', s:palette.grey1, s:palette.none)
+call everforest#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.aqua, 'bold')
+call everforest#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.statusline2, 'bold')
+call everforest#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.statusline1, 'bold')
+call everforest#highlight('MiniStatuslineModeOther', s:palette.bg0, s:palette.purple, 'bold')
+call everforest#highlight('MiniStatuslineModeReplace', s:palette.bg0, s:palette.orange, 'bold')
+call everforest#highlight('MiniStatuslineModeVisual', s:palette.bg0, s:palette.statusline3, 'bold')
+
+highlight! link MiniSurround IncSearch
+
+call everforest#highlight('MiniTablineCurrent', s:palette.fg, s:palette.bg4)
+highlight! link MiniTablineFill TabLineFill
+call everforest#highlight('MiniTablineHidden', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('MiniTablineModifiedCurrent', s:palette.blue, s:palette.bg4)
+call everforest#highlight('MiniTablineModifiedHidden', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('MiniTablineModifiedVisible', s:palette.blue, s:palette.bg2)
+call everforest#highlight('MiniTablineTabpagesection', s:palette.bg0, s:palette.statusline1, 'bold')
+call everforest#highlight('MiniTablineVisible', s:palette.fg, s:palette.bg2)
+
+call everforest#highlight('MiniTestEmphasis', s:palette.none, s:palette.none, 'bold')
+call everforest#highlight('MiniTestFail', s:palette.red, s:palette.none, 'bold')
+call everforest#highlight('MiniTestPass', s:palette.green, s:palette.none, 'bold')
+
+call everforest#highlight('MiniTrailspace', s:palette.none, s:palette.red)
 " }}}
 endif
 " }}}
