@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jul 16 13:29:44 UTC 2022'
+let s:last_modified = 'Tue Aug  2 10:03:42 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -371,14 +371,14 @@ endif
 if ((has('termguicolors') && &termguicolors) || has('gui_running')) && !s:configuration.disable_terminal_colors
   " Definition
   let s:terminal = {
-        \ 'black':    s:palette.bg3,
+        \ 'black':    &background ==# 'dark' ? s:palette.bg3 : s:palette.fg,
         \ 'red':      s:palette.red,
         \ 'yellow':   s:palette.yellow,
         \ 'green':    s:palette.green,
         \ 'cyan':     s:palette.aqua,
         \ 'blue':     s:palette.blue,
         \ 'purple':   s:palette.purple,
-        \ 'white':    s:palette.fg
+        \ 'white':    &background ==# 'dark' ? s:palette.fg : s:palette.bg3,
         \ }
   " Implementation: {{{
   if !has('nvim')
