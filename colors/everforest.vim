@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Aug  3 09:34:35 UTC 2022'
+let s:last_modified = 'Wed Aug  3 10:26:00 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1315,6 +1315,34 @@ highlight! link FernBranchSymbol FernBranchText
 highlight! link FernBranchText Green
 highlight! link FernWindowSelectIndicator TabLineSel
 highlight! link FernWindowSelectStatusLine TabLine
+" syn_end }}}
+" syn_begin: octo {{{
+" https://github.com/pwntester/octo.nvim
+call everforest#highlight('OctoViewer', s:palette.bg0, s:palette.blue)
+call everforest#highlight('OctoGreenFloat', s:palette.green, s:palette.bg2)
+call everforest#highlight('OctoRedFloat', s:palette.red, s:palette.bg2)
+call everforest#highlight('OctoPurpleFloat', s:palette.purple, s:palette.bg2)
+call everforest#highlight('OctoYellowFloat', s:palette.yellow, s:palette.bg2)
+call everforest#highlight('OctoBlueFloat', s:palette.blue, s:palette.bg2)
+call everforest#highlight('OctoGreyFloat', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('OctoBubbleGreen', s:palette.bg0, s:palette.green)
+call everforest#highlight('OctoBubbleRed', s:palette.bg0, s:palette.red)
+call everforest#highlight('OctoBubblePurple', s:palette.bg0, s:palette.purple)
+call everforest#highlight('OctoBubbleYellow', s:palette.bg0, s:palette.yellow)
+call everforest#highlight('OctoBubbleBlue', s:palette.bg0, s:palette.blue)
+call everforest#highlight('OctoBubbleGrey', s:palette.bg0, s:palette.grey1)
+highlight! link OctoGreen Green
+highlight! link OctoRed Red
+highlight! link OctoPurple Purple
+highlight! link OctoYellow Yellow
+highlight! link OctoBlue Blue
+highlight! link OctoGrey Grey
+highlight! link OctoBubbleDelimiterGreen Green
+highlight! link OctoBubbleDelimiterRed Red
+highlight! link OctoBubbleDelimiterPurple Purple
+highlight! link OctoBubbleDelimiterYellow Yellow
+highlight! link OctoBubbleDelimiterBlue Blue
+highlight! link OctoBubbleDelimiterGrey Grey
 " syn_end }}}
 " syn_begin: netrw {{{
 " https://www.vim.org/scripts/script.php?script_id=1075
