@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Aug  3 10:26:00 UTC 2022'
+let s:last_modified = 'Wed Aug  3 11:56:57 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1224,6 +1224,10 @@ highlight! link VistaHeadNr Fg
 highlight! link VistaPublic Green
 highlight! link VistaProtected Yellow
 highlight! link VistaPrivate Red
+" syn_end }}}
+" syn_begin: Outline {{{
+" https://github.com/simrat39/symbols-outline.nvim
+highlight! link FocusedSymbol NormalFloat
 " syn_end }}}
 " syn_begin: aerial {{{
 " https://github.com/stevearc/aerial.nvim
