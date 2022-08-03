@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Aug  3 09:11:02 UTC 2022'
+let s:last_modified = 'Wed Aug  3 09:34:35 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1046,6 +1046,15 @@ highlight! link MiniStarterItem Normal
 highlight! link MiniStarterSection Title
 highlight! link MiniSurround IncSearch
 highlight! link MiniTablineFill TabLineFill
+" }}}
+" ggandor/lightspeed.nvim {{{
+call everforest#highlight('LightspeedLabel', s:palette.red, s:palette.none, 'bold,underline')
+call everforest#highlight('LightspeedLabelDistant', s:palette.blue, s:palette.none, 'bold,underline')
+call everforest#highlight('LightspeedShortcut', s:palette.bg0, s:palette.red, 'bold')
+call everforest#highlight('LightspeedUnlabeledMatch', s:palette.fg, s:palette.none, 'bold')
+call everforest#highlight('LightspeedPendingOpArea', s:palette.bg0, s:palette.green)
+highlight! link LightspeedMaskedChar Purple
+highlight! link LightspeedGreyWash Grey
 " }}}
 endif
 " }}}
