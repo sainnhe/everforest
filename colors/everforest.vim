@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Aug  3 11:56:57 UTC 2022'
+let s:last_modified = 'Thu Aug  4 02:24:10 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -493,6 +493,7 @@ highlight! link CocErrorFloat ErrorFloat
 highlight! link CocWarningFloat WarningFloat
 highlight! link CocInfoFloat InfoFloat
 highlight! link CocHintFloat HintFloat
+highlight! link CocFloatDividingLine Grey
 highlight! link CocErrorHighlight ErrorText
 highlight! link CocWarningHighlight WarningText
 highlight! link CocInfoHighlight InfoText
