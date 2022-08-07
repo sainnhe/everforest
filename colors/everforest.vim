@@ -1,7 +1,7 @@
 " -----------------------------------------------------------------------------
 " Name:         Everforest
 " Description:  Comfortable & Pleasant Color Scheme for Vim
-" Author:       sainnhe <sainnhe@gmail.com>
+" Author:       sainnhe <i@sainnhe.dev>
 " Website:      https://github.com/sainnhe/everforest
 " License:      MIT
 " -----------------------------------------------------------------------------
