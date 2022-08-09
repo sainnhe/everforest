@@ -475,7 +475,7 @@ Check [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/
 
 How to enable cursive italic keywords?~
 
-1. Install a font that supports cursive italics, for example https://www.sainnhe.dev/post/patch-fonts-with-cursive-italic-styles/
+1. Install a font that supports cursive italics, for example https://aka.sainnhe.dev/fonts
 
 2. Enable italic keywords in this color scheme: `let g:everforest_enable_italic = 1`
 
@@ -525,13 +525,13 @@ Note: Make sure to define the `augroup` before declare the `colorscheme`.
 
 What's your status line configuration?~
 
-See this [article](https://www.sainnhe.dev/post/status-line-config/).
+See this post: https://aka.sainnhe.dev/statusline
 
 ------------------------------------------------------------------------------
 
 What's the font used here?~
 
-See https://www.sainnhe.dev/post/patch-fonts-with-cursive-italic-styles/
+See this post: https://aka.sainnhe.dev/fonts
 
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:
