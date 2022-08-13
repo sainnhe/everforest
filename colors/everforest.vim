@@ -2118,6 +2118,8 @@ highlight! link luaFunc Green
 highlight! link luaFunction Aqua
 highlight! link luaTable Fg
 highlight! link luaIn RedItalic
+highlight! link luaTSField Fg
+highlight! link luaTSConstructor Fg
 " }}}
 " vim-lua: https://github.com/tbastos/vim-lua {{{
 highlight! link luaFuncCall Green
