@@ -2576,8 +2576,10 @@ highlight! link jsonQuote Grey
 highlight! link jsonBraces Fg
 " syn_end }}}
 " syn_begin: yaml {{{
-highlight! link yamlKey Orange
+highlight! link yamlKey Green
 highlight! link yamlConstant Purple
+highlight! link yamlTSField Green
+highlight! link yamlTSString Fg
 " syn_end }}}
 " syn_begin: toml {{{
 call everforest#highlight('tomlTable', s:palette.purple, s:palette.none, 'bold')
