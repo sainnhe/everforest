@@ -2582,10 +2582,14 @@ highlight! link yamlTSField Green
 highlight! link yamlTSString Fg
 " syn_end }}}
 " syn_begin: toml {{{
-call everforest#highlight('tomlTable', s:palette.purple, s:palette.none, 'bold')
-highlight! link tomlKey Orange
+call everforest#highlight('tomlTable', s:palette.orange, s:palette.none, 'bold')
+highlight! link tomlKey Green
+highlight! link tomlString Fg
+highlight! link tomlDate Special
 highlight! link tomlBoolean Aqua
 highlight! link tomlTableArray tomlTable
+highlight! link tomlTSProperty tomlKey
+highlight! link tomlTSString tomlString
 " syn_end }}}
 " syn_begin: gitcommit {{{
 highlight! link gitcommitSummary Red
