@@ -2571,9 +2571,11 @@ highlight! link cmakeKWvariable_watch Aqua
 highlight! link cmakeKWwrite_file Aqua
 " syn_end }}}
 " syn_begin: json {{{
-highlight! link jsonKeyword Orange
+highlight! link jsonKeyword Green
+highlight! link jsonString Fg
 highlight! link jsonQuote Grey
-highlight! link jsonBraces Fg
+highlight! link jsonTSLabel jsonKeyword
+highlight! link jsonTSString jsonString
 " syn_end }}}
 " syn_begin: yaml {{{
 highlight! link yamlKey Green
