@@ -2182,18 +2182,26 @@ highlight! link scalaKeywordModifier Orange
 " }}}
 " syn_end }}}
 " syn_begin: go {{{
-" builtin: https://github.com/google/vim-ft-go {{{
-highlight! link goDirective PurpleItalic
-highlight! link goConstants Aqua
+" builtin: https://github.com/fatih/vim-go {{{
+highlight! link goPackage Define
+highlight! link goImport Include
+highlight! link goVar OrangeItalic
+highlight! link goConst goVar
+highlight! link goType Yellow
+highlight! link goSignedInts goType
+highlight! link goUnsignedInts goType
+highlight! link goFloats goType
+highlight! link goComplexes goType
+highlight! link goVarDefs Aqua
 highlight! link goDeclType OrangeItalic
-" }}}
-" polyglot: {{{
-highlight! link goPackage PurpleItalic
-highlight! link goImport PurpleItalic
-highlight! link goVarArgs Blue
-highlight! link goBuiltins Green
+highlight! link goFunctionCall Function
 highlight! link goPredefinedIdentifiers Aqua
-highlight! link goVar Orange
+highlight! link goBuiltins Function
+highlight! link goVarArgs Grey
+highlight! link goTSInclude Purple
+highlight! link goTSNamespace Fg
+highlight! link goTSProperty Identifier
+highlight! link goTSConstBuiltin AquaItalic
 " }}}
 " syn_end }}}
 " syn_begin: rust {{{
