@@ -2578,10 +2578,15 @@ highlight! link jsonTSLabel jsonKeyword
 highlight! link jsonTSString jsonString
 " syn_end }}}
 " syn_begin: yaml {{{
-highlight! link yamlKey Green
-highlight! link yamlConstant Purple
-highlight! link yamlTSField Green
-highlight! link yamlTSString Fg
+highlight! link yamlBlockMappingKey Green
+highlight! link yamlString Fg
+highlight! link yamlConstant OrangeItalic
+highlight! link yamlKeyValueDelimiter Grey
+highlight! link yamlTSField yamlBlockMappingKey
+highlight! link yamlTSString yamlString
+highlight! link yamlTSBoolean yamlConstant
+highlight! link yamlTSConstBuiltin yamlConstant
+highlight! link yamlKey yamlBlockMappingKey  " stephpy/vim-yaml
 " syn_end }}}
 " syn_begin: toml {{{
 call everforest#highlight('tomlTable', s:palette.orange, s:palette.none, 'bold')
