@@ -488,6 +488,12 @@ The comment color looks weird.~
 Some terminal emulators don't support italics, which may cause the comment
 color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
 
+A temporary solution is to disable italic comments via
+|g:everforest_disable_italic_comment|.
+
+If you are using tmux, you may also need to override default true colors of
+tmux: https://github.com/tmux/tmux/issues/1246
+
 ------------------------------------------------------------------------------
 
 How to use custom colors?~
