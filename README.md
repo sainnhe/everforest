@@ -46,9 +46,9 @@ See this [wiki page](https://github.com/sainnhe/everforest/wiki).
 
 ## Maintainers
 
-| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Jef LeCompte](https://avatars0.githubusercontent.com/u/12074633?s=70&u=425e7f9db7a80a6615fd0d89bd58afdf7bddfda1&v=4)](https://github.com/jef) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Jef LeCompte](https://github.com/jef)                                                                                                           |
+| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Jef LeCompte](https://avatars0.githubusercontent.com/u/12074633?s=70&u=425e7f9db7a80a6615fd0d89bd58afdf7bddfda1&v=4)](https://github.com/jef) | [![Antoine Cotten](https://avatars.githubusercontent.com/u/3299086?v=4&s=70)](https://github.com/antoineco) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Jef LeCompte](https://github.com/jef)                                                                                                           | [Antoine Cotten](https://github.com/antoineco)                                                              |
 
 ## License
 
