@@ -2576,6 +2576,7 @@ highlight! link jsonString Fg
 highlight! link jsonQuote Grey
 highlight! link jsonTSLabel jsonKeyword
 highlight! link jsonTSString jsonString
+highlight! link jsonTSStringEscape SpecialChar
 " syn_end }}}
 " syn_begin: yaml {{{
 highlight! link yamlBlockMappingKey Green
@@ -2584,6 +2585,7 @@ highlight! link yamlConstant OrangeItalic
 highlight! link yamlKeyValueDelimiter Grey
 highlight! link yamlTSField yamlBlockMappingKey
 highlight! link yamlTSString yamlString
+highlight! link yamlTSStringEscape SpecialChar
 highlight! link yamlTSBoolean yamlConstant
 highlight! link yamlTSConstBuiltin yamlConstant
 highlight! link yamlKey yamlBlockMappingKey  " stephpy/vim-yaml
