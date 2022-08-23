@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Aug 21 09:09:11 UTC 2022'
+let s:last_modified = 'Mon Aug 22 15:25:18 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2601,7 +2601,7 @@ highlight! link tomlTSProperty tomlKey
 highlight! link tomlTSString tomlString
 " syn_end }}}
 " syn_begin: gitcommit {{{
-highlight! link gitcommitSummary Red
+highlight! link gitcommitSummary Green
 highlight! link gitcommitUntracked Grey
 highlight! link gitcommitDiscarded Grey
 highlight! link gitcommitSelected Grey
