@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug 25 08:14:40 UTC 2022'
+let s:last_modified = 'Thu Aug 25 08:24:08 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -560,8 +560,11 @@ if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
         \ 'namespace': 'TSNamespace',
         \ }
   for tokenType in keys( g:YCM_HIGHLIGHT_GROUP )
-    call prop_type_add( 'YCM_HL_' . tokenType,
-          \ { 'highlight': g:YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+    try
+      call prop_type_add( 'YCM_HL_' . tokenType,
+            \ { 'highlight': g:YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+    catch
+    endtry
   endfor
 endif
 " }}}
