@@ -472,7 +472,7 @@ call everforest#highlight('CocMarkdownHeader', s:palette.orange, s:palette.none,
 call everforest#highlight('CocMarkdownLink', s:palette.green, s:palette.none, 'underline')
 highlight! link CocMarkdownCode Green
 highlight! link CocPumShortcut Grey
-highlight! link CocPumVirtualText LineNr
+highlight! link CocPumVirtualText Grey
 highlight! link CocPumMenu Pmenu
 highlight! link CocMenuSel PmenuSel
 highlight! link CocDisabled Grey
