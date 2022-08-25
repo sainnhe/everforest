@@ -545,6 +545,27 @@ highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
 highlight! link YcmWarningSection WarningText
+highlight! link YcmInlayHint LineNr
+if !has('nvim') && has('textprop')
+  let YCM_HIGHLIGHT_GROUP = {
+        \ 'typeParameter': 'TSType',
+        \ 'parameter': 'TSParameter',
+        \ 'variable': 'TSVariable',
+        \ 'property': 'TSProperty',
+        \ 'enumMember': 'TSVariableBuiltin',
+        \ 'event': 'TSLabel',
+        \ 'member': 'TSVariable',
+        \ 'method': 'TSMethod',
+        \ 'class': 'TSType',
+        \ 'namespace': 'TSNamespace',
+        \ }
+
+  for tokenType in keys( YCM_HIGHLIGHT_GROUP )
+    call prop_type_add( 'YCM_HL_' . tokenType,
+          \ { 'highlight': YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+  endfor
+  unlet YCM_HIGHLIGHT_GROUP
+endif
 " }}}
 " dense-analysis/ale {{{
 highlight! link ALEError ErrorText
