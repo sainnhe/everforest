@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug 25 10:46:22 UTC 2022'
+let s:last_modified = 'Fri Aug 26 09:21:03 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1034,8 +1034,16 @@ call everforest#highlight('LspFloatWinBorder', s:palette.bg0, s:palette.bg0)
 call everforest#highlight('LspSagaDiagnosticHeader', s:palette.orange, s:palette.none, 'bold')
 call everforest#highlight('LspSagaCodeActionTitle', s:palette.purple, s:palette.none, 'bold')
 call everforest#highlight('DefinitionPreviewTitle', s:palette.blue, s:palette.none, 'bold')
+highlight! link LspSagaDiagnosticError Red
+highlight! link LspSagaDiagnosticWarn Yellow
+highlight! link LspSagaDiagnosticInfo Blue
+highlight! link LspSagaDiagnosticHint Green
+highlight! link LspSagaErrorTrunCateLine LspSagaDiagnosticError
+highlight! link LspSagaWarnTrunCateLine LspSagaDiagnosticWarn
+highlight! link LspSagaInfoTrunCateLine LspSagaDiagnosticInfo
+highlight! link LspSagaHintTrunCateLine LspSagaDiagnosticHint
+highlight! link LspSagaDiagnosticSource Orange
 highlight! link LspSagaDiagnosticBorder Orange
-highlight! link LspSagaDiagnosticTruncateLine Orange
 highlight! link LspSagaRenameBorder Purple
 highlight! link LspSagaRenamePromptPrefix Blue
 highlight! link LspSagaCodeActionBorder Purple
