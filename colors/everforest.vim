@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Aug 26 09:21:03 UTC 2022'
+let s:last_modified = 'Mon Aug 29 17:59:32 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1729,6 +1729,10 @@ highlight! link jsModuleKeyword Yellow
 highlight! link jsTemplateExpression Yellow
 highlight! link jsTemplateBraces Yellow
 highlight! link jsClassMethodType Orange
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link javascriptTSInclude Purple
+highlight! link javascriptTSConstructor Yellow
 " }}}
 " yajs: https://github.com/othree/yajs.vim {{{
 highlight! link javascriptEndColons Fg
