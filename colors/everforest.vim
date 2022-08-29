@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Aug 29 17:59:32 UTC 2022'
+let s:last_modified = 'Tue Aug 30 15:01:13 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -463,6 +463,57 @@ highlight! link TSTypeBuiltin YellowItalic
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin BlueItalic
+if has('nvim-0.8.0')
+  highlight! link @annotation TSAnnotation
+  highlight! link @attribute TSAttribute
+  highlight! link @boolean TSBoolean
+  highlight! link @character TSCharacter
+  highlight! link @comment TSComment
+  highlight! link @conditional TSConditional
+  highlight! link @constant TSConstant
+  highlight! link @constant.builtin TSConstBuiltin
+  highlight! link @constant.macro TSConstMacro
+  highlight! link @constructor TSConstructor
+  highlight! link @exception TSException
+  highlight! link @field TSField
+  highlight! link @float TSFloat
+  highlight! link @function TSFunction
+  highlight! link @function.builtin TSFuncBuiltin
+  highlight! link @function.macro TSFuncMacro
+  highlight! link @include TSInclude
+  highlight! link @keyword TSKeyword
+  highlight! link @keyword.function TSKeywordFunction
+  highlight! link @keyword.operator TSKeywordOperator
+  highlight! link @label TSLabel
+  highlight! link @method TSMethod
+  highlight! link @namespace TSNamespace
+  highlight! link @none TSNone
+  highlight! link @number TSNumber
+  highlight! link @operator TSOperator
+  highlight! link @parameter TSParameter
+  highlight! link @parameter.reference TSParameterReference
+  highlight! link @property TSProperty
+  highlight! link @punctuation.bracket TSPunctBracket
+  highlight! link @punctuation.delimiter TSPunctDelimiter
+  highlight! link @punctuation.special TSPunctSpecial
+  highlight! link @repeat TSRepeat
+  highlight! link @storageclass TSStorageClass
+  highlight! link @string TSString
+  highlight! link @string.escape TSStringEscape
+  highlight! link @string.regex TSStringRegex
+  highlight! link @structure TSStructure
+  highlight! link @symbol TSSymbol
+  highlight! link @tag TSTag
+  highlight! link @tag.delimiter TSTagDelimiter
+  highlight! link @text TSText
+  highlight! link @strike TSStrike
+  highlight! link @math TSMath
+  highlight! link @type TSType
+  highlight! link @type.builtin TSTypeBuiltin
+  highlight! link @uri TSURI
+  highlight! link @variable TSVariable
+  highlight! link @variable.builtin TSVariableBuiltin
+endif
 " }}}
 " neoclide/coc.nvim {{{
 call everforest#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
@@ -1733,6 +1784,10 @@ highlight! link jsClassMethodType Orange
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link javascriptTSInclude Purple
 highlight! link javascriptTSConstructor Yellow
+if has('nvim-0.8.0')
+  highlight! link @include.javascript javascriptTSInclude
+  highlight! link @constructor.javascript javascriptTSConstructor
+endif
 " }}}
 " yajs: https://github.com/othree/yajs.vim {{{
 highlight! link javascriptEndColons Fg
@@ -2172,8 +2227,14 @@ highlight! link luaFunc Green
 highlight! link luaFunction Aqua
 highlight! link luaTable Fg
 highlight! link luaIn RedItalic
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
 highlight! link luaTSField Fg
-highlight! link luaTSConstructor Fg
+highlight! link luaTSConstructor TSPunctBracket
+if has('nvim-0.8.0')
+  highlight! link @field.lua luaTSField
+  highlight! link @constructor.lua luaTSConstructor
+endif
 " }}}
 " vim-lua: https://github.com/tbastos/vim-lua {{{
 highlight! link luaFuncCall Green
@@ -2252,10 +2313,18 @@ highlight! link goFunctionCall Function
 highlight! link goPredefinedIdentifiers Aqua
 highlight! link goBuiltins Function
 highlight! link goVarArgs Grey
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
 highlight! link goTSInclude Purple
 highlight! link goTSNamespace Fg
 highlight! link goTSProperty Identifier
 highlight! link goTSConstBuiltin AquaItalic
+if has('nvim-0.8.0')
+  highlight! link @include.go goTSInclude
+  highlight! link @namespace.go goTSNamespace
+  highlight! link @property.go goTSProperty
+  highlight! link @constant.builtin.go goTSConstBuiltin
+endif
 " }}}
 " syn_end }}}
 " syn_begin: rust {{{
@@ -2633,34 +2702,62 @@ highlight! link cmakeKWvariable_watch Aqua
 highlight! link cmakeKWwrite_file Aqua
 " syn_end }}}
 " syn_begin: json {{{
+" builtin {{{
 highlight! link jsonKeyword Green
 highlight! link jsonString Fg
 highlight! link jsonQuote Grey
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
 highlight! link jsonTSLabel jsonKeyword
 highlight! link jsonTSString jsonString
 highlight! link jsonTSStringEscape SpecialChar
+if has('nvim-0.8.0')
+  highlight! link @label.json jsonTSLabel
+  highlight! link @string.json jsonTSString
+  highlight! link @string.escape jsonTSStringEscape
+endif
+" }}}
 " syn_end }}}
 " syn_begin: yaml {{{
+" builtin {{{
 highlight! link yamlBlockMappingKey Green
 highlight! link yamlString Fg
 highlight! link yamlConstant OrangeItalic
 highlight! link yamlKeyValueDelimiter Grey
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
 highlight! link yamlTSField yamlBlockMappingKey
 highlight! link yamlTSString yamlString
 highlight! link yamlTSStringEscape SpecialChar
 highlight! link yamlTSBoolean yamlConstant
 highlight! link yamlTSConstBuiltin yamlConstant
+if has('nvim-0.8.0')
+  highlight! link @field.yaml yamlTSField
+  highlight! link @string.yaml yamlTSString
+  highlight! link @string.escape.yaml yamlTSStringEscape
+  highlight! link @boolean.yaml yamlTSBoolean
+  highlight! link @constant.builtin.yaml yamlTSConstBuiltin
+endif
 highlight! link yamlKey yamlBlockMappingKey  " stephpy/vim-yaml
+" }}}
 " syn_end }}}
 " syn_begin: toml {{{
+" builtin: https://github.com/cespare/vim-toml {{{
 call everforest#highlight('tomlTable', s:palette.orange, s:palette.none, 'bold')
 highlight! link tomlKey Green
 highlight! link tomlString Fg
 highlight! link tomlDate Special
 highlight! link tomlBoolean Aqua
 highlight! link tomlTableArray tomlTable
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
 highlight! link tomlTSProperty tomlKey
 highlight! link tomlTSString tomlString
+if has('nvim-0.8.0')
+  highlight! link @property.toml tomlTSProperty
+  highlight! link @string.toml tomlTSString
+endif
+" }}}
 " syn_end }}}
 " syn_begin: gitcommit {{{
 highlight! link gitcommitSummary Green
