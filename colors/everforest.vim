@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Aug 30 15:01:13 UTC 2022'
+let s:last_modified = 'Mon Sep  5 18:55:28 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -159,6 +159,7 @@ else
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 endif
 call everforest#highlight('VertSplit', s:palette.bg4, s:palette.none)
+highlight! link WinSeparator VertSplit
 call everforest#highlight('Visual', s:palette.none, s:palette.bg_visual)
 call everforest#highlight('VisualNOS', s:palette.none, s:palette.bg_visual)
 call everforest#highlight('QuickFixLine', s:palette.purple, s:palette.none, 'bold')
