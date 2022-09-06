@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Sep  5 18:55:28 UTC 2022'
+let s:last_modified = 'Tue Sep  6 12:27:48 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -955,7 +955,7 @@ if has('nvim')
 call everforest#highlight('CmpItemAbbrMatch', s:palette.green, s:palette.none, 'bold')
 call everforest#highlight('CmpItemAbbrMatchFuzzy', s:palette.green, s:palette.none, 'bold')
 highlight! link CmpItemAbbr Fg
-highlight! link CmpItemAbbrDeprecated Fg
+highlight! link CmpItemAbbrDeprecated Grey
 highlight! link CmpItemMenu Fg
 highlight! link CmpItemKind Yellow
 highlight! link CmpItemKindText Fg
