@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Sep  6 12:27:48 UTC 2022'
+let s:last_modified = 'Thu Sep  8 20:05:41 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -452,7 +452,6 @@ highlight! link TSStorageClass Orange
 highlight! link TSString Aqua
 highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
-highlight! link TSStructure BlueItalic
 highlight! link TSSymbol Fg
 highlight! link TSTag Orange
 highlight! link TSTagDelimiter Green
@@ -502,7 +501,6 @@ if has('nvim-0.8.0')
   highlight! link @string TSString
   highlight! link @string.escape TSStringEscape
   highlight! link @string.regex TSStringRegex
-  highlight! link @structure TSStructure
   highlight! link @symbol TSSymbol
   highlight! link @tag TSTag
   highlight! link @tag.delimiter TSTagDelimiter
@@ -2153,7 +2151,7 @@ highlight! link AutoType TSType
 " vim-lsp-cxx-highlight https://github.com/jackguo380/vim-lsp-cxx-highlight {{{
 highlight! link LspCxxHlSkippedRegion Grey
 highlight! link LspCxxHlSkippedRegionBeginEnd TSKeyword
-highlight! link LspCxxHlGroupEnumConstant TSStructure
+highlight! link LspCxxHlGroupEnumConstant BlueItalic
 highlight! link LspCxxHlGroupNamespace TSNamespace
 highlight! link LspCxxHlGroupMemberVariable TSVariable
 " }}}
