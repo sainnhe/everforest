@@ -190,26 +190,26 @@ if has('nvim')
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
   highlight! link DiagnosticSignHint GreenSign
-  highlight! link LspDiagnosticsFloatingError ErrorFloat
-  highlight! link LspDiagnosticsFloatingWarning WarningFloat
-  highlight! link LspDiagnosticsFloatingInformation InfoFloat
-  highlight! link LspDiagnosticsFloatingHint HintFloat
-  highlight! link LspDiagnosticsDefaultError ErrorText
-  highlight! link LspDiagnosticsDefaultWarning WarningText
-  highlight! link LspDiagnosticsDefaultInformation InfoText
-  highlight! link LspDiagnosticsDefaultHint HintText
-  highlight! link LspDiagnosticsVirtualTextError VirtualTextError
-  highlight! link LspDiagnosticsVirtualTextWarning VirtualTextWarning
-  highlight! link LspDiagnosticsVirtualTextInformation VirtualTextInfo
-  highlight! link LspDiagnosticsVirtualTextHint VirtualTextHint
-  highlight! link LspDiagnosticsUnderlineError ErrorText
-  highlight! link LspDiagnosticsUnderlineWarning WarningText
-  highlight! link LspDiagnosticsUnderlineInformation InfoText
-  highlight! link LspDiagnosticsUnderlineHint HintText
-  highlight! link LspDiagnosticsSignError RedSign
-  highlight! link LspDiagnosticsSignWarning YellowSign
-  highlight! link LspDiagnosticsSignInformation BlueSign
-  highlight! link LspDiagnosticsSignHint GreenSign
+  highlight! link LspDiagnosticsFloatingError DiagnosticFloatingError
+  highlight! link LspDiagnosticsFloatingWarning DiagnosticFloatingWarn
+  highlight! link LspDiagnosticsFloatingInformation DiagnosticFloatingInfo
+  highlight! link LspDiagnosticsFloatingHint DiagnosticFloatingHint
+  highlight! link LspDiagnosticsDefaultError DiagnosticError
+  highlight! link LspDiagnosticsDefaultWarning DiagnosticWarn
+  highlight! link LspDiagnosticsDefaultInformation DiagnosticInfo
+  highlight! link LspDiagnosticsDefaultHint DiagnosticHint
+  highlight! link LspDiagnosticsVirtualTextError DiagnosticVirtualTextError
+  highlight! link LspDiagnosticsVirtualTextWarning DiagnosticVirtualTextWarn
+  highlight! link LspDiagnosticsVirtualTextInformation DiagnosticVirtualTextInfo
+  highlight! link LspDiagnosticsVirtualTextHint DiagnosticVirtualTextHint
+  highlight! link LspDiagnosticsUnderlineError DiagnosticUnderlineError
+  highlight! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
+  highlight! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
+  highlight! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
+  highlight! link LspDiagnosticsSignError DiagnosticSignError
+  highlight! link LspDiagnosticsSignWarning DiagnosticSignWarn
+  highlight! link LspDiagnosticsSignInformation DiagnosticSignInfo
+  highlight! link LspDiagnosticsSignHint DiagnosticSignHint
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
