@@ -496,6 +496,34 @@ tmux: https://github.com/tmux/tmux/issues/1246
 
 ------------------------------------------------------------------------------
 
+The colors of diagnostic signs in Lualine are off.~
+
+Lualine tries to determine a suitable color for diagnostic signs by looking at
+the foreground highlight color of the |DiagnosticHint|, |DiagnosticInfo|,
+|DiagnosticWarn| and |DiagnosticError| highlight groups. Everforest doesn't set
+any foreground color for these highlight groups. Instead, it uses the
+`undercurl` highlight attribute, which is a design choice.
+
+To apply the intended colors from the Everforest color palette to diagnostic
+signs in Lualine, set their `diagnostics_color` explicitly inside your Neovim
+configuration:
+>
+    local palette = vim.fn['everforest#get_palette']('medium', {[vim.type_idx]=vim.types.dictionary})
+
+    require'lualine'.setup {
+      options = {
+        theme = 'everforest',
+        diagnostics_color = {
+          hint  = { fg = palette['green'][1]  },
+          info  = { fg = palette['blue'][1]   },
+          warn  = { fg = palette['yellow'][1] },
+          error = { fg = palette['red'][1]    },
+        }
+      }
+    }
+<
+------------------------------------------------------------------------------
+
 How to use custom colors?~
 >
     function! s:everforest_custom() abort
