@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Everforest is a green based color scheme, it's designed to be warm and soft in order to protect developers' eyes.
+Everforest is a green based color scheme; it's designed to be warm and soft in order to protect developers' eyes.
 
 ### Features
 
