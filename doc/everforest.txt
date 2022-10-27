@@ -449,7 +449,7 @@ The colors don't match those in the screenshots.~
 
 1. This color scheme is mainly designed for true colors, `set termguicolors`
 is required. Check output of `vim --version`, maybe your vim doesn't support
-`termguicolors`.
+`termguicolors`. This is the case if you're using default apple vim.
 
 2. Maybe your terminal emulator doesn't support true colors, you can test it
 using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
