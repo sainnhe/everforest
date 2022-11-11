@@ -22,7 +22,7 @@ Note: Type |gO| in neovim to show the outline of contents.
 ==============================================================================
 INTRODUCTION                                           *everforest-introduction*
 
-Everforest is a green based color scheme, it's designed to be warm and soft
+Everforest is a green based color scheme; it's designed to be warm and soft
 in order to protect developers' eyes.
 
 Features~
