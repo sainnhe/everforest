@@ -182,6 +182,7 @@ let s:IA2 = [ s:inactive_sub_fg[0] , s:inactive_sub_bg[0] , s:inactive_sub_fg[1]
 let s:IA3 = [ s:inactive_mid_fg[0] , s:inactive_mid_bg[0] , s:inactive_mid_fg[1] , s:inactive_mid_bg[1] ]
 
 let g:airline#themes#everforest#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+let g:airline#themes#everforest#palette.inactive.airline_term = [ s:inactive_mid_fg[0] , s:inactive_mid_bg[0] , s:inactive_mid_fg[1] , s:inactive_mid_bg[1] ]
 let g:airline#themes#everforest#palette.inactive_modified = deepcopy(g:airline#themes#everforest#palette.inactive)
 let g:airline#themes#everforest#palette.inactive_modified.airline_c = [ s:inactive_mod_fg[0] , s:inactive_mod_bg[0] , s:inactive_mod_fg[1] , s:inactive_mod_bg[1] ]
 
