@@ -460,6 +460,8 @@ highlight! link TSStrike Grey
 highlight! link TSMath Blue
 highlight! link TSType Yellow
 highlight! link TSTypeBuiltin YellowItalic
+highlight! link TSTypeDefinition Red
+highlight! link TSTypeQualifier Orange
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin BlueItalic
@@ -509,6 +511,8 @@ if has('nvim-0.8.0')
   highlight! link @math TSMath
   highlight! link @type TSType
   highlight! link @type.builtin TSTypeBuiltin
+  highlight! link @type.definition TSTypeDefinition
+  highlight! link @type.qualifier TSTypeQualifier
   highlight! link @uri TSURI
   highlight! link @variable TSVariable
   highlight! link @variable.builtin TSVariableBuiltin
