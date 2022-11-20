@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Nov 13 11:14:35 UTC 2022'
+let s:last_modified = 'Sun Nov 20 02:10:40 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -419,96 +419,143 @@ highlight! link TSAnnotation Purple
 highlight! link TSAttribute Purple
 highlight! link TSBoolean Purple
 highlight! link TSCharacter Aqua
+highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
 highlight! link TSConditional Red
-highlight! link TSConstBuiltin BlueItalic
-highlight! link TSConstMacro BlueItalic
+highlight! link TSConstBuiltin PurpleItalic
+highlight! link TSConstMacro PurpleItalic
 highlight! link TSConstant Fg
 highlight! link TSConstructor Green
+highlight! link TSDebug Debug
+highlight! link TSDefine Define
+highlight! link TSEnvironment Macro
+highlight! link TSEnvironmentName Type
+highlight! link TSError Error
 highlight! link TSException Red
-highlight! link TSField Green
+highlight! link TSField Blue
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
+highlight! link TSFunctionCall Green
 highlight! link TSInclude Red
 highlight! link TSKeyword Red
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
+highlight! link TSKeywordReturn Red
 highlight! link TSLabel Orange
+highlight! link TSLiteral String
+highlight! link TSMath Blue
 highlight! link TSMethod Green
+highlight! link TSMethodCall Green
 highlight! link TSNamespace YellowItalic
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
 highlight! link TSOperator Orange
 highlight! link TSParameter Fg
 highlight! link TSParameterReference Fg
-highlight! link TSProperty Fg
+highlight! link TSPreProc PreProc
+highlight! link TSProperty Blue
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
 highlight! link TSRepeat Red
 highlight! link TSStorageClass Orange
+highlight! link TSStorageClassLifetime Orange
+highlight! link TSStrike Grey
 highlight! link TSString Aqua
 highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
+highlight! link TSStringSpecial SpecialChar
 highlight! link TSSymbol Fg
 highlight! link TSTag Orange
+highlight! link TSTagAttribute Green
 highlight! link TSTagDelimiter Green
 highlight! link TSText Green
-highlight! link TSStrike Grey
-highlight! link TSMath Blue
+highlight! link TSTextReference Constant
+highlight! link TSTitle Title
+highlight! link TSTodo Todo
 highlight! link TSType Yellow
 highlight! link TSTypeBuiltin YellowItalic
 highlight! link TSTypeDefinition Red
 highlight! link TSTypeQualifier Orange
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
-highlight! link TSVariableBuiltin BlueItalic
+highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8.0')
   highlight! link @annotation TSAnnotation
   highlight! link @attribute TSAttribute
   highlight! link @boolean TSBoolean
   highlight! link @character TSCharacter
+  highlight! link @character.special TSCharacterSpecial
   highlight! link @comment TSComment
+  highlight! link @conceal Conceal
   highlight! link @conditional TSConditional
   highlight! link @constant TSConstant
   highlight! link @constant.builtin TSConstBuiltin
   highlight! link @constant.macro TSConstMacro
   highlight! link @constructor TSConstructor
+  highlight! link @debug TSDebug
+  highlight! link @define TSDefine
+  highlight! link @error TSError
   highlight! link @exception TSException
   highlight! link @field TSField
   highlight! link @float TSFloat
   highlight! link @function TSFunction
   highlight! link @function.builtin TSFuncBuiltin
+  highlight! link @function.call TSFunctionCall
   highlight! link @function.macro TSFuncMacro
   highlight! link @include TSInclude
   highlight! link @keyword TSKeyword
   highlight! link @keyword.function TSKeywordFunction
   highlight! link @keyword.operator TSKeywordOperator
+  highlight! link @keyword.return TSKeywordReturn
   highlight! link @label TSLabel
+  highlight! link @math TSMath
   highlight! link @method TSMethod
+  highlight! link @method.call TSMethodCall
   highlight! link @namespace TSNamespace
   highlight! link @none TSNone
   highlight! link @number TSNumber
   highlight! link @operator TSOperator
   highlight! link @parameter TSParameter
   highlight! link @parameter.reference TSParameterReference
+  highlight! link @preproc TSPreProc
   highlight! link @property TSProperty
   highlight! link @punctuation.bracket TSPunctBracket
   highlight! link @punctuation.delimiter TSPunctDelimiter
   highlight! link @punctuation.special TSPunctSpecial
   highlight! link @repeat TSRepeat
   highlight! link @storageclass TSStorageClass
+  highlight! link @storageclass.lifetime TSStorageClassLifetime
+  highlight! link @strike TSStrike
   highlight! link @string TSString
   highlight! link @string.escape TSStringEscape
   highlight! link @string.regex TSStringRegex
+  highlight! link @string.special TSStringSpecial
   highlight! link @symbol TSSymbol
   highlight! link @tag TSTag
+  highlight! link @tag.attribute TSTagAttribute
   highlight! link @tag.delimiter TSTagDelimiter
   highlight! link @text TSText
-  highlight! link @strike TSStrike
-  highlight! link @math TSMath
+  highlight! link @text.danger TSDanger
+  highlight! link @text.diff.add diffAdded
+  highlight! link @text.diff.delete diffRemoved
+  highlight! link @text.emphasis TSEmphasis
+  highlight! link @text.environment TSEnvironment
+  highlight! link @text.environment.name TSEnvironmentName
+  highlight! link @text.literal TSLiteral
+  highlight! link @text.math TSMath
+  highlight! link @text.note TSNote
+  highlight! link @text.reference TSTextReference
+  highlight! link @text.strike TSStrike
+  highlight! link @text.strong TSStrong
+  highlight! link @text.title TSTitle
+  highlight! link @text.todo TSTodo
+  highlight! link @text.underline TSUnderline
+  highlight! link @text.uri TSURI
+  highlight! link @text.warning TSWarning
+  highlight! link @todo TSTodo
   highlight! link @type TSType
   highlight! link @type.builtin TSTypeBuiltin
   highlight! link @type.definition TSTypeDefinition
