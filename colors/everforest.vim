@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Nov 20 04:28:34 UTC 2022'
+let s:last_modified = 'Sun Nov 20 04:34:25 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1486,6 +1486,25 @@ highlight! link FernBranchSymbol FernBranchText
 highlight! link FernBranchText Green
 highlight! link FernWindowSelectIndicator TabLineSel
 highlight! link FernWindowSelectStatusLine TabLine
+" syn_end }}}
+" syn_begin: neo-tree {{{
+" https://github.com/nvim-neo-tree/neo-tree.nvim
+call everforest#highlight('NeoTreeNormal', s:palette.fg, s:palette.bg_dim)
+call everforest#highlight('NeoTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+call everforest#highlight('NeoTreeVertSplit', s:palette.bg0, s:palette.bg0)
+highlight! link NeoTreeGitAdded Green
+highlight! link NeoTreeGitConflict Yellow
+highlight! link NeoTreeGitDeleted Red
+highlight! link NeoTreeGitIgnored Grey
+highlight! link NeoTreeGitModified Blue
+highlight! link NeoTreeGitUnstaged Purple
+highlight! link NeoTreeGitUntracked Fg
+highlight! link NeoTreeGitStaged Purple
+highlight! link NeoTreeDimText Grey
+highlight! link NeoTreeIndentMarker NonText
+highlight! link NeoTreeNormalNC NeoTreeNormal
+highlight! link NeoTreeSignColumn NeoTreeNormal
+highlight! link NeoTreeRootName Title
 " syn_end }}}
 " syn_begin: octo {{{
 " https://github.com/pwntester/octo.nvim
