@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Nov 20 02:32:59 UTC 2022'
+let s:last_modified = 'Sun Nov 20 03:35:59 AM UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1078,23 +1078,23 @@ highlight! link rainbowcol6 Blue
 highlight! link rainbowcol7 Purple
 " }}}
 " romgrk/barbar.nvim {{{
-call everforest#highlight('BufferCurrent', s:palette.fg, s:palette.bg4)
-call everforest#highlight('BufferCurrentIndex', s:palette.fg, s:palette.bg4)
-call everforest#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg4)
-call everforest#highlight('BufferCurrentSign', s:palette.statusline1, s:palette.bg4)
-call everforest#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg4, 'bold')
-call everforest#highlight('BufferVisible', s:palette.fg, s:palette.bg2)
-call everforest#highlight('BufferVisibleIndex', s:palette.fg, s:palette.bg2)
-call everforest#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg2)
-call everforest#highlight('BufferVisibleSign', s:palette.statusline1, s:palette.bg2)
-call everforest#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg2, 'bold')
-call everforest#highlight('BufferInactive', s:palette.grey1, s:palette.bg2)
-call everforest#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg2)
-call everforest#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg2)
-call everforest#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg2)
-call everforest#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg2, 'bold')
-call everforest#highlight('BufferTabpages', s:palette.bg0, s:palette.statusline1, 'bold')
-call everforest#highlight('BufferTabpageFill', s:palette.bg0, s:palette.bg0)
+call everforest#highlight('BufferCurrent', s:palette.fg, s:palette.bg0)
+call everforest#highlight('BufferCurrentIndex', s:palette.fg, s:palette.bg0)
+call everforest#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg0)
+call everforest#highlight('BufferCurrentSign', s:palette.statusline1, s:palette.bg0)
+call everforest#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg0, 'bold')
+call everforest#highlight('BufferVisible', s:palette.fg, s:palette.bg_dim)
+call everforest#highlight('BufferVisibleIndex', s:palette.fg, s:palette.bg_dim)
+call everforest#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg_dim)
+call everforest#highlight('BufferVisibleSign', s:palette.statusline1, s:palette.bg_dim)
+call everforest#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
+call everforest#highlight('BufferInactive', s:palette.grey1, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
+call everforest#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
+call everforest#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
 " rcarriga/nvim-notify {{{
 highlight! link NotifyERRORBorder Red
@@ -1447,6 +1447,9 @@ highlight! link DirvishArg Yellow
 " syn_end }}}
 " syn_begin: NvimTree {{{
 " https://github.com/kyazdani42/nvim-tree.lua
+call everforest#highlight('NvimTreeNormal', s:palette.fg, s:palette.bg_dim)
+call everforest#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+call everforest#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
 highlight! link NvimTreeSymlink Fg
 highlight! link NvimTreeFolderName Green
 highlight! link NvimTreeRootFolder Grey

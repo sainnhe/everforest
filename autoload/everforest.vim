@@ -32,6 +32,7 @@ function! everforest#get_palette(background, colors_override) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
+            \ 'bg_dim':     ['#21282c',   '233'],
             \ 'bg0':        ['#2b3339',   '235'],
             \ 'bg1':        ['#323c41',   '236'],
             \ 'bg2':        ['#3a454a',   '237'],
@@ -46,6 +47,7 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
+            \ 'bg_dim':     ['#f0eed9',   '223'],
             \ 'bg0':        ['#fff9e8',   '230'],
             \ 'bg1':        ['#f7f4e0',   '228'],
             \ 'bg2':        ['#f0eed9',   '223'],
@@ -62,6 +64,7 @@ function! everforest#get_palette(background, colors_override) "{{{
   elseif a:background ==# 'medium' "{{{
     if &background ==# 'dark'
       let palette1 = {
+            \ 'bg_dim':     ['#252c31',   '233'],
             \ 'bg0':        ['#2f383e',   '235'],
             \ 'bg1':        ['#374247',   '236'],
             \ 'bg2':        ['#404c51',   '237'],
@@ -76,6 +79,7 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
+            \ 'bg_dim':     ['#edead5',   '223'],
             \ 'bg0':        ['#fdf6e3',   '230'],
             \ 'bg1':        ['#f3efda',   '228'],
             \ 'bg2':        ['#edead5',   '223'],
@@ -92,6 +96,7 @@ function! everforest#get_palette(background, colors_override) "{{{
   else "{{{
     if &background ==# 'dark'
       let palette1 = {
+            \ 'bg_dim':     ['#283136',   '233'],
             \ 'bg0':        ['#323d43',   '235'],
             \ 'bg1':        ['#3c474d',   '236'],
             \ 'bg2':        ['#465258',   '237'],
@@ -106,6 +111,7 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
+            \ 'bg_dim':     ['#e9e5cf',   '223'],
             \ 'bg0':        ['#f8f0dc',   '230'],
             \ 'bg1':        ['#efead4',   '228'],
             \ 'bg2':        ['#e9e5cf',   '223'],
