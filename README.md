@@ -31,6 +31,10 @@ See [`:help everforest.txt`](https://github.com/sainnhe/everforest/blob/master/d
 
 See this [wiki page](https://github.com/sainnhe/everforest/wiki).
 
+## Contributing
+
+See this [post](https://www.sainnhe.dev/post/contributing-guide/).
+
 ## More Color Schemes
 
 - [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
