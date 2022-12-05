@@ -47,18 +47,18 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
-            \ 'bg_dim':     ['#f0eed9',   '223'],
-            \ 'bg0':        ['#fff9e8',   '230'],
-            \ 'bg1':        ['#f7f4e0',   '228'],
-            \ 'bg2':        ['#f0eed9',   '223'],
-            \ 'bg3':        ['#e9e8d2',   '223'],
-            \ 'bg4':        ['#e1ddcb',   '223'],
+            \ 'bg_dim':     ['#efede1',   '223'],
+            \ 'bg0':        ['#fffbef',   '230'],
+            \ 'bg1':        ['#f7f5e8',   '228'],
+            \ 'bg2':        ['#efede1',   '223'],
+            \ 'bg3':        ['#eae8dc',   '223'],
+            \ 'bg4':        ['#e5e3d7',   '223'],
             \ 'bg5':        ['#bec5b2',   '223'],
-            \ 'bg_visual':  ['#edf0cd',   '194'],
-            \ 'bg_red':     ['#fce5dc',   '217'],
-            \ 'bg_green':   ['#f1f3d4',   '194'],
-            \ 'bg_blue':    ['#eaf2eb',   '117'],
-            \ 'bg_yellow':  ['#fbefd0',   '226'],
+            \ 'bg_visual':  ['#f0f2d4',   '194'],
+            \ 'bg_red':     ['#ffe7de',   '217'],
+            \ 'bg_green':   ['#f3f5d9',   '194'],
+            \ 'bg_blue':    ['#ecf5ed',   '117'],
+            \ 'bg_yellow':  ['#fef2d5',   '226'],
             \ }
     endif "}}}
   elseif a:background ==# 'medium' "{{{
@@ -111,18 +111,18 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
-            \ 'bg_dim':     ['#e9e5cf',   '223'],
-            \ 'bg0':        ['#f8f0dc',   '230'],
-            \ 'bg1':        ['#efead4',   '228'],
-            \ 'bg2':        ['#e9e5cf',   '223'],
-            \ 'bg3':        ['#e1ddc9',   '223'],
-            \ 'bg4':        ['#dcd8c4',   '223'],
+            \ 'bg_dim':     ['#e4dfc6',   '223'],
+            \ 'bg0':        ['#f3ead3',   '230'],
+            \ 'bg1':        ['#e9e4ca',   '228'],
+            \ 'bg2':        ['#e4dfc6',   '223'],
+            \ 'bg3':        ['#dcd8bf',   '223'],
+            \ 'bg4':        ['#d7d3bb',   '223'],
             \ 'bg5':        ['#b9c0ab',   '223'],
-            \ 'bg_visual':  ['#e6e9c4',   '194'],
-            \ 'bg_red':     ['#f9e0d4',   '217'],
-            \ 'bg_green':   ['#edeece',   '194'],
-            \ 'bg_blue':    ['#e7ede5',   '117'],
-            \ 'bg_yellow':  ['#f6e9c9',   '226'],
+            \ 'bg_visual':  ['#e1e4bd',   '194'],
+            \ 'bg_red':     ['#f4dbd0',   '217'],
+            \ 'bg_green':   ['#e5e6c5',   '194'],
+            \ 'bg_blue':    ['#e1e7dd',   '117'],
+            \ 'bg_yellow':  ['#f1e4c5',   '226'],
             \ }
     endif
   endif "}}}
