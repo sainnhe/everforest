@@ -111,12 +111,12 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
-            \ 'bg_dim':     ['#e6e0c5',   '223'],
+            \ 'bg_dim':     ['#e5dfc5',   '223'],
             \ 'bg0':        ['#f3ead3',   '230'],
-            \ 'bg1':        ['#ebe5c9',   '228'],
-            \ 'bg2':        ['#e6e0c5',   '223'],
-            \ 'bg3':        ['#ded9be',   '223'],
-            \ 'bg4':        ['#d9d4ba',   '223'],
+            \ 'bg1':        ['#eae4ca',   '228'],
+            \ 'bg2':        ['#e5dfc5',   '223'],
+            \ 'bg3':        ['#ddd8be',   '223'],
+            \ 'bg4':        ['#d8d3ba',   '223'],
             \ 'bg5':        ['#b9c0ab',   '223'],
             \ 'bg_visual':  ['#e1e4bd',   '194'],
             \ 'bg_red':     ['#f4dbd0',   '217'],
