@@ -79,12 +79,12 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
-            \ 'bg_dim':     ['#f0ecd5',   '223'],
+            \ 'bg_dim':     ['#efebd4',   '223'],
             \ 'bg0':        ['#fdf6e3',   '230'],
             \ 'bg1':        ['#f4f0d9',   '228'],
-            \ 'bg2':        ['#f0ecd5',   '223'],
-            \ 'bg3':        ['#e7e3cd',   '223'],
-            \ 'bg4':        ['#e2ddc8',   '223'],
+            \ 'bg2':        ['#efebd4',   '223'],
+            \ 'bg3':        ['#e6e2cc',   '223'],
+            \ 'bg4':        ['#e0dcc7',   '223'],
             \ 'bg5':        ['#bdc3af',   '223'],
             \ 'bg_visual':  ['#eaedc8',   '194'],
             \ 'bg_red':     ['#fbe3da',   '217'],
@@ -111,12 +111,12 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ }
     else
       let palette1 = {
-            \ 'bg_dim':     ['#e7e1c6',   '223'],
+            \ 'bg_dim':     ['#e6e0c5',   '223'],
             \ 'bg0':        ['#f3ead3',   '230'],
-            \ 'bg1':        ['#ece6ca',   '228'],
-            \ 'bg2':        ['#e7e1c6',   '223'],
-            \ 'bg3':        ['#dfdabf',   '223'],
-            \ 'bg4':        ['#dad5bb',   '223'],
+            \ 'bg1':        ['#ebe5c9',   '228'],
+            \ 'bg2':        ['#e6e0c5',   '223'],
+            \ 'bg3':        ['#ded9be',   '223'],
+            \ 'bg4':        ['#d9d4ba',   '223'],
             \ 'bg5':        ['#b9c0ab',   '223'],
             \ 'bg_visual':  ['#e1e4bd',   '194'],
             \ 'bg_red':     ['#f4dbd0',   '217'],
