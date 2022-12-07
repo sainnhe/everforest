@@ -27,14 +27,14 @@ The semantics of each color in the context of syntax highlighting is described i
 #### Background Colors (palette1)
 
 <sub>hard</sub>  
-![#2B3339][2B3339]![#323C41][323C41]![#3A454A][3A454A]![#445055][445055]![#4C555B][4C555B]![#53605C][53605C]  
-![#503946][503946]![#4E3E43][4E3E43]![#404D44][404D44]![#394F5A][394F5A]![#4A4940][4A4940]  
+![#1E2326][1E2326]![#272E33][272E33]![#2E383C][2E383C]![#374145][374145]![#414B50][414B50]![#495156][495156]![#4F5B58][4F5B58]  
+![#4C3743][4C3743]![#493B40][493B40]![#3C4841][3C4841]![#384B55][384B55]![#45443c][45443c]  
 <sub>medium</sub>  
-![#2F383E][2F383E]![#374247][374247]![#404C51][404C51]![#4A555B][4A555B]![#525C62][525C62]![#596763][596763]  
-![#573E4C][573E4C]![#544247][544247]![#445349][445349]![#3B5360][3B5360]![#504F45][504F45]  
+![#232A2E][232A2E]![#2D353B][2D353B]![#343F44][343F44]![#3D484D][3D484D]![#475258][475258]![#4F585E][4F585E]![#56635f][56635f]  
+![#543A48][543A48]![#514045][514045]![#425047][425047]![#3A515D][3A515D]![#4D4C43][4D4C43]  
 <sub>low</sub>  
-![#323D43][323D43]![#3C474D][3C474D]![#465258][465258]![#505A60][505A60]![#576268][576268]![#5F6D67][5F6D67]  
-![#5D4251][5D4251]![#59454B][59454B]![#48584D][48584D]![#3D5665][3D5665]![#55544A][55544A]
+![#293136][293136]![#333C43][333C43]![#3A464C][3A464C]![#434F55][434F55]![#4D5960][4D5960]![#555F66][555F66]![#5D6B66][5D6B66]  
+![#5C3F4F][5C3F4F]![#59464C][59464C]![#48584E][48584E]![#3F5865][3F5865]![#55544A][55544A]
 
 #### Foreground Colors (palette2)
 
@@ -52,14 +52,14 @@ The semantics of each color in the context of syntax highlighting is described i
 #### Background Colors (palette1)
 
 <sub>hard</sub>  
-![#FFF9E8][FFF9E8]![#F7F4E0][F7F4E0]![#F0EED9][F0EED9]![#E9E8D2][E9E8D2]![#E1DDCB][E1DDCB]![#BEC5B2][BEC5B2]  
-![#EDF0CD][EDF0CD]![#FCE5DC][FCE5DC]![#F1F3D4][F1F3D4]![#EAF2EB][EAF2EB]![#FBEFD0][FBEFD0]  
+![#F2EFDF][F2EFDF]![#FFFBEF][FFFBEF]![#F8F5E4][F8F5E4]![#F2EFDF][F2EFDF]![#EDEADA][EDEADA]![#E8E5D5][E8E5D5]![#BEC5B2][BEC5B2]  
+![#F0F2D4][F0F2D4]![#FFE7DE][FFE7DE]![#F3F5D9][F3F5D9]![#ECF5ED][ECF5ED]![#FEF2D5][FEF2D5]  
 <sub>medium</sub>  
-![#FDF6E3][FDF6E3]![#F3EFDA][F3EFDA]![#EDEAD5][EDEAD5]![#E4E1CD][E4E1CD]![#DFDBC8][DFDBC8]![#BDC3AF][BDC3AF]  
+![#EFEBD4][EFEBD4]![#FDF6E3][FDF6E3]![#F4F0D9][F4F0D9]![#EFEBD4][EFEBD4]![#E6E2CC][E6E2CC]![#E0DCC7][E0DCC7]![#BDC3AF][BDC3AF]  
 ![#EAEDC8][EAEDC8]![#FBE3DA][FBE3DA]![#F0F1D2][F0F1D2]![#E9F0E9][E9F0E9]![#FAEDCD][FAEDCD]  
 <sub>low</sub>  
-![#F8F0DC][F8F0DC]![#EFEAD4][EFEAD4]![#E9E5CF][E9E5CF]![#E1DDC9][E1DDC9]![#DCD8C4][DCD8C4]![#B9C0AB][B9C0AB]  
-![#E6E9C4][E6E9C4]![#F9E0D4][F9E0D4]![#EDEECE][EDEECE]![#E7EDE5][E7EDE5]![#F6E9C9][F6E9C9]
+![#E5DFC5][E5DFC5]![#F3EAD3][F3EAD3]![#EAE4CA][EAE4CA]![#E5DFC5][E5DFC5]![#DDD8BE][DDD8BE]![#D8D3BA][D8D3BA]![#B9C0AB][B9C0AB]  
+![#E1E4BD][E1E4BD]![#F4DBD0][F4DBD0]![#E5E6C5][E5E6C5]![#E1E7DD][E1E7DD]![#F1E4C5][F1E4C5]
 
 #### Foreground Colors (palette2)
 
@@ -80,17 +80,18 @@ contrast settings.
 
 |                    | Hex     | Identifier    | Usages                                                                                                                    |
 |--------------------|---------|---------------|---------------------------------------------------------------------------------------------------------------------------|
-| ![#2F383E][2F383E] | #2F383E | `bg0`         | Default Background, Line Numbers Background, Signs Background, Status Line Background (inactive), Tab Line Label (active) |
-| ![#374247][374247] | #374247 | `bg1`         | Cursor Line Background, Color Columns, Closed Folds Background, Status Line Background (active), Tab Line Background      |
-| ![#404C51][404C51] | #404C51 | `bg2`         | Popup Menu Background, Floating Window Background, Window Toolbar Background                                              |
-| ![#4A555B][4A555B] | #4A555B | `bg3`         | List Chars, Special Keys, Tab Line Label Background (inactive)                                                            |
-| ![#525C62][525C62] | #525C62 | `bg4`         | Window Splits Separators, Whitespaces, Breaks                                                                             |
-| ![#596763][596763] | #596763 | `bg5`         | _Not currently used_                                                                                                      |
-| ![#573E4C][573E4C] | #573E4C | `bg_visual`   | Visual Selection                                                                                                          |
-| ![#544247][544247] | #544247 | `bg_red`      | Diff Deleted Line Background, Error Highlights                                                                            |
-| ![#445349][445349] | #445349 | `bg_green`    | Diff Added Line Background, Hint Highlights                                                                               |
-| ![#3B5360][3B5360] | #3B5360 | `bg_blue`     | Diff Changed Line Background, Info Highlights                                                                             |
-| ![#504F45][504F45] | #504F45 | `bg_yellow`   | Warning Highlights                                                                                                        |
+| ![#232A2E][232A2E] | #232A2E | `bg_dim`      | Dimmed Background                                                                                                         |
+| ![#2D353B][2D353B] | #2D353B | `bg0`         | Default Background, Line Numbers Background, Signs Background, Status Line Background (inactive), Tab Line Label (active) |
+| ![#343F44][343F44] | #343F44 | `bg1`         | Cursor Line Background, Color Columns, Closed Folds Background, Status Line Background (active), Tab Line Background      |
+| ![#3D484D][3D484D] | #3D484D | `bg2`         | Popup Menu Background, Floating Window Background, Window Toolbar Background                                              |
+| ![#475258][475258] | #475258 | `bg3`         | List Chars, Special Keys, Tab Line Label Background (inactive)                                                            |
+| ![#4F585E][4F585E] | #4F585E | `bg4`         | Window Splits Separators, Whitespaces, Breaks                                                                             |
+| ![#56635f][56635f] | #56635f | `bg5`         | _Not currently used_                                                                                                      |
+| ![#543A48][543A48] | #543A48 | `bg_visual`   | Visual Selection                                                                                                          |
+| ![#514045][514045] | #514045 | `bg_red`      | Diff Deleted Line Background, Error Highlights                                                                            |
+| ![#425047][425047] | #425047 | `bg_green`    | Diff Added Line Background, Hint Highlights                                                                               |
+| ![#3A515D][3A515D] | #3A515D | `bg_blue`     | Diff Changed Line Background, Info Highlights                                                                             |
+| ![#4D4C43][4D4C43] | #4D4C43 | `bg_yellow`   | Warning Highlights                                                                                                        |
 | ![#D3C6AA][D3C6AA] | #D3C6AA | `fg`          | Default Foreground, Signs, [_Treesitter_: Constants, Variables, Function Parameters, Properties, Symbol Identifiers]      |
 | ![#E67E80][E67E80] | #E67E80 | `red`         | Conditional Keywords, Loop Keywords, Exception Keywords, Inclusion Keywords, Uncategorised Keywords, Diff Deleted Signs, Error Messages, Error Signs |
 | ![#E69875][E69875] | #E69875 | `orange`      | Operator Keywords, Operators, Labels, Storage Classes, Composite Types, Enumerated Types, Tags, Debugging Statements      |
@@ -136,63 +137,66 @@ https://github.com/sainnhe/everforest/pull/81#issuecomment-1216751460
 
 
 <!-- dark hard palette1 -->
-[2B3339]: https://via.placeholder.com/48/2B3339/2B3339.png "bg0 - #2B3339"
-[323C41]: https://via.placeholder.com/48/323C41/323C41.png "bg1 - #323C41"
-[3A454A]: https://via.placeholder.com/48/3A454A/3A454A.png "bg2 - #3A454A"
-[445055]: https://via.placeholder.com/48/445055/445055.png "bg3 - #445055"
-[4C555B]: https://via.placeholder.com/48/4C555B/4C555B.png "bg4 - #4C555B"
-[53605C]: https://via.placeholder.com/48/53605C/53605C.png "bg5 - #53605C"
-[503946]: https://via.placeholder.com/48/503946/503946.png "bg_visual - #503946"
-[4E3E43]: https://via.placeholder.com/48/4E3E43/4E3E43.png "bg_reg - #4E3E43"
-[404D44]: https://via.placeholder.com/48/404D44/404D44.png "bg_green - #404D44"
-[394F5A]: https://via.placeholder.com/48/394F5A/394F5A.png "bg_blue - #394F5A"
-[4A4940]: https://via.placeholder.com/48/4A4940/4A4940.png "bg_yellow - #4A4940"
+[1E2326]: https://via.placeholder.com/48/1E2326/1E2326.png "bg_dim - #1E2326"
+[272E33]: https://via.placeholder.com/48/272E33/272E33.png "bg0 - #272E33"
+[2E383C]: https://via.placeholder.com/48/2E383C/2E383C.png "bg1 - #2E383C"
+[374145]: https://via.placeholder.com/48/374145/374145.png "bg2 - #374145"
+[414B50]: https://via.placeholder.com/48/414B50/414B50.png "bg3 - #414B50"
+[495156]: https://via.placeholder.com/48/495156/495156.png "bg4 - #495156"
+[4F5B58]: https://via.placeholder.com/48/4F5B58/4F5B58.png "bg5 - #4F5B58"
+[4C3743]: https://via.placeholder.com/48/4C3743/4C3743.png "bg_visual - #4C3743"
+[493B40]: https://via.placeholder.com/48/493B40/493B40.png "bg_reg - #493B40"
+[3C4841]: https://via.placeholder.com/48/3C4841/3C4841.png "bg_green - #3C4841"
+[384B55]: https://via.placeholder.com/48/384B55/384B55.png "bg_blue - #384B55"
+[45443c]: https://via.placeholder.com/48/45443c/45443c.png "bg_yellow - #45443c"
 
 <!-- dark medium palette1 -->
-[2F383E]: https://via.placeholder.com/48/2F383E/2F383E.png "bg0 - #2F383E"
-[374247]: https://via.placeholder.com/48/374247/374247.png "bg1 - #374247"
-[404C51]: https://via.placeholder.com/48/404C51/404C51.png "bg2 - #404C51"
-[4A555B]: https://via.placeholder.com/48/4A555B/4A555B.png "bg3 - #4A555B"
-[525C62]: https://via.placeholder.com/48/525C62/525C62.png "bg4 - #525C62"
-[596763]: https://via.placeholder.com/48/596763/596763.png "bg5 - #596763"
-[573E4C]: https://via.placeholder.com/48/573E4C/573E4C.png "bg_visual - #573E4C"
-[544247]: https://via.placeholder.com/48/544247/544247.png "bg_reg - #544247"
-[445349]: https://via.placeholder.com/48/445349/445349.png "bg_green - #445349"
-[3B5360]: https://via.placeholder.com/48/3B5360/3B5360.png "bg_blue - #3B5360"
-[504F45]: https://via.placeholder.com/48/504F45/504F45.png "bg_yellow - #504F45"
+[232A2E]: https://via.placeholder.com/48/232A2E/232A2E.png "bg_dim - #232A2E"
+[2D353B]: https://via.placeholder.com/48/2D353B/2D353B.png "bg0 - #2D353B"
+[343F44]: https://via.placeholder.com/48/343F44/343F44.png "bg1 - #343F44"
+[3D484D]: https://via.placeholder.com/48/3D484D/3D484D.png "bg2 - #3D484D"
+[475258]: https://via.placeholder.com/48/475258/475258.png "bg3 - #475258"
+[4F585E]: https://via.placeholder.com/48/4F585E/4F585E.png "bg4 - #4F585E"
+[56635f]: https://via.placeholder.com/48/56635f/56635f.png "bg5 - #56635f"
+[543A48]: https://via.placeholder.com/48/543A48/543A48.png "bg_visual - #543A48"
+[514045]: https://via.placeholder.com/48/514045/514045.png "bg_reg - #514045"
+[425047]: https://via.placeholder.com/48/425047/425047.png "bg_green - #425047"
+[3A515D]: https://via.placeholder.com/48/3A515D/3A515D.png "bg_blue - #3A515D"
+[4D4C43]: https://via.placeholder.com/48/4D4C43/4D4C43.png "bg_yellow - #4D4C43"
 
 <!-- dark low palette1 -->
-[323D43]: https://via.placeholder.com/48/323D43/323D43.png "bg0 - #323D43"
-[3C474D]: https://via.placeholder.com/48/3C474D/3C474D.png "bg1 - #3C474D"
-[465258]: https://via.placeholder.com/48/465258/465258.png "bg2 - #465258"
-[505A60]: https://via.placeholder.com/48/505A60/505A60.png "bg3 - #505A60"
-[576268]: https://via.placeholder.com/48/576268/576268.png "bg4 - #576268"
-[5F6D67]: https://via.placeholder.com/48/5F6D67/5F6D67.png "bg5 - #5F6D67"
-[5D4251]: https://via.placeholder.com/48/5D4251/5D4251.png "bg_visual - #5D4251"
-[59454B]: https://via.placeholder.com/48/59454B/59454B.png "bg_reg - #59454B"
-[48584D]: https://via.placeholder.com/48/48584D/48584D.png "bg_green - #48584D"
-[3D5665]: https://via.placeholder.com/48/3D5665/3D5665.png "bg_blue - #3D5665"
+[293136]: https://via.placeholder.com/48/293136/293136.png "bg_dim - #293136"
+[333C43]: https://via.placeholder.com/48/333C43/333C43.png "bg0 - #333C43"
+[3A464C]: https://via.placeholder.com/48/3A464C/3A464C.png "bg1 - #3A464C"
+[434F55]: https://via.placeholder.com/48/434F55/434F55.png "bg2 - #434F55"
+[4D5960]: https://via.placeholder.com/48/4D5960/4D5960.png "bg3 - #4D5960"
+[555F66]: https://via.placeholder.com/48/555F66/555F66.png "bg4 - #555F66"
+[5D6B66]: https://via.placeholder.com/48/5D6B66/5D6B66.png "bg5 - #5D6B66"
+[5C3F4F]: https://via.placeholder.com/48/5C3F4F/5C3F4F.png "bg_visual - #5C3F4F"
+[59464C]: https://via.placeholder.com/48/59464C/59464C.png "bg_reg - #59464C"
+[48584E]: https://via.placeholder.com/48/48584E/48584E.png "bg_green - #48584E"
+[3F5865]: https://via.placeholder.com/48/3F5865/3F5865.png "bg_blue - #3F5865"
 [55544A]: https://via.placeholder.com/48/55544A/55544A.png "bg_yellow - #55544A"
 
 <!-- light hard palette1 -->
-[FFF9E8]: https://via.placeholder.com/48/FFF9E8/FFF9E8.png "bg0 - #FFF9E8"
-[F7F4E0]: https://via.placeholder.com/48/F7F4E0/F7F4E0.png "bg1 - #F7F4E0"
-[F0EED9]: https://via.placeholder.com/48/F0EED9/F0EED9.png "bg2 - #F0EED9"
-[E9E8D2]: https://via.placeholder.com/48/E9E8D2/E9E8D2.png "bg3 - #E9E8D2"
-[E1DDCB]: https://via.placeholder.com/48/E1DDCB/E1DDCB.png "bg4 - #E1DDCB"
+[F2EFDF]: https://via.placeholder.com/48/F2EFDF/F2EFDF.png "bg_dim/bg2 - #F2EFDF"
+[FFFBEF]: https://via.placeholder.com/48/FFFBEF/FFFBEF.png "bg0 - #FFFBEF"
+[F8F5E4]: https://via.placeholder.com/48/F8F5E4/F8F5E4.png "bg1 - #F8F5E4"
+[EDEADA]: https://via.placeholder.com/48/EDEADA/EDEADA.png "bg3 - #EDEADA"
+[E8E5D5]: https://via.placeholder.com/48/E8E5D5/E8E5D5.png "bg4 - #E8E5D5"
 [BEC5B2]: https://via.placeholder.com/48/BEC5B2/BEC5B2.png "bg5 - #BEC5B2"
-[EDF0CD]: https://via.placeholder.com/48/EDF0CD/EDF0CD.png "bg_visual - #EDF0CD"
-[FCE5DC]: https://via.placeholder.com/48/FCE5DC/FCE5DC.png "bg_reg - #FCE5DC"
-[F1F3D4]: https://via.placeholder.com/48/F1F3D4/F1F3D4.png "bg_green - #F1F3D4"
-[EAF2EB]: https://via.placeholder.com/48/EAF2EB/EAF2EB.png "bg_blue - #EAF2EB"
-[FBEFD0]: https://via.placeholder.com/48/FBEFD0/FBEFD0.png "bg_yellow - #FBEFD0"
+[F0F2D4]: https://via.placeholder.com/48/F0F2D4/F0F2D4.png "bg_visual - #F0F2D4"
+[FFE7DE]: https://via.placeholder.com/48/FFE7DE/FFE7DE.png "bg_reg - #FFE7DE"
+[F3F5D9]: https://via.placeholder.com/48/F3F5D9/F3F5D9.png "bg_green - #F3F5D9"
+[ECF5ED]: https://via.placeholder.com/48/ECF5ED/ECF5ED.png "bg_blue - #ECF5ED"
+[FEF2D5]: https://via.placeholder.com/48/FEF2D5/FEF2D5.png "bg_yellow - #FEF2D5"
 
 <!-- light medium palette1 -->
+[EFEBD4]: https://via.placeholder.com/48/EFEBD4/EFEBD4.png "bg_dim/bg2 - #EFEBD4"
 [FDF6E3]: https://via.placeholder.com/48/FDF6E3/FDF6E3.png "bg0 - #FDF6E3"
-[F3EFDA]: https://via.placeholder.com/48/F3EFDA/F3EFDA.png "bg1 - #F3EFDA"
-[EDEAD5]: https://via.placeholder.com/48/EDEAD5/EDEAD5.png "bg2 - #EDEAD5"
-[E4E1CD]: https://via.placeholder.com/48/E4E1CD/E4E1CD.png "bg3 - #E4E1CD"
-[DFDBC8]: https://via.placeholder.com/48/DFDBC8/DFDBC8.png "bg4 - #DFDBC8"
+[F4F0D9]: https://via.placeholder.com/48/F4F0D9/F4F0D9.png "bg1 - #F4F0D9"
+[E6E2CC]: https://via.placeholder.com/48/E6E2CC/E6E2CC.png "bg3 - #E6E2CC"
+[E0DCC7]: https://via.placeholder.com/48/E0DCC7/E0DCC7.png "bg4 - #E0DCC7"
 [BDC3AF]: https://via.placeholder.com/48/BDC3AF/BDC3AF.png "bg5 - #BDC3AF"
 [EAEDC8]: https://via.placeholder.com/48/EAEDC8/EAEDC8.png "bg_visual - #EAEDC8"
 [FBE3DA]: https://via.placeholder.com/48/FBE3DA/FBE3DA.png "bg_reg - #FBE3DA"
@@ -201,17 +205,17 @@ https://github.com/sainnhe/everforest/pull/81#issuecomment-1216751460
 [FAEDCD]: https://via.placeholder.com/48/FAEDCD/FAEDCD.png "bg_yellow - #FAEDCD"
 
 <!-- light low palette1 -->
-[F8F0DC]: https://via.placeholder.com/48/F8F0DC/F8F0DC.png "bg0 - #F8F0DC"
-[EFEAD4]: https://via.placeholder.com/48/EFEAD4/EFEAD4.png "bg1 - #EFEAD4"
-[E9E5CF]: https://via.placeholder.com/48/E9E5CF/E9E5CF.png "bg2 - #E9E5CF"
-[E1DDC9]: https://via.placeholder.com/48/E1DDC9/E1DDC9.png "bg3 - #E1DDC9"
-[DCD8C4]: https://via.placeholder.com/48/DCD8C4/DCD8C4.png "bg4 - #DCD8C4"
+[E5DFC5]: https://via.placeholder.com/48/E5DFC5/E5DFC5.png "bg_dim/bg2 - #E5DFC5"
+[F3EAD3]: https://via.placeholder.com/48/F3EAD3/F3EAD3.png "bg0 - #F3EAD3"
+[EAE4CA]: https://via.placeholder.com/48/EAE4CA/EAE4CA.png "bg1 - #EAE4CA"
+[DDD8BE]: https://via.placeholder.com/48/DDD8BE/DDD8BE.png "bg3 - #DDD8BE"
+[D8D3BA]: https://via.placeholder.com/48/D8D3BA/D8D3BA.png "bg4 - #D8D3BA"
 [B9C0AB]: https://via.placeholder.com/48/B9C0AB/B9C0AB.png "bg5 - #B9C0AB"
-[E6E9C4]: https://via.placeholder.com/48/E6E9C4/E6E9C4.png "bg_visual - #E6E9C4"
-[F9E0D4]: https://via.placeholder.com/48/F9E0D4/F9E0D4.png "bg_reg - #F9E0D4"
-[EDEECE]: https://via.placeholder.com/48/EDEECE/EDEECE.png "bg_green - #EDEECE"
-[E7EDE5]: https://via.placeholder.com/48/E7EDE5/E7EDE5.png "bg_blue - #E7EDE5"
-[F6E9C9]: https://via.placeholder.com/48/F6E9C9/F6E9C9.png "bg_yellow - #F6E9C9"
+[E1E4BD]: https://via.placeholder.com/48/E1E4BD/E1E4BD.png "bg_visual - #E1E4BD"
+[F4DBD0]: https://via.placeholder.com/48/F4DBD0/F4DBD0.png "bg_reg - #F4DBD0"
+[E5E6C5]: https://via.placeholder.com/48/E5E6C5/E5E6C5.png "bg_green - #E5E6C5"
+[E1E7DD]: https://via.placeholder.com/48/E1E7DD/E1E7DD.png "bg_blue - #E1E7DD"
+[F1E4C5]: https://via.placeholder.com/48/F1E4C5/F1E4C5.png "bg_yellow - #F1E4C5"
 
 <!-- dark palette2 -->
 [D3C6AA]: https://via.placeholder.com/48/D3C6AA/D3C6AA.png "fg/statusline2 - #D3C6AA"
