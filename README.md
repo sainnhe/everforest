@@ -23,6 +23,10 @@ Everforest is a green based color scheme; it's designed to be warm and soft in o
 - Semantic highlighting support.
 - [Italic support](https://aka.sainnhe.dev/fonts) 🎉
 
+### Palette
+
+🎨 See [Color Palette and Highlighting Semantics](palette.md).
+
 ## Documentation
 
 See [`:help everforest.txt`](https://github.com/sainnhe/everforest/blob/master/doc/everforest.txt)
