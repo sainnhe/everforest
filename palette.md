@@ -6,10 +6,6 @@
    * [Dark](#dark)
    * [Light](#light)
 1. [Highlights](#highlights)
-1. [Design Decisions](#design-decisions)
-   * [Primary and Secondary Colors](#primary-and-secondary-colors)
-   * [Vim versus Treesitter Highlights](#vim-versus-treesitter-highlights)
-   * [Italics](#italics)
 
 ## Palette Variants
 
@@ -106,34 +102,6 @@ contrast settings.
 | ![#A7C080][hl_st1] | #A7C080 | `statusline1` | Menu Selection Background, Tab Line Label Background (active), Status Line Mode Indicator                                 |
 | ![#D3C6AA][hl_st2] | #D3C6AA | `statusline2` | Status Line Mode Indicator                                                                                                |
 | ![#E67E80][hl_st3] | #E67E80 | `statusline3` | Status Line Mode Indicator                                                                                                |
-
-## Design Decisions
-
-TODO
-
-<!-- TODO(antoineco): describe higher level semantics for italics and design decisions for Classic Vim vs. Treesitter highlights -->
-
-### Primary and Secondary Colors
-
-<!--
-General feel: Green, Aqua, Yellow, Orange, Red
-https://github.com/sainnhe/gruvbox-material/issues/119#issuecomment-1019999876
--->
-
-### Vim versus Treesitter Highlights
-
-<!--
-Green vs Aqua strings
-https://github.com/sainnhe/gruvbox-material/issues/109#issuecomment-964656653
-https://github.com/sainnhe/gruvbox-material/issues/119#issuecomment-1019686439
--->
-
-### Italics
-
-<!--
-Two conventions
-https://github.com/sainnhe/everforest/pull/81#issuecomment-1216751460
--->
 
 
 <!-- dark hard palette1 -->
