@@ -2,11 +2,11 @@
 𝐄𝐯𝐞𝐫𝐟𝐨𝐫𝐞𝐬𝐭
 </h1>
 
-|        |                                      𝐃𝐚𝐫𝐤                                      |                                      𝐋𝐢𝐠𝐡𝐭                                       |
-| :----: | :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-|  𝐇𝐚𝐫𝐝  |   ![hard-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-hard.png)   |   ![hard-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-hard.png)   |
-| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![medium-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-medium.png) | ![medium-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-medium.png) |
-|  𝐒𝐨𝐟𝐭  |   ![soft-dark](https://gitlab.com/sainnhe/img/-/raw/master/fn-dark-soft.png)   |   ![soft-light](https://gitlab.com/sainnhe/img/-/raw/master/fn-light-soft.png)   |
+|        |                                                         𝐃𝐚𝐫𝐤                                                          |                                                         𝐋𝐢𝐠𝐡𝐭                                                          |
+| :----: | :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![hard-dark](https://user-images.githubusercontent.com/37491630/206063892-e1b2197e-2404-4ab4-8570-3dee96242ba1.png)  |  ![hard-light](https://user-images.githubusercontent.com/37491630/206063912-666f7ddd-3f95-41b3-a906-12d946d5f688.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![medium-dark](https://user-images.githubusercontent.com/37491630/206063921-58418bb0-7752-43f3-9f3b-f3752f8ee753.png) | ![medium-light](https://user-images.githubusercontent.com/37491630/206063932-6bd60bef-8d2a-40d7-86b9-b284f2fea7b0.png) |
+|  𝐒𝐨𝐟𝐭  |  ![soft-dark](https://user-images.githubusercontent.com/37491630/206063950-d0ac0c11-4b29-410d-a1c5-6606fe6e73fd.png)  |  ![soft-light](https://user-images.githubusercontent.com/37491630/206063958-9242e148-6ec3-4a5b-998f-f30dc19d37c6.png)  |
 
 ## Introduction
 
