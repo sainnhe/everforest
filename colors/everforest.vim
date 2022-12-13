@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 21 06:24:15 AM UTC 2022'
+let s:last_modified = 'Tue Dec 13 03:47:01 UTC 2022'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -30,6 +30,7 @@ endif
 " UI: {{{
 if s:configuration.transparent_background >= 1
   call everforest#highlight('Normal', s:palette.fg, s:palette.none)
+  call everforest#highlight('NormalNC', s:palette.fg, s:palette.none)
   call everforest#highlight('Terminal', s:palette.fg, s:palette.none)
   if s:configuration.show_eob
     call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.none)
@@ -46,11 +47,24 @@ if s:configuration.transparent_background >= 1
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.none)
 else
   call everforest#highlight('Normal', s:palette.fg, s:palette.bg0)
+  if s:configuration.dim_inactive_windows
+    call everforest#highlight('NormalNC', s:palette.fg, s:palette.bg_dim)
+  else
+    call everforest#highlight('NormalNC', s:palette.fg, s:palette.bg0)
+  endif
   call everforest#highlight('Terminal', s:palette.fg, s:palette.bg0)
   if s:configuration.show_eob
-    call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.bg0)
+    if s:configuration.dim_inactive_windows
+      call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.bg_dim)
+    else
+      call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.bg0)
+    endif
   else
-    call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+    if s:configuration.dim_inactive_windows
+      call everforest#highlight('EndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+    else
+      call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+    endif
   endif
   call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
@@ -158,7 +172,11 @@ else
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 endif
-call everforest#highlight('VertSplit', s:palette.bg4, s:palette.none)
+if s:configuration.dim_inactive_windows
+  call everforest#highlight('VertSplit', s:palette.bg4, s:palette.bg_dim)
+else
+  call everforest#highlight('VertSplit', s:palette.bg4, s:palette.none)
+endif
 highlight! link WinSeparator VertSplit
 call everforest#highlight('Visual', s:palette.none, s:palette.bg_visual)
 call everforest#highlight('VisualNOS', s:palette.none, s:palette.bg_visual)
