@@ -375,6 +375,7 @@ Currently, the following plugins are supported:
 - https://github.com/prabirshrestha/vim-lsp
 - https://github.com/dense-analysis/ale
 - https://github.com/neomake/neomake
+- https://github.com/ycm-core/YouCompleteMe
 
 ------------------------------------------------------------------------------
                                                      *g:everforest_current_word*
