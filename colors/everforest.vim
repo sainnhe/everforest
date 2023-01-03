@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Dec 23 13:23:09 UTC 2022'
+let s:last_modified = 'Tue Jan  3 02:25:57 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -493,9 +493,9 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType Yellow
+highlight! link TSType YellowItalic
 highlight! link TSTypeBuiltin YellowItalic
-highlight! link TSTypeDefinition Red
+highlight! link TSTypeDefinition YellowItalic
 highlight! link TSTypeQualifier Orange
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
