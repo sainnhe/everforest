@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan  3 02:25:57 UTC 2023'
+let s:last_modified = 'Mon Feb 27 03:30:53 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -283,14 +283,13 @@ call everforest#highlight('Character', s:palette.green, s:palette.none)
 call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
 call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
+call everforest#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
 if s:configuration.disable_italic_comment
   call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
   call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
-  call everforest#highlight('Todo', s:palette.purple, s:palette.none)
 else
   call everforest#highlight('Comment', s:palette.grey1, s:palette.none, 'italic')
   call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none, 'italic')
-  call everforest#highlight('Todo', s:palette.purple, s:palette.none, 'italic')
 endif
 call everforest#highlight('Delimiter', s:palette.fg, s:palette.none)
 call everforest#highlight('Ignore', s:palette.grey1, s:palette.none)
@@ -430,7 +429,7 @@ endif
 call everforest#highlight('TSStrong', s:palette.none, s:palette.none, 'bold')
 call everforest#highlight('TSEmphasis', s:palette.none, s:palette.none, 'italic')
 call everforest#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
-call everforest#highlight('TSNote', s:palette.bg0, s:palette.blue, 'bold')
+call everforest#highlight('TSNote', s:palette.bg0, s:palette.green, 'bold')
 call everforest#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call everforest#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
 highlight! link TSAnnotation Purple
