@@ -156,10 +156,10 @@ else
   call everforest#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
 endif
 if s:configuration.transparent_background == 2
-  call everforest#highlight('StatusLine', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineNC', s:palette.grey2, s:palette.none)
-  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLine', s:palette.grey2, s:palette.none)
+  call everforest#highlight('StatusLineTerm', s:palette.grey2, s:palette.none)
+  call everforest#highlight('StatusLineNC', s:palette.grey0, s:palette.none)
+  call everforest#highlight('StatusLineTermNC', s:palette.grey0, s:palette.none)
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
