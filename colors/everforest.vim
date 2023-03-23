@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Feb 27 03:30:53 UTC 2023'
+let s:last_modified = 'Thu Mar 23 10:26:40 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -383,6 +383,45 @@ elseif s:configuration.current_word ==# 'grey background'
 else
   call everforest#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
+" Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
+let g:everforest_lsp_kind_color = [
+      \ ["Array", "Aqua"],
+      \ ["Boolean", "Aqua"],
+      \ ["Class", "Red"],
+      \ ["Class", "Yellow"],
+      \ ["Color", "Aqua"],
+      \ ["Constant", "Blue"],
+      \ ["Constructor", "Green"],
+      \ ["Default", "Aqua"],
+      \ ["Enum", "Yellow"],
+      \ ["EnumMember", "Purple"],
+      \ ["Event", "Orange"],
+      \ ["Field", "Green"],
+      \ ["File", "Green"],
+      \ ["Folder", "Aqua"],
+      \ ["Function", "Green"],
+      \ ["Interface", "Yellow"],
+      \ ["Key", "Red"],
+      \ ["Keyword", "Red"],
+      \ ["Method", "Green"],
+      \ ["Module", "Yellow"],
+      \ ["Namespace", "Purple"],
+      \ ["Null", "Aqua"],
+      \ ["Number", "Aqua"],
+      \ ["Object", "Aqua"],
+      \ ["Operator", "Orange"],
+      \ ["Package", "Purple"],
+      \ ["Property", "Blue"],
+      \ ["Reference", "Aqua"],
+      \ ["Snippet", "Aqua"],
+      \ ["String", "Aqua"],
+      \ ["Struct", "Yellow"],
+      \ ["Text", "Fg"],
+      \ ["TypeParameter", "Yellow"],
+      \ ["Unit", "Purple"],
+      \ ["Value", "Purple"],
+      \ ["Variable", "Blue"],
+      \ ]
 " }}}
 " }}}
 " Terminal: {{{
@@ -1026,31 +1065,9 @@ highlight! link CmpItemAbbr Fg
 highlight! link CmpItemAbbrDeprecated Grey
 highlight! link CmpItemMenu Fg
 highlight! link CmpItemKind Yellow
-highlight! link CmpItemKindText Fg
-highlight! link CmpItemKindMethod Green
-highlight! link CmpItemKindFunction Green
-highlight! link CmpItemKindConstructor Green
-highlight! link CmpItemKindField Green
-highlight! link CmpItemKindVariable Blue
-highlight! link CmpItemKindClass Yellow
-highlight! link CmpItemKindInterface Yellow
-highlight! link CmpItemKindModule Yellow
-highlight! link CmpItemKindProperty Blue
-highlight! link CmpItemKindUnit Purple
-highlight! link CmpItemKindValue Purple
-highlight! link CmpItemKindEnum Yellow
-highlight! link CmpItemKindKeyword Red
-highlight! link CmpItemKindSnippet Aqua
-highlight! link CmpItemKindColor Aqua
-highlight! link CmpItemKindFile Aqua
-highlight! link CmpItemKindReference Aqua
-highlight! link CmpItemKindFolder Aqua
-highlight! link CmpItemKindEnumMember Purple
-highlight! link CmpItemKindConstant Blue
-highlight! link CmpItemKindStruct Yellow
-highlight! link CmpItemKindEvent Orange
-highlight! link CmpItemKindOperator Orange
-highlight! link CmpItemKindTypeParameter Yellow
+for kind in g:everforest_lsp_kind_color
+  execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
+endfor
 " }}}
 " folke/trouble.nvim {{{
 highlight! link TroubleText Fg
@@ -1312,33 +1329,9 @@ highlight! link packerTimeLow Green
 " https://github.com/neoclide/coc.nvim
 highlight! link CocTreeOpenClose Aqua
 highlight! link CocTreeDescription Grey
-highlight! link CocSymbolFile Green
-highlight! link CocSymbolModule Purple
-highlight! link CocSymbolNamespace Purple
-highlight! link CocSymbolPackage Purple
-highlight! link CocSymbolClass Red
-highlight! link CocSymbolMethod Green
-highlight! link CocSymbolProperty Blue
-highlight! link CocSymbolField Green
-highlight! link CocSymbolConstructor Green
-highlight! link CocSymbolEnum Yellow
-highlight! link CocSymbolInterface Yellow
-highlight! link CocSymbolFunction Green
-highlight! link CocSymbolVariable Blue
-highlight! link CocSymbolConstant Blue
-highlight! link CocSymbolString Aqua
-highlight! link CocSymbolNumber Aqua
-highlight! link CocSymbolBoolean Aqua
-highlight! link CocSymbolArray Aqua
-highlight! link CocSymbolObject Aqua
-highlight! link CocSymbolKey Red
-highlight! link CocSymbolNull Aqua
-highlight! link CocSymbolEnumMember Aqua
-highlight! link CocSymbolStruct Yellow
-highlight! link CocSymbolEvent Orange
-highlight! link CocSymbolOperator Orange
-highlight! link CocSymbolTypeParameter Yellow
-highlight! link CocSymbolDefault Aqua
+for kind in g:everforest_lsp_kind_color
+  execute "highlight! link CocSymbol" . kind[0] . " " . kind[1]
+endfor
 " syn_end }}}
 " syn_begin: coc-explorer {{{
 " https://github.com/weirongxu/coc-explorer
@@ -1410,6 +1403,14 @@ highlight! link VistaPrivate Red
 " syn_begin: Outline {{{
 " https://github.com/simrat39/symbols-outline.nvim
 highlight! link FocusedSymbol NormalFloat
+" syn_end }}}
+" syn_begin: aerial {{{
+" https://github.com/stevearc/aerial.nvim
+highlight! link AerialLine CursorLine
+highlight! link AerialGuide LineNr
+for kind in g:everforest_lsp_kind_color
+  execute "highlight! link Aerial" . kind[0] . "Icon " . kind[1]
+endfor
 " syn_end }}}
 " syn_begin: aerial {{{
 " https://github.com/stevearc/aerial.nvim
