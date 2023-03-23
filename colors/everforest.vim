@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 10:26:40 UTC 2023'
+let s:last_modified = 'Thu Mar 23 10:34:07 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1411,37 +1411,6 @@ highlight! link AerialGuide LineNr
 for kind in g:everforest_lsp_kind_color
   execute "highlight! link Aerial" . kind[0] . "Icon " . kind[1]
 endfor
-" syn_end }}}
-" syn_begin: aerial {{{
-" https://github.com/stevearc/aerial.nvim
-highlight! link AerialLine CursorLine
-highlight! link AerialGuide LineNr
-highlight! link AerialFileIcon Green
-highlight! link AerialModuleIcon Purple
-highlight! link AerialNamespaceIcon Purple
-highlight! link AerialPackageIcon Purple
-highlight! link AerialClassIcon Red
-highlight! link AerialMethodIcon Green
-highlight! link AerialPropertyIcon Blue
-highlight! link AerialFieldIcon Green
-highlight! link AerialConstructorIcon Green
-highlight! link AerialEnumIcon Yellow
-highlight! link AerialInterfaceIcon Yellow
-highlight! link AerialFunctionIcon Green
-highlight! link AerialVariableIcon Blue
-highlight! link AerialConstantIcon Blue
-highlight! link AerialStringIcon Aqua
-highlight! link AerialNumberIcon Aqua
-highlight! link AerialBooleanIcon Aqua
-highlight! link AerialArrayIcon Aqua
-highlight! link AerialObjectIcon Aqua
-highlight! link AerialKeyIcon Red
-highlight! link AerialNullIcon Aqua
-highlight! link AerialEnumMemberIcon Aqua
-highlight! link AerialStructIcon Yellow
-highlight! link AerialEventIcon Orange
-highlight! link AerialOperatorIcon Orange
-highlight! link AerialTypeParameterIcon Yellow
 " syn_end }}}
 " syn_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
