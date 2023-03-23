@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 10:36:55 UTC 2023'
+let s:last_modified = 'Thu Mar 23 11:06:41 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -158,8 +158,8 @@ endif
 if s:configuration.transparent_background == 2
   call everforest#highlight('StatusLine', s:palette.grey1, s:palette.none)
   call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineNC', s:palette.grey2, s:palette.none)
-  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLineNC', s:palette.grey0, s:palette.none)
+  call everforest#highlight('StatusLineTermNC', s:palette.grey0, s:palette.none)
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
