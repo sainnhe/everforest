@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 11:06:41 UTC 2023'
+let s:last_modified = 'Thu Mar 23 11:16:05 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -82,6 +82,7 @@ else
 endif
 call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
 call everforest#highlight('Search', s:palette.bg0, s:palette.green)
+highlight! link CurSearch IncSearch
 call everforest#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 if s:configuration.ui_contrast ==# 'low'
   call everforest#highlight('Conceal', s:palette.bg5, s:palette.none)
@@ -139,6 +140,8 @@ call everforest#highlight('SpecialKey', s:palette.bg3, s:palette.none)
 call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg2)
 call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
 call everforest#highlight('PmenuSel', s:palette.bg0, s:palette.statusline1)
+call everforest#highlight('PmenuKind', s:palette.green, s:palette.bg2)
+call everforest#highlight('PmenuExtra', s:palette.grey2, s:palette.bg2)
 highlight! link WildMenu PmenuSel
 call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
