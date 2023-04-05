@@ -202,7 +202,7 @@ E.g.
     let g:everforest_better_performance = 1
 
     colorscheme everforest
-    let g:lightline.colorscheme = 'everforest'
+    let g:lightline = {'colorscheme' : 'everforest'}
 <
 ------------------------------------------------------------------------------
                                                        *g:everforest_background*
