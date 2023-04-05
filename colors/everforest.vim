@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 11:16:05 UTC 2023'
+let s:last_modified = 'Wed Apr  5 13:48:22 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2832,6 +2832,7 @@ endif
 " }}}
 " syn_end }}}
 " syn_begin: gitcommit {{{
+" builtin {{{
 highlight! link gitcommitSummary Green
 highlight! link gitcommitUntracked Grey
 highlight! link gitcommitDiscarded Grey
@@ -2840,6 +2841,12 @@ highlight! link gitcommitUnmerged Grey
 highlight! link gitcommitOnBranch Grey
 highlight! link gitcommitArrow Grey
 highlight! link gitcommitFile Green
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+if has('nvim-0.8.0')
+  highlight! link @text.gitcommit Fg
+endif
+" }}}
 " syn_end }}}
 " syn_begin: dosini {{{
 call everforest#highlight('dosiniHeader', s:palette.red, s:palette.none, 'bold')
