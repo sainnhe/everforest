@@ -1101,6 +1101,12 @@ for kind in g:everforest_lsp_kind_color
   execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
 endfor
 " }}}
+" SmiteshP/nvim-navic {{{
+for kind in g:everforest_lsp_kind_color
+  execute "highlight! link NavicIcons" . kind[0] . " " . kind[1]
+endfor
+" }}}
+
 " folke/trouble.nvim {{{
 highlight! link TroubleText Fg
 highlight! link TroubleSource Grey
