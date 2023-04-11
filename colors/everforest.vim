@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Apr 11 11:44:09 UTC 2023'
+let s:last_modified = 'Tue Apr 11 12:54:47 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2327,10 +2327,8 @@ highlight! link luaTable Fg
 highlight! link luaIn RedItalic
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
-highlight! link luaTSField Fg
 highlight! link luaTSConstructor TSPunctBracket
 if has('nvim-0.8.0')
-  highlight! link @field.lua luaTSField
   highlight! link @constructor.lua luaTSConstructor
 endif
 " }}}
