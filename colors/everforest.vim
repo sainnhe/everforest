@@ -1102,6 +1102,8 @@ for kind in g:everforest_lsp_kind_color
 endfor
 " }}}
 " SmiteshP/nvim-navic {{{
+highlight! link NavicText Fg
+highlight! link NavicSeparator Grey
 for kind in g:everforest_lsp_kind_color
   execute "highlight! link NavicIcons" . kind[0] . " " . kind[1]
 endfor
