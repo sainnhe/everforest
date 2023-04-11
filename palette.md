@@ -92,10 +92,10 @@ contrast settings.
 | ![#E67E80][hl_red] | #E67E80 | `red`         | Conditional Keywords, Loop Keywords, Exception Keywords, Inclusion Keywords, Uncategorised Keywords, Diff Deleted Signs, Error Messages, Error Signs |
 | ![#E69875][hl_ora] | #E69875 | `orange`      | Operator Keywords, Operators, Labels, Storage Classes, Composite Types, Enumerated Types, Tags, Debugging Statements      |
 | ![#DBBC7F][hl_yel] | #DBBC7F | `yellow`      | Types, Special Characters, Warning Messages, Warning Signs, [_Treesitter_: Modules, Namespaces]                           |
-| ![#A7C080][hl_gre] | #A7C080 | `green`       | Function Names, Method Names, Strings, Characters, Hint Messages, Hint Signs, Search Highlights, [_Treesitter_: Constructors, Fields, Function Calls, Built-In Functions, Macro Functions, String Escapes, Regex Literals, Tag Delimiters, Non-Structured Text] |
+| ![#A7C080][hl_gre] | #A7C080 | `green`       | Function Names, Method Names, Strings, Characters, Hint Messages, Hint Signs, Search Highlights, [_Treesitter_: Constructors, Function Calls, Built-In Functions, Macro Functions, String Escapes, Regex Literals, Tag Delimiters, Non-Structured Text] |
 | ![#83C092][hl_aqu] | #83C092 | `aqua`        | Constants, Macros, [_Treesitter_: Strings, Characters]                                                                    |
-| ![#7FBBB3][hl_blu] | #7FBBB3 | `blue`        | Identifiers, Uncategorised Special Symbols, Diff Changed Text Background, Info Messages, Info Signs, [_Treesitter_: Built-In Constants, Built-In Variables, Macro-Defined Constants, Special Punctuation, Math Environments] |
-| ![#D699B6][hl_pur] | #D699B6 | `purple`      | Booleans, Numbers, Preprocessors, [_Treesitter_: Attributes/Annotations]                                                  |
+| ![#7FBBB3][hl_blu] | #7FBBB3 | `blue`        | Identifiers, Uncategorised Special Symbols, Diff Changed Text Background, Info Messages, Info Signs, [_Treesitter_: Fields, Special Punctuation, Math Environments] |
+| ![#D699B6][hl_pur] | #D699B6 | `purple`      | Booleans, Numbers, Preprocessors, [_Treesitter_: Built-In Constants, Built-In Variables, Macro-Defined Constants, Attributes/Annotations]                                                  |
 | ![#7A8478][hl_gr0] | #7A8478 | `grey0`       | Line Numbers, Fold Columns, Concealed Text, Foreground UI Elements                                                        |
 | ![#859289][hl_gr1] | #859289 | `grey1`       | Comments, Punctuation Delimiters, Closed Folds, Ignored/Disabled, UI Borders, Status Line Text                            |
 | ![#9DA9A0][hl_gr2] | #9DA9A0 | `grey2`       | Cursor Line Number, Tab Line Label (inactive)                                                                             |
