@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Apr 11 12:54:47 UTC 2023'
+let s:last_modified = 'Tue Apr 11 15:48:48 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1524,6 +1524,7 @@ if !s:configuration.transparent_background
   call everforest#highlight('NeoTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
   call everforest#highlight('NeoTreeVertSplit', s:palette.bg0, s:palette.bg0)
 endif
+highlight! link NeoTreeDirectoryIcon Orange
 highlight! link NeoTreeGitAdded Green
 highlight! link NeoTreeGitConflict Yellow
 highlight! link NeoTreeGitDeleted Red
