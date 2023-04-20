@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Apr 16 21:11:02 UTC 2023'
+let s:last_modified = 'Thu Apr 20 22:42:26 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2423,12 +2423,10 @@ highlight! link goVarArgs Grey
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link goTSInclude Purple
 highlight! link goTSNamespace Fg
-highlight! link goTSProperty Identifier
 highlight! link goTSConstBuiltin AquaItalic
 if has('nvim-0.8.0')
   highlight! link @include.go goTSInclude
   highlight! link @namespace.go goTSNamespace
-  highlight! link @property.go goTSProperty
   highlight! link @constant.builtin.go goTSConstBuiltin
 endif
 if has('nvim-0.9.0')
