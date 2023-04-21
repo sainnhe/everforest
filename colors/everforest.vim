@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Apr 21 19:53:57 UTC 2023'
+let s:last_modified = 'Fri Apr 21 20:27:36 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2338,12 +2338,6 @@ highlight! link luaFunction Aqua
 highlight! link luaTable Fg
 highlight! link luaIn RedItalic
 " }}}
-" nvim-treesitter/nvim-treesitter {{{
-highlight! link luaTSConstructor TSPunctBracket
-if has('nvim-0.8.0')
-  highlight! link @constructor.lua luaTSConstructor
-endif
-" }}}
 " vim-lua: https://github.com/tbastos/vim-lua {{{
 highlight! link luaFuncCall Green
 highlight! link luaLocal Orange
@@ -2356,6 +2350,12 @@ highlight! link luaFuncTable Yellow
 highlight! link luaFuncArgName Blue
 highlight! link luaEllipsis Orange
 highlight! link luaDocTag Green
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link luaTSConstructor luaBraces
+if has('nvim-0.8.0')
+  highlight! link @constructor.lua luaTSConstructor
+endif
 " }}}
 " syn_end }}}
 " syn_begin: moon {{{
