@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Apr 22 19:50:13 UTC 2023'
+let s:last_modified = 'Sat Apr 22 21:12:18 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -369,11 +369,16 @@ if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
   highlight! link VirtualTextHint Grey
-else
+elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
   highlight! link VirtualTextInfo Blue
   highlight! link VirtualTextHint Green
+else
+  call everforest#highlight('VirtualTextWarning', s:palette.yellow, s:palette.bg_yellow)
+  call everforest#highlight('VirtualTextError', s:palette.red, s:palette.bg_red)
+  call everforest#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_blue)
+  call everforest#highlight('VirtualTextHint', s:palette.green, s:palette.bg_green)
 endif
 call everforest#highlight('ErrorFloat', s:palette.red, s:palette.bg2)
 call everforest#highlight('WarningFloat', s:palette.yellow, s:palette.bg2)

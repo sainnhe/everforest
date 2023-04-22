@@ -360,17 +360,17 @@ Currently, the following plugins are supported:
                                           *g:everforest_diagnostic_virtual_text*
 g:everforest_diagnostic_virtual_text~
 
-Some plugins can use virtual text feature of neovim to display
-error/warning/info/hint information, you can use this option to adjust the
-colors of it.
+Some plugins can use the virtual text feature of Neovim to display
+error/warning/info/hint information. You can use this option to adjust the
+way these virtual texts are highlighted.
 
     Type:               |String|
-    Available values:   `'grey'`, `'colored'`
+    Available values:   `'grey'`, `'colored'`, `'highlighted'`
     Default value:      `'grey'`
 
 Currently, the following plugins are supported:
 
-- neovim's built-in language server client
+- Neovim's built-in language server client
 - https://github.com/neoclide/coc.nvim
 - https://github.com/prabirshrestha/vim-lsp
 - https://github.com/dense-analysis/ale
