@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Apr 22 21:12:18 UTC 2023'
+let s:last_modified = 'Mon Apr 24 19:09:56 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1773,6 +1773,12 @@ highlight! link htmlArg Aqua
 highlight! link htmlScriptTag Purple
 highlight! link htmlSpecialTagName RedItalic
 " }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link htmlTSText TSNone
+if has('nvim-0.8.0')
+  highlight! link @text.html htmlTSText
+endif
+" }}}
 " syn_end }}}
 " syn_begin: xml {{{
 " builtin: https://github.com/chrisbra/vim-xml-ftplugin {{{
@@ -1903,6 +1909,7 @@ if has('nvim-0.8.0')
 endif
 if has('nvim-0.9.0')
   highlight! link @lsp.typemod.variable.defaultLibrary.javascript TSConstBuiltin
+  highlight! link @lsp.typemod.variable.defaultLibrary.javascriptreact TSConstBuiltin
 endif
 " }}}
 " yajs: https://github.com/othree/yajs.vim {{{
@@ -2199,11 +2206,14 @@ highlight! link typescriptMathStaticProp Aqua
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link typescriptTSInclude Purple
+highlight! link tsxTSConstructor TSType
 if has('nvim-0.8.0')
   highlight! link @include.typescript typescriptTSInclude
+  highlight! link @constructor.tsx tsxTSConstructor
 endif
 if has('nvim-0.9.0')
   highlight! link @lsp.typemod.variable.defaultLibrary.typescript TSConstBuiltin
+  highlight! link @lsp.typemod.variable.defaultLibrary.typescriptreact TSConstBuiltin
 endif
 " }}}
 " syn_end }}}
@@ -2897,7 +2907,7 @@ highlight! link gitcommitFile Green
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 if has('nvim-0.8.0')
-  highlight! link @text.gitcommit Fg
+  highlight! link @text.gitcommit TSNone
 endif
 " }}}
 " syn_end }}}
