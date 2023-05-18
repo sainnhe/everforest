@@ -1148,6 +1148,7 @@ highlight! link HopUnmatched Grey
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
 call everforest#highlight('IndentBlanklineContextChar', s:palette.grey1, s:palette.none, 'nocombine')
+call everforest#highlight('IndentBlanklineContextStart', s:palette.none, s:palette.bg2)
 call everforest#highlight('IndentBlanklineChar', s:palette.bg5, s:palette.none, 'nocombine')
 highlight! link IndentBlanklineSpaceChar IndentBlanklineChar
 highlight! link IndentBlanklineSpaceCharBlankline IndentBlanklineChar
