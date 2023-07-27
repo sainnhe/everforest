@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Jul 27 10:50:05 UTC 2023'
+let s:last_modified = 'Thu Jul 27 13:52:49 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -54,17 +54,9 @@ else
   endif
   call everforest#highlight('Terminal', s:palette.fg, s:palette.bg0)
   if s:configuration.show_eob
-    if s:configuration.dim_inactive_windows
-      call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.none)
-    else
-      call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.none)
-    endif
+    call everforest#highlight('EndOfBuffer', s:palette.bg4, s:palette.none)
   else
-    if s:configuration.dim_inactive_windows
-      call everforest#highlight('EndOfBuffer', s:palette.bg_dim, s:palette.none)
-    else
-      call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
-    endif
+    call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
   call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
