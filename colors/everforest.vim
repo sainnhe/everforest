@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Jul 27 13:52:49 UTC 2023'
+let s:last_modified = 'Mon Aug  7 07:21:35 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -372,10 +372,10 @@ else
   call everforest#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_blue)
   call everforest#highlight('VirtualTextHint', s:palette.green, s:palette.bg_green)
 endif
-call everforest#highlight('ErrorFloat', s:palette.red, s:palette.bg2)
-call everforest#highlight('WarningFloat', s:palette.yellow, s:palette.bg2)
-call everforest#highlight('InfoFloat', s:palette.blue, s:palette.bg2)
-call everforest#highlight('HintFloat', s:palette.green, s:palette.bg2)
+call everforest#highlight('ErrorFloat', s:palette.red, s:palette.none)
+call everforest#highlight('WarningFloat', s:palette.yellow, s:palette.none)
+call everforest#highlight('InfoFloat', s:palette.blue, s:palette.none)
+call everforest#highlight('HintFloat', s:palette.green, s:palette.none)
 if &diff
   call everforest#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
