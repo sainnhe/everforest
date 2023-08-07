@@ -18,6 +18,7 @@ function! everforest#get_configuration() "{{{
         \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
+        \ 'float_style': get(g:, 'everforest_float_style', 'bright'),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),
