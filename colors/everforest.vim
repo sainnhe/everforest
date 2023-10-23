@@ -139,9 +139,11 @@ call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg_dim, 'bold')
 else
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg2, 'bold')
 endif
 call everforest#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
