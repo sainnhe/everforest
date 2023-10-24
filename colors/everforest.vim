@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Aug  7 07:21:35 UTC 2023'
+let s:last_modified = 'Tue Oct 24 16:39:47 UTC 2023'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1147,9 +1147,11 @@ highlight! link HopNextKey2 Green
 highlight! link HopUnmatched Grey
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
-call everforest#highlight('IndentBlanklineContextChar', s:palette.grey1, s:palette.none, 'nocombine')
+call everforest#highlight('IblScope', s:palette.grey1, s:palette.none, 'nocombine')
+call everforest#highlight('IblIndent', s:palette.bg4, s:palette.none, 'nocombine')
 call everforest#highlight('IndentBlanklineContextStart', s:palette.none, s:palette.bg2)
-call everforest#highlight('IndentBlanklineChar', s:palette.bg5, s:palette.none, 'nocombine')
+highlight! link IndentBlanklineContextChar IblScope
+highlight! link IndentBlanklineChar IblIndent
 highlight! link IndentBlanklineSpaceChar IndentBlanklineChar
 highlight! link IndentBlanklineSpaceCharBlankline IndentBlanklineChar
 " }}}
