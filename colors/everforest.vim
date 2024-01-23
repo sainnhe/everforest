@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct 24 16:39:47 UTC 2023'
+let s:last_modified = 'Tue Jan 23 12:33:33 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -552,6 +552,10 @@ if has('nvim-0.8.0')
   highlight! link @character TSCharacter
   highlight! link @character.special TSCharacterSpecial
   highlight! link @comment TSComment
+  highlight! link @comment.error TSDanger
+  highlight! link @comment.note TSNote
+  highlight! link @comment.todo TSTodo
+  highlight! link @comment.warning TSWarning
   highlight! link @conceal Grey
   highlight! link @conditional TSConditional
   highlight! link @constant TSConstant
@@ -560,7 +564,10 @@ if has('nvim-0.8.0')
   highlight! link @constructor TSConstructor
   highlight! link @debug TSDebug
   highlight! link @define TSDefine
-  highlight! link @error TSError
+  highlight! link @diff.delta diffChanged
+  highlight! link @diff.minus diffRemoved
+  highlight! link @diff.plus diffAdded
+  highlight! link @error TSError " This has been removed from nvim-treesitter
   highlight! link @exception TSException
   highlight! link @field TSField
   highlight! link @float TSFloat
@@ -568,18 +575,47 @@ if has('nvim-0.8.0')
   highlight! link @function.builtin TSFuncBuiltin
   highlight! link @function.call TSFunctionCall
   highlight! link @function.macro TSFuncMacro
+  highlight! link @function.method TSMethod
+  highlight! link @function.method.call TSMethodCall
   highlight! link @include TSInclude
   highlight! link @keyword TSKeyword
+  highlight! link @keyword.conditional TSConditional
+  highlight! link @keyword.debug TSDebug
+  highlight! link @keyword.directive TSPreProc
+  highlight! link @keyword.directive.define TSDefine
+  highlight! link @keyword.exception TSException
   highlight! link @keyword.function TSKeywordFunction
+  highlight! link @keyword.import TSInclude
   highlight! link @keyword.operator TSKeywordOperator
+  highlight! link @keyword.repeat TSRepeat
   highlight! link @keyword.return TSKeywordReturn
+  highlight! link @keyword.storage TSStorageClass
   highlight! link @label TSLabel
+  highlight! link @markup.emphasis TSEmphasis
+  highlight! link @markup.environment TSEnvironment
+  highlight! link @markup.environment.name TSEnvironmentName
+  highlight! link @markup.heading TSTitle
+  highlight! link @markup.link TSTextReference
+  highlight! link @markup.link.label TSStringSpecial
+  highlight! link @markup.link.url TSURI
+  highlight! link @markup.list TSPunctSpecial
+  highlight! link @markup.list.checked Green
+  highlight! link @markup.list.unchecked Ignore
+  highlight! link @markup.math TSMath
+  highlight! link @markup.note TSNote
+  highlight! link @markup.quote Grey
+  highlight! link @markup.raw TSLiteral
+  highlight! link @markup.strike TSStrike
+  highlight! link @markup.strong TSStrong
+  highlight! link @markup.underline TSUnderline
   highlight! link @math TSMath
   highlight! link @method TSMethod
   highlight! link @method.call TSMethodCall
+  highlight! link @module TSNamespace
   highlight! link @namespace TSNamespace
   highlight! link @none TSNone
   highlight! link @number TSNumber
+  highlight! link @number.float TSFloat
   highlight! link @operator TSOperator
   highlight! link @parameter TSParameter
   highlight! link @parameter.reference TSParameterReference
@@ -595,7 +631,10 @@ if has('nvim-0.8.0')
   highlight! link @string TSString
   highlight! link @string.escape TSStringEscape
   highlight! link @string.regex TSStringRegex
+  highlight! link @string.regexp TSStringRegex
   highlight! link @string.special TSStringSpecial
+  highlight! link @string.special.symbol TSSymbol
+  highlight! link @string.special.uri TSURI
   highlight! link @symbol TSSymbol
   highlight! link @tag TSTag
   highlight! link @tag.attribute TSTagAttribute
@@ -628,6 +667,8 @@ if has('nvim-0.8.0')
   highlight! link @uri TSURI
   highlight! link @variable TSVariable
   highlight! link @variable.builtin TSVariableBuiltin
+  highlight! link @variable.member TSField
+  highlight! link @variable.parameter TSParameter
 endif
 if has('nvim-0.9.0')
   highlight! link @lsp.type.class TSType
