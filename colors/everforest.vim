@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan 23 12:33:33 UTC 2024'
+let s:last_modified = 'Wed Jan 24 09:17:00 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1950,6 +1950,7 @@ highlight! link jsClassMethodType Orange
 highlight! link javascriptTSInclude Purple
 if has('nvim-0.8.0')
   highlight! link @include.javascript javascriptTSInclude
+  highlight! link @keyword.import.javascript javascriptTSInclude
 endif
 if has('nvim-0.9.0')
   highlight! link @lsp.typemod.variable.defaultLibrary.javascript TSConstBuiltin
@@ -2253,6 +2254,7 @@ highlight! link typescriptTSInclude Purple
 highlight! link tsxTSConstructor TSType
 if has('nvim-0.8.0')
   highlight! link @include.typescript typescriptTSInclude
+  highlight! link @keyword.import.typescript typescriptTSInclude
   highlight! link @constructor.tsx tsxTSConstructor
 endif
 if has('nvim-0.9.0')
@@ -2498,6 +2500,7 @@ highlight! link goTSConstBuiltin AquaItalic
 if has('nvim-0.8.0')
   highlight! link @include.go goTSInclude
   highlight! link @namespace.go goTSNamespace
+  highlight! link @module.go goTSNamespace
   highlight! link @constant.builtin.go goTSConstBuiltin
 endif
 if has('nvim-0.9.0')
