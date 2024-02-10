@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jan 24 09:17:00 AM UTC 2024'
+let s:last_modified = 'Sat Feb 10 11:08:08 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1732,6 +1732,22 @@ highlight! link mkdListItem Red
 highlight! link mkdRule Purple
 highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+if has('nvim-0.8.0')
+  highlight! link @markup.heading.1.markdown markdownH1
+  highlight! link @markup.heading.2.markdown markdownH2
+  highlight! link @markup.heading.3.markdown markdownH3
+  highlight! link @markup.heading.4.markdown markdownH4
+  highlight! link @markup.heading.5.markdown markdownH5
+  highlight! link @markup.heading.6.markdown markdownH6
+  highlight! link @markup.heading.1.marker.markdown @conceal
+  highlight! link @markup.heading.2.marker.markdown @conceal
+  highlight! link @markup.heading.3.marker.markdown @conceal
+  highlight! link @markup.heading.4.marker.markdown @conceal
+  highlight! link @markup.heading.5.marker.markdown @conceal
+  highlight! link @markup.heading.6.marker.markdown @conceal
+endif
 " }}}
 " syn_end }}}
 " syn_begin: vimwiki {{{
