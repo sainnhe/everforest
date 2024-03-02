@@ -2271,6 +2271,7 @@ highlight! link tsxTSConstructor TSType
 if has('nvim-0.8.0')
   highlight! link @include.typescript typescriptTSInclude
   highlight! link @keyword.import.typescript typescriptTSInclude
+  highlight! link @keyword.import.tsx typescriptTSInclude
   highlight! link @constructor.tsx tsxTSConstructor
 endif
 if has('nvim-0.9.0')
