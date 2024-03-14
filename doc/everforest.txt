@@ -535,7 +535,7 @@ How to use custom colors?~
       " See `colors/everforest.vim` for all predefined highlight groups.
       highlight! link groupA groupB
       highlight! link groupC groupD
-    
+
       " Initialize the color palette.
       " The first parameter is a valid value for `g:everforest_background`,
       " and the second parameter is a valid value for `g:everforest_colors_override`.
@@ -549,15 +549,30 @@ How to use custom colors?~
       " See `autoload/everforest.vim` for the format of `l:palette`.
       call everforest#highlight('groupE', l:palette.red, l:palette.none, 'undercurl', l:palette.red)
     endfunction
-    
+
     augroup EverforestCustom
       autocmd!
       autocmd ColorScheme everforest call s:everforest_custom()
     augroup END
-    
+
     colorscheme everforest
 <
-Note: Make sure to define the `augroup` before declare the `colorscheme`.
+Or in Neovim (Lua configuration):
+>
+    vim.api.nvim_create_autocmd('ColorScheme', {
+      group = vim.api.nvim_create_augroup('custom_highlights_everforest', {}),
+      pattern = 'everforest',
+      callback = function()
+        local config = vim.fn['everforest#get_configuration']()
+        local palette = vim.fn['everforest#get_palette'](config.background, config.colors_override)
+        local set_hl = vim.fn['everforest#highlight']
+
+        set_hl('Search', palette.none, palette.bg_visual_yellow)
+        set_hl('IncSearch', palette.none, palette.bg_visual_red)
+      end
+    })
+<
+Note: Make sure to define the `augroup` before calling `colorscheme`.
 
 ------------------------------------------------------------------------------
 
