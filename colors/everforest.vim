@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Feb 10 11:08:08 AM UTC 2024'
+let s:last_modified = 'Sat Mar 23 12:27:46 PM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1747,6 +1747,10 @@ if has('nvim-0.8.0')
   highlight! link @markup.heading.4.marker.markdown @conceal
   highlight! link @markup.heading.5.marker.markdown @conceal
   highlight! link @markup.heading.6.marker.markdown @conceal
+  if !has('nvim-0.10')
+    call everforest#highlight('@markup.italic', s:palette.none, s:palette.none, 'italic')
+    call everforest#highlight('@markup.strikethrough', s:palette.none, s:palette.none, 'strikethrough')
+  endif
 endif
 " }}}
 " syn_end }}}
