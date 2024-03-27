@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Mar 23 12:27:46 PM UTC 2024'
+let s:last_modified = 'Wed Mar 27 02:41:46 PM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -542,7 +542,7 @@ highlight! link TSType YellowItalic
 highlight! link TSTypeBuiltin YellowItalic
 highlight! link TSTypeDefinition YellowItalic
 highlight! link TSTypeQualifier Orange
-highlight! link TSURI markdownUrl
+call everforest#highlight('TSURI', s:palette.blue, s:palette.none, 'underline')
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8.0')
@@ -1698,10 +1698,10 @@ call everforest#highlight('markdownH3', s:palette.yellow, s:palette.none, 'bold'
 call everforest#highlight('markdownH4', s:palette.green, s:palette.none, 'bold')
 call everforest#highlight('markdownH5', s:palette.blue, s:palette.none, 'bold')
 call everforest#highlight('markdownH6', s:palette.purple, s:palette.none, 'bold')
-call everforest#highlight('markdownUrl', s:palette.blue, s:palette.none, 'underline')
 call everforest#highlight('markdownItalic', s:palette.none, s:palette.none, 'italic')
 call everforest#highlight('markdownBold', s:palette.none, s:palette.none, 'bold')
 call everforest#highlight('markdownItalicDelimiter', s:palette.grey1, s:palette.none, 'italic')
+highlight! link markdownUrl TSURI
 highlight! link markdownCode Green
 highlight! link markdownCodeBlock Aqua
 highlight! link markdownCodeDelimiter Aqua
