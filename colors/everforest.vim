@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue May  7 05:43:07 AM UTC 2024'
+let s:last_modified = 'Tue May  7 05:57:46 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1346,6 +1346,12 @@ call everforest#highlight('LightspeedUnlabeledMatch', s:palette.fg, s:palette.no
 call everforest#highlight('LightspeedPendingOpArea', s:palette.bg0, s:palette.green)
 highlight! link LightspeedMaskedChar Purple
 highlight! link LightspeedGreyWash Grey
+" }}}
+" nvim-neotest/neotest {{{
+highlight! link NeotestPassed GreenSign
+highlight! link NeotestFailed RedSign
+highlight! link NeotestRunning YellowSign
+highlight! link NeotestSkipped BlueSign
 " }}}
 endif
 " }}}
@@ -2996,6 +3002,19 @@ highlight! link helpCommand Aqua
 highlight! link helpExample Green
 highlight! link helpSpecial Blue
 highlight! link helpSectionDelim Grey
+" syn_end }}}
+" syn_begin: neotest-summary {{{
+" https://github.com/nvim-neotest/neotest
+if has('nvim')
+highlight! link NeotestNamespace Purple
+highlight! link NeotestFile Aqua
+highlight! link NeotestDir Directory
+highlight! link NeotestIndent NonText
+call everforest#highlight('NeotestExpandMarker', s:palette.bg5, s:palette.none)
+highlight! link NeotestAdapterName Title
+highlight! link NeotestMarked Orange
+highlight! link NeotestTarget Red
+endif
 " syn_end }}}
 " }}}
 
