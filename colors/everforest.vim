@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Mar 27 02:41:46 PM UTC 2024'
+let s:last_modified = 'Tue May  7 05:43:07 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -545,7 +545,7 @@ highlight! link TSTypeQualifier Orange
 call everforest#highlight('TSURI', s:palette.blue, s:palette.none, 'underline')
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin PurpleItalic
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @annotation TSAnnotation
   highlight! link @attribute TSAttribute
   highlight! link @boolean TSBoolean
@@ -670,7 +670,7 @@ if has('nvim-0.8.0')
   highlight! link @variable.member TSField
   highlight! link @variable.parameter TSParameter
 endif
-if has('nvim-0.9.0')
+if has('nvim-0.9')
   highlight! link @lsp.type.class TSType
   highlight! link @lsp.type.comment TSComment
   highlight! link @lsp.type.decorator TSFunction
@@ -1734,7 +1734,7 @@ highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @markup.heading.1.markdown markdownH1
   highlight! link @markup.heading.2.markdown markdownH2
   highlight! link @markup.heading.3.markdown markdownH3
@@ -1839,7 +1839,7 @@ highlight! link htmlSpecialTagName RedItalic
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link htmlTSText TSNone
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @text.html htmlTSText
 endif
 " }}}
@@ -1968,11 +1968,11 @@ highlight! link jsClassMethodType Orange
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link javascriptTSInclude Purple
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @include.javascript javascriptTSInclude
   highlight! link @keyword.import.javascript javascriptTSInclude
 endif
-if has('nvim-0.9.0')
+if has('nvim-0.9')
   highlight! link @lsp.typemod.variable.defaultLibrary.javascript TSConstBuiltin
   highlight! link @lsp.typemod.variable.defaultLibrary.javascriptreact TSConstBuiltin
 endif
@@ -2272,13 +2272,13 @@ highlight! link typescriptMathStaticProp Aqua
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link typescriptTSInclude Purple
 highlight! link tsxTSConstructor TSType
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @include.typescript typescriptTSInclude
   highlight! link @keyword.import.typescript typescriptTSInclude
   highlight! link @keyword.import.tsx typescriptTSInclude
   highlight! link @constructor.tsx tsxTSConstructor
 endif
-if has('nvim-0.9.0')
+if has('nvim-0.9')
   highlight! link @lsp.typemod.variable.defaultLibrary.typescript TSConstBuiltin
   highlight! link @lsp.typemod.variable.defaultLibrary.typescriptreact TSConstBuiltin
 endif
@@ -2445,7 +2445,7 @@ highlight! link luaDocTag Green
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link luaTSConstructor luaBraces
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @constructor.lua luaTSConstructor
 endif
 " }}}
@@ -2518,13 +2518,13 @@ highlight! link goVarArgs Grey
 highlight! link goTSInclude Purple
 highlight! link goTSNamespace Fg
 highlight! link goTSConstBuiltin AquaItalic
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @include.go goTSInclude
   highlight! link @namespace.go goTSNamespace
   highlight! link @module.go goTSNamespace
   highlight! link @constant.builtin.go goTSConstBuiltin
 endif
-if has('nvim-0.9.0')
+if has('nvim-0.9')
   highlight! link @lsp.typemod.variable.defaultLibrary.go goTSConstBuiltin
   highlight! link @lsp.type.namespace.go goTSNamespace
 endif
@@ -2914,7 +2914,7 @@ highlight! link jsonQuote Grey
 highlight! link jsonTSLabel jsonKeyword
 highlight! link jsonTSString jsonString
 highlight! link jsonTSStringEscape SpecialChar
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @label.json jsonTSLabel
   highlight! link @string.json jsonTSString
   highlight! link @string.escape jsonTSStringEscape
@@ -2934,7 +2934,7 @@ highlight! link yamlTSString yamlString
 highlight! link yamlTSStringEscape SpecialChar
 highlight! link yamlTSBoolean yamlConstant
 highlight! link yamlTSConstBuiltin yamlConstant
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @field.yaml yamlTSField
   highlight! link @string.yaml yamlTSString
   highlight! link @string.escape.yaml yamlTSStringEscape
@@ -2956,7 +2956,7 @@ highlight! link tomlTableArray tomlTable
 " nvim-treesitter/nvim-treesitter {{{
 highlight! link tomlTSProperty tomlKey
 highlight! link tomlTSString tomlString
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @property.toml tomlTSProperty
   highlight! link @string.toml tomlTSString
 endif
@@ -2974,7 +2974,7 @@ highlight! link gitcommitArrow Grey
 highlight! link gitcommitFile Green
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @text.gitcommit TSNone
 endif
 " }}}
