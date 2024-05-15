@@ -39,66 +39,93 @@ Features~
 ==============================================================================
 INSTALLATION                                           *everforest-installation*
 
+Note: For better syntax highlighting support, consider installing one of the
+following plugins additionally to this colorscheme:
+
+	https://github.com/sheerun/vim-polyglot
+	https://github.com/nvim-treesitter/nvim-treesitter.
+
 ------------------------------------------------------------------------------
+Via a Plugin Manager
 
-Via Plugin Manager~
-
-    Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
+VIM-PLUG
 >
-        Plug 'sainnhe/everforest'
+    Plug 'sainnhe/everforest'
 <
-    For better syntax highlighting support, please install
-    https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
+Refer to https://github.com/junegunn/vim-plug for further information.
+
+LAZY.NVIM
+
+In Neovim (Lua configuration):
+>
+    {
+      'sainnhe/everforest',
+      lazy = false,
+      priority = 1000,
+      config = function()
+        -- Optionally configure and load the colorscheme
+        -- directly inside the plugin declaration.
+        vim.g.everforest_enable_italic = true
+        vim.cmd.colorscheme('everforest')
+      end
+    }
+<
+Refer to https://github.com/folke/lazy.nvim for further information.
 
 ------------------------------------------------------------------------------
+As a Native Vim Package
 
-Via Pack Feature~
+Users of Vim 8 and greater may leverage Vim's native |packages| system.
 
-    1. Create a new directory: `$ mkdir -p ~/.vim/pack/colors/opt`
+1. Create a new directory: `$ mkdir -p ~/.vim/pack/colors/opt`
 
-    2. Clone this repository: `$ git clone --depth 1 https://github.com/sainnhe/everforest.git ~/.vim/pack/colors/opt/everforest`
+2. Clone this repository: `$ git clone --depth 1 https://github.com/sainnhe/everforest.git ~/.vim/pack/colors/opt/everforest`
 
-    3. Generate help tags: `:helptags ~/.vim/pack/colors/opt/everforest/doc/`
+3. Generate help tags: `:helptags ~/.vim/pack/colors/opt/everforest/doc/`
 
-    4. Add `packadd! everforest` to your vimrc.
+4. Add `packadd! everforest` to your vimrc.
 
-Note: If you install this color scheme to `pack/*/start`, you still need to add `packadd! everforest` to your vimrc. [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
-
-------------------------------------------------------------------------------
-
-Manually~
-
-    1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/everforest.git`
-
-    2. Copy `/path/to/everforest/autoload/everforest.vim` to
-    `~/.vim/autoload/` .
-
-    3. Copy `/path/to/everforest/colors/everforest.vim` to
-    `~/.vim/colors/` .
-
-    4. Copy `/path/to/everforest/doc/everforest.txt` to
-    `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
-
-    5. To install [airline](https://github.com/vim-airline/vim-airline) theme,
-    copy `/path/to/everforest/autoload/airline/themes/everforest.vim`
-    to `~/.vim/autoload/airline/themes/` .
-
-    6. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
-    copy `/path/to/everforest/autoload/lightline/colorscheme/everforest.vim`
-    to `~/.vim/autoload/lightline/colorscheme/` .
-
-    7. To install [lualine](https://github.com/nvim-lualine/lualine.nvim) theme,
-    copy `/path/to/everforest/lua/lualine/themes/everforest.lua`
-    to `~/.config/nvim/lua/lualine/themes/` .
+Note: If you install this color scheme to `pack/*/start` instead of
+`pack/*/opt`, you still need to add `packadd! everforest` to your vimrc,
+as discussed in the following issue:
+https://github.com/sainnhe/gruvbox-material/issues/60
 
 ------------------------------------------------------------------------------
+Manually
 
-AUR~
+Users of Vim 7 and lower may install the colorscheme manually.
 
-    There are some packages available for Arch Linux users in AUR:
+1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/everforest.git`
 
-    - [vim-everforest-git](https://aur.archlinux.org/pkgbase/vim-everforest-git/)
-    - [neovim-everforest-git](https://aur.archlinux.org/pkgbase/neovim-everforest-git/)
+2. Copy `everforest/autoload/everforest.vim` to `~/.vim/autoload/`.
+
+3. Copy `everforest/colors/everforest.vim` to `~/.vim/colors/`.
+
+4. Copy `everforest/doc/everforest.txt` to `~/.vim/doc/` and
+   execute `:helptags ~/.vim/doc/` to generate help tags.
+
+5. To install the airline theme, copy
+   `everforest/autoload/airline/themes/everforest.vim`
+   to `~/.vim/autoload/airline/themes/`.
+   https://github.com/vim-airline/vim-airline
+
+6. To install the lightline theme,
+   copy `everforest/autoload/lightline/colorscheme/everforest.vim`
+   to `~/.vim/autoload/lightline/colorscheme/`.
+   https://github.com/itchyny/lightline.vim
+
+7. To install the lualine theme,
+   copy `everforest/lua/lualine/themes/everforest.lua`
+   to `~/.config/nvim/lua/lualine/themes/`.
+   https://github.com/nvim-lualine/lualine.nvim
+
+------------------------------------------------------------------------------
+AUR
+
+There are some packages available for Arch Linux users in AUR:
+
+	https://aur.archlinux.org/pkgbase/vim-everforest-git (Vim)
+	https://aur.archlinux.org/pkgbase/neovim-everforest-git (Neovim)
 
 ==============================================================================
 USAGE                                                         *everforest-usage*
