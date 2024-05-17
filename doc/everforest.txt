@@ -446,6 +446,24 @@ Currently, the following plugins are supported:
 - https://github.com/prabirshrestha/vim-lsp
 
 ------------------------------------------------------------------------------
+                                           *g:everforest_inlay_hints_background*
+g:everforest_inlay_hints_background~
+
+Inlay hints are special markers that are displayed inline with the code to
+provide you with additional information. You can use this option to customize
+the background color of inlay hints.
+
+    Type:               |String|
+    Available values:   `'none'`, `'dimmed'`
+    Default value:      `'none'`
+
+Currently, the following LSP clients are supported:
+
+- https://github.com/neoclide/coc.nvim
+- https://github.com/prabirshrestha/vim-lsp
+- https://github.com/ycm-core/YouCompleteMe
+
+------------------------------------------------------------------------------
                                           *g:everforest_disable_terminal_colors*
 g:everforest_disable_terminal_colors~
 

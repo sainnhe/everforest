@@ -20,6 +20,7 @@ function! everforest#get_configuration() "{{{
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
         \ 'float_style': get(g:, 'everforest_float_style', 'bright'),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
+        \ 'inlay_hints_background': get(g:, 'everforest_inlay_hints_background', 'none'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),
         \ 'diagnostic_line_highlight': get(g:, 'everforest_diagnostic_line_highlight', 0),

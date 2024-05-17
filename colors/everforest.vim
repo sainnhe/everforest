@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 15 08:06:05 PM UTC 2024'
+let s:last_modified = 'Fri May 17 06:08:05 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -390,6 +390,11 @@ elseif s:configuration.current_word ==# 'grey background'
 else
   call everforest#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
+if s:configuration.inlay_hints_background ==# 'none'
+  highlight! link InlayHints LineNr
+else
+  call everforest#highlight('InlayHints', s:palette.grey1, s:palette.bg_dim)
+endif
 " Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
 let g:everforest_lsp_kind_color = [
       \ ["Array", "Aqua"],
@@ -715,7 +720,7 @@ highlight! link CocPumMenu Pmenu
 highlight! link CocMenuSel PmenuSel
 highlight! link CocDisabled Grey
 highlight! link CocSnippetVisual DiffAdd
-highlight! link CocInlayHint LineNr
+highlight! link CocInlayHint InlayHints
 highlight! link CocNotificationProgress Green
 highlight! link CocNotificationButton PmenuSel
 highlight! link CocSemClass TSType
@@ -776,8 +781,8 @@ highlight! link LspWarningHighlight WarningText
 highlight! link LspInformationHighlight InfoText
 highlight! link LspHintHighlight HintText
 highlight! link lspReference CurrentWord
-highlight! link lspInlayHintsType LineNr
-highlight! link lspInlayHintsParameter LineNr
+highlight! link lspInlayHintsType InlayHints
+highlight! link lspInlayHintsParameter InlayHints
 highlight! link LspSemanticType TSType
 highlight! link LspSemanticClass TSType
 highlight! link LspSemanticEnum TSType
@@ -806,7 +811,7 @@ highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
 highlight! link YcmWarningSection WarningText
-highlight! link YcmInlayHint LineNr
+highlight! link YcmInlayHint InlayHints
 highlight! link YcmErrorText VirtualTextError
 highlight! link YcmWarningText VirtualTextWarning
 if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
