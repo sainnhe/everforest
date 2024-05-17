@@ -189,7 +189,8 @@ call everforest#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call everforest#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
   call everforest#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link WinBarNC Grey
+  call everforest#highlight('WinBar', s:palette.grey2, s:palette.bg_dim, 'bold')
+  call everforest#highlight('WinBarNC', s:palette.grey1, s:palette.bg_dim)
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
