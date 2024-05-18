@@ -459,6 +459,7 @@ the background color of inlay hints.
 
 Currently, the following LSP clients are supported:
 
+- Neovim's built-in language server client
 - https://github.com/neoclide/coc.nvim
 - https://github.com/prabirshrestha/vim-lsp
 - https://github.com/ycm-core/YouCompleteMe

@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri May 17 06:08:05 UTC 2024'
+let s:last_modified = 'Sat May 18 07:47:08 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -233,6 +233,7 @@ if has('nvim')
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
+  highlight! link LspInlayHint InlayHints
   highlight! link LspCodeLens VirtualTextInfo
   highlight! link LspCodeLensSeparator VirtualTextHint
   highlight! link LspSignatureActiveParameter Search
