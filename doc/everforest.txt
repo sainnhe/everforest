@@ -49,7 +49,7 @@ following plugins additionally to this colorscheme:
 Via a Plugin Manager
 
 VIM-PLUG
->vim
+>
     Plug 'sainnhe/everforest'
 <
 Refer to https://github.com/junegunn/vim-plug for further information.
@@ -57,7 +57,7 @@ Refer to https://github.com/junegunn/vim-plug for further information.
 LAZY.NVIM
 
 In Neovim (Lua configuration):
->lua
+>
     {
       'sainnhe/everforest',
       lazy = false,
@@ -135,7 +135,7 @@ USAGE                                                         *everforest-usage*
 Vim~
 
     Put something like this in your vimrc:
->vim
+>
         " Important!!
         if has('termguicolors')
           set termguicolors
@@ -161,7 +161,7 @@ Vim~
 
     If you want to apply this color scheme temporarily, run this command in
     vim(this may cause broken colors):
->vim
+>
         :colorscheme everforest
 <
 ------------------------------------------------------------------------------
@@ -170,11 +170,11 @@ Airline~
 
     To enable [airline](https://github.com/vim-airline/vim-airline) color
     scheme, put this in your vimrc:
->vim
+>
         let g:airline_theme = 'everforest'
 <
     To apply it without reloading:
->vim
+>
         :AirlineTheme everforest
 <
 ------------------------------------------------------------------------------
@@ -183,7 +183,7 @@ Lightline~
 
     To enable [lightline](https://github.com/itchyny/lightline.vim) color
     scheme, put this in your vimrc:
->vim
+>
         let g:lightline = {}
         let g:lightline.colorscheme = 'everforest'
 
@@ -191,7 +191,7 @@ Lightline~
         let g:lightline = {'colorscheme' : 'everforest'}
 <
     To apply it without reloading:
->vim
+>
         :let g:lightline.colorscheme = 'everforest'
         :call lightline#init()
         :call lightline#colorscheme()
@@ -202,7 +202,7 @@ Lualine~
 
     To enable [lualine](https://github.com/nvim-lualine/lualine.nvim) color
     scheme, put this in your init.lua:
->lua
+>
         require'lualine'.setup {
           options = {
             theme = 'everforest'
@@ -210,7 +210,7 @@ Lualine~
         }
 <
     To apply it without reloading:
->vim
+>
         :lua require'lualine'.setup {options = {theme = 'everforest'}}
 <
 ==============================================================================
@@ -219,7 +219,7 @@ CONFIGURATION                                         *everforest-configuration*
 Note: the configuration options should be placed before `colorscheme everforest`
 
 E.g.
->vim
+>
     if has('termguicolors')
       set termguicolors
     endif
@@ -511,7 +511,7 @@ Override color palette. The available keys can be found in
 `/path/to/everforest/autoload/everforest.vim`.
 
 E.g.
->vim
+>
     let g:everforest_colors_override = {'bg0': ['#202020', '234'], 'bg2': ['#282828', '235']}
     colorscheme everforest
 <
@@ -575,7 +575,7 @@ tmux: https://github.com/tmux/tmux/issues/1246
 ------------------------------------------------------------------------------
 
 How to use custom colors?~
->vim
+>
     function! s:everforest_custom() abort
       " Link a highlight group to a predefined highlight group.
       " See `colors/everforest.vim` for all predefined highlight groups.
@@ -604,7 +604,7 @@ How to use custom colors?~
     colorscheme everforest
 <
 Or in Neovim (Lua configuration):
->lua
+>
     vim.api.nvim_create_autocmd('ColorScheme', {
       group = vim.api.nvim_create_augroup('custom_highlights_everforest', {}),
       pattern = 'everforest',
