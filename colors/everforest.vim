@@ -354,6 +354,14 @@ else
   call everforest#highlight('InfoText', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
   call everforest#highlight('HintText', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
 endif
+
+if s:configuration.diagnostic_float_highlight
+  highlight! link DiagnosticError ErrorFloat
+  highlight! link DiagnosticInfo InfoFloat
+  highlight! link DiagnosticWarn WarningFloat
+  highlight! link DiagnosticHint HintFloat
+endif
+
 if s:configuration.diagnostic_line_highlight
   call everforest#highlight('ErrorLine', s:palette.none, s:palette.bg_red)
   call everforest#highlight('WarningLine', s:palette.none, s:palette.bg_yellow)
