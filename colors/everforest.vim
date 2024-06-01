@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun May 19 06:34:10 PM UTC 2024'
+let s:last_modified = 'Sat Jun  1 18:40:51 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -191,22 +191,33 @@ if has('nvim')
   call everforest#highlight('Substitute', s:palette.bg0, s:palette.yellow)
   highlight! link WinBar StatusLine
   highlight! link WinBarNC StatusLineNC
+  if s:configuration.diagnostic_text_highlight
+    call everforest#highlight('DiagnosticError', s:palette.red, s:palette.bg_red)
+    call everforest#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
+    call everforest#highlight('DiagnosticWarn', s:palette.yellow, s:palette.bg_yellow)
+    call everforest#highlight('DiagnosticUnderlineWarn', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
+    call everforest#highlight('DiagnosticInfo', s:palette.blue, s:palette.bg_blue)
+    call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
+    call everforest#highlight('DiagnosticHint', s:palette.green, s:palette.bg_green)
+    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
+  else
+    call everforest#highlight('DiagnosticError', s:palette.red, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
+    call everforest#highlight('DiagnosticWarn', s:palette.yellow, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineWarn', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
+    call everforest#highlight('DiagnosticInfo', s:palette.blue, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+    call everforest#highlight('DiagnosticHint', s:palette.green, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
+  endif
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
   highlight! link DiagnosticFloatingHint HintFloat
-  highlight! link DiagnosticError ErrorText
-  highlight! link DiagnosticWarn WarningText
-  highlight! link DiagnosticInfo InfoText
-  highlight! link DiagnosticHint HintText
   highlight! link DiagnosticVirtualTextError VirtualTextError
   highlight! link DiagnosticVirtualTextWarn VirtualTextWarning
   highlight! link DiagnosticVirtualTextInfo VirtualTextInfo
   highlight! link DiagnosticVirtualTextHint VirtualTextHint
-  highlight! link DiagnosticUnderlineError ErrorText
-  highlight! link DiagnosticUnderlineWarn WarningText
-  highlight! link DiagnosticUnderlineInfo InfoText
-  highlight! link DiagnosticUnderlineHint HintText
   highlight! link DiagnosticSignError RedSign
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
