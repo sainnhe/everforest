@@ -712,7 +712,7 @@ if has('nvim-0.9')
   highlight! link @lsp.type.type TSType
   highlight! link @lsp.type.typeParameter TSTypeDefinition
   highlight! link @lsp.type.variable TSVariable
-  highlight! link DiagnosticUnnecessary WarningText
+  call everforest#highlight('DiagnosticUnnecessary', s:palette.grey1, s:palette.none)
 endif
 highlight! link TSModuleInfoGood Green
 highlight! link TSModuleInfoBad Red
