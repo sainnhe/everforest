@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jun  1 18:40:51 UTC 2024'
+let s:last_modified = 'Sat Jun 22 12:49:50 PM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -165,6 +165,10 @@ if s:configuration.transparent_background == 2
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
+  if has('nvim')
+    call everforest#highlight('WinBar', s:palette.grey1, s:palette.none, 'bold')
+    call everforest#highlight('WinBarNC', s:palette.grey0, s:palette.none)
+  endif
 else
   call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg2)
   call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
@@ -173,6 +177,10 @@ else
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
+  if has('nvim')
+    call everforest#highlight('WinBar', s:palette.grey1, s:palette.bg2, 'bold')
+    call everforest#highlight('WinBarNC', s:palette.grey1, s:palette.bg1)
+  endif
 endif
 if s:configuration.dim_inactive_windows
   call everforest#highlight('VertSplit', s:palette.bg4, s:palette.bg_dim)
@@ -189,8 +197,6 @@ call everforest#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call everforest#highlight('ToolbarButton', s:palette.bg0, s:palette.green)
 if has('nvim')
   call everforest#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link WinBar StatusLine
-  highlight! link WinBarNC StatusLineNC
   if s:configuration.diagnostic_text_highlight
     call everforest#highlight('DiagnosticError', s:palette.red, s:palette.bg_red)
     call everforest#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
