@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jun 22 12:49:50 PM UTC 2024'
+let s:last_modified = 'Tue Jun 25 08:59:48 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2948,7 +2948,7 @@ highlight! link jsonTSStringEscape SpecialChar
 if has('nvim-0.8')
   highlight! link @label.json jsonTSLabel
   highlight! link @string.json jsonTSString
-  highlight! link @string.escape jsonTSStringEscape
+  highlight! link @string.escape.json jsonTSStringEscape
 endif
 " }}}
 " syn_end }}}
