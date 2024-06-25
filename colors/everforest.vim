@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jun 25 09:34:36 AM UTC 2024'
+let s:last_modified = 'Tue Jun 25 13:38:33 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1434,7 +1434,7 @@ highlight! link MiniStarterItemPrefix Yellow
 highlight! link MiniStarterQuery Blue
 highlight! link MiniStarterSection Title
 highlight! link MiniStatuslineFilename Grey
-highlight! link MiniStatuslineModeInactive Grey
+highlight! link MiniStatuslineInactive Grey
 highlight! link MiniSurround IncSearch
 highlight! link MiniTablineFill TabLineFill
 " }}}
