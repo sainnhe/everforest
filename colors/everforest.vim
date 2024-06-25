@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jun 25 08:59:48 AM UTC 2024'
+let s:last_modified = 'Tue Jun 25 09:34:36 AM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1323,8 +1323,29 @@ highlight! link TargetFileName Grey
 call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 " }}}
 " echasnovski/mini.nvim {{{
+call everforest#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, 'reverse,nocombine')
+if s:configuration.float_style ==# 'dim'
+  call everforest#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg_dim, 'bold')
+else
+  call everforest#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg2, 'bold')
+endif
+call everforest#highlight('MiniHipatternsFixme', s:palette.bg0, s:palette.red, 'bold')
+call everforest#highlight('MiniHipatternsHack', s:palette.bg0, s:palette.yellow, 'bold')
+call everforest#highlight('MiniHipatternsNote', s:palette.bg0, s:palette.blue, 'bold')
+call everforest#highlight('MiniHipatternsTodo', s:palette.bg0, s:palette.green, 'bold')
+call everforest#highlight('MiniIconsAzure', s:palette.blue, s:palette.none)
+call everforest#highlight('MiniIconsBlue', s:palette.blue, s:palette.none)
+call everforest#highlight('MiniIconsCyan', s:palette.aqua, s:palette.none)
+call everforest#highlight('MiniIconsGreen', s:palette.green, s:palette.none)
+call everforest#highlight('MiniIconsGrey', s:palette.grey2, s:palette.none)
+call everforest#highlight('MiniIconsOrange', s:palette.orange, s:palette.none)
+call everforest#highlight('MiniIconsPurple', s:palette.purple, s:palette.none)
+call everforest#highlight('MiniIconsRed', s:palette.red, s:palette.none)
+call everforest#highlight('MiniIconsYellow', s:palette.yellow, s:palette.none)
 call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
+call everforest#highlight('MiniJump2dSpotAhead', s:palette.aqua, s:palette.none, 'nocombine')
+call everforest#highlight('MiniJump2dSpotUnique', s:palette.yellow, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
 call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
@@ -1345,21 +1366,75 @@ call everforest#highlight('MiniTestEmphasis', s:palette.none, s:palette.none, 'b
 call everforest#highlight('MiniTestFail', s:palette.red, s:palette.none, 'bold')
 call everforest#highlight('MiniTestPass', s:palette.green, s:palette.none, 'bold')
 call everforest#highlight('MiniTrailspace', s:palette.none, s:palette.red)
-highlight! link MiniStarterItemBullet Grey
-highlight! link MiniStarterItemPrefix Yellow
-highlight! link MiniStarterQuery Blue
-highlight! link MiniStatuslineFilename Grey
-highlight! link MiniStatuslineModeInactive Grey
+highlight! link MiniAnimateNormalFloat NormalFloat
+highlight! link MiniClueBorder FloatBorder
+highlight! link MiniClueDescGroup DiagnosticFloatingWarn
+highlight! link MiniClueDescSingle NormalFloat
+highlight! link MiniClueNextKey DiagnosticFloatingHint
+highlight! link MiniClueNextKeyWithPostkeys DiagnosticFloatingError
+highlight! link MiniClueSeparator DiagnosticFloatingInfo
+highlight! link MiniClueTitle FloatTitle
 highlight! link MiniCompletionActiveParameter LspSignatureActiveParameter
 highlight! link MiniCursorword CurrentWord
 highlight! link MiniCursorwordCurrent CurrentWord
+highlight! link MiniDepsChangeAdded diffAdded
+highlight! link MiniDepsChangeRemoved diffRemoved
+highlight! link MiniDepsHint DiagnosticHint
+highlight! link MiniDepsInfo DiagnosticInfo
+highlight! link MiniDepsMsgBreaking DiagnosticWarn
+highlight! link MiniDepsPlaceholder Comment
+highlight! link MiniDepsTitle Title
+highlight! link MiniDepsTitleError DiffDelete
+highlight! link MiniDepsTitleSame DiffChange
+highlight! link MiniDepsTitleUpdate DiffAdd
+highlight! link MiniDiffOverAdd DiffAdd
+highlight! link MiniDiffOverChange DiffText
+highlight! link MiniDiffOverContext DiffChange
+highlight! link MiniDiffOverDelete DiffDelete
+highlight! link MiniDiffSignAdd GreenSign
+highlight! link MiniDiffSignChange BlueSign
+highlight! link MiniDiffSignDelete RedSign
+highlight! link MiniFilesBorder FloatBorder
+highlight! link MiniFilesBorderModified DiagnosticFloatingWarn
+highlight! link MiniFilesCursorLine CursorLine
+highlight! link MiniFilesDirectory Directory
+highlight! link MiniFilesFile NormalFloat
+highlight! link MiniFilesNormal NormalFloat
+highlight! link MiniFilesTitle FloatTitle
 highlight! link MiniIndentscopeSymbol Grey
 highlight! link MiniJump Search
+highlight! link MiniJump2dDim Comment
+highlight! link MiniMapNormal NormalFloat
+highlight! link MiniMapSymbolCount Special
+highlight! link MiniMapSymbolLine Title
+highlight! link MiniMapSymbolView Delimiter
+highlight! link MiniNotifyBorder FloatBorder
+highlight! link MiniNotifyNormal NormalFloat
+highlight! link MiniNotifyTitle FloatTitle
+highlight! link MiniOperatorsExchangeFrom IncSearch
+highlight! link MiniPickBorder FloatBorder
+highlight! link MiniPickBorderBusy DiagnosticFloatingWarn
+highlight! link MiniPickBorderText FloatTitle
+highlight! link MiniPickHeader DiagnosticFloatingHint
+highlight! link MiniPickIconDirectory Directory
+highlight! link MiniPickIconFile MiniPickNormal
+highlight! link MiniPickMatchCurrent CursorLine
+highlight! link MiniPickMatchMarked Visual
+highlight! link MiniPickMatchRanges DiagnosticFloatingHint
+highlight! link MiniPickNormal NormalFloat
+highlight! link MiniPickPreviewLine CursorLine
+highlight! link MiniPickPreviewRegion IncSearch
+highlight! link MiniPickPrompt DiagnosticFloatingInfo
 highlight! link MiniStarterFooter Orange
 highlight! link MiniStarterHeader Yellow
 highlight! link MiniStarterInactive Comment
 highlight! link MiniStarterItem Normal
+highlight! link MiniStarterItemBullet Grey
+highlight! link MiniStarterItemPrefix Yellow
+highlight! link MiniStarterQuery Blue
 highlight! link MiniStarterSection Title
+highlight! link MiniStatuslineFilename Grey
+highlight! link MiniStatuslineModeInactive Grey
 highlight! link MiniSurround IncSearch
 highlight! link MiniTablineFill TabLineFill
 " }}}
