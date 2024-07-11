@@ -1324,6 +1324,7 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 " }}}
 " echasnovski/mini.nvim {{{
 call everforest#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, 'reverse,nocombine')
+call everforest#highlight('MiniFilesFile', s:palette.fg, s:palette.none)
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg_dim, 'bold')
 else
@@ -1346,6 +1347,11 @@ call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.non
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniJump2dSpotAhead', s:palette.aqua, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpotUnique', s:palette.yellow, s:palette.none, 'bold,nocombine')
+if s:configuration.float_style ==# 'dim'
+  call everforest#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg_dim)
+else
+  call everforest#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg2)
+endif
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
 call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
@@ -1398,7 +1404,6 @@ highlight! link MiniFilesBorder FloatBorder
 highlight! link MiniFilesBorderModified DiagnosticFloatingWarn
 highlight! link MiniFilesCursorLine CursorLine
 highlight! link MiniFilesDirectory Directory
-highlight! link MiniFilesFile NormalFloat
 highlight! link MiniFilesNormal NormalFloat
 highlight! link MiniFilesTitle FloatTitle
 highlight! link MiniIndentscopeSymbol Grey
@@ -1424,7 +1429,6 @@ highlight! link MiniPickMatchRanges DiagnosticFloatingHint
 highlight! link MiniPickNormal NormalFloat
 highlight! link MiniPickPreviewLine CursorLine
 highlight! link MiniPickPreviewRegion IncSearch
-highlight! link MiniPickPrompt DiagnosticFloatingInfo
 highlight! link MiniStarterFooter Orange
 highlight! link MiniStarterHeader Yellow
 highlight! link MiniStarterInactive Comment
