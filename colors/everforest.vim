@@ -409,7 +409,7 @@ call everforest#highlight('HintFloat', s:palette.green, s:palette.none)
 if &diff
   call everforest#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
-  call everforest#highlight('CurrentWord', s:palette.none, s:palette.bg2)
+  call everforest#highlight('CurrentWord', s:palette.none, s:palette.bg3)
 else
   call everforest#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
