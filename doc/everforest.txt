@@ -433,7 +433,8 @@ Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
 
     Type:               |String|
-    Available values:   `'grey background'`, `'bold'`, `'underline'`, `'italic'`
+    Available values:   `'grey background'`, `'high contrast background'`, `'bold'`,
+    `'underline'`, `'italic'`
     Default value:      `'grey background'` when not in transparent mode, `'bold'`
     when in transparent mode.
 

@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Aug 20 06:20:03 PM UTC 2024'
+let s:last_modified = 'Mon Sep  2 06:19:52 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -410,6 +410,8 @@ if &diff
   call everforest#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
   call everforest#highlight('CurrentWord', s:palette.none, s:palette.bg2)
+elseif s:configuration.current_word ==# 'high contrast background'
+  call everforest#highlight('CurrentWord', s:palette.none, s:palette.bg3)
 else
   call everforest#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
