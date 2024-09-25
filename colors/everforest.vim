@@ -119,7 +119,11 @@ endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
 call everforest#highlight('DiffDelete', s:palette.none, s:palette.bg_red)
-call everforest#highlight('DiffText', s:palette.bg0, s:palette.blue)
+if has('nvim')
+  call everforest#highlight('DiffText', s:palette.bg0, s:palette.blue)
+else
+  call everforest#highlight('DiffText', s:palette.blue, s:palette.bg0, 'reverse')
+endif
 call everforest#highlight('Directory', s:palette.green, s:palette.none)
 call everforest#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call everforest#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
