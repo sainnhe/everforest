@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Sep  2 06:19:52 UTC 2024'
+let s:last_modified = 'Wed Sep 25 13:38:39 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -72,8 +72,13 @@ else
     endif
   endif
 endif
-call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
-call everforest#highlight('Search', s:palette.bg0, s:palette.green)
+if has('nvim')
+  call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
+  call everforest#highlight('Search', s:palette.bg0, s:palette.green)
+else
+  call everforest#highlight('IncSearch', s:palette.red, s:palette.bg0, 'reverse')
+  call everforest#highlight('Search', s:palette.green, s:palette.bg0, 'reverse')
+endif
 highlight! link CurSearch IncSearch
 call everforest#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 if s:configuration.ui_contrast ==# 'low'
