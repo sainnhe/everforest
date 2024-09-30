@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Sep 25 13:38:39 UTC 2024'
+let s:last_modified = 'Mon Sep 30 09:50:05 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1716,6 +1716,9 @@ highlight! link NeoTreeIndentMarker NonText
 highlight! link NeoTreeNormalNC NeoTreeNormal
 highlight! link NeoTreeSignColumn NeoTreeNormal
 highlight! link NeoTreeRootName Title
+if &background ==# 'light'
+  call everforest#highlight('NeoTreeCursorLine', s:palette.none, s:palette.bg0)
+endif
 " syn_end }}}
 " syn_begin: octo {{{
 " https://github.com/pwntester/octo.nvim
