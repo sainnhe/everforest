@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Sep 30 10:08:51 UTC 2024'
+let s:last_modified = 'Thu Oct 31 10:12:58 UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1368,8 +1368,8 @@ else
   call everforest#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg2)
 endif
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
-call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey2, s:palette.bg3)
+call everforest#highlight('MiniStatuslineFilename', s:palette.grey1, s:palette.bg1)
 call everforest#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.aqua, 'bold')
 call everforest#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.statusline2, 'bold')
 call everforest#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.statusline1, 'bold')
@@ -1452,7 +1452,7 @@ highlight! link MiniStarterItemBullet Grey
 highlight! link MiniStarterItemPrefix Yellow
 highlight! link MiniStarterQuery Blue
 highlight! link MiniStarterSection Title
-highlight! link MiniStatuslineFilename Grey
+highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
 highlight! link MiniStatuslineInactive Grey
 highlight! link MiniSurround IncSearch
 highlight! link MiniTablineFill TabLineFill
