@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Oct 31 10:12:58 UTC 2024'
+let s:last_modified = 'Sun Nov 24 10:15:18 PM UTC 2024'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1284,6 +1284,14 @@ highlight! link NotifyTRACETitle Purple
 " rcarriga/nvim-dap-ui {{{
 call everforest#highlight('DapUIModifiedValue', s:palette.blue, s:palette.none, 'bold')
 call everforest#highlight('DapUIBreakpointsCurrentLine', s:palette.blue, s:palette.none, 'bold')
+call everforest#highlight('DapUIPlayPause', s:palette.green, s:palette.bg2)
+call everforest#highlight('DapUIRestart', s:palette.green, s:palette.bg2)
+call everforest#highlight('DapUIStop', s:palette.red, s:palette.bg2)
+call everforest#highlight('DapUIUnavailable', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('DapUIStepOver', s:palette.blue, s:palette.bg2)
+call everforest#highlight('DapUIStepInto', s:palette.blue, s:palette.bg2)
+call everforest#highlight('DapUIStepBack', s:palette.blue, s:palette.bg2)
+call everforest#highlight('DapUIStepOut', s:palette.blue, s:palette.bg2)
 highlight! link DapUIScope Blue
 highlight! link DapUIType Purple
 highlight! link DapUIDecoration Blue
