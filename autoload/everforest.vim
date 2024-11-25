@@ -203,7 +203,7 @@ function! everforest#syn_gen(path, last_modified, msg) "{{{
     call everforest#ftplugin_detect(a:path)
   else
     echohl WarningMsg | echom '[everforest] Generated ' . rootpath . syntax_relative_path | echohl None
-    execute 'set runtimepath+=' . fnamemodify(rootpath, ':p') . 'after'
+    execute 'set runtimepath+=' . fnameescape(fnamemodify(rootpath, ':p')) . 'after'
   endif
 endfunction "}}}
 function! everforest#syn_write(rootpath, syn, content) "{{{
