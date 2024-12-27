@@ -494,15 +494,24 @@ Note: this configuration option doesn't need to be placed before `colorscheme ev
                                                *g:everforest_better_performance*
 g:everforest_better_performance~
 
-The loading time of this color scheme is very long because too many file types
-and plugins are optimized. This feature allows you to load part of the code on
-demand by placing them in the `after/syntax` directory.
+The loading time of this color scheme might be long because too many file
+types and plugins are optimized. This option allows you to load part of the
+code on demand by placing them in the `after/syntax` directory.
 
-Enabling this option will reduce loading time by approximately 50%.
+Enabling this option will reduce loading time by approximately 50%, but in
+most cases it will only reduce tens of milliseconds, which you may not be very
+aware of it.
+
+This option can be particularly useful on low-performance machines, such as
+the Raspberry Pi, where it may be possible to reduce loading time by hundreds
+of milliseconds.
 
     Type:               |Number|
     Available values:   `0`, `1`
     Default value:      `0`
+
+Note: the initial generation of syntax files, which occurs on the first Vim
+restart after enabling this option, requires up to 5 seconds to complete.
 
 ------------------------------------------------------------------------------
                                                   *g:everforest_colors_override*
