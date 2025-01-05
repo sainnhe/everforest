@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Jan  2 09:42:11 UTC 2025'
+let s:last_modified = 'Sun Jan  5 07:41:06 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1188,6 +1188,13 @@ highlight! link CmpItemMenu Fg
 highlight! link CmpItemKind Yellow
 for kind in g:everforest_lsp_kind_color
   execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
+endfor
+" }}}
+" Saghen/blink.cmp {{{
+call everforest#highlight('BlinkCmpLabelMatch', s:palette.green, s:palette.none, 'bold')
+highlight! link BlinkCmpKind Yellow
+for kind in g:everforest_lsp_kind_color
+  execute "highlight! link BlinkCmpKind" . kind[0] . " " . kind[1]
 endfor
 " }}}
 " SmiteshP/nvim-navic {{{
