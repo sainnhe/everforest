@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Feb  7 15:34:13 UTC 2025'
+let s:last_modified = 'Fri Feb  7 16:05:25 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1233,6 +1233,9 @@ call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none, 
 highlight! link TelescopeBorder Grey
 highlight! link TelescopePromptPrefix Orange
 highlight! link TelescopeSelection DiffAdd
+" }}}
+" ibhagwan/fzf-lua {{{
+highlight! link FzfLuaBorder Grey
 " }}}
 " folke/snacks.nvim {{{
 highlight! link SnacksPicker Normal
