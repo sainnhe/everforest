@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Feb  7 11:06:17 UTC 2025'
+let s:last_modified = 'Fri Feb  7 15:34:13 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1233,6 +1233,20 @@ call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none, 
 highlight! link TelescopeBorder Grey
 highlight! link TelescopePromptPrefix Orange
 highlight! link TelescopeSelection DiffAdd
+" }}}
+" folke/snacks.nvim {{{
+highlight! link SnacksPicker Normal
+highlight! link SnacksPickerBorder Grey
+highlight! link SnacksPickerTitle Title
+highlight! link SnacksPickerFooter SnacksPickerTitle
+highlight! link SnacksPickerPrompt Orange
+highlight! link SnacksPickerInputCursorLine DiffAdd
+call everforest#highlight('SnacksPickerMatch', s:palette.green, s:palette.none, 'bold')
+highlight! link SnacksPickerToggle CursorLine
+highlight! link SnacksPickerDir Comment
+highlight! link SnacksPickerBufFlags Grey
+highlight! link SnacksPickerSelected Aqua
+highlight! link SnacksPickerKeymapRhs Grey
 " }}}
 " lewis6991/gitsigns.nvim {{{
 highlight! link GitSignsAdd GreenSign
