@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Feb  7 16:05:25 UTC 2025'
+let s:last_modified = 'Sat Feb  8 10:11:37 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1243,7 +1243,8 @@ highlight! link SnacksPickerBorder Grey
 highlight! link SnacksPickerTitle Title
 highlight! link SnacksPickerFooter SnacksPickerTitle
 highlight! link SnacksPickerPrompt Orange
-highlight! link SnacksPickerInputCursorLine DiffAdd
+highlight! link SnacksPickerInputCursorLine Normal
+highlight! link SnacksPickerListCursorLine DiffAdd
 call everforest#highlight('SnacksPickerMatch', s:palette.green, s:palette.none, 'bold')
 highlight! link SnacksPickerToggle CursorLine
 highlight! link SnacksPickerDir Comment
