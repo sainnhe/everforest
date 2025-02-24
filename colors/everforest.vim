@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Feb  8 10:11:37 UTC 2025'
+let s:last_modified = 'Mon Feb 24 13:14:03 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1211,7 +1211,6 @@ endfor
 " }}}
 " Saghen/blink.cmp {{{
 call everforest#highlight('BlinkCmpLabelMatch', s:palette.green, s:palette.none, 'bold')
-highlight! link BlinkCmpKind Yellow
 for kind in g:everforest_lsp_kind_color
   execute "highlight! link BlinkCmpKind" . kind[0] . " " . kind[1]
 endfor
