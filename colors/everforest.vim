@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Feb 24 13:14:03 UTC 2025'
+let s:last_modified = 'Wed Feb 26 08:07:31 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -2628,6 +2628,9 @@ highlight! link luaDocTag Green
 highlight! link luaTSConstructor luaBraces
 if has('nvim-0.8')
   highlight! link @constructor.lua luaTSConstructor
+endif
+if has('nvim-0.9')
+  call everforest#highlight('@lsp.type.variable.lua', s:palette.none, s:palette.none)
 endif
 " }}}
 " syn_end }}}
