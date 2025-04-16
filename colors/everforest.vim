@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Feb 26 08:07:31 UTC 2025'
+let s:last_modified = 'Wed Apr 16 15:34:16 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1293,6 +1293,9 @@ call everforest#highlight('BufferCurrentIndex', s:palette.fg, s:palette.bg0)
 call everforest#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg0)
 call everforest#highlight('BufferCurrentSign', s:palette.statusline1, s:palette.bg0)
 call everforest#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg0, 'bold')
+call everforest#highlight('BufferCurrentADDED', s:palette.green, s:palette.bg0)
+call everforest#highlight('BufferCurrentDELETED', s:palette.red, s:palette.bg0)
+call everforest#highlight('BufferCurrentCHANGED', s:palette.blue, s:palette.bg0)
 call everforest#highlight('BufferVisible', s:palette.fg, s:palette.bg_dim)
 call everforest#highlight('BufferVisibleIndex', s:palette.fg, s:palette.bg_dim)
 call everforest#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg_dim)
@@ -1303,6 +1306,9 @@ call everforest#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg_d
 call everforest#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg_dim)
 call everforest#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
 call everforest#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
+call everforest#highlight('BufferInactiveADDED', s:palette.grey0, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveDELETED', s:palette.grey0, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveCHANGED', s:palette.grey0, s:palette.bg_dim)
 call everforest#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
 call everforest#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
