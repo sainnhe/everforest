@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Apr 16 15:34:16 UTC 2025'
+let s:last_modified = 'Wed Apr 16 19:25:23 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1310,6 +1310,7 @@ highlight! link BufferInactiveADDED BufferInactiveSign
 highlight! link BufferInactiveDELETED BufferInactiveSign
 highlight! link BufferInactiveCHANGED BufferInactiveSign
 call everforest#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
+call everforest#highlight('BufferTabpagesSep', s:palette.grey0, s:palette.bg_dim, 'bold')
 call everforest#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
 " rcarriga/nvim-notify {{{
