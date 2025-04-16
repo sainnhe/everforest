@@ -1291,8 +1291,8 @@ highlight! link RainbowDelimiterViolet Purple
 call everforest#highlight('BufferCurrent', s:palette.fg, s:palette.bg0)
 call everforest#highlight('BufferCurrentIndex', s:palette.fg, s:palette.bg0)
 call everforest#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg0)
-call everforest#highlight('BufferCurrentSign', s:palette.statusline1, s:palette.bg0)
 call everforest#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg0, 'bold')
+call everforest#highlight('BufferCurrentSign', s:palette.statusline1, s:palette.bg0)
 call everforest#highlight('BufferCurrentADDED', s:palette.green, s:palette.bg0)
 call everforest#highlight('BufferCurrentDELETED', s:palette.red, s:palette.bg0)
 call everforest#highlight('BufferCurrentCHANGED', s:palette.blue, s:palette.bg0)
@@ -1304,11 +1304,11 @@ call everforest#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg_
 call everforest#highlight('BufferInactive', s:palette.grey1, s:palette.bg_dim)
 call everforest#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg_dim)
 call everforest#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg_dim)
-call everforest#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
 call everforest#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
-call everforest#highlight('BufferInactiveADDED', s:palette.grey0, s:palette.bg_dim)
-call everforest#highlight('BufferInactiveDELETED', s:palette.grey0, s:palette.bg_dim)
-call everforest#highlight('BufferInactiveCHANGED', s:palette.grey0, s:palette.bg_dim)
+call everforest#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
+highlight! link BufferInactiveADDED BufferInactiveSign
+highlight! link BufferInactiveDELETED BufferInactiveSign
+highlight! link BufferInactiveCHANGED BufferInactiveSign
 call everforest#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
 call everforest#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
