@@ -62,7 +62,7 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ 'bg_yellow':  ['#fef2d5',   '226'],
             \ 'bg_green':   ['#f3f5d9',   '194'],
             \ 'bg_blue':    ['#ecf5ed',   '117'],
-            \ 'bg_purple':  ['#f4edf0',   '189'],
+            \ 'bg_purple':  ['#fceced',   '189'],
             \ }
     endif "}}}
   elseif a:background ==# 'medium' "{{{
@@ -92,11 +92,11 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ 'bg4':        ['#e0dcc7',   '223'],
             \ 'bg5':        ['#bdc3af',   '223'],
             \ 'bg_visual':  ['#eaedc8',   '194'],
-            \ 'bg_red':     ['#fbe3da',   '217'],
+            \ 'bg_red':     ['#fde3da',   '217'],
             \ 'bg_yellow':  ['#faedcd',   '226'],
             \ 'bg_green':   ['#f0f1d2',   '194'],
             \ 'bg_blue':    ['#e9f0e9',   '117'],
-            \ 'bg_purple':  ['#f2e9e5',   '189'],
+            \ 'bg_purple':  ['#fae8e2',   '189'],
             \ }
     endif "}}}
   else "{{{
@@ -126,11 +126,11 @@ function! everforest#get_palette(background, colors_override) "{{{
             \ 'bg4':        ['#d8d3ba',   '223'],
             \ 'bg5':        ['#b9c0ab',   '223'],
             \ 'bg_visual':  ['#e1e4bd',   '194'],
-            \ 'bg_red':     ['#f4dbd0',   '217'],
+            \ 'bg_red':     ['#fadbd0',   '217'],
             \ 'bg_yellow':  ['#f1e4c5',   '226'],
             \ 'bg_green':   ['#e5e6c5',   '194'],
             \ 'bg_blue':    ['#e1e7dd',   '117'],
-            \ 'bg_purple':  ['#e9ded8',   '189'],
+            \ 'bg_purple':  ['#f1ddd4',   '189'],
             \ }
     endif
   endif "}}}
