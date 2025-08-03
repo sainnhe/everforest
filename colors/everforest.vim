@@ -217,8 +217,8 @@ if has('nvim')
     call everforest#highlight('DiagnosticUnderlineWarn', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
     call everforest#highlight('DiagnosticInfo', s:palette.blue, s:palette.bg_blue)
     call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
-    call everforest#highlight('DiagnosticHint', s:palette.green, s:palette.bg_green)
-    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
+    call everforest#highlight('DiagnosticHint', s:palette.purple, s:palette.bg_purple)
+    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.bg_purple, 'undercurl', s:palette.purple)
   else
     call everforest#highlight('DiagnosticError', s:palette.red, s:palette.none)
     call everforest#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -226,8 +226,8 @@ if has('nvim')
     call everforest#highlight('DiagnosticUnderlineWarn', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
     call everforest#highlight('DiagnosticInfo', s:palette.blue, s:palette.none)
     call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-    call everforest#highlight('DiagnosticHint', s:palette.green, s:palette.none)
-    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
+    call everforest#highlight('DiagnosticHint', s:palette.purple, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
   endif
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
@@ -240,7 +240,7 @@ if has('nvim')
   highlight! link DiagnosticSignError RedSign
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
-  highlight! link DiagnosticSignHint GreenSign
+  highlight! link DiagnosticSignHint PurpleSign
   highlight! link LspDiagnosticsFloatingError DiagnosticFloatingError
   highlight! link LspDiagnosticsFloatingWarning DiagnosticFloatingWarn
   highlight! link LspDiagnosticsFloatingInformation DiagnosticFloatingInfo
@@ -380,18 +380,18 @@ if s:configuration.diagnostic_text_highlight
   call everforest#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
   call everforest#highlight('WarningText', s:palette.none, s:palette.bg_yellow, 'undercurl', s:palette.yellow)
   call everforest#highlight('InfoText', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
-  call everforest#highlight('HintText', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
+  call everforest#highlight('HintText', s:palette.none, s:palette.bg_purple, 'undercurl', s:palette.purple)
 else
   call everforest#highlight('ErrorText', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
   call everforest#highlight('WarningText', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
   call everforest#highlight('InfoText', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-  call everforest#highlight('HintText', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
+  call everforest#highlight('HintText', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
 endif
 if s:configuration.diagnostic_line_highlight
   call everforest#highlight('ErrorLine', s:palette.none, s:palette.bg_red)
   call everforest#highlight('WarningLine', s:palette.none, s:palette.bg_yellow)
   call everforest#highlight('InfoLine', s:palette.none, s:palette.bg_blue)
-  call everforest#highlight('HintLine', s:palette.none, s:palette.bg_green)
+  call everforest#highlight('HintLine', s:palette.none, s:palette.bg_purple)
 else
   highlight clear ErrorLine
   highlight clear WarningLine
@@ -407,17 +407,17 @@ elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
   highlight! link VirtualTextInfo Blue
-  highlight! link VirtualTextHint Green
+  highlight! link VirtualTextHint Purple
 else
   call everforest#highlight('VirtualTextWarning', s:palette.yellow, s:palette.bg_yellow)
   call everforest#highlight('VirtualTextError', s:palette.red, s:palette.bg_red)
   call everforest#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_blue)
-  call everforest#highlight('VirtualTextHint', s:palette.green, s:palette.bg_green)
+  call everforest#highlight('VirtualTextHint', s:palette.purple, s:palette.bg_purple)
 endif
 call everforest#highlight('ErrorFloat', s:palette.red, s:palette.none)
 call everforest#highlight('WarningFloat', s:palette.yellow, s:palette.none)
 call everforest#highlight('InfoFloat', s:palette.blue, s:palette.none)
-call everforest#highlight('HintFloat', s:palette.green, s:palette.none)
+call everforest#highlight('HintFloat', s:palette.purple, s:palette.none)
 if &diff
   call everforest#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
@@ -784,7 +784,7 @@ highlight! link CocHoverRange CurrentWord
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
-highlight! link CocHintSign GreenSign
+highlight! link CocHintSign PurpleSign
 highlight! link CocWarningVirtualText VirtualTextWarning
 highlight! link CocErrorVirtualText VirtualTextError
 highlight! link CocInfoVirtualText VirtualTextInfo
@@ -850,7 +850,7 @@ highlight! link LspDiagInlineHint HintText
 highlight! link LspDiagSignErrorText RedSign
 highlight! link LspDiagSignWarningText YellowSign
 highlight! link LspDiagSignInfoText BlueSign
-highlight! link LspDiagSignHintText GreenSign
+highlight! link LspDiagSignHintText PurpleSign
 highlight! link LspDiagVirtualTextError VirtualTextError
 highlight! link LspDiagVirtualTextWarning VirtualTextWarning
 highlight! link LspDiagVirtualTextInfo VirtualTextInfo
@@ -1365,7 +1365,7 @@ call everforest#highlight('DefinitionPreviewTitle', s:palette.blue, s:palette.no
 highlight! link LspSagaDiagnosticError Red
 highlight! link LspSagaDiagnosticWarn Yellow
 highlight! link LspSagaDiagnosticInfo Blue
-highlight! link LspSagaDiagnosticHint Green
+highlight! link LspSagaDiagnosticHint Purple
 highlight! link LspSagaErrorTrunCateLine LspSagaDiagnosticError
 highlight! link LspSagaWarnTrunCateLine LspSagaDiagnosticWarn
 highlight! link LspSagaInfoTrunCateLine LspSagaDiagnosticInfo
@@ -1739,7 +1739,7 @@ highlight! link NvimTreeGitDeleted Red
 highlight! link NvimTreeLspDiagnosticsError RedSign
 highlight! link NvimTreeLspDiagnosticsWarning YellowSign
 highlight! link NvimTreeLspDiagnosticsInformation BlueSign
-highlight! link NvimTreeLspDiagnosticsHint GreenSign
+highlight! link NvimTreeLspDiagnosticsHint PurpleSign
 " syn_end }}}
 " syn_begin: fern {{{
 " https://github.com/lambdalisue/fern.vim
