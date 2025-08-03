@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = '2025年 06月 22日 星期日 06:02:12 UTC'
+let s:last_modified = 'Sun Aug  3 18:49:50 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -219,6 +219,8 @@ if has('nvim')
     call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.bg_blue, 'undercurl', s:palette.blue)
     call everforest#highlight('DiagnosticHint', s:palette.purple, s:palette.bg_purple)
     call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.bg_purple, 'undercurl', s:palette.purple)
+    call everforest#highlight('DiagnosticOk', s:palette.green, s:palette.bg_green)
+    call everforest#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.bg_green, 'undercurl', s:palette.green)
   else
     call everforest#highlight('DiagnosticError', s:palette.red, s:palette.none)
     call everforest#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -228,19 +230,24 @@ if has('nvim')
     call everforest#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
     call everforest#highlight('DiagnosticHint', s:palette.purple, s:palette.none)
     call everforest#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+    call everforest#highlight('DiagnosticOk', s:palette.green, s:palette.none)
+    call everforest#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
   endif
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
   highlight! link DiagnosticFloatingHint HintFloat
+  highlight! link DiagnosticFloatingOk OkFloat
   highlight! link DiagnosticVirtualTextError VirtualTextError
   highlight! link DiagnosticVirtualTextWarn VirtualTextWarning
   highlight! link DiagnosticVirtualTextInfo VirtualTextInfo
   highlight! link DiagnosticVirtualTextHint VirtualTextHint
+  highlight! link DiagnosticVirtualTextOk VirtualTextOk
   highlight! link DiagnosticSignError RedSign
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
   highlight! link DiagnosticSignHint PurpleSign
+  highlight! link DiagnosticSignOk GreenSign
   highlight! link LspDiagnosticsFloatingError DiagnosticFloatingError
   highlight! link LspDiagnosticsFloatingWarning DiagnosticFloatingWarn
   highlight! link LspDiagnosticsFloatingInformation DiagnosticFloatingInfo
@@ -403,21 +410,25 @@ if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
   highlight! link VirtualTextHint Grey
+  highlight! link VirtualTextOk Grey
 elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
   highlight! link VirtualTextInfo Blue
   highlight! link VirtualTextHint Purple
+  highlight! link VirtualTextOk Green
 else
   call everforest#highlight('VirtualTextWarning', s:palette.yellow, s:palette.bg_yellow)
   call everforest#highlight('VirtualTextError', s:palette.red, s:palette.bg_red)
   call everforest#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_blue)
   call everforest#highlight('VirtualTextHint', s:palette.purple, s:palette.bg_purple)
+  call everforest#highlight('VirtualTextOk', s:palette.green, s:palette.bg_green)
 endif
 call everforest#highlight('ErrorFloat', s:palette.red, s:palette.none)
 call everforest#highlight('WarningFloat', s:palette.yellow, s:palette.none)
 call everforest#highlight('InfoFloat', s:palette.blue, s:palette.none)
 call everforest#highlight('HintFloat', s:palette.purple, s:palette.none)
+call everforest#highlight('OkFloat', s:palette.green, s:palette.none)
 if &diff
   call everforest#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
