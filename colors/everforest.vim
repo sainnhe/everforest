@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Aug  3 18:49:50 UTC 2025'
+let s:last_modified = 'Sat Aug 16 10:21:49 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -153,6 +153,10 @@ if s:configuration.float_style ==# 'dim'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
   call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg_dim, 'bold')
+elseif s:configuration.float_style ==# 'none'
+  call everforest#highlight('NormalFloat', s:palette.fg, s:palette.none)
+  call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.none)
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.none, 'bold')
 else
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)

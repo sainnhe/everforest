@@ -351,16 +351,22 @@ Whether to show |hl-EndOfBuffer|.
                                                       *g:everforest_float_style*
 g:everforest_float_style~
 
-Style used to make floating windows stand out from other windows. `'bright'`
-makes the background of these windows lighter than |hl-Normal|, whereas
-`'dim'` makes it darker.
+Style used to make Neovim's floating windows stand out from other windows.
+`'bright'` makes the background of these windows lighter than |hl-Normal|,
+whereas `'dim'` makes it darker.
+
+The special value `'none'` causes floating windows to be displayed with the
+same background as normal windows. Only use this style if Neovim is configured
+with a non-empty |'winborder'|, otherwise floating windows will visually blend
+into the main buffer. Plugins which create floating windows without border by
+default may also need to be configured individually.
 
 Floating windows include for instance diagnostic pop-ups, scrollable
 documentation windows from completion engines, overlay windows from
 installers, etc.
 
     Type:               |String|
-    Available values:   `'bright'`, `'dim'`
+    Available values:   `'bright'`, `'dim'`, `'none'`
     Default value:      `'bright'`
 
 ------------------------------------------------------------------------------
