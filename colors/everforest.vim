@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Aug 16 10:21:49 UTC 2025'
+let s:last_modified = 'Mon Aug 18 18:50:37 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -752,6 +752,7 @@ if has('nvim-0.9')
   highlight! link @lsp.type.typeParameter TSTypeDefinition
   highlight! link @lsp.type.variable TSVariable
   call everforest#highlight('DiagnosticUnnecessary', s:palette.grey1, s:palette.none)
+  call everforest#highlight('DiagnosticDeprecated', s:palette.none, s:palette.none, 'strikethrough', s:palette.fg)
 endif
 highlight! link TSModuleInfoGood Green
 highlight! link TSModuleInfoBad Red
