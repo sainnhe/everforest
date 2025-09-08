@@ -269,7 +269,12 @@ this option to `1`.
                                                            *g:everforest_cursor*
 g:everforest_cursor~
 
-Customize the cursor color, only works in GUI clients.
+Customize the cursor color.
+
+Requires setting the |guicursor| option as in the examples from the Vim doc for
+the cursor to be styled according to |hl-Cursor|.
+
+Only works in GUI clients and compatible terminal emulators.
 
     Type:               |String|
     Available values:   `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
