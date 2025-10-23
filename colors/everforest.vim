@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Aug 18 18:50:37 UTC 2025'
+let s:last_modified = 'Thu Oct 23 14:39:07 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -757,6 +757,20 @@ endif
 highlight! link TSModuleInfoGood Green
 highlight! link TSModuleInfoBad Red
 " }}}
+" nvim-treesitter/nvim-treesitter-context {{{
+if s:configuration.ui_contrast ==# 'low'
+  if s:configuration.transparent_background >= 1
+    call everforest#highlight('TreesitterContextLineNumber', s:palette.bg5, s:palette.none)
+  else
+    call everforest#highlight('TreesitterContextLineNumber', s:palette.bg5, s:palette.bg0)
+  endif
+else
+  if s:configuration.transparent_background >= 1
+    call everforest#highlight('TreesitterContextLineNumber', s:palette.grey0, s:palette.none)
+  else
+    call everforest#highlight('TreesitterContextLineNumber', s:palette.grey0, s:palette.bg0)
+  endif
+endif
 " github/copilot.vim {{{
 highlight! link CopilotSuggestion Grey
 " }}}
