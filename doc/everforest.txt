@@ -313,11 +313,14 @@ dimmed symbols. This is due to the way Vim and Neovim handle |hl-EndOfBuffer|.
                                            *g:everforest_sign_column_background*
 g:everforest_sign_column_background~
 
-By default, the color of sign column background is the same as normal text
-background, but you can use a grey background by setting this option to `'grey'`.
+By default, the background color of the sign and fold columns is the same as
+the one of the normal text. `'grey'` turns the background of the sign and fold
+columns grey. `'linenr'` applies an homogeneous grey background across the
+sign, fold and line number columns. The latter is particularly suitable for a
+usage with Neovim's |statuscolumn| option.
 
     Type:               |String|
-    Available values:   `'none'`, `'grey'`
+    Available values:   `'none'`, `'grey'`, `'linenr'`
     Default value:      `'none'`
 
 ------------------------------------------------------------------------------
