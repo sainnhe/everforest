@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct 27 14:28:38 UTC 2025'
+let s:last_modified = 'Mon Oct 27 14:58:06 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -780,6 +780,7 @@ highlight! link TSModuleInfoGood Green
 highlight! link TSModuleInfoBad Red
 " }}}
 " nvim-treesitter/nvim-treesitter-context {{{
+call everforest#highlight('TreesitterContext', s:palette.fg, s:palette.bg2)
 if !s:configuration.dim_inactive_windows || s:configuration.transparent_background >= 1 || s:configuration.sign_column_background ==# 'linenr'
   highlight! link TreesitterContextLineNumber LineNr
 else
