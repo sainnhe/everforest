@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct 27 13:51:30 UTC 2025'
+let s:last_modified = 'Mon Oct 27 14:28:38 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -103,7 +103,7 @@ else
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
 if s:configuration.ui_contrast ==# 'low'
-  if s:configuration.sign_column_background ==# 'linenr'
+  if s:configuration.sign_column_background ==# 'linenr' && s:configuration.transparent_background == 0
     call everforest#highlight('LineNr', s:palette.bg5, s:palette.bg1)
     if &diff
       call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1, 'underline')
@@ -123,7 +123,7 @@ if s:configuration.ui_contrast ==# 'low'
     endif
   endif
 else
-  if s:configuration.sign_column_background ==# 'linenr'
+  if s:configuration.sign_column_background ==# 'linenr' && s:configuration.transparent_background == 0
     call everforest#highlight('LineNr', s:palette.grey0, s:palette.bg1)
     if &diff
       call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
