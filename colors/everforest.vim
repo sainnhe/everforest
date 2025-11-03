@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Oct 27 14:58:06 UTC 2025'
+let s:last_modified = 'Mon Nov  3 21:14:55 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -174,15 +174,15 @@ call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
-  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg_dim, 'bold')
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg0, 'bold')
 elseif s:configuration.float_style ==# 'none'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg0)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
-  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg0, 'bold')
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg1, 'bold')
 else
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
-  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg2, 'bold')
+  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg4, 'bold')
 endif
 call everforest#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
