@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov  4 10:11:47 UTC 2025'
+let s:last_modified = 'Tue Nov  4 10:40:48 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1472,10 +1472,16 @@ call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.non
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniJump2dSpotAhead', s:palette.aqua, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpotUnique', s:palette.yellow, s:palette.none, 'bold,nocombine')
+highlight! link MiniPickPrompt NormalFloat
 if s:configuration.float_style ==# 'dim'
-  call everforest#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg_dim)
+  call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg_dim)
+  call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg_dim)
+elseif s:configuration.float_style ==# 'none'
+  call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg0)
+  call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg0)
 else
-  call everforest#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg2)
+  call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg2)
+  call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg2)
 endif
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey2, s:palette.bg3)
@@ -1536,18 +1542,6 @@ highlight! link MiniNotifyBorder FloatBorder
 highlight! link MiniNotifyNormal NormalFloat
 highlight! link MiniNotifyTitle FloatTitle
 highlight! link MiniOperatorsExchangeFrom IncSearch
-highlight! link MiniPickBorder FloatBorder
-highlight! link MiniPickBorderBusy DiagnosticFloatingWarn
-highlight! link MiniPickBorderText FloatTitle
-highlight! link MiniPickHeader DiagnosticFloatingHint
-highlight! link MiniPickIconDirectory Directory
-highlight! link MiniPickIconFile MiniPickNormal
-highlight! link MiniPickMatchCurrent CursorLine
-highlight! link MiniPickMatchMarked Visual
-highlight! link MiniPickMatchRanges DiagnosticFloatingHint
-highlight! link MiniPickNormal NormalFloat
-highlight! link MiniPickPreviewLine CursorLine
-highlight! link MiniPickPreviewRegion IncSearch
 highlight! link MiniStarterFooter Orange
 highlight! link MiniStarterHeader Yellow
 highlight! link MiniStarterInactive Comment
