@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov  3 21:14:55 UTC 2025'
+let s:last_modified = 'Tue Nov  4 10:11:47 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -1447,11 +1447,13 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 " }}}
 " echasnovski/mini.nvim {{{
 call everforest#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, 'reverse,nocombine')
-call everforest#highlight('MiniFilesFile', s:palette.fg, s:palette.none)
+"call everforest#highlight('MiniFilesFile', s:palette.fg, s:palette.none)
 if s:configuration.float_style ==# 'dim'
-  call everforest#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg_dim, 'bold')
+  call everforest#highlight('MiniFilesTitle', s:palette.fg, s:palette.bg_dim, 'bold')
+elseif s:configuration.float_style ==# 'none'
+  call everforest#highlight('MiniFilesTitle', s:palette.fg, s:palette.bg0, 'bold')
 else
-  call everforest#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg2, 'bold')
+  call everforest#highlight('MiniFilesTitle', s:palette.fg, s:palette.bg2, 'bold')
 endif
 call everforest#highlight('MiniHipatternsFixme', s:palette.bg0, s:palette.red, 'bold')
 call everforest#highlight('MiniHipatternsHack', s:palette.bg0, s:palette.yellow, 'bold')
@@ -1523,12 +1525,6 @@ highlight! link MiniDiffOverDelete DiffDelete
 highlight! link MiniDiffSignAdd GreenSign
 highlight! link MiniDiffSignChange BlueSign
 highlight! link MiniDiffSignDelete RedSign
-highlight! link MiniFilesBorder FloatBorder
-highlight! link MiniFilesBorderModified DiagnosticFloatingWarn
-highlight! link MiniFilesCursorLine CursorLine
-highlight! link MiniFilesDirectory Directory
-highlight! link MiniFilesNormal NormalFloat
-highlight! link MiniFilesTitle FloatTitle
 highlight! link MiniIndentscopeSymbol Grey
 highlight! link MiniJump Search
 highlight! link MiniJump2dDim Comment
