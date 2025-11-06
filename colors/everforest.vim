@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov  4 11:40:59 UTC 2025'
+let s:last_modified = 'Thu Nov  6 12:09:25 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -103,7 +103,7 @@ else
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
 if s:configuration.ui_contrast ==# 'low'
-  if s:configuration.sign_column_background ==# 'linenr' && s:configuration.transparent_background == 0
+  if s:configuration.sign_column_background ==# 'linenr' && !s:configuration.transparent_background
     call everforest#highlight('LineNr', s:palette.bg5, s:palette.bg1)
     if &diff
       call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1, 'underline')
@@ -123,7 +123,7 @@ if s:configuration.ui_contrast ==# 'low'
     endif
   endif
 else
-  if s:configuration.sign_column_background ==# 'linenr' && s:configuration.transparent_background == 0
+  if s:configuration.sign_column_background ==# 'linenr' && !s:configuration.transparent_background
     call everforest#highlight('LineNr', s:palette.grey0, s:palette.bg1)
     if &diff
       call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
@@ -781,9 +781,7 @@ highlight! link TSModuleInfoBad Red
 " }}}
 " nvim-treesitter/nvim-treesitter-context {{{
 call everforest#highlight('TreesitterContext', s:palette.fg, s:palette.bg2)
-if !s:configuration.dim_inactive_windows || s:configuration.transparent_background >= 1 || s:configuration.sign_column_background ==# 'linenr'
-  highlight! link TreesitterContextLineNumber LineNr
-else
+if s:configuration.dim_inactive_windows && !s:configuration.transparent_background && s:configuration.sign_column_background !=# 'linenr'
   if s:configuration.ui_contrast ==# 'low'
     call everforest#highlight('TreesitterContextLineNumber', s:palette.bg5, s:palette.bg0)
   else
