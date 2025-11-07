@@ -363,18 +363,19 @@ Style used to make Neovim's floating windows stand out from other windows.
 `'bright'` makes the background of these windows lighter than |hl-Normal|,
 whereas `'dim'` makes it darker.
 
-The special value `'none'` causes floating windows to be displayed with the
-same background as normal windows. Only use this style if Neovim is configured
-with a non-empty |'winborder'|, otherwise floating windows will visually blend
-into the main buffer. Plugins which create floating windows without border by
-default may also need to be configured individually.
+The value `'blend'` causes floating windows to be displayed with the same
+background as normal windows. Only use this style if Neovim is configured with
+a non-empty |'winborder'|, otherwise floating windows will visually blend into
+the main window without any distinctive delimiter. Plugins which create
+floating windows without border by default may also need to be configured
+individually.
 
 Floating windows include for instance diagnostic pop-ups, scrollable
 documentation windows from completion engines, overlay windows from
 installers, etc.
 
     Type:               |String|
-    Available values:   `'bright'`, `'dim'`, `'none'`
+    Available values:   `'bright'`, `'dim'`, `'blend'`
     Default value:      `'bright'`
 
 ------------------------------------------------------------------------------

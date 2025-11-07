@@ -7,6 +7,12 @@
 " =============================================================================
 
 function! everforest#get_configuration() "{{{
+  let float_style = get(g:, 'everforest_float_style', 'bright')
+  if float_style ==# 'none'
+    let float_style = 'blend'
+    echoerr "g:everforest_float_style='none' was renamed to 'blend'"
+  endif
+
   return {
         \ 'background': get(g:, 'everforest_background', 'medium'),
         \ 'transparent_background': get(g:, 'everforest_transparent_background', 0),
@@ -18,7 +24,7 @@ function! everforest#get_configuration() "{{{
         \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
-        \ 'float_style': get(g:, 'everforest_float_style', 'bright'),
+        \ 'float_style': float_style,
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'inlay_hints_background': get(g:, 'everforest_inlay_hints_background', 'none'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),

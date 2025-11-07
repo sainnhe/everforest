@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Nov  6 14:13:52 UTC 2025'
+let s:last_modified = 'Fri Nov  7 09:45:00 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -175,7 +175,7 @@ if s:configuration.float_style ==# 'dim'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
   call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg0, 'bold')
-elseif s:configuration.float_style ==# 'none'
+elseif s:configuration.float_style ==# 'blend'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg0)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
   call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg1, 'bold')
@@ -1448,7 +1448,7 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 call everforest#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, 'reverse,nocombine')
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('MiniFilesTitle', s:palette.grey0, s:palette.bg0)
-elseif s:configuration.float_style ==# 'none'
+elseif s:configuration.float_style ==# 'blend'
   call everforest#highlight('MiniFilesTitle', s:palette.grey1, s:palette.bg1)
 else
   call everforest#highlight('MiniFilesTitle', s:palette.grey2, s:palette.bg4)
@@ -1474,7 +1474,7 @@ highlight! link MiniPickPrompt NormalFloat
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg_dim)
   call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg_dim)
-elseif s:configuration.float_style ==# 'none'
+elseif s:configuration.float_style ==# 'blend'
   call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg0)
   call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg0)
 else
