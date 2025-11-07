@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Nov  7 09:45:00 UTC 2025'
+let s:last_modified = 'Fri Nov  7 19:44:49 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -28,7 +28,7 @@ endif
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
-if s:configuration.transparent_background >= 1
+if s:configuration.transparent_background
   call everforest#highlight('Normal', s:palette.fg, s:palette.none)
   call everforest#highlight('NormalNC', s:palette.fg, s:palette.none)
   call everforest#highlight('Terminal', s:palette.fg, s:palette.none)
@@ -176,9 +176,15 @@ if s:configuration.float_style ==# 'dim'
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
   call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg0, 'bold')
 elseif s:configuration.float_style ==# 'blend'
-  call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg0)
-  call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
-  call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg1, 'bold')
+  if s:configuration.transparent_background
+    highlight! link NormalFloat Normal
+    highlight! link FloatBorder Grey
+    call everforest#highlight('FloatTitle', s:palette.fg, s:palette.none, 'bold')
+  else
+    call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg0)
+    call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
+    call everforest#highlight('FloatTitle', s:palette.fg, s:palette.bg1, 'bold')
+  endif
 else
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
@@ -1449,7 +1455,11 @@ call everforest#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, '
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('MiniFilesTitle', s:palette.grey0, s:palette.bg0)
 elseif s:configuration.float_style ==# 'blend'
-  call everforest#highlight('MiniFilesTitle', s:palette.grey1, s:palette.bg1)
+  if s:configuration.transparent_background
+    highlight! link MiniFilesTitle Grey
+  else
+    call everforest#highlight('MiniFilesTitle', s:palette.grey1, s:palette.bg1)
+  endif
 else
   call everforest#highlight('MiniFilesTitle', s:palette.grey2, s:palette.bg4)
 endif
@@ -1475,8 +1485,13 @@ if s:configuration.float_style ==# 'dim'
   call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg_dim)
   call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg_dim)
 elseif s:configuration.float_style ==# 'blend'
-  call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg0)
-  call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg0)
+  if s:configuration.transparent_background
+    highlight! link MiniPickPromptPrefix Orange
+    highlight! link MiniPickPromptCaret Blue
+  else
+    call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg0)
+    call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg0)
+  endif
 else
   call everforest#highlight('MiniPickPromptPrefix', s:palette.orange, s:palette.bg2)
   call everforest#highlight('MiniPickPromptCaret', s:palette.blue, s:palette.bg2)
