@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Nov  7 19:44:49 UTC 2025'
+let s:last_modified = 'Wed Nov 12 18:36:58 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -154,6 +154,7 @@ endif
 call everforest#highlight('Directory', s:palette.green, s:palette.none)
 call everforest#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call everforest#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
+highlight! link OkMsg Green
 call everforest#highlight('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call everforest#highlight('MoreMsg', s:palette.yellow, s:palette.none, 'bold')
 call everforest#highlight('MatchParen', s:palette.none, s:palette.bg4)
