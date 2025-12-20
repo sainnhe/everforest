@@ -271,15 +271,18 @@ g:everforest_cursor~
 
 Customize the cursor color.
 
+The value `'auto'` causes the color to change according to the foreground
+color of the character under the cursor.
+
 Requires setting the |guicursor| option as in the examples from the Vim doc for
 the cursor to be styled according to |hl-Cursor|.
 
 Only works in GUI clients and compatible terminal emulators.
 
     Type:               |String|
-    Available values:   `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    Available values:   `''`, `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
     `'aqua'`, `'blue'`, `'purple'`
-    Default value:      `'auto'`
+    Default value:      `''`
 
 ------------------------------------------------------------------------------
                                            *g:everforest_transparent_background*

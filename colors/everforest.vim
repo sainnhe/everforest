@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = '2025年 12月 06日 星期六 05:11:59 UTC'
+let s:last_modified = 'Sat Dec 20 09:17:49 UTC 2025'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -88,7 +88,7 @@ else
 endif
 if s:configuration.cursor ==# 'auto'
   call everforest#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
-else
+elseif s:configuration.cursor != ''
   call everforest#highlight('Cursor', s:palette.bg0, s:palette[s:configuration.cursor])
 endif
 highlight! link vCursor Cursor

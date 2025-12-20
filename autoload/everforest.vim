@@ -19,7 +19,7 @@ function! everforest#get_configuration() "{{{
         \ 'dim_inactive_windows': get(g:, 'everforest_dim_inactive_windows', 0),
         \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 0),
         \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
-        \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
+        \ 'cursor': get(g:, 'everforest_cursor', ''),
         \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'none'),
         \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
