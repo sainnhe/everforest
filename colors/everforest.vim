@@ -1603,9 +1603,6 @@ call everforest#highlight('AgenticStatusFailed', s:palette.bg0, s:palette.red)
 call everforest#highlight('AgenticStatusPending', s:palette.bg0, s:palette.purple)
 call everforest#highlight('AgenticThinking', s:palette.bg0, s:palette.bg3)
 call everforest#highlight('AgenticTitle', s:palette.bg0, s:palette.blue, 'bold')
-highlight! link AgenticCodeBlockFence Directory
-highlight! link AgenticDiffAdd DiffAdd
-highlight! link AgenticSpinnerBusy Comment
 " }}}
 endif
 " }}}
