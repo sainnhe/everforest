@@ -10,7 +10,7 @@
 let s:configuration = everforest#get_configuration()
 let s:palette = everforest#get_palette(s:configuration.background, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Dec 20 09:17:49 UTC 2025'
+let s:last_modified = 'Thu Apr 16 17:32:20 UTC 2026'
 let g:everforest_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'everforest' && s:configuration.better_performance)
@@ -165,13 +165,27 @@ if has('nvim')
 else
   call everforest#highlight('SpecialKey', s:palette.bg3, s:palette.none)
 endif
-call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg2)
-call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
+if s:configuration.pmenu_style ==# 'dim'
+  call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg_dim)
+  call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg_dim)
+  call everforest#highlight('PmenuThumb', s:palette.none, s:palette.bg2)
+  call everforest#highlight('PmenuKind', s:palette.green, s:palette.bg_dim)
+  call everforest#highlight('PmenuExtra', s:palette.grey0, s:palette.bg_dim)
+elseif s:configuration.pmenu_style ==# 'blend'
+  call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg0)
+  call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg0)
+  call everforest#highlight('PmenuThumb', s:palette.none, s:palette.bg4)
+  call everforest#highlight('PmenuKind', s:palette.green, s:palette.bg0)
+  call everforest#highlight('PmenuExtra', s:palette.grey1, s:palette.bg0)
+else
+  call everforest#highlight('Pmenu', s:palette.fg, s:palette.bg2)
+  call everforest#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
+  call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
+  call everforest#highlight('PmenuKind', s:palette.green, s:palette.bg2)
+  call everforest#highlight('PmenuExtra', s:palette.grey2, s:palette.bg2)
+endif
 call everforest#highlight('PmenuSel', s:palette.bg0, s:palette.statusline1)
-call everforest#highlight('PmenuKind', s:palette.green, s:palette.bg2)
-call everforest#highlight('PmenuExtra', s:palette.grey2, s:palette.bg2)
 highlight! link WildMenu PmenuSel
-call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 if s:configuration.float_style ==# 'dim'
   call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)

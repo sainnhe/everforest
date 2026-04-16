@@ -382,6 +382,25 @@ installers, etc.
     Default value:      `'bright'`
 
 ------------------------------------------------------------------------------
+                                                      *g:everforest_pmenu_style*
+g:everforest_pmenu_style~
+
+Controls the appearance of the completion popup menu (|ins-completion-menu|).
+`'bright'` makes the menu's background lighter than |hl-Normal|, whereas `'dim'`
+makes it darker.
+
+The value `'blend'` causes the popup menu to be displayed with the same
+background as normal windows. Only use this style if Neovim is configured with
+a non-empty |'pumborder'|, otherwise the popup menu will visually blend into
+the main window without any distinctive delimiter. Completion plugins which
+create pseudo popup menus using the |hl-Pmenu| highlighting group and without
+border by default may also need to be configured individually.
+
+    Type:               |String|
+    Available values:   `'bright'`, `'dim'`, `'blend'`
+    Default value:      `'bright'`
+
+------------------------------------------------------------------------------
                                         *g:everforest_diagnostic_text_highlight*
 g:everforest_diagnostic_text_highlight~
 

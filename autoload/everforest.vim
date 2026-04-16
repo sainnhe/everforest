@@ -25,6 +25,7 @@ function! everforest#get_configuration() "{{{
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
         \ 'float_style': float_style,
+        \ 'pmenu_style': get(g:, 'everforest_pmenu_style', 'bright'),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'inlay_hints_background': get(g:, 'everforest_inlay_hints_background', 'none'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
