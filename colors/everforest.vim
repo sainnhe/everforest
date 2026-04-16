@@ -1592,6 +1592,18 @@ highlight! link NeotestFailed RedSign
 highlight! link NeotestRunning YellowSign
 highlight! link NeotestSkipped BlueSign
 " }}}
+" carlos-algms/agentic.nvim {{{
+call everforest#highlight('AgenticDiffAddWord', s:palette.bg0, s:palette.bg_green, 'bold')
+call everforest#highlight('AgenticDiffDeleteWord', s:palette.bg0, s:palette.bg_red, 'bold')
+call everforest#highlight('AgenticSpinnerGenerating', s:palette.blue, s:palette.none, 'bold')
+call everforest#highlight('AgenticSpinnerSearching', s:palette.yellow, s:palette.none, 'bold')
+call everforest#highlight('AgenticSpinnerThinking', s:palette.purple, s:palette.none, 'bold')
+call everforest#highlight('AgenticStatusCompleted', s:palette.bg0, s:palette.green)
+call everforest#highlight('AgenticStatusFailed', s:palette.bg0, s:palette.red)
+call everforest#highlight('AgenticStatusPending', s:palette.bg0, s:palette.purple)
+call everforest#highlight('AgenticThinking', s:palette.bg0, s:palette.bg3)
+call everforest#highlight('AgenticTitle', s:palette.bg0, s:palette.blue, 'bold')
+" }}}
 endif
 " }}}
 " Extended File Types: {{{
